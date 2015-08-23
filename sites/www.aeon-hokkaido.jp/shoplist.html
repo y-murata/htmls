@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="css2012/import.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css2014/shoplist.css" type="text/css" media="all" />
+<link type="text/css" href="css2012/theme/jquery-ui-1.8.17.custom.css" rel="stylesheet" />
+<title>店舗一覧 | イオン北海道株式会社</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<script type="text/javascript" src="js2012/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js2012/jquery-ui-1.8.17.custom.min.js"></script>
+
+<script type="text/javascript" src="js2014/jquery.imagemapster.js"></script>
+
+<script type="text/javascript" src="js2012/rollover.js"></script>
+<script type="text/javascript" src="js2012/accordion2.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21728439-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" language="javascript">
+/* <![CDATA[ */
+var yahoo_retargeting_id = 'LDHX81BTHB';
+var yahoo_retargeting_label = '';
+/* ]]> */
+</script>
+<script type="text/javascript" language="javascript" src="//b92.yahoo.co.jp/js/s_retargeting.js"></script>
+<script type="text/javascript">
+$(function(){
+    $('table.table1 tr:even').addClass('bg_even'); // 偶数行
+    $('table.table1 tr:odd').addClass('bg_odd');   // 奇数行
+});
+</script>
+
+<!--[if IE 6]>
+<script src="js2012/dd_pngfix.js" type="text/javascript"></script>
+<script type="text/javascript" charset="utf-8">
+DD_belatedPNG.fix("img");
+</script>
+<![endif]-->
+<style>
+#shoplist_inner li.child {
+  margin: 4px 0px 0px 0px;
+  padding: 0 0 0 12px;
+}
+</style>
+
+<!--global_navi-->
+</head>
+
+<body>
+
+<div id="page">
+
+  <div id="header_navi">
+    <div id="logo">
+        <img src="../img2015/common/aeonh_logo.jpg" alt="AEON　イオン北海道株式会社" usemap="#logo">
+        <map name="logo">
+          <area href="http://www.aeon.info/" shape="rect" alt="aeon" coords="0,0,70,30">
+        <area href="/home.html" shape="rect" alt="aeon" coords="71,0,290,30">
+        </map>
+
+        </div>
+        
+        
+        <div id="navi">
+          <ul>
+              <li><a href="/home.html"><img src="../img2012/header/gnavi01_off.jpg" alt="トップページへ" width="192" height="36" /></a></li><!--
+                --><li><a href="/news/index.html"><img src="../img2012/header/gnavi02_off.jpg" alt="ニュースリリース" width="192" height="36" /></a></li><!--
+                --><li><a href="/shoplist.html"><img src="../img2012/header/gnavi03_off.jpg" alt="店舗一覧" width="192" height="36" /></a></li><!--
+                --><li><a href="/netshop.html"><img src="../img2012/header/gnavi04_off.jpg" alt="ネットショップ" width="192" height="36" /></a></li><!--
+                --><li><a href="/corporation/index.html"><img src="../img2012/header/gnavi05_off.jpg" alt="企業情報" width="192" height="36" /></a></li>
+
+            </ul>
+        </div>
+    </div>
+
+
+<!--global_navi_end-->
+  <div style="margin-bottom:13px;">
+  </div>
+  <p id="headerTitle">AEON MAP</p>
+  <p id="headerDiscription">お探しの店舗を下記リストからクリックしていただけますと、詳細ページへと移動いたします。</p>
+  <div id="shoplist_listbox">
+    <div id="shoplist_inner">
+    <div><img src="img2014/toppage/mapoff.gif" alt="店舗一覧" usemap="#shape1" id="shape1"></div>
+    <map name="shape1">
+    <area alt="手稲山口店" region="Teine Yamaguchi" shape="poly" coords="116,114,136,114,136,131,145,131,145,156,66,156,66,131,116,131" href="/teine/index.html">
+<area alt="札幌発寒店" region="Sapporo Hassamu" shape="poly" coords="149,161,168,161,168,177,178,177,178,200,98,200,98,177,149,177" href="/hassamu/index.html">
+<area alt="札幌桑園店" region="Sapporo Souen" shape="poly" coords="191,192,217,192,217,212,194,212,194,225,111,225,111,200,191,200" href="/souen/index.html">
+<area alt="札幌西岡店" region="Sapporo Nishioka" shape="poly" coords="175,243,272,243,272,270,175,270" href="/nishioka/index.html">
+<area alt="札幌藻岩店" region="Sapporo Moiwa" shape="poly" coords="122,276,222,276,222,305,122,305" href="/moiwa/index.html">
+<area alt="札幌平岡店" region="Sapporo Hiraoka" shape="poly" coords="314,269,334,269,334,285,349,285,349,312,265,312,265,285,314,285" href="/hiraoka/index.html">
+<area alt="札幌苗穂店" region="Sapporo Naebo" shape="poly" coords="265,173,285,173,285,189,344,189,344,217,260,217,260,189,265,189" href="/naebo/index.html">
+<area alt="札幌元町店" region="Sapporo Motomachi" shape="poly" coords="237,144,337,144,337,172,237,172" href="/motomachi/index.html">
+<area alt="名寄店" region="Nayoro" shape="poly" coords="575,138,631,138,631,161,611,161,611,174,595,174,595,161,575,161" href="/nayoro/index.html">
+<area alt="旭川駅前店" region="Asahikawa Ekimae" shape="poly" coords="680,280,600,280,600,270,585,270,585,260,680,260" href="/asahikawaekimae/index.html">
+<area alt="旭川西店" region="Asahikawa Nishi" shape="poly" coords="524,218,591,218,591,252,577,252,577,240,524,240" href="/asahikawanishi/index.html">
+<area alt="旭川春光店" region="Asahikawa Shunko" shape="poly" coords="591,245,603,245,603,230,670,230,670,210,591,210" href="/syunkou/index.html">
+<area alt="旭川永山店" region="Asahikawa Nagayama" shape="poly" coords="614,228,705,228,705,251,614,251" href="/nagayama/index.html">
+<area alt="紋別店" region="Monbetsu" shape="poly" coords="677,134,733,134,733,156,702,156,702,172,685,172,685,156,677,156" href="/monbetsu/index.html">
+<area alt="北見店" region="Kitami" shape="poly" coords="721,197,776,197,776,221,750,221,750,236,733,236,733,221,721,221" href="/kitami/index.html">
+<area alt="根室店" region="Nemura" shape="poly" coords="882,254,939,254,939,278,918,278,918,292,902,292,902,278,882,278" href="/nemuro/index.html">
+<area alt="厚岸店" region="Akkishi" shape="poly" coords="831,323,903,323,903,346,831,346" href="/akkeshi/index.html">
+<area alt="釧路店" region="Kushiro" shape="poly" coords="797,327,815,327,815,346,832,346,832,367,778,367,778,346,797,346" href="/kushiro/index.html">
+<area alt="釧路昭和店" region="Kushiro Showa" shape="poly" coords="752,298,824,298,824,320,796,320,796,335,780,335,780,320,752,320" href="/kushirosyouwa/index.html">
+<area alt="帯広店" region="Obihiro" shape="poly" coords="674,345,689,345,689,359,710,359,710,381,653,381,653,359,674,359" href="/obihiro/index.html">
+<area alt="三笠店" region="Mikasa" shape="poly" coords="528,257,583,257,583,280,575,280,575,293,556,293,556,280,528,280" href="/mikasa/index.html">
+<area alt="岩見沢店" region="Iwamizawa" shape="poly" coords="553,295,634,295,634,318,553,318" href="/iwamizawa/index.html">
+<area alt="江別店" region="Ebetsu" shape="poly" coords="521,318,594,318,594,341,521,341" href="/ebetsu/index.html">
+<area alt="千歳店" region="Chitose" shape="poly" coords="524,341,595,341,595,362,524,362" href="/chitose/index.html">
+<area alt="静内店" region="Shizunai" shape="poly" coords="596,410,611,410,611,424,632,424,632,448,576,448,576,424,596,424" href="/shizunai/index.html">
+<area alt="苫小牧店" region="Tomakomai" shape="poly" coords="618,373,618,395,549,395,549,389,536,389,536,375" href="/tomakomai/index.html">
+<area alt="登別店" region="Noboribetsu" shape="poly" coords="549,389,549,411,494,411,494,406,480,406,480,390" href="/noboribetsu/index.html">
+<area alt="室蘭店" region="Muroran" shape="poly" coords="482,407,482,424,467,424,467,431,416,431,416,408" href="/muroran/index.html">
+<area alt="伊達店" region="Date" shape="poly" coords="398,385,464,388,464,403,398,406" href="/date/index.html">
+<area alt="余市店" region="Yoichi" shape="poly" coords="454,317,469,317,469,330,501,330,501,350,446,350,446,330,454,330" href="/yoichi/index.html">
+<area alt="石狩緑苑台店" region="Ishikari Ryokuendai" shape="poly" coords="421,276,510,276,511,315,492,315,492,298,421,298" href="/ishikari/index.html">
+<area alt="小樽店" region="Otaru" shape="poly" coords="414,298,471,298,471,303,488,303,488,316,414,318" href="/otaru/index.html">      </map>
+    <ul id="storeCategory"><li><a href="/storelist.html" target="_top"><img src="/img2014/toppage/store_list_bt_off.png" alt="AEON" /></a></li><li><a href="/sclist.html" target="_top"><img src="/img2014/toppage/sc_list_bt_off.png" alt="イオンスーパーセンター" /></a></li><li><a href="/mybasket/index.html" target="_top"><img src="/img2014/toppage/mybasket_list_bt_off.png" alt="まいばすけっと" /></a></li><li><a href="/aeonbike/index.html" target="_top"><img src="/img2014/toppage/bike_list_bt_off.png" alt="AEON BIKE" /></a></li><li class="last"><a href="/syohousen/shoplist.html" target="_top"><img src="/img2014/toppage/pharmacy_list_bt_off.png" alt="調剤薬局" /></a></li></ul>
+    </div>
+  </div>
+  <div class="clearbox"></div>
+  <script>
+$(document).ready(function (){
+if (typeof document.documentElement.style.maxHeight != "undefined") {
+    if (!/*@cc_on!@*/false){
+      $('#shape1').mapster({
+        singleSelect : true,
+        clickNavigate : true,
+        //ロールオーバ
+        render_highlight : { altImage : 'img2014/toppage/mapon.png' },
+        mapKey: 'region',
+        fillOpacity : 1,
+      });
+    }else if (document.documentMode >8) {
+      $('#shape1').mapster({
+        singleSelect : true,
+        clickNavigate : true,
+        //ロールオーバ
+        render_highlight : { altImage : 'img2014/toppage/mapon.png' },
+        mapKey: 'region',
+        fillOpacity : 1,
+      });
+    }else {
+        //IE7, IE8（IE7 mode)
+    }
+} else {
+  // IE 6.0 以下
+}
+});
+
+</script>
+  <!--footer-->
+<!--footer-->
+
+    <div id="footer">
+  
+      <div class="footer_top">
+            <ul class="footer_l">
+                <li class="start"><a href="/houshin.html">当サイトの運営方針</a></li><!--
+                --><li class="inline"><a href="/policy.html">個人情報保護方針</a></li><!--
+                --><li class="inline"><a href="/sitemap.html">サイトマップ</a></li><!--
+                --><li class="last"><a href="/information/index.html">お問合せ</a></li>
+            </ul>
+<p class="footer">Copyright&copy; 2014 AEON Hokkaido Co.,Ltd. All rights Reserved.</p>
+          
+        </div>
+        <div class="footer_btm">
+          <a href="http://www.aeon.info/"><img class="footerimg" src="/img2012/common/footer_aeon.jpg" /></a>
+          <ul class="footer_btmmenu">
+            <li class="btmmenu"><a href="http://www.aeon.jp/">お客さまサイトへ</a></li><!--
+            --><li class="btmmenu"><a href="http://www.aeon.info/">グループ情報サイトへ</a></li>
+          </ul>
+          <!-- Google Code for &#36092;&#20837;&#23436;&#20102;&#12506;&#12540;&#12472; Conversion Page -->
+          <table class="hidden-xs" style="width:115px;float:left;" summary="Google Site Stats"><tr><td style="font-family: arial, sans-serif; font-size: 11px; color: #000000;" align="center">Google Site Stats<br/><a href="http://www.google.com/gwt/n?u=http://services.google.com/sitestats/en.html" style="color: #000000">send feedback</a></td></tr></table><img height="1" width="1" alt="" src="http://www.googleadservices.com/pagead/conversion/989547674/imp.gif?value=0&amp;label=StfPCJ6p3wQQmpnt1wM&amp;guid=ON&amp;script=0"/>
+          <a style="float:right;" href="http://www.aeon.info/environment/"><img class="tree" src="/img2012/common/footer_tree.jpg" /></a>
+        </div>
+        <div class="sp_footer">
+            <p class="goto-corporate text-center"><a href="/home.html">企業ページトップへ</span></a></p>
+            <p class="copyright">Copyright&copy; 2014 AEON Hokkaido Co.,Ltd. All rights Reserved.</p>
+        </div>
+    </div>
+
+</div>
+<!-- Google Code for &#12522;&#12510;&#12540;&#12465;&#12486;&#12451;&#12531;&#12464; &#12479;&#12464; -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 989547674;
+var google_conversion_label = "8kLcCKao3wQQmpnt1wM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/989547674/?value=0&amp;label=8kLcCKao3wQQmpnt1wM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+<!-- リマーケティング タグの Google コード -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 962648677;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/962648677/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+<!--otoku cv-->
+<!-- Google Code for &#35370;&#21839; Conversion Page -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 962648677;
+var google_conversion_language = "en";
+var google_conversion_format = "2";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "HKsxCNDUwFgQ5bSDywM";
+var google_remarketing_only = false;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/962648677/?label=HKsxCNDUwFgQ5bSDywM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+<!--/otoku cv-->
+
+</body>
+</html>
+
+<!--footer_end-->

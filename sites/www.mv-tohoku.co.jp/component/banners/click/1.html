@@ -1,0 +1,923 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+    <meta name="viewport" content="width=device-width,maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>TOPVALU 〜トップバリュはお客さまの声を商品に生かします〜</title>
+
+    <meta name="description" content="トップバリュはイオンのブランドです。お客さまの声をカタチにしています トップバリュ リラックスタイムを楽しむ 大人のワンマイルウェア 生アトランティックサーモン トップバリュオーダーカーテン特設サイト 生地の口どけがやさしく、ほんのり広がるバニラの香りと甘みのホットケーキミックス。 トップバリュ 蛇口直結型浄水器 PEACE FIT(ピースフィット)幸せを感じるほどの心地よさ。 トップバリュセレクト ギリシャヨーグルト 脂肪ゼロ いいね。おいしいね。トップバリュ トップバリュ商品購入キャンペーン しっとりとした食感 ホットケーキミックス メントール配合 薬用 リップスティック キズを早くきれいに治す ハイドロコロイドパッド ジャンボサイズ キズを早くきれいに治す ハイドロコロイドパッド アソート 2サイズ ペット エンブレム カジュアルトレーナー 格好良いアメカジ">
+    <meta name="keywords" content="AEON, イオン, TOPVALU, トップバリュ, トップバリュセレクト, トップバリュ グリーンアイ, ベストプライスby TOPVALU,">
+    <meta name="cXenseParse:aeo-sptarget" content="1">
+    <meta name="cXenseParse:recs:custom0" content="サイトトップ">
+    <meta name="cXenseParse:aeo-sort_level" content="0">
+
+
+    <script type="text/javascript" src="/assets/static/js/jquery-1.11.1.min.js"></script>
+    <!--[if (gte IE 9)|!(IE)]><!-->
+    <script type="text/javascript" src="/assets/static/js/uikit.min.js"></script>
+    <script type="text/javascript" src="/assets/static/js/function.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/assets/static/js/jquery.bxSlider.min.js"></script>
+    <script type="text/javascript" src="/assets/static/js/jquery.equalheight.js"></script>
+    <script type="text/javascript" src="/assets/static/js/jquery.mousewheel.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="/assets/static/js/css3-mediaqueries.js"></script>
+    <script type="text/javascript" src="/assets/static/js/html5shiv-printshiv.js"></script>
+    <link href="/assets/static/css/forie8.css?2015041501" rel="stylesheet" />
+    <![endif]-->
+    <script type="text/javascript" src="/assets/static/js/jquery.blueberry.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $("#seizosyokensaku").on('submit',function(e) {
+            e.preventDefault();
+            var str = $(this).find('#textfield').val();
+            $.ajax({
+            async: true,
+            type: "GET",
+            url: "./xml/seisan/",
+            data: $(this).serialize(),
+            dataType: "text",
+            success: function(data){
+                    // IE8対策
+                    var xml = (typeof window.addEventListener == "undefined" && typeof document.getElementsByClassName == "undefined") ? $($.parseXML(data)) : $(data);
+                    var flag = false;
+                    $(xml).find('item').each( function(i) {
+                        if ( $(this).find('code').text() == str ) {
+                            var datastr = "【製造所名】\n　" + $(this).find('company').text() + "\n";
+                            datastr = datastr + "【所在地】\n　" + $(this).find('address').text() + "\n";
+                            $('#textarea').html(datastr);
+                            flag = true;
+            
+                        }
+                    });
+                    if ( flag == false ) {
+                        $('#textarea').html('該当が見つかりませんでした');
+                    }
+                },
+            });
+            $.ajax({
+                async: false,
+                type:"POST",
+                dataType: 'xml',
+                url: './',
+                data:"str="+str,
+                success: function(data) {
+                }
+            });
+        }).on('reset',function(e) {
+            $(this).find('#textarea').html('');
+        });
+});
+/*
+function checkData(str) {
+var flag = false;
+
+$.ajax({
+async: true,
+type: "GET",
+url: "./xml/seisan/",
+data: "str="+str,
+success: function(data){
+        xml = $(data);
+
+        $(xml).find('item').each( function(i) {
+            if ( $(this).find('code').text() == str ) {
+                var datastr = "【製造所名】\n　" + $(this).find('company').text() + "\n";
+                datastr = datastr + "【所在地】\n　" + $(this).find('address').text() + "\n";
+                $('#textarea').html(datastr);
+                flag = true;
+
+            }
+        });
+        if ( flag == false ) {
+            $('#textarea').html('該当が見つかりませんでした');
+        }
+    },
+});
+}
+
+    function search() {
+            var str = document.form1.textfield.value;
+                checkData(str.toUpperCase());
+    }
+    function clear_text() {
+            $('#textarea').html("");
+                $('input#textfield').val("");
+
+    }
+*/
+    </script>
+    <script>
+    $(document).ready(function(){
+        if(jQuery.trim($('input#textfield').val()) == ""){
+            $('label').removeClass("no");
+        } else {
+            $('label').addClass("no");
+        }
+        $('input#textfield').focus(function(){
+            $('label').addClass("no");
+        }).blur(function(){
+        if(jQuery.trim($(this).val()) == ""){
+            $('label').removeClass("no");
+        } else {
+            $('label').addClass("no");
+        }
+        $('#reset').click(function(){
+            $('label').removeClass("no");
+            $('input#textfield').html("");
+        });
+      });
+    });
+    </script>
+
+    <script>
+        <!--
+        $(function() {
+            var w = $(window).width();
+            var x = 1100;
+            if (w >= x) {
+                var spslider = $("#bx_spitem").bxSlider({
+                    auto: true,
+                    autoControls: true,
+                    mode: 'vertical',
+                    minSlides: 3,
+                    maxSlides: 3,
+                    moveSlides: 1,
+                    pager: false,
+                    controls: false,
+                });
+                $('#bx_spitem').mousewheel(function(event, delta, deltaX, deltaY) {
+                    if (delta > 0) {
+                        spslider.goToPrevSlide();
+                    }
+                    if (deltaY < 0){
+                        spslider.goToNextSlide();
+                    }
+                    event.stopPropagation();
+                    event.preventDefault();
+                });
+        
+                var topicslider = $("#bx_topics").bxSlider({
+                    auto: true,
+                    autoControls: true,
+                    mode: 'vertical',
+                    minSlides: 5,
+                    maxSlides: 10,
+                    moveSlides: 1,
+                    pager: false,
+                    controls: false,
+                });
+                $('#bx_topics').mousewheel(function(event, delta, deltaX, deltaY) {
+                    if (delta > 0) {
+                        topicslider.goToPrevSlide();
+                    }
+                    if (deltaY < 0){
+                        topicslider.goToNextSlide();
+                    }
+                    event.stopPropagation();
+                    event.preventDefault();
+                });
+            }
+        });
+
+        $(window).load(function() {
+            $('#rotation').blueberry({
+                interval: 3000,
+                duration: 250,
+                hoverpause: true,
+                pager: true,
+            });
+        });
+
+        $(function(){
+            $("#search ul li a").on("click", function(e) {
+                e.preventDefault();
+                $("#search ul li").removeClass("on");
+                $(this).parent("li").toggleClass("on");
+                $(".src_box form").attr("action",$(this).attr("href"));
+                return false;
+            });
+            return false;
+        });
+
+        $(function(){
+            $(".ctgr_separator").on("click", function() {
+                $(this).next().slideToggle();
+            });
+        });
+
+        -->
+    </script>
+
+
+
+    <link rel="stylesheet" href="/assets/static/css/jquery.bxslider.css" />
+    <link rel="stylesheet" href="/assets/static/css/tv-uikit.mini.css">
+    <link rel="stylesheet" href="/assets/static/css/style.css?2015071501">
+
+
+    <link rel="shortcut icon" href="/assets/static/images/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/static/images/touch-icon.png">
+</head>
+
+    <body>
+
+<!-- Header -->
+<header>
+    <!-- Head Contents -->
+    <div class="h_inner">
+        <!-- Logo -->
+        <div id="tv-logo">
+            <h1><a href="/">TOPVALU 〜トップバリュはお客さまの声を商品に生かします〜</a></h1>
+        </div>
+        <!-- /Logo -->
+
+        <!-- Search -->
+        <div id="search">
+            <ul>
+                <li class="on"><a href="/search/">すべて</a></li>
+                <li><a href="/search/item/">商品</a></li>
+                <li><a href="/search/recipe/">レシピ</a></li>
+                <li><a href="/search/review/">レビュー</a></li>
+            </ul>
+            <div class="src_box">
+                <form action="/search/">
+                <div><input type="text" id="src_kwd" size="15" name="word" value=""></div>
+                <input type="submit" id="src_sbm" value="検　索">
+                </form>
+            </div>
+        </div>
+        <!-- /Search -->
+
+        <!-- AEON SQUARE -->
+        <div id="asq">
+            <ul>
+                <li><a href="http://www.aeonsquare.net/" target="_blank">AEON SQUARE</a></li>
+                <li><a href="/consumer/login/">ログイン</a></li>
+            </ul>
+        </div>
+        <!-- /AEON SQUARE -->
+    </div>
+    <!-- /Head Contents -->
+
+    <!-- Global Navigation -->
+    <nav>
+        <ul>
+            <li><a href="/items/">商品情報</a></li>
+            <li><a href="/brand/">トップバリュについて</a></li>
+            <li><a href="/voice/">お客さまの声コーナー</a></li>
+            <li><a href="/recipe/">レシピ</a></li>
+            <li><a href="/inquiry/">お問い合わせ</a></li>
+            <li class="nv_fb"><iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.topvalu.net&amp;width=102&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:102px; height:21px;" allowTransparency="true"></iframe></li>
+        </ul>
+    </nav>
+    <!-- /Global Navigation -->
+
+    <!-- Off Canvas Trigger -->
+    <div class="ocm_btn"><a href="#oc_menu" data-uk-offcanvas>メニュー</a></div>
+    <div class="login_btn"><a href="/consumer/login/">ログイン</a></div>
+    <div class="occ_btn"><a href="#oc_category" data-uk-offcanvas>商品カテゴリー</a></div>
+    <!-- /Off Canvas Trigger -->
+
+    <!-- Off Canvas Contents -->
+    <div id="oc_menu" class="uk-offcanvas">
+        <div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
+            <ul class="uk-nav uk-nav-offcanvas" data-uk-nav>
+                <li><a href="/items/">商品情報</a></li>
+                <li><a href="/brand/">トップバリュについて</a></li>
+                <li><a href="/voice/">お客さまの声コーナー</a></li>
+                <li><a href="/recipe/">レシピ</a></li>
+                <li><a href="/inquiry/" target="_blank">お問い合わせ</a></li>
+                <li><a href="http://www.aeonsquare.net/" target="_blank">AEON SQUARE</a></li>
+            </ul>
+        </div>
+    </div><!--/#oc_menu -->
+    <div id="oc_category" class="uk-offcanvas">
+        <div class="uk-offcanvas-bar">
+            <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav>
+                <li class="uk-nav-header">商品カテゴリー</li>
+                <li><a href="/items/list/new/">新商品情報</a></li>
+                <li><a href="/items/category/100000000/">食品</a></li>
+                <li><a href="/items/list/200000000/">衣料</a></li>
+                <li><a href="/items/list/300000000/">日用雑貨</a></li>
+                <li><a href="/items/list/400000000/">ホーム&キッチン</a></li>
+                <li><a href="/items/list/500000000/">家電</a></li>
+                <li><a href="/items/list/580000000/">精密</a></li>
+                <li><a href="/items/list/600000000/">健康・美容・子育て</a></li>
+                <li><a href="/items/list/700000000/">ペット</a></li>
+                <li><a href="/items/list/750000000/">スポーツ・アウトドア</a></li>
+                <li><a href="/items/list/850000000/">自転車</a></li>
+                <li><a href="/items/list/900000000/">ピースフィット</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="/seizosyo-kensaku/">製造所・所在地検索</a></li>
+                <li><a href="/brand/safety/search/#rice">お米（精米）の生産地情報検索</a></li>
+                <li class="uk-nav-divider"></li>
+                <li class="uk-nav-header">ブランド</li>
+                <li><a href="/brand/about/#01">トップバリュ</a></li>
+                <li><a href="/brand/about/#02">トップバリュ セレクト</a></li>
+                <li><a href="/brand/about/#04">トップバリュ グリーンアイ</a></li>
+                <li><a href="/brand/about/#03">トップバリュ ベストプライス</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="/company-group/">取扱い企業一覧</a></li>
+                <li class="uk-nav-divider"></li>
+                <li class="uk-nav-header">インフォメーション</li>
+                <li><a href="https://www.facebook.com/Aeon.Topvalu" target="_blank">TOPVALU 公式 Facebook</a></li>
+                <li><a href="https://twitter.com/topvaluofficial" target="_blank">TOPVALU 公式 Twitter</a></li>
+                <li><a href="http://www.topvalu.com.my" target="_blank">TOPVALU MALAYSIA</a></li>
+            </ul>
+        </div>
+    </div><!--/#oc_category -->
+    <div id="oc_recipe" class="uk-offcanvas">
+        <div class="uk-offcanvas-bar">
+        <!-- recipe category  -->
+ 
+        <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav>
+            <li class="uk-nav-header">レシピを探す</li>
+            
+            <li><a href="/recipe/foodstuff/">食材から探す</a></li>
+            
+                        <li><a href="/recipe/category/">カテゴリーから探す</a></li>
+                        
+                        <li><a href="/recipe/time/">時間から探す</a></li>
+            
+                        <li><a href="/recipe/keyword/">人気のワードから探す</a></li>
+                    </ul>
+        </div>
+    </div>
+
+    <!-- /Off Canvas Contents -->
+
+</header>
+<!-- /Header -->
+
+<!-- Main Area -->
+<article>
+    <!-- Contetns -->
+    <div class="uk-container uk-container-center">
+        <!-- Main Grid -->
+        <div class="uk-grid uk-grid-preserve">
+            <!-- Left Column -->
+            <section id="left_clm"  class="uk-width-large-1-5 uk-width-medium-1-4 uk-hidden-small">
+
+                <!-- Item Category -->
+                <div class="category_list">
+                    <h2>商品カテゴリー</h2>
+                    <ul class="uk-list uk-list-line">
+                        <li><a href="/items/list/new/">新商品情報</a></li>
+                <li><a href="/items/category/100000000/">食品</a></li>
+                <li><a href="/items/list/200000000/">衣料</a></li>
+                <li><a href="/items/list/300000000/">日用雑貨</a></li>
+                <li><a href="/items/list/400000000/">ホーム&キッチン</a></li>
+                <li><a href="/items/list/500000000/">家電</a></li>
+                <li><a href="/items/list/580000000/">精密</a></li>
+                <li><a href="/items/list/600000000/">健康・美容・子育て</a></li>
+                <li><a href="/items/list/700000000/">ペット</a></li>
+                <li><a href="/items/list/750000000/">スポーツ・アウトドア</a></li>
+                <li><a href="/items/list/850000000/">自転車</a></li>
+                <li><a href="/items/list/900000000/">ピースフィット</a></li>
+                    </ul>
+                </div><!--/.category_list -->
+                <!-- /Item Category -->
+                <!-- Factory Search -->
+                <div class="factory_src"><a href="/seizosyo-kensaku/">製造所・所在地検索</a></div>
+                <div class="factory_src rice"><a href="/brand/safety/search/#rice">お米の生産地情報検索</a></div>
+                <!-- /Factory Search -->
+                <!-- Brands -->
+                <div class="brand_menu">
+                    <h2>ブランド</h2>
+                    <ul class="uk-list uk-list-line">
+                        <li id="lb_tv"><a href="/brand/about/#01"><div>トップバリュ</div></a></li>
+                        <li id="lb_sl"><a href="/brand/about/#02"><div>トップバリュ<br>セレクト</div></a></li>
+                        <li id="lb_ge"><a href="/brand/about/#04"><div>トップバリュ<br>グリーンアイ</div></a></li>
+                        <li id="lb_bp"><a href="/brand/about/#03"><div>トップバリュ<br>ベストプライス</div></a></li>
+                    </ul>
+                </div><!--/.brand_menu -->
+                <!-- /Brands -->
+                <!-- Buying Channel -->
+                <div class="buy_ch"><a href="/company-group/">取扱い企業一覧</a></div>
+                <!-- /Buying Channel -->
+                <!-- Information -->
+                <div class="left_info">
+                    <h2>インフォメーション</h2>
+                    <ul  class="uk-list">
+                        <li><a href="https://www.facebook.com/Aeon.Topvalu" target="_blank"><img src="/assets/static/images/banners/bnr_facebook.png" alt="TOPVALU 公式 FACEBOOK"></a></li>
+                        <li><a href="https://twitter.com/topvaluofficial" target="_blank"><img src="/assets/static/images/banners/bnr_twitter.png" alt="TOPVALU 公式 twitter"></a></li>
+                        <li><a href="http://www.topvalu.com.my" target="_blank"><img src="/assets/static/images/banners/bnr_malaysia2.png" alt="TOPVALU MALAYSIA"></a></li>
+                    </ul>
+                </div><!--/.left_info -->
+                <!-- /Information -->
+            </section>
+            <!-- /Left Column -->
+<!-- cxenseparse_start -->
+
+<!-- Main Column -->
+<section id="center_clm" class="uk-width-large-3-5 uk-width-medium-3-4 toptop">
+    <!-- Contents Area -->
+    <div class="contentsArea">
+        <!-- Main Image Area -->
+        <div id="rotation">
+          <ul class="slides">
+                        <li>
+              <a href="https://www.topvalu.net/feel-relaxing/" target="_blank">
+                <img src="/assets/contents/images/banner/219/banner_20150813163922.jpg" height="500" width="1240" alt="トップバリュ リラックスタイムを楽しむ 大人のワンマイルウェア" />
+              </a>
+            </li>
+                        <li>
+              <a href="/tv-atlanticsalmon/" target="_self">
+                <img src="/assets/contents/images/banner/3/banner_20150806095600.jpg" height="500" width="1240" alt="生アトランティックサーモン" />
+              </a>
+            </li>
+                        <li>
+              <a href="https://www.topvalu.net/order_curtain/" target="_blank">
+                <img src="/assets/contents/images/banner/213/banner_20150731091017.jpg" height="500" width="1240" alt="トップバリュオーダーカーテン特設サイト" />
+              </a>
+            </li>
+                        <li>
+              <a href="https://www.topvalu.net/hotcakemix/" target="_self">
+                <img src="/assets/contents/images/banner/215/banner_20150803163959.jpg" height="500" width="1240" alt="生地の口どけがやさしく、ほんのり広がるバニラの香りと甘みのホットケーキミックス。" />
+              </a>
+            </li>
+                        <li>
+              <a href="https://www.topvalu.net/water-purification-system/" target="_self">
+                <img src="/assets/contents/images/banner/188/banner_20150527171105.jpg" height="500" width="1240" alt="トップバリュ 蛇口直結型浄水器" />
+              </a>
+            </li>
+                        <li>
+              <a href="https://www.topvalu.net/peace_fit/" target="_self">
+                <img src="/assets/contents/images/banner/137/banner_20150414095840.jpg" height="500" width="1240" alt="PEACE FIT(ピースフィット)幸せを感じるほどの心地よさ。" />
+              </a>
+            </li>
+                        <li>
+              <a href="https://www.topvalu.net/greekyogurt/" target="_self">
+                <img src="/assets/contents/images/banner/146/banner_20150703103441.jpg" height="500" width="1240" alt="トップバリュセレクト ギリシャヨーグルト 脂肪ゼロ" />
+              </a>
+            </li>
+                        <li>
+              <a href="https://www.topvalu.net/iine_topvalu/" target="_self">
+                <img src="/assets/contents/images/banner/135/banner_20150304195103.jpg" height="500" width="1240" alt="いいね。おいしいね。トップバリュ" />
+              </a>
+            </li>
+                        <li>
+              <a href="https://www.topvalu.net/ns_cp08/" target="_self">
+                <img src="/assets/contents/images/banner/217/banner_20150812163151.jpg" height="500" width="1240" alt="トップバリュ商品購入キャンペーン" />
+              </a>
+            </li>
+                      </ul>
+        </div><!--/#rotation -->
+        <!-- /Main Image Area -->
+
+
+                    <!-- Hint & Recipe Area -->
+                    <div class="uk-grid hint_recipe" data-uk-grid-match="{target:'.match'}">
+                        <section class="hintArea uk-width-medium-1-2">
+                            <div class="inner">
+                                <div class="bgBox match">
+                                    <h2>注目のキーワード（トップバリュ関連情報）</h2>
+                                    <p class="txt">商品、レシピ、レビューから<br>トップバリュ関連情報をお届けします。</p>
+                                                                        <div class="keyBox">
+                                                                                <ul class="keyUl clearfix uk-grid uk-grid-small uk-grid-width-1-3" data-uk-grid-match="{target:'list'}">
+
+                <li class="list sb"><a href="/search/?word=浄水器"><span>浄水器</span></a></li>
+                    <li class="list sb"><a href="/search/?word=コロッケ"><span>コロッケ</span></a></li>
+                    <li class="list lb"><a href="/search/?word=グリーンアイ"><span>グリーンアイ</span></a></li>
+                    <li class="list lb"><a href="/search/?word=トップバリュセレクト"><span>トップバリュセレクト</span></a></li>
+                    <li class="list mb"><a href="/search/?word=ギリシャヨーグルト"><span>ギリシャヨーグルト</span></a></li>
+                    <li class="list lb"><a href="/search/?word=ベストプライス"><span>ベストプライス</span></a></li>
+                    <li class="list dn mb"><a href="/search/?word=スムージー"><span>スムージー</span></a></li>
+                    <li class="list dn mb"><a href="/search/?word=日焼け止め"><span>日焼け止め</span></a></li>
+                    <li class="list dn sb"><a href="/search/?word=フェアトレード"><span>フェアトレード</span></a></li>
+                    <li class="list dn mb"><a href="/search/?word=虫よけ"><span>虫よけ</span></a></li>
+                    <li class="list dn mb"><a href="/search/?word=タスマニアビーフ"><span>タスマニアビーフ</span></a></li>
+                    <li class="list dn lb"><a href="/search/?word=ピースフィット"><span>ピースフィット</span></a></li>
+                    <li class="list dn sb"><a href="/search/?word=あんでござる"><span>あんでござる</span></a></li>
+                    <li class="list dn lb"><a href="/search/?word=クリーナー"><span>クリーナー</span></a></li>
+                                            </ul>                        
+                                    </div>
+                                    <div class="blind">&nbsp;</div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="recipeArea uk-width-medium-1-2">
+                            <div class="inner match"><a href="/recipe/">
+                                <div class="titBox">
+                                    <h2>TOPVALU RECIPE</h2>
+                                </div>
+                                </a>
+                                <a href="/recipe/detail/1249/" class="rcp_main">
+                                <dl>
+                                    <dt class="pic" style=" background-image: url(/assets/contents/images/recipe/1249/image.jpg?1438822801);">サーモンと野菜の贅沢サラダ</dt>
+                                    <dd>
+                                        <div class="txtBox clearfix">
+                                            <p class="txt">サーモンと野菜の贅沢サラダ</p>
+                                            <p class="link">詳しいレシピを見る</p>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </a></div>
+                        </section>                    
+                    </div>
+                    <!-- /Hint & Recipe Area -->
+
+                    <!-- Banner Space Area -->
+                    <div class="bannerArea">
+                                          </div>
+                    <!-- /Banner Space Area -->
+
+
+<!-- Laboratory Area -->
+<section class="laboratoryArea">
+  <div class="titBox clearfix">
+    <h2 class="tit">お客さまの声コーナー</h2>
+    <p class="txt">みなさまのご意見・ご要望をお寄せください。</p>
+  </div>
+  <div class="inner">
+    <div class="uk-grid uk-grid-small" data-uk-grid-match="{target:'.Box'}">
+      <div class="uk-width-small-1-2">
+        <div class="Box">
+          <div class="titBox02 clearfix">
+            <h3>アンケート</h3>
+              <p><a href="/voice/enq/">もっと見る</a></p>
+          </div>
+          <div class="mtn1">
+                                                <dl><a href="/voice/enq/19/">
+              <dt>
+                <img src="/assets/contents/images/enquete/19/image.jpg?" height="50" width="50" alt="">
+              </dt>
+              <dd><span class="middle"> 健康的な生活を心がけていますか?              <br>
+              <span class="enq_sg">参加者全員に1,000SGプレゼント!</span></span></dd>
+            </a><a href="http://www.aeonsquare.net/feature/squaregold/" target="_blank"><dt>&nbsp;</dt><dd><span class="top"><span class="enq_sg">※SG（スクエアゴールド）についてはこちら</span></span></dd></a></dl>
+                                  </div><!-- /mtn1 -->
+        </div><!-- /Box -->
+      </div><!-- /uk-width-small-1-2 -->
+
+
+      <div class="uk-width-small-1-2">
+        <div class="Box">
+          <div class="titBox02 clearfix">
+            <h3>アンケート結果発表！</h3>
+            <p><a href="/voice/enq/result/list/">もっと見る</a></p>
+          </div>
+          <div class="mtn1">
+                                                <dl><a href="/voice/enq/result/14/">
+              <dt>
+                <img src="/assets/contents/images/enquete_result/14/banner.jpg" alt="">
+              </dt>
+              <dd><span class="middle">トップバリュ アンケート 第11回 小学校の入学準備はいつから?? 結果発表</span></dd>
+            </a></dl>
+                        <dl><a href="/voice/enq/result/13/">
+              <dt>
+                <img src="/assets/contents/images/enquete_result/13/banner.jpg" alt="">
+              </dt>
+              <dd><span class="middle">トップバリュ アンケート 第10回 熱中症対策は大丈夫? 結果発表</span></dd>
+            </a></dl>
+                        <dl class="nodisp"><a href="/voice/enq/result/12/">
+              <dt>
+                <img src="/assets/contents/images/enquete_result/12/banner.jpg" alt="">
+              </dt>
+              <dd><span class="middle">トップバリュ アンケート 第9回 今年の夏もクールビズ? 結果発表</span></dd>
+            </a></dl>
+                                  </div><!-- /mtn1 -->
+        </div><!-- /Box -->
+      </div><!-- /uk-width-small-1-2 -->
+
+    </div><!-- /uk-grid -->
+  </div><!-- /inner -->
+</section>
+<!-- /Laboratory Area -->
+
+
+
+                    <!-- Free Space -->
+                    <div class="freeArea">
+                                          </div>
+                    <!-- /Free Space -->
+
+
+        <!-- New Products Area -->
+        <section class="newproArea">
+            <div class="titBox clearfix">
+                <h2>新商品情報</h2>
+                <p class="more"><a href="/items/list/new/">もっと見る</a></p>
+            </div>
+            <ul class="uk-grid">
+                <li class="uk-width-1-3 uk-width-small-1-5"><a href="/items/detail/4902121374571/">
+
+                    <p><img src="/assets/contents/images/product/26604/4902121374571_PC_L.jpg?1439859601" alt="しっとりとした食感 ホットケーキミックス"></p>
+                    <p class="box5">しっとりとした食感<br>ホットケーキミックス</p>
+                </a></li>
+                <li class="uk-width-1-3 uk-width-small-1-5"><a href="/items/detail/4902121168439/">
+
+                    <p><img src="/assets/contents/images/product/26572/4902121168439_PC_L.jpg?1439859601" alt="メントール配合 薬用 リップスティック"></p>
+                    <p class="box5">メントール配合<br>薬用<br>リップスティック</p>
+                </a></li>
+                <li class="uk-width-1-3 uk-width-small-1-5"><a href="/items/detail/4901810863020/">
+
+                    <p><img src="/assets/contents/images/product/26565/4901810863020_PC_L.jpg?1439859601" alt="キズを早くきれいに治す ハイドロコロイドパッド ジャンボサイズ"></p>
+                    <p class="box5">キズを早くきれいに治す<br>ハイドロコロイドパッド<br>ジャンボサイズ</p>
+                </a></li>
+                <li class="uk-width-1-3 uk-width-small-1-5 dns"><a href="/items/detail/4901810863037/">
+
+                    <p><img src="/assets/contents/images/product/26419/4901810863037_PC_L.jpg?1439859601" alt="キズを早くきれいに治す ハイドロコロイドパッド アソート 2サイズ"></p>
+                    <p class="box5">キズを早くきれいに治す<br>ハイドロコロイドパッド<br>アソート<br>2サイズ</p>
+                </a></li>
+                <li class="uk-width-1-3 uk-width-small-1-5 dns"><a href="/items/detail/4902121391103/">
+
+                    <p><img src="/assets/contents/images/product/26666/4902121391103_PC_L.jpg?1439884802" alt="ペット エンブレム カジュアルトレーナー 格好良いアメカジ"></p>
+                    <p class="box5">ペット<br>エンブレム<br>カジュアルトレーナー<br>格好良いアメカジ</p>
+                </a></li>
+            </ul>
+            <p class="buyBtn"><a href="/buy/">トップバリュ商品の購入について→</a></p>
+        </section>
+        <!-- /New Products Area -->
+
+        <!-- News Area -->
+        <section class="newsArea">
+            <div class="titBox clearfix">
+                <h2>トップバリュからのお知らせ</h2>
+                <p class="more"><a href="/info/">もっと見る</a></p>
+            </div>
+            <div class="inner">
+                <dl>
+                    <dt>2015年08月06日</dt>
+                    <dd class="icn"><span>リリース</span></dd>
+                    <dd class="txt"><span>NEW&nbsp;</span>                    <a href="http://www.aeon.info/news/2015_1/pdf/150804R_1_1.pdf" target="_blank">とろけるおいしさ!「ASC」認証「トップバリュ グリーンアイ 生アトランティックサーモン」新登場!</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>2015年07月17日</dt>
+                    <dd class="icn"><span>リリース</span></dd>
+                    <dd class="txt">                    <a href="http://www.aeon.info/news/2015_1/pdf/150713R_2.pdf" target="_blank">「トップバリュ」から&ldquo;和こもの&rdquo;シリーズ登場![イオン(株) イオントップバリュ(株) イオンリテール(株)]</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>2015年07月03日</dt>
+                    <dd class="icn"><span>お知らせ</span></dd>
+                    <dd class="txt">                    <a href="https://www.topvalu.net/greekyogurt/" target="_blank">おかげさまで販売数500万個突破!「トップバリュ セレクト ギリシャヨーグルト 脂肪ゼロ」</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>2015年06月10日</dt>
+                    <dd class="icn"><span>お知らせ</span></dd>
+                    <dd class="txt">                    <a href="http://www.aeon.info/news/important/pdf/150610R_1.pdf" target="_blank">【重要なお知らせ】「トップバリュ コーヒーメーカー」に関するお詫びと商品回収のお知らせ</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>2015年06月04日</dt>
+                    <dd class="icn"><span>リリース</span></dd>
+                    <dd class="txt">                    <a href="http://www.aeon.info/news/2015_1/pdf/150604R_2.pdf" target="_blank">「トップバリュ グリーンアイ 奄美うまれ生本まぐろ」発売!  [イオン(株) イオントップバリュ(株) イオンリテール(株)]</a>
+                    </dd>
+                </dl>
+            </div>
+        </section>
+        <!-- /News Area -->
+    </div>
+    <!-- /Contents Area -->
+</section>
+<!-- /Main Column -->
+
+
+<!-- cxenseparse_end -->
+            <!-- Right Column -->
+            <section id="right_clm" class="uk-width-large-1-5 uk-width-medium-3-4 uk-float-right">
+                <!-- Special Item -->
+                <div class="sp_item">
+                    <h2>注目の商品</h2>
+                    <ul id="bx_spitem" class="uk-list uk-list-line">
+                        <li>
+                            <a href="/roastbeef/" target="_blank">
+                            <div><img src="/assets/contents/images/special_page/42/banner_20150602171121.jpg" alt="この厚み、主役級。メインディッシュ宣言。とっておきRESERVE「五島塩ローストビーフ・ポーク ダイナミックカット」新登場!"></div>
+                            <h4>この厚み、主役級。メインディッシュ宣言。とっておきRESERVE「五島塩ローストビーフ・ポーク ダイナミックカット」新登場!</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/tv-tansansui/" target="_blank">
+                            <div><img src="/assets/contents/images/special_page/21/banner_20150310105405.jpg" alt="天然水でつくった炭酸水"></div>
+                            <h4>天然水でつくった炭酸水</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/onnanokonomikata/" target="_blank">
+                            <div><img src="/assets/contents/images/special_page/28/banner_20150330092711.jpg" alt="からだの成長を考えたジュニアインナー「おんなのこのミカタ」"></div>
+                            <h4>からだの成長を考えたジュニアインナー「おんなのこのミカタ」</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/items/sp/17/" target="_blank">
+                            <div><img src="/assets/contents/images/pickup/17/banner_20140916103740.jpg" alt="昨日より、今日の自分が好きになる。GLAMATICAL"></div>
+                            <h4>昨日より、今日の自分が好きになる。GLAMATICAL</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/wagashi/" target="_blank">
+                            <div><img src="/assets/contents/images/special_page/32/banner_20150417160409.jpg" alt="トップバリュのこだわり和菓子"></div>
+                            <h4>トップバリュのこだわり和菓子</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/tv-colorfulsmoothie/" target="_blank">
+                            <div><img src="/assets/contents/images/special_page/41/banner_20150601201730.jpg" alt="カラフルなおいしさ 食べるスムージー"></div>
+                            <h4>カラフルなおいしさ 食べるスムージー</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/tv-bellmarkstationary/" target="_blank">
+                            <div><img src="/assets/contents/images/special_page/51/banner_20150804141500.jpg" alt="トップバリュ文具のベルマーク運動"></div>
+                            <h4>トップバリュ文具のベルマーク運動</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/greeneye-tasmanianbeefsyosai/" target="_blank">
+                            <div><img src="/assets/contents/images/special_page/14/banner_20150316151309.jpg" alt="食べ飽きない赤身の「旨み」と「やわらかさ」。タスマニアビーフ"></div>
+                            <h4>食べ飽きない赤身の「旨み」と「やわらかさ」。タスマニアビーフ</h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /Special Item -->
+                <!-- Pick Up -->
+                <div class="rc_pickup">
+                    <h2>ピックアップ</h2>
+                    <ul  class="uk-list">
+                                              <li>
+                          <a href="https://www.topvalu.net/ns_cp08/" target="_self">
+                            <img src="/assets/contents/images/banner/218/banner_20150812163338.jpg" alt="トップバリュ商品購入キャンペーン" />
+                          </a>
+                        </li>
+                                              <li>
+                          <a href="https://www.topvalu.net/voice/enq/19/" target="_self">
+                            <img src="/assets/contents/images/banner/216/banner_20150810104423.jpg" alt="8月アンケート" />
+                          </a>
+                        </li>
+                                              <li>
+                          <a href="https://www.topvalu.net/review_cp08/" target="_self">
+                            <img src="/assets/contents/images/banner/212/banner_20150730141722.jpg" alt="トップバリュ商品 レビューキャンペーン" />
+                          </a>
+                        </li>
+                                              <li>
+                          <a href="https://www.topvalu.net/csr_fairtrade_cp/" target="_self">
+                            <img src="/assets/contents/images/banner/210/banner_20150727164152.jpg" alt="「フェアトレード」クイズキャンペーン" />
+                          </a>
+                        </li>
+                                          </ul>
+                </div>
+                <!-- /Pick Up -->
+                <!-- Topics -->
+                <div class="rc_topics">
+                    <h2>トピックス</h2>
+                    <ul id="bx_topics" class="uk-list">
+                                              <li>
+                          <a href="http://www.aeonsquare.net/benefit/tieup/3854/" target="_blank">
+                            <img src="/assets/contents/images/banner/211/banner_20150730103001.jpg" alt="トップバリュセレクト「ナチュラルウッドシリーズ」早期購入キャンペーン" />
+                          </a>
+                        </li>
+                                              <li>
+                          <a href="http://marche.aeonsquare.net/ryomi" target="_blank">
+                            <img src="/assets/contents/images/banner/190/banner_20150529093854.jpg" alt="簡単アレンジ 冷製レシピ" />
+                          </a>
+                        </li>
+                                              <li>
+                          <a href="https://www.topvalu.net/10minutes-recipe/" target="_blank">
+                            <img src="/assets/contents/images/banner/186/banner_20150507123623.jpg" alt="10分食堂イオン「TOPVALU」の楽レシピ" />
+                          </a>
+                        </li>
+                                              <li>
+                          <a href="http://www.aeonretail.jp/kidsschool/" target="_blank">
+                            <img src="/assets/contents/images/banner/178/banner_20150422092953.jpg" alt="出会おうよ、最高のスマイルに。 HELLO! イオン新入学2016" />
+                          </a>
+                        </li>
+                                              <li>
+                          <a href="https://www.topvalu.net/giriguru/" target="_self">
+                            <img src="/assets/contents/images/banner/177/banner_20150422092809.jpg" alt="ギリとグルのほどほど生活" />
+                          </a>
+                        </li>
+                                              <li>
+                          <a href="http://www.aeonbike.jp/features/product/tvcm2015/" target="_blank">
+                            <img src="/assets/contents/images/banner/133/banner_20150303192429.jpg" alt="超スーパーサイクル!パンつよ!" />
+                          </a>
+                        </li>
+                                          </ul>
+                </div>
+                <!-- /Topics -->
+                <!-- Facebook LikeBox for SP -->
+                <div class="fbsp uk-hidden-large">
+                <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FAeon.Topvalu&amp;width&amp;height=62&amp;colorscheme=light&amp;show_faces=false&amp;header=true&amp;stream=false&amp;show_border=true" scrolling="no" frameborder="0" style="border:1px solid #CCC; overflow:hidden; width:100%; height:62px;" allowTransparency="true"></iframe>
+                </div>
+                <!-- /Facebook LikeBox for SP -->
+            </section>
+            <!-- /Right Column -->
+        </div>
+        <!-- /Main Grid -->
+    </div>
+    <!-- /Contetns -->
+</article>
+<!-- /Main Area -->
+
+<!-- Footer -->
+<footer>
+    <!-- Foot Contetns -->
+    <div class="uk-container uk-container-center">
+        <!-- Footer Grid -->
+        <div class="uk-grid  uk-grid-preserve">
+            <!-- Footer Left -->
+            <div class="uk-grid uk-grid-preserve uk-width-large-4-5">
+                <!-- Footer Logo -->
+                <div class="uk-width-large-1-10">
+                    <h2><a href="/">TOPVALU 〜トップバリュはお客さまの声を商品に生かします〜</a></h2>
+                </div>
+                <!-- /Footer Logo -->
+
+                <!-- Footer Link -->
+                <div class="uk-width-large-9-10">
+                    <ul class="uk-list uk-list-line">
+                        <li><a href="/items/">商品情報</a></li>
+                        <li><a href="/brand/">トップバリュについて</a></li>
+                        <li><a href="/voice/">お客さまの声コーナー</a></li>
+                        <li><a href="/company-group/">取扱い企業一覧</a></li>
+                        <li><a href="/inquiry/">お問い合わせ</a></li>
+                        <li><a href="/sitemap/">サイトマップ</a></li>
+                        <li><a href="/privacy/">プライバシーポリシー</a></li>
+                        <li><a href="/terms/">ご利用規約</a></li>
+                    </ul>
+                    <p>Copyright &copy; 2015 Topvalu. All Rights Reserved.</p>
+                </div>
+                <!-- /Footer Link -->
+            </div>
+            <!-- /Footer Left -->
+
+            <!-- Footer Right -->
+            <!-- AEON Logo -->
+            <div class="uk-width-large-1-5"><a href="http://www.aeon.info/company/group/" target="_blank">イオングループ情報サイト</a></div>
+            <!-- /AEON Logo -->
+            <!-- /Footer Right -->
+        </div>
+        <!-- /Footer Grid -->
+    </div>
+    <!-- /Foot Contetns -->
+<!-- Cxense script begin -->
+<script type="text/javascript">
+var cX = cX || {}; cX.callQueue = cX.callQueue || [];
+cX.callQueue.push(['setSiteId', '9222356677066081873']);
+cX.callQueue.push(['sendPageViewEvent']);
+</script>
+<script type="text/javascript">
+(function() { try { var scriptEl = document.createElement('script'); scriptEl.type = 'text/javascript'; scriptEl.async = 'async';
+scriptEl.src = ('https:' == location.protocol) ? 'https://scdn.cxense.com/cx.js' : 'http://cdn.cxense.com/cx.js';
+var targetEl = document.getElementsByTagName('script')[0]; targetEl.parentNode.insertBefore(scriptEl, targetEl); } catch (e) {};} ());
+</script>
+<!-- Cxense script end -->
+
+<script type="text/javascript" language="javascript">
+/* <![CDATA[ */
+var yahoo_retargeting_id = '30QV5NWQR7';
+var yahoo_retargeting_label = 'topvalu';
+/* ]]> */
+</script>
+<script type="text/javascript" language="javascript" src="//b92.yahoo.co.jp/js/s_retargeting.js"></script>
+
+<!-- Google Code for &#12488;&#12483;&#12503;&#12496;&#12522;&#12517; -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 995653307;
+var google_conversion_label = "8VdXCIryo1YQu-3h2gM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/995653307/?value=1.00&amp;currency_code=JPY&amp;label=8VdXCIryo1YQu-3h2gM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ 
+  ga('create', 'UA-16537766-1', 'auto');
+  ga('send', 'pageview');
+ 
+</script>
+
+<!-- SiteCatalyst code version: H.22. -->
+<script type="text/javascript" src="/assets/static/js/s_code.js"></script>
+<script type="text/javascript">//<![CDATA[
+s.eVar4="other_page";
+s.eVar15="other_page";
+s.t();
+//]]></script>
+<!-- End SiteCatalyst code version: H.22. -->
+
+</footer>
+<!-- /Footer -->
+
+</body>
+</html>
+

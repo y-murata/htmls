@@ -1,0 +1,320 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="keywords" content="お料理,レシピ" />
+<meta name="description" content="和食、中華、洋食、イタリアン、エスニック料理、アジア料理、デザート、スイーツ等盛りだくさんのレシピを用意。" />
+<title>北海道ガス株式会社：お料理レシピ「北ガスクッキング」</title>
+<link rel="stylesheet" type="text/css" href="/common/styles/import.css" media="screen,print" />
+<link rel="stylesheet" type="text/css" href="/common/styles/module/component.css" media="screen, all" />
+<link rel="stylesheet" type="text/css" href="/common/styles/module/support.css" media="screen,print" />
+<link rel="stylesheet" type="text/css" href="/common/styles/font/font.css" title="default" />
+<link rel="alternate stylesheet" type="text/css" href="/common/styles/font/fontS.css" title="small" />
+<link rel="alternate stylesheet" type="text/css" href="/common/styles/font/fontL.css" title="large" />
+<script type="text/javascript" src="/common/scripts/default.js"></script>
+<script type="text/javascript" src="/common/scripts/jquery.js"></script>
+<script type="text/javascript" src="/common/scripts/recipe.js"></script>
+
+</head>
+<body id="recipe" onload="initialize();">
+	<div id="wrap">
+
+<!-- header -->
+
+
+ <!-- header -->
+<div id="header">
+<div id="header_wrap">
+
+	<div class="hdr_identity">
+		<p class="tagline">北のくらし、もっとできること</p>
+		<p class="logo"><a href="/"><img src="/common/images/hdr_logo.gif" width="175" height="47" alt="KITAGAS" /></a></p>
+	</div>
+
+	<div class="hdr_link">
+		<ul>
+			<li><a href="/utility/index.html"><img class="rollover" src="/common/images/btn_hdrlink_01.gif" width="86" height="28" alt="お問い合わせ" /></a></li>
+			<li><a href="/utility/madoguchi/index.html"><img class="rollover" src="/common/images/btn_hdrlink_02.gif" width="119" height="28" alt="お近くのサービス窓口" /></a></li>
+			<li><a href="/utility/faq/index.html"><img class="rollover" src="/common/images/btn_hdrlink_03.gif" width="90" height="28" alt="よくあるご質問" /></a></li>
+			<li><a href="/english/index.html"><img class="rollover" src="/common/images/btn_hdrlink_04.gif" width="62" height="28" alt="English" /></a></li>
+		</ul>
+	</div>
+
+	<div class="hdr_utility">
+				<ul id="hdr_ul">
+					<li><a href="/utility/sitemap.html"><img class="rollover" src="/common/images/btn_hdrutility_01.gif" width="89" height="16" alt="サイトマップ" /></a></li>
+					<li><a href="/utility/mobile.html"><img class="rollover" src="/common/images/btn_hdrutility_02.gif" width="78" height="16" alt="携帯サイト" /></a></li>
+				</ul>
+				<dl>
+					<dt><img src="/common/images/txt_fontnavi.gif" width="88" height="16" alt="文字サイズ変更" /></dt>
+					<dd>
+						<ul id="font_navi">
+							<li id="font_navi_s"><a href="#" onclick="setActiveStyleSheet('small');return false;" title="文字を小さく"><span>文字を小さく</span></a></li>
+							<li id="font_navi_d"><a href="#" onclick="setActiveStyleSheet('default');return false;" title="文字を標準に"><span>文字を標準に</span></a></li>
+							<li id="font_navi_l"><a href="#" onclick="setActiveStyleSheet('large');return false;" title="文字を大きく"><span>文字を大きく</span></a></li>
+						</ul>
+					</dd>
+				</dl>
+                <div id="kensaku">
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+google.load('search', '1');
+google.setOnLoadCallback(function() {
+google.search.CustomSearchControl.attachAutoCompletion(
+'009563632581467065258:rqug57wyclu',
+document.getElementById('q'),
+'cse-search-box');
+});
+</script><script type="text/javascript" src="http://www.google.com/uds/?file=search&amp;v=1"></script><link rel="stylesheet" type="text/css" href="http://www.google.com/uds/api/search/1.0/039ef4677591ed11db202edf04243dae/default.css"><script type="text/javascript" src="http://www.google.com/uds/api/search/1.0/039ef4677591ed11db202edf04243dae/default+ja.I.js"></script>
+<form id="cse-search-box" action="http://www.google.com/cse">
+<div>
+<input type="hidden" value="009563632581467065258:rqug57wyclu" name="cx">
+<input type="hidden" value="UTF-8" name="ie">
+<input type="text" autocomplete="off" id="q" name="q" style="background: url(&quot;http://www.google.com/cse/intl/ja/images/google_custom_search_watermark.gif&quot;) no-repeat scroll left center rgb(255, 255, 255);" />
+<input class="rollover" type="image" src="/common/images/kensaku_btn.gif" id="kensaku-btn" value="検索" name="sa">
+</div>
+<input type="hidden" name="siteurl" value="www.google.com/cse/home?cx=009563632581467065258:rqug57wyclu"></form>
+<script src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=ja" type="text/javascript"></script> </div>
+			</div>
+
+	<div class="global_navi">
+		<ul class="gl_menu_01">
+			<li><a href="/home/index.html"><img class="rollover" src="/common/images/btn_glnavi_01.gif" width="143" height="34" alt="個人のお客さま" /></a></li>
+			<li><a href="/business/index.html"><img class="rollover" src="/common/images/btn_glnavi_02.gif" width="142" height="34" alt="法人のお客さま" /></a></li>
+			<li><a href="/ir/index.html"><img class="rollover" src="/common/images/btn_glnavi_03.gif" width="142" height="34" alt="企業情報・IR情報" /></a></li>
+			<li><a href="/recruit/index.html"><img class="rollover" src="/common/images/btn_glnavi_04.gif" width="141" height="34" alt="採用情報" /></a></li>
+		</ul>
+		<ul class="gl_menu_02">
+			<li><a href="/safety/index.html"><img class="rollover" src="/common/images/btn_glnavi_05.gif" width="142" height="34" alt="安全使用のために" /></a></li>
+			<li><a href="/support/index.html"><img src="/common/images/btn_glnavi_06_v.gif" width="142" height="34" alt="暮らしサポート" /></a></li>
+		</ul>
+	</div>
+
+</div>
+</div>
+<!-- contents -->
+<div id="contents">
+
+<div id="contents_wrap">
+
+<p id="location"><a href="/index.html">総合トップ</a>&nbsp;&gt;&nbsp;<a href="/support/index.html">暮らしサポート情報</a>&nbsp;&gt;&nbsp;<a href="/support/recipe/index.html">お料理レシピ「北ガスクッキング」</a>&nbsp;&gt;&nbsp;たこのペペロンチーノ風</p>
+
+<!-- main_contents -->
+<div id="main_contents">
+
+	<!-- indivi_recipe -->
+	<div class="indivi_recipe">
+
+		<h1><img src="/support/recipe/images/ttl_recipe_01.jpg" width="640" height="85" alt="お料理レシピ「北ガスクッキング」" /></h1>
+
+		<div class="indivi_ttl">
+		<div class="indivi_ttl_wrap">
+
+		<h2><span>たこのペペロンチーノ風</span></h2>
+        <p>レシピID:000642</p>
+        </div>
+        </div>
+
+		<div class="main">
+			<div class="info">
+				<ul>
+<li><img src="/support/recipe/images/icn_fish.gif" width="95" height="22" alt="魚料理" /></li><li><img src="/support/recipe/images/icn_italian.gif" width="95" height="22" alt="イタリア" /></li><li><img src="/support/recipe/images/icn_healthy.gif" width="95" height="22" alt="ヘルシーメニュー" /></li>				</ul>
+				                <table>
+                <tr>
+
+					<th><img src="/support/recipe/images/ttl_enegy_01.gif" width="74" height="19" alt="エネルギー" /></th>
+					<td>155kcal(１人あたり)</td>
+				</tr>
+                </table>
+                            </div>
+            <div class="pic">
+                            <img src="/support/recipe/642/photo.jpg" width="310" height="240" alt="たこのペペロンチーノ風" />
+                        </div>
+            <div class="print"><a href="#" onclick="window.print(); return false;"><img class="rollover" src="/support/recipe/images/btn_print.gif" width="93" height="26" alt="印刷する" /></a></div>
+		</div>
+
+		<div class="item">
+			<div class="material">
+				<dl>
+					<dt>材料(6人分)</dt>
+					<dd>
+                        <ul><li class="cf"><span class="name">たこ</span><span class="amount">400g<br/></span><span class="name">白ワイン</span><span class="amount">大さじ1杯<br/></span></li>
+<li class="cf"><span class="name">にんにく</span><span class="amount">1片<br/></span><span class="name">赤唐辛子</span><span class="amount">2本<br/></span><span class="name">塩・こしょう</span><span class="amount">少々<br/></span><span class="name">オリーブ油</span><span class="amount">適量      <br/></span></li>
+<li class="cf"><span class="name">じゃが芋</span><span class="amount">1個<br/></span></li>
+<li class="cf"><strong>A材料
+</strong><ul><li class="cf"><span class="name">卵</span><span class="amount">1/3個
+</span></li><li class="cf"><span class="name">小麦粉</span><span class="amount">大さじ1/2杯弱
+</span></li><li class="cf"><span class="name">塩・こしょう</span><span class="amount">少々  
+</span></li></ul></li>
+<li class="cf"><span class="name">サラダ油</span><span class="amount">適量      <br/></span></li>
+<li class="cf last"><span class="name">パセリ(みじん切り)</span><span class="amount">大さじ1/2杯</span></ul>
+					</dd>
+				</dl>
+			</div>
+
+			<div class="howto">
+				<dl>
+					<dt>作り方</dt>
+					<dd>
+                        <ol><li><span>1.</span> たこは薄く切り白ワインをかけておきます。<br />
+</li><li><span>2.</span> にんにくは薄く切り、赤唐辛子は小口切りにします。<br />
+</li><li><span>3.</span> フライパンにオリーブ油、2.のにんにくの半量を入れ、にんにくチップを作ります。<br />
+</li><li><span>4.</span> 3.に残りのにんにく、赤唐辛子を入れ1.のたこを加え炒め、塩・こしょうで味を調えます。<br />
+</li><li><span>5.</span> じゃが芋は皮をむき、千切りにし、クッキングペーパーに包み、水分を良くふきとります。<br />
+</li><li><span>6.</span> ボウルに5.を入れA材料を加え混ぜ合わせます。<br />
+</li><li><span>7.</span> フライパンにサラダ油を入れ温め、6.のじゃが芋を入れ、平らにし、両面をこんがり、きつね色になるまで焼きます。<br />
+</li><li><span>8.</span> 皿に7.を盛り、4.のたこを盛りパセリ・3.のにんにくチップを飾り仕上げます。</ol>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<p class="note">カップ1杯=200ml 大さじ1杯=15ml 小さじ1杯=5ml </p>
+
+				<div class="memo">
+			<dl>
+
+				<dt><img src="/support/recipe/images/ttl_recipe_01.gif" width="640" height="90" alt="一口メモ" /></dt>
+				<dd><p>たこは吸盤に砂がたまりやすいので、吸盤の中心から立てに包丁で切り込みを入れると吸盤の中まできれいに洗うことが出来ます。このとき流水できれいに洗いましょう。<br />
+				  </p></dd>
+			</dl>
+		</div>
+		
+
+
+		<div class="pagenation"><p class="prev"><a href="/support/recipe/641/"><img class="rollover" src="/support/recipe/images/btn_recipe_prev.gif" width="119" height="36" alt="前のレシピを見る" /></a></p><p class="cur">このレシピのID:000642</p><p class="next"><a href="/support/recipe/643/"><img class="rollover" src="/support/recipe/images/btn_recipe_next.gif" width="119" height="36" alt="次のレシピを見る" /></a></p></div>            
+		<div class="recomend_recipe">
+			<dl>
+			<dt><img src="/support/recipe/images/ttl_recipe_02.gif" width="640" height="33" alt="同じ食材でのおすすめレシピ" /></dt>
+			<dd>
+			<dl>
+				<dt>
+                    <img style="vertical-align:middle; padding-right:8px;" src="/support/recipe/images/icn_fish_s.gif" width="20" height="21" alt="魚料理" />魚料理
+                    <input type="hidden" name="word" value="fish" />
+                </dt>
+				<dd id="recommend"></dd>
+			</dl>
+			</dd>
+			</dl>
+		</div>
+
+		<!--div class="recomend_products">
+
+			<dl>
+				<dt>おすすめガス機器</dt>
+				<dd>
+					<ul>
+						<li class="external"><a href="#" target="_blank">Siセンサーコンロ</a></li>
+					</ul>
+				</dd>
+			</dl>
+
+		</div-->
+
+	</div>
+	<!-- /recipe -->
+
+</div>
+<!-- /main_contents -->
+
+<!-- side_contents -->
+<div id="side_contents"><div class="btmMg15"><a href="https://user.hokkaido-gas.co.jp/Member/" target="ns"><img class="rollover" src="/images/btn_top_lnav01.gif" width="210" height="80" alt="ご使用量・料金照会 ログイン＆新規登録はこちら" /></a></div>
+	<!--p><a href="#"><img class="rollover" src="/images/btn_top_lnav01.gif" width="210" height="69" alt="ご使用量・料金照会 ログイン＆新規登録はこちら" /></a></p-->
+
+	<dl class="menu">
+	<dt><a href="/support/index.html"><img src="/support/images/ttl_side_support.gif" width="210" height="35" alt="暮らしサポート情報" /></a></dt>
+	<dd>
+<ul>
+	<li><a href="/support/po.html">北ガスだより「ぽっ」読者プレゼント</a></li>
+	<li class="sub_menu stay"><a href="/support/recipe/index.html">お料理レシピ「北ガスクッキング」</a>
+		<ul>
+			<li class="first"><a href="/support/recipe/menu/">レシピ一覧</a></li>
+			<li><a href="/support/recipe/menu/?category=material">素材別</a></li>
+			<li><a href="/support/recipe/menu/?category=country">国別</a></li>
+			<li><a href="/support/recipe/menu/?category=dessert">デザート・お菓子</a></li>
+			<li class="last"><a href="/support/recipe/menu/?category=type">タイプ別</a></li>
+		</ul>
+	</li>
+	<li><a href="/support/grill_de_cooking/index.html">グリルdeクッキング</a></li>
+	<li><a href="/support/hojyokin/index.html">省エネシステム導入等への補助金制度</a></li>
+	<li><a href="/support/mansion/index.html">新築マンション紹介</a></li>
+	<li class="last"><a href="/support/chintai.html">お部屋探し耳より情報</a></li>
+</ul>
+	</dd>
+	</dl>
+
+	<dl class="rellink">
+	<dt>関連リンク</dt>
+	<dd>
+		<ul>
+			<li class="external"><a href="http://eco.hokkaido-gas.co.jp/" target="_blank">ガス機器情報サイト「エコのたね」</a></li>
+			<li><a href="/home/consult/sagatik/cook_factory.html">クッキングスクール</a></li>
+		</ul>
+	</dd>
+	</dl>
+
+	<div class="banner">
+	<ul>
+		<li><a href="/support/2015oyako/"><img src="/common/images/bnr_cookingcontest.gif" width="202" height="60" alt="第9回ウィズガス　全国親子クッキングコンテスト" /></a></li>
+        <li><a href="/home/consult/sagatik/cook_factory.html"><img src="/common/images/bnr_cooking-scl.gif" width="202" height="60" alt="北ガスクッキングスクールのご案内" /></a></li>
+		<li><a href="/utility/kyouiku/index.html "><img height="60" width="202" alt="エネルギー環境教育のご案内" src="/common/images/bnr_kengaku.gif"/></a></li>
+		<li><a href="http://www.gasdemori.jp/" target="_blank"><img src="/common/images/bnr_blue.gif" width="202" height="60" alt="ガスで森をつくる。BLUE&amp;GREEN PROJECT" /></a></li>
+		<li><a href="http://www.meti.go.jp/policy/safety_security/industrial_safety/sangyo/citygas/aikotobademinaoshitai/index.html" target="_blank"><img src="/common/images/bnr_safe.gif" width="202" height="60" alt="ガスの安全見直し隊" /></a></li>
+	</ul>
+	</div>
+
+
+</div>
+<!-- /side_contents -->
+<div class="pagetop"><a href="javascript:scrollToTop();"><img class="rollover" src="/common/images/btn_pagetop.gif" width="124" height="30" alt="このページの先頭へ" /></a></div>
+
+</div>
+</div>
+<!-- /contents -->
+
+    <!-- footer -->
+<!-- footer -->
+<div id="footer">
+<div id="footer_wrap">
+
+	<ul>
+		<li><a href="/">北海道ガス総合トップ</a></li>
+		<li><a href="/home/">個人のお客さま</a></li>
+		<li><a href="/business/">法人のお客さま</a></li>
+		<li><a href="/ir/">企業情報・IR情報</a></li>
+		<li><a href="/recruit/">採用情報</a></li>
+		<li><a href="/safety/">安全使用のために</a></li>
+		<li><a href="/support/">暮らしサポート情報</a></li>
+	</ul>
+
+	<ul>
+		<li><a href="/utility/">お問い合わせ</a></li>
+		<li><a href="/utility/madoguchi/">お近くのサービス窓口</a></li>
+		<li><a href="/utility/privacy.html">お客さま情報の取扱いについて</a></li>
+		<li><a href="/utility/attention.html">このサイトについて</a></li>
+		<li><a href="/utility/link.html">リンク</a></li>
+	</ul>
+
+	<div class="copyright">
+		<div><img src="/common/images/ftr_logo.gif" width="152" height="18" alt="北海道ガス株式会社" /></div>
+		<p>Copyright Hokkaido Gas Co.,Ltd. All Rights Reserved.</p>
+	</div>
+
+</div>
+</div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ?
+"https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost +
+"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+    var pageTracker = _gat._getTracker("UA-8450454-1");
+    pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>

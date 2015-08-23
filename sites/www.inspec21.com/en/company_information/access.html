@@ -1,0 +1,339 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Access｜INSPEC INC.</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<base href="http://www.inspec21.com/">
+<style type="text/css">
+@import url("css/style.css");
+</style>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/cookie.js"></script>
+<script type="text/javascript" src="js/fontsize.js"></script>
+<!--[if lte IE 8]>
+<script type="text/javascript" src="js/html5.js"></script>
+<script type="text/javascript" src="js/selectivizr-min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="js/pagetop.js"></script><script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAzcl8LhMHVb6tpxerFBu_dRSjtLUWnpV3IdtDSYzOYAIhoBlEUxRDDKbv_YUVGz7AfCYBlt1B7qLPzw" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+var map1,map2,map3;
+var geocoder = new GClientGeocoder();
+
+
+function addMarker(map, address,text){
+	geocoder.getLatLng(address,
+	function(point){
+		var marker = new GMarker(point);
+		map.addOverlay(marker);
+		GEvent.addListener(marker,"click",function(){
+			marker.openInfoWindowHtml(text);
+		});
+	});
+}
+
+function load(){
+	if(GBrowserIsCompatible()){
+		map1 = new GMap2(document.getElementById("map1"));
+		map1.setCenter(new GLatLng(39.590491, 140.556517),14);
+		addMarker(map1, "秋田県仙北市角館町雲然荒屋敷79-1","インスペック株式会社・本社</br>秋田県仙北市角館町雲然荒屋敷79-1");
+		map1.addControl(new GLargeMapControl()); //コントローラ
+		map1.addControl(new GOverviewMapControl()); //小さいコントロール
+		map1.addControl(new GScaleControl()); //スケール表示
+
+		map2 = new GMap2(document.getElementById("map2"));
+		map2.setCenter(new GLatLng(35.6553546, 139.7532658),14);
+		addMarker(map2, "東京都港区芝大門2-7-5","東京オフィス</br>東京都港区芝大門2-7-5 MTビル1F");
+		map2.addControl(new GLargeMapControl()); //コントローラ
+		map2.addControl(new GOverviewMapControl()); //小さいコントロール
+		map2.addControl(new GScaleControl()); //スケール表示		
+
+		map3 = new GMap2(document.getElementById("map3"));
+		map3.setCenter(new GLatLng(24.9905, 121.3090),16);
+		addMarker(map3, "60 Nanhua St., Taoyuan City Taoyuan County Taiwan","<b>台湾英視（TAIWAN Inspec Inc.)</b></br>60 Nanhua St., Taoyuan City Taoyuan County Taiwan");
+		map3.addControl(new GLargeMapControl()); //コントローラ
+		map3.addControl(new GOverviewMapControl()); //小さいコントロール
+		map3.addControl(new GScaleControl()); //スケール表示
+      }
+    }
+    //]]>
+    </script>
+<meta name="viewport" content="width=1250, user-scalable=yes">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-5100200-6', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<style type="text/css">
+div#wrap_cs section#main section {margin-bottom:35px;}
+
+div#wrap_cs section#main div.box {
+overflow: hidden;
+margin-bottom:20px;
+}
+div#wrap_cs section#main div.box div.primary {
+width:350px;
+margin-right:30px;
+float:left;
+}
+div#wrap_cs section#main div.box div.secondary {
+width:350px;
+float:left;
+}
+
+div#wrap_cs section#main div.box table {margin-bottom:0;}
+div#wrap_cs section#main div.box table th {width:auto;}
+div#wrap_cs section#main div.box table td {width:28%; text-align:center;}
+
+div#wrap_cs section#main div.box div.secondary img {
+border:none;
+}
+
+div#wrap_cs section#main div#map1,
+div#wrap_cs section#main div#map2,
+div#wrap_cs section#main div#map3{
+height:400px;
+}
+</style>
+
+</head>
+
+<body id="top" class="cs en company" onload="load()" onunload="GUnload()">
+<div class="header_wrap">
+<header>
+<h1 class="tagline">INSPEC INC. finds technologies that supports people lives.</h1>
+<h2 class="site_logo"><a href="en/"><img src="media/images/logo.png" width="180" height="50" alt="INSPEC INC." /></a></h2>
+<nav>
+<ul class="gnv_primary">
+<li class="gnv1"><a href="en/">TOP</a></li>
+<li class="gnv2"><a href="en/company_information/">Company Information</a></li>
+<li class="gnv3"><a href="en/business_description/">Business Description</a></li>
+<li class="gnv4"><a href="en/products_information/">Products</a></li>
+<li class="gnv5"><a href="en/support/">Support</a></li>
+<li class="gnv6"><a href="en/ir/">Information for Investors</a></li>
+<li class="gnv7"><a href="employment/">Careers(Japanese)</a></li>
+</ul>
+<ul class="gnv_secondary">
+<li><a href="./">日本語</a></li>
+<li><a href="en/">English</a></li>
+<li><a href="en/sitemap.html">Sitemap</a></li>
+<li><a href="en/contact_us.html">Contact Us(Japanese)</a></li>
+</ul>
+<div class="text_size">
+<p>Change Font Size</p>
+<ul class="resizer">
+<li class="resize_btn large">Large</li>
+<li class="resize_btn middle">Standard</li>
+</ul>
+</div>
+</nav>
+<div id="search">
+<form action="http://www.google.com/search" method="get">
+<input type="hidden" name="hl" value="ja">
+<input type="hidden" name="as_sitesearch" value="http://www.inspec21.com/">
+<input class="text" type="text" name="q" size="27" value="">
+<input class="button" type="image" src="media/images/icon01.png" value="Search">
+</form>
+</div>
+</header>
+</div>
+
+<section id="pnkz">
+<ul class="pankuzu "><li class="home"><a href="./">HOME</a></li>
+<li class=""><a href="en/">en</a></li>
+<li class=""><a href="en/company_information/">Company Information</a></li>
+<li class=""><span class="last">Access</span></li></ul>
+</section>
+
+<section id="pagetitle">
+<h2><span>Access</span></h2>
+</section>
+
+<div id="wrap_cs">
+<section id="main">
+<section>
+<h2>Head Office</h2>
+
+<div class="box">
+	<div class="primary">
+		<p><strong>INSPEC INC.</strong><br />
+		Arayashiki Kakunodatemachi Kumoshikari, Senboku-shi, Akita-ken 014-0341<br />
+		TEL: 0187-54-1888 (Board)</p>
+	</div>
+
+	<div class="secondary">
+		<img alt="" height="233" src="media/images/company/fig2.jpg" width="350" />
+	</div>
+</div>
+
+<div class="box">
+	<div class="primary">
+		<h2>By Air</h2>
+
+		<table>
+			<tbody>
+				<tr>
+					<th>Chitose Airport　&lt;&lt;===&gt;&gt;　Akita Airport</th>
+					<td>50 minutes</td>
+				</tr>
+				<tr>
+					<th>Haneda Airport　&lt;&lt;===&gt;&gt;　Akita Airport</th>
+					<td>60 minutes</td>
+				</tr>
+				<tr>
+					<th>Osaka　&lt;&lt;===&gt;&gt;　Akita Airport</th>
+					<td>80 minutes</td>
+				</tr>
+				<tr>
+					<th>Nagoya　&lt;&lt;===&gt;&gt;　Akita Airport</th>
+					<td>70 minutes</td>
+				</tr>
+				<tr>
+					<th>Fukuoka Airport　&lt;&lt;===&gt;&gt;　Akita Airport</th>
+					<td>105 minutes</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- primary -->
+
+	<div class="secondary">
+		<h2>Shinkansen (Akita Shinkansen)</h2>
+
+		<table>
+			<tbody>
+				<tr>
+					<th>Tokyo　&lt;&lt;===&gt;&gt;　Kakunodate</th>
+					<td>3 hours 11 minutes</td>
+				</tr>
+				<tr>
+					<th>Sendai　&lt;&lt;===&gt;&gt;　Kakunodate</th>
+					<td>1 hours 30 minutes</td>
+				</tr>
+				<tr>
+					<th>Morioka　&lt;&lt;===&gt;&gt;　Kakunodate</th>
+					<td>50 minutes</td>
+				</tr>
+				<tr>
+					<th>Akita　&lt;&lt;===&gt;&gt;　Kakunodate</th>
+					<td>45 minutes</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- secondary -->
+</div>
+<!-- box -->
+
+<div class="box">
+	<h2>By Car</h2>
+
+	<table>
+		<tbody>
+			<tr>
+				<th>Morioka (National Route 46)　&lt;&lt;===&gt;&gt;　Kakunodate</th>
+				<td>About 70 minutes</td>
+			</tr>
+			<tr>
+				<th>Akita (National Route 13～National Route 46 from Kyowamachi)&lt;&lt;===&gt;&gt;　Kakunodate</th>
+				<td>About 60 minutes</td>
+			</tr>
+			<tr>
+				<th>Akita Airport (National Route 13～National Route 46 from Kyowamachi)&lt;&lt;===&gt;&gt;　Kakunodate</th>
+				<td>About 60 minutes</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<!-- box -->
+
+<div id="map1">
+	&nbsp;
+</div>
+
+<p><a href="https://www.google.co.jp/maps/place/%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%9A%E3%83%83%E3%82%AF%EF%BC%88%E6%A0%AA%EF%BC%89/@39.590771,140.547872,17z/data=!3m1!4b1!4m2!3m1!1s0x5f8f9a142663dfad:0x3f39f355fd35206f?hl=ja">View in a larger map</a></p>
+</section>
+
+<section>
+<h2>Tokyo Office</h2>
+
+<div class="box">
+	<div class="primary">
+		<p><strong>Tokyo Office</strong><br />
+		1F MT Building, Shiba Daimon 2-7-5, Minato-ku, Tokyo 105-0012.</p>
+	</div>
+
+	<div class="secondary">
+		<img alt="" height="233" src="media/images/company/fig3.jpg" width="350" />
+	</div>
+</div>
+
+<div id="map2">
+	&nbsp;
+</div>
+
+<p><a href="https://www.google.co.jp/maps/place/%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%AF%E5%8C%BA%E8%8A%9D%E5%A4%A7%E9%96%80%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%97%E2%88%92%EF%BC%95/@35.6553546,139.7532658,17z/data=!3m1!4b1!4m2!3m1!1s0x60188bc79c6590fb:0x2958c9a340326158?hl=ja">View in a larger map</a></p>
+</section>
+
+<section>
+<h2>Inspec Taiwan Inc.</h2>
+
+<div class="box">
+	<div class="primary">
+		<p><strong>Inspec Taiwan Inc.</strong><br />
+		5F-6,No.60,Nanhua St., Taoyuan City,Taoyuan County<br />
+		33042, Taiwan(R.O.C)<br />
+		TEL：(886)3-339-1302</p>
+	</div>
+
+	<div class="secondary">
+		<img alt="" src="media/images/company/fig4.jpg" style="width: 350px; height: 233px;" />
+	</div>
+</div>
+
+<div id="map3">
+	&nbsp;
+</div>
+
+<p><a href="https://www.google.co.jp/maps/place/No.+60,+Nanhua+St,+Taoyuan+City,+Taoyuan+County,+%E5%8F%B0%E6%B9%BE+330/@24.990563,121.308543,17z/data=!3m1!4b1!4m2!3m1!1s0x34681ee2aaf9df5d:0xa0fecb0281121868?hl=ja">View in a larger map</a></p>
+</section>
+</section><!-- main -->
+<section id="side">
+<nav>
+<!--Qrt\Plugin\LocalNavigation::loadPlugin--><h2 class="top_title"><a href="en/company_information/">Company Information</a></h2><ul class="depth1"><li class="type2 depth1 lm65  first "><a href="en/company_information/company_overview.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">Company Overview</a></li><li class="type2 depth1 lm66   "><a href="en/company_information/company_history.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">Company History</a></li><li class="type2 depth1 lm67 active last "><a href="en/company_information/access.html"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">Access</a></li></ul><!--/Qrt\Plugin\LocalNavigation::loadPlugin-->
+</nav>
+<p><a href="en/contact_us.html"><img src="media/images/en/en_bnr_contact1.png" width="240" height="96" alt="Contact Us(Japanese)"></a></p>
+</section><!-- side_cs -->
+</div><!-- wrap -->
+
+<p class="pagetop"><a href="#top"><img src="media/images/en/en_btn_pagetop.png" width="106" height="15" alt="To Top Page"></a></p>
+<footer>
+	
+<div class="wrap_sitemap">
+<nav id="sitemap">
+<!--Qrt\Plugin\LocalNavigation::loadPlugin--><h2 class="top_title"><a href="en/">en</a></h2><ul class="depth1"><li class="type1 depth1 lm64 active first has_children"><a href="en/company_information/"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">Company Information</a><ul class="depth2"><li class="type2 depth2 lm65  first "><a href="en/company_information/company_overview.html" >Company Overview</a></li><li class="type2 depth2 lm66   "><a href="en/company_information/company_history.html" >Company History</a></li><li class="type2 depth2 lm67 active last "><a href="en/company_information/access.html" >Access</a></li></ul></li><li class="type1 depth1 lm69   has_children"><a href="en/business_description/"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">Business Description</a><ul class="depth2"><li class="type2 depth2 lm70  first "><a href="en/business_description/our_strengths.html" >Our strengths</a></li><li class="type2 depth2 lm71  last "><a href="en/business_description/production_system.html" >Production System</a></li></ul></li><li class="type1 depth1 lm72   has_children"><a href="en/products_information/"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">Products</a><ul class="depth2"><li class="type1 depth2 lm99  first "><a href="en/products_information/products/category01/" >products</a></li><li class="type1 depth2 lm98  last "><a href="en/products_information/technical_information/information01.html" >Technical Information</a></li></ul></li><li class="type1 depth1 lm73   "><a href="en/support/"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">Support</a></li><li class="type1 depth1 lm74  last has_children"><a href="en/ir/"  class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">Investor For Investors</a><ul class="depth2"><li class="type2 depth2 lm75  first "><a href="en/ir/financial_information.html" >Financial Information</a></li><li class="type2 depth2 lm77   "><a href="en/ir/stock_information.html" >Stock Information</a></li><li class="type2 depth2 lm78   "><a href="en/ir/disclaimer.html" >Disclaimer</a></li><li class="type1 depth2 lm76  last "><a href="en/ir/ir_library/" >IR library</a></li></ul></li></ul><!--/Qrt\Plugin\LocalNavigation::loadPlugin-->
+</nav>
+</div><!-- wrap_sitemap -->
+
+<div class="wrap_footer">
+<p id="footer_logo"><a href="en/"><img src="media/images/logo2.png" width="150" height="42" alt="logo" /></a><strong>INSPEC INC.</strong></p>
+<p class="tagline">INSPEC INC. finds technologies that supports people lives.</p>
+<nav>
+<ul>
+<li><a href="en/privacypolicy.html">Privacy policy</a></li>
+<li><a href="en/information_security_policy.html">Information security policy</a></li>
+<li><a href="en/contact_us.html">Contact Us(Japanese)</a></li>
+</ul>
+</nav>
+<p id="copyright">&copy; 2015 INSPEC INC.</p>
+</div><!-- wrap_footer -->
+</footer>
+<div class="nocache" style="display:none;">no cache</div></body>
+</html>

@@ -1,0 +1,373 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="copyright" content="Copyrigt(C)AEON Hokkaido Corp. All Right Reserved" />
+<meta name="Description" content="テナントの応募・お問い合わせはこちらからどうぞ" />
+<meta name="keyword" content="イオン北海道, ジャスコ, ポスフール, イオンスーパーセンター" />
+<link rel="stylesheet" href="../css2012/import.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../css2012/shop_styles.css" type="text/css" media="all" />
+<link type="text/css" href="../css2012/theme/jquery-ui-1.8.17.custom.css" rel="stylesheet" />
+<link rel="stylesheet" href="../css2012/slide.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../css2012/styles.css" type="text/css" media="all" />
+<script type="text/javascript" src="../js2012/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="../js2012/jquery-ui-1.8.17.custom.min.js"></script>
+<script type="text/javascript" src="../js2012/rollover.js"></script>
+<script type="text/javascript" src="../js2012/accordion2.js"></script>
+<script type="text/javascript" src="../js2012/jquery.bxSlider.js"></script>
+<script src="../Examples/js/ui.tabs.pack.js" type="text/javascript"></script>
+<script src="../Examples/js/ui.tabs.ext.pack.js" type="text/javascript"></script>
+<link rel="stylesheet" href="../Examples/css/ui.tabs.css" type="text/css" media="print, projection, screen">
+<link rel="stylesheet" href="common.css" type="text/css" media="all" />
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21728439-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!--[if IE 6]>
+<script src="../js2012/dd_pngfix.js" type="text/javascript"></script>
+<script type="text/javascript" charset="utf-8">
+DD_belatedPNG.fix("img");
+</script>
+<![endif]-->
+<!--header_end-->
+<title>応募・お問い合わせ | イオン北海道株式会社</title>
+
+
+<!--global_navi-->
+</head>
+
+<body>
+
+<div id="page">
+
+  <div id="header_navi">
+    <div id="logo">
+        <img src="../img2015/common/aeonh_logo.jpg" alt="AEON　イオン北海道株式会社" usemap="#logo">
+        <map name="logo">
+          <area href="http://www.aeon.info/" shape="rect" alt="aeon" coords="0,0,70,30">
+        <area href="/home.html" shape="rect" alt="aeon" coords="71,0,290,30">
+        </map>
+
+        </div>
+
+
+        <div id="navi">
+          <ul>
+              <li><a href="/home.html"><img src="../img2012/header/gnavi01_off.jpg" alt="トップページへ" width="192" height="36" /></a></li><!--
+                --><li><a href="/news/index.html"><img src="../img2012/header/gnavi02_off.jpg" alt="ニュースリリース" width="192" height="36" /></a></li><!--
+                --><li><a href="/shoplist.html"><img src="../img2012/header/gnavi03_off.jpg" alt="店舗一覧" width="192" height="36" /></a></li><!--
+                --><li><a href="/netshop.html"><img src="../img2012/header/gnavi04_off.jpg" alt="ネットショップ" width="192" height="36" /></a></li><!--
+                --><li><a href="/corporation/index.html"><img src="../img2012/header/gnavi05_off.jpg" alt="企業情報" width="192" height="36" /></a></li>
+
+            </ul>
+        </div>
+    </div>
+
+
+<!--global_navi_end-->
+
+
+  <!--global_navi_end-->
+  <ul class="tab">
+         <li><a href="index.html"><img onmouseout="this.src='img/tab01_d.jpg'" onmouseover="this.src='img/tab01_o.jpg'" src="img/tab01_d.jpg" alt=""></a></li><!--
+      --><li><a href="guide.html"><img onmouseout="this.src='img/tab02_d.jpg'" onmouseover="this.src='img/tab02_o.jpg'" src="img/tab02_d.jpg" alt=""></a></li><!--
+      --><li><a href="list.html"><img onmouseout="this.src='img/tab03_d.jpg'" onmouseover="this.src='img/tab03_o.jpg'" src="img/tab03_d.jpg" alt=""></a></li><!--
+      --><li><img src="img/tab04_o.jpg" alt=""></li>
+  </ul>
+  <div class="contents" style="padding-bottom:20px;">
+    <div class="inner-wrap" style="width:730px;">
+      <h2 style="margin-bottom:45px;">応募・お問い合わせ</h2>
+      <p style="margin-bottom:10px;">●下記の項目をご記入の上、送信ボタンを押して下さい。<br>
+      ※英数字は半角、カタカナは全角でご入力してください。<br>
+      ※<span style="color:red;">*</span>の印がある項目は、必須です。</p>
+
+
+    <form id="form" name="form" method="post" action="contact_form.php">
+    <div class="form-wrap">
+      <table border="0" cellspacing="1" cellpadding="3">
+        <tr>
+          <td class="data-type"><span style="color:red;">*</span>氏名（漢字）</td>
+          <td class="data-description"><input name="name;s" type="text" id="name" size="43">
+          <span class="example">例：山田太郎（全角）</span></td>
+        </tr>
+        <tr>
+          <td class="data-type"><span style="color:red;">*</span>氏名（フリガナ）</td>
+          <td class="data-description"><input name="name_k;s" type="text" id="name_k" size="43">
+          <span class="example">例：ヤマダタロウ（全角）</span></td>
+        </tr>
+        <tr>
+          <td class="data-type"><span style="color:red;">*</span>会社名</td>
+          <td class="data-description"><input name="company;s" type="text" id="company" size="43">
+          <span class="example">例：山田商店（全角）</span></td>
+        </tr>
+        <tr>
+          <td class="data-type"><span style="color:red;">*</span>フリガナ</td>
+          <td class="data-description"><input name="company_k;s" type="text" id="company_k" size="43">
+          <span class="example">例：ヤマダショウテン（全角）</span> </td>
+        </tr>
+        <tr>
+          <td class="data-type">店舗名</td>
+          <td class="data-description"><input name="shop" type="text" id="shop" size="43">
+          <span class="example">例：レディスファッション山田（全角）</span></td>
+        </tr>
+        <tr>
+          <td class="data-type">フリガナ</td>
+          <td class="data-description"><input name="shop_k" type="text" id="shop_k" size="43">
+          <span class="example">例：レディスファッションヤマダ（全角）</span></td>
+        </tr>
+        <tr>
+          <td class="data-type"><span style="color:red;">*</span>郵便番号</td>
+          <td class="data-description"><input name="zip;s" type="text" id="zip" size="8" maxlength="8">
+          <span class="example">例：812-0016（半角）</font></td>
+        </tr>
+        <tr>
+          <td class="data-type"><span style="color:red;">*</span>住　所</td>
+          <td class="data-description">
+          <select name="address_1;s" id="address_1">
+              <option value="" selected>都道府県</option>
+              <option value="北海道">北海道</option>
+              <option value="青森県">青森県</option>
+              <option value="岩手県">岩手県</option>
+              <option value="宮城県">宮城県</option>
+              <option value="秋田県">秋田県</option>
+              <option value="山形県">山形県</option>
+              <option value="福島県">福島県</option>
+              <option value="山梨県">山梨県</option>
+              <option value="茨城県">茨城県</option>
+              <option value="栃木県">栃木県</option>
+              <option value="群馬県">群馬県</option>
+              <option value="埼玉県">埼玉県</option>
+              <option value="千葉県">千葉県</option>
+              <option value="東京都">東京都</option>
+              <option value="神奈川県">神奈川県</option>
+              <option value="新潟県">新潟県</option>
+              <option value="長野県">長野県</option>
+              <option value="富山県">富山県</option>
+              <option value="石川県">石川県</option>
+              <option value="福井県">福井県</option>
+              <option value="岐阜県">岐阜県</option>
+              <option value="静岡県">静岡県</option>
+              <option value="愛知県">愛知県</option>
+              <option value="三重県">三重県</option>
+              <option value="滋賀県">滋賀県</option>
+              <option value="京都府">京都府</option>
+              <option value="大阪府">大阪府</option>
+              <option value="兵庫県">兵庫県</option>
+              <option value="奈良県">奈良県</option>
+              <option value="和歌山県">和歌山県</option>
+              <option value="鳥取県">鳥取県</option>
+              <option value="島根県">島根県</option>
+              <option value="岡山県">岡山県</option>
+              <option value="広島県">広島県</option>
+              <option value="山口県">山口県</option>
+              <option value="徳島県">徳島県</option>
+              <option value="香川県">香川県</option>
+              <option value="愛媛県">愛媛県</option>
+              <option value="高知県">高知県</option>
+              <option value="福岡県">福岡県</option>
+              <option value="佐賀県">佐賀県</option>
+              <option value="長崎県">長崎県</option>
+              <option value="熊本県">熊本県</option>
+              <option value="大分県">大分県</option>
+              <option value="宮崎県">宮崎県</option>
+              <option value="鹿児島県">鹿児島県</option>
+              <option value="沖縄県">沖縄県</option>
+              </select>
+              <br>
+              <input name="address_2;s" type="text" id="address_2" size="43">
+              <br>
+              <span class="example">例：北海道札幌市西区発寒8条12丁目1-1<br>
+                ビル・アパート・マンション名・部屋番号まで正確に入力して下さい。</span></td>
+        </tr>
+        <tr>
+          <td class="data-type"><span style="color:red;">*</span>電話番号</td>
+          <td class="data-description"><input name="tel;s" type="text" id="tel" size="43">
+          <span class="example">例：092-111-1111（半角）</span></td>
+        </tr>
+        <tr>
+          <td class="data-type">FAX番号</td>
+          <td class="data-description"><input type="text" name="fax" id="fax" size="43">
+          <span class="example">例：092-111-1111（半角）</span></td>
+        </tr>
+        <tr>
+          <td class="data-type"><span style="color:red;">*</span>E-mail</td>
+          <td class="data-description"><input name="email;s" type="text" id="email" size="43">
+          <span class="example block">例：email@yamada.info（半角英数）</span></td>
+        </tr>
+        <tr>
+          <td class="data-type"><span style="color:red;">*</span>E-mai（確認）</td>
+          <td class="data-description"><input name="emailcheck;s" type="text" id="emailcheck" size="43">
+          <span class="example block">※確認のため、もう一度入力して下さい。</span></td>
+        </tr>
+        <tr>
+          <td class="data-type"><font color="#FF0000"></font>希望出店店舗（地区）</td>
+          <td class="data-description"><input type="text" name="store" id="store">
+          <span class="example block">例：イオンモール札幌発寒または、道南地区（全角）</span></td>
+        </tr>
+        <tr>
+          <td class="data-type">希望業種</td>
+          <td class="data-description">
+          <select name="sale" id="sale">
+              <option value="" selected>業種</option>
+              <option>婦人服</option>
+              <option>紳士服</option>
+              <option>子供服</option>
+              <option>ランファン・靴下</option>
+              <option>靴・鞄</option>
+              <option>服飾雑貨</option>
+              <option>ファンシー雑貨</option>
+              <option>文化用品雑貨</option>
+              <option>食品</option>
+              <option>飲食</option>
+              <option>サービス</option>
+         　　 <option>その他(上記以外)</option>
+          </select>
+        <span class="example">ご希望の業種をお選び下さい。</font>例：婦人服</td>
+        </tr>
+        <tr>
+          <td class="data-type">お問い合わせ・ご質問等</td>
+          <td class="data-description"><textarea name="message" id="message" cols="65" rows="3" ></textarea>                      </td>
+        </tr>
+      </table>
+    </div>
+
+      <h3 style="margin-bottom:12px;">個人情報の取扱について</h3>
+      <p class="agreement">
+        下記規約を必ずお読みください。同意されますとフォームよりお問合せいただけます。<br>
+        イオン株式会社（以下「当社」と言います）では当社へご意見・ご要望・お問合せをいただくお客さま（以下「お客さま」といいます）が、本ウェブサイトその他を通じて当社にご提供・開示いただくお客さまご自身の個人情報について、以下のとおり取り扱っております。 お客さまにおかれましては、以下の内容にあらかじめ同意の上で、ご自身の個人情報の提供・開示をお願い申し上げます。
+        <br><br>１． 利用目的<br>
+        当社では、お客さまのご意見・ご要望・お問合せへご回答するのみに利用する目的で、お客さまの氏名、住所、生年月日、電話番号、E-Mailアドレス等の個人情報に関する情報（以下「個人情報」）を収集いたします。
+        <br><br>２． 個人情報の第三者への提供について<br>
+        当社は個人情報を以下のいずれかに該当する場合を除き、第三者へ提供いたしません。
+        <br>(1) お客さまの同意がある場合。
+        <br>(2) 国の機関または地方公共団体が法令の定める業務を遂行することに対して協力する必要がある場合。
+        <br>(3) 必要となる業務委託先に開示する場合。
+        <br>(4) グループ会社と共同利用する場合。
+        上記１の利用目的の範囲内でグループ各社と共同して利用させていただくことがございます。共同して利用する個人情報の項目は提供される全ての項目です。共同利用に際してのお客さまの個人情報の管理、運用についてはイオン株式会社が責任を負います。
+        <br><br>３． 個人情報の管理について<br>
+        当社では、お客さまの個人情報を、当社の責任のもとで厳重に管理いたします。
+        なお、当社では本ウェブサイトの運営を外部の企業に委託することがありますが、この場合にも当該業務委託先に機密保持義務を課すなどして個人情報の管理に努めます。
+        <br><br>４． セキュリティについて<br>
+        当社ウェブサイトにおいてお客さまに個人情報を提供していただくページには、ＳＳＬ（セキュア・ソケット・レイアー）と呼ばれるデータを暗号化して通信する仕組みを使用しておりますので、万が一、送信データを第三者が傍受した場合でも、内容が盗み取られる心配はございません。またサーバーのデータはファイア・ウォールという不正アクセスを防止するシステムを採用しております。これらの技術によりご登録いただいたお客さまの個人情報が外部に漏れることのないよう、情報の管理・保護に万全を期しております。
+        <br><br>５． 内容の変更について<br>
+        ここで定めた事項は、法令その他の事情により変更する場合があります。
+        <br><br>６． 個人情報に関する問合せ窓口<br>
+        個人情報の開示、訂正、削除や利用、提供の中止の申出等に関しましては この フォームから、もしくは当社プライバシーポリシー記載の「お客さまの個人情報に係 る相談窓口」までご連絡くださいますようお願いいたします。
+        イオン北海道株式会社
+    </p>
+    <div class="consent"><input type="hidden" name="agreement" value="　"><input type="checkbox" name="agreement" id="agreement" value="同意">同意する　※当フォームをご利用するにあたり、個人情報の取り扱いにご同意いただく必要があります。</div>
+    <div class="action text-center">
+      <button type="submit" name="submit"><img src="img/action01.jpg" alt=""></button>
+      <button type="RESET" name="RESET"><img src="img/action02.jpg" alt=""></button>
+    </div>
+
+    </form>
+
+
+
+    </div>
+  </div>
+
+
+
+  <div class="clearbox"></div>
+
+  <!--footer-->
+  <!--footer-->
+
+    <div id="footer">
+
+      <div class="footer_top">
+            <ul class="footer_l">
+                <li class="start"><a href="/houshin.html">当サイトの運営方針</a></li><!--
+                --><li class="inline"><a href="/policy.html">個人情報保護方針</a></li><!--
+                --><li class="inline"><a href="/sitemap.html">サイトマップ</a></li><!--
+                --><li class="last"><a href="/information/index.html">お問合せ</a></li>
+            </ul>
+<p class="footer">Copyright &copy 2014 AEON Hokkaido Co.Ltd , All rights reserved.</p>
+
+        </div>
+        <div class="footer_btm">
+          <a href="http://www.aeon.info/"><img class="footerimg" src="/img2012/common/footer_aeon.jpg" /></a>
+          <ul class="footer_btmmenu">
+            <li class="btmmenu"><a href="http://www.aeon.jp/">お客さまサイトへ</a></li><!--
+            --><li class="btmmenu"><a href="http://www.aeon.info/">グループ情報サイトへ</a></li>
+          </ul>
+          <!-- Google Code for &#36092;&#20837;&#23436;&#20102;&#12506;&#12540;&#12472; Conversion Page -->
+          <table class="hidden-xs" style="width:115px;float:left;" summary="Google Site Stats"><tr><td style="font-family: arial, sans-serif; font-size: 11px; color: #000000;" align="center">Google Site Stats<br/><a href="http://www.google.com/gwt/n?u=http://services.google.com/sitestats/en.html" style="color: #000000">send feedback</a></td></tr></table><img height="1" width="1" alt="" src="http://www.googleadservices.com/pagead/conversion/989547674/imp.gif?value=0&amp;label=StfPCJ6p3wQQmpnt1wM&amp;guid=ON&amp;script=0"/>
+          <a style="float:right;" href="http://www.aeon.info/environment/"><img class="tree" src="/img2012/common/footer_tree.jpg" /></a>
+        </div>
+        <div class="sp_footer">
+            <p class="goto-corporate text-center"><a href="/home.html">企業ページトップへ</span></a></p>
+            <p class="copyright">Copyright c 2014 AEON Hokkaido Co.Ltd , All rights reserved.</p>
+        </div>
+    </div>
+
+</div>
+<!-- Google Code for &#12522;&#12510;&#12540;&#12465;&#12486;&#12451;&#12531;&#12464; &#12479;&#12464; -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 989547674;
+var google_conversion_label = "8kLcCKao3wQQmpnt1wM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/989547674/?value=0&amp;label=8kLcCKao3wQQmpnt1wM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+<!-- リマーケティング タグの Google コード -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 962648677;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/962648677/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+<!--otoku cv-->
+<!-- Google Code for &#35370;&#21839; Conversion Page -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 962648677;
+var google_conversion_language = "en";
+var google_conversion_format = "2";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "HKsxCNDUwFgQ5bSDywM";
+var google_remarketing_only = false;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/962648677/?label=HKsxCNDUwFgQ5bSDywM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+<!--/otoku cv-->
+
+</body>
+</html>
+
+<!--footer_end-->

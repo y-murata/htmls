@@ -1,0 +1,542 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>多言語地図｜株式会社ゼンリンデータコム</title>
+<meta name="description" content="多言語地図についてご紹介いたします。">
+<meta name="keywords" content="多言語,マルチリンガル,multilingual,地図,法人向け,ゼンリン,ゼンリンデータコム">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" href="/common02/css/import.css" media="all"><link rel="stylesheet" href="/common02/css/lightbox.css" media="all">
+<link rel="stylesheet" href="/common02/css/business.css" media="all">
+<link rel="stylesheet" href="/common02/css/print.css" media="print">
+<script src="/common02/js/jquery-1.7.2.min.js"></script>
+<script src="/common02/js/common.js"></script>
+<script src="/common02/js/jquery.lightbox.js"></script>
+<script type="text/javascript">
+$(function() {
+  $('a.lightbox').lightBox();
+});
+</script>
+<!--[if lt IE 9]>
+<script src="/common02/js/html5shiv.js"></script>
+<![endif]-->
+<!--[if lte IE 6]>
+<script src="/common02/js/DD_belatedPNG_0.0.8a-min.js"></script>
+<script>
+DD_belatedPNG.fix('img, .png_bg');
+</script><![endif]-->
+<script type="text/javascript" src="//typesquare.com/accessor/script/typesquare.js?GLGG~EOlofk%3D" charset="utf-8"></script><script type="text/javascript" src="http://api.docodoco.jp/v3/docodoco?key=88NoMleXhwzDCbCkYtO1BTh6VwgNQ3aJaGRBB7rjKLHqtkJFFgKxfAWZoeWrh4uI" charset="utf-8"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  var pluginUrl = 
+'//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+
+  _gaq.push(['_setAccount', 'UA-46720940-1']);
+  _gaq.push(['_setDomainName', '.zenrin-datacom.net']);
+  _gaq.push(['_setSessionCookieTimeout', 9000000]);
+
+  _gaq.push(['._setCustomVar',1,'Organization Name', SURFPOINT.getOrgName() ,1]);
+  _gaq.push(['._setCustomVar',2,'Organization Name', SURFPOINT.getOrgIndustrialCategoryL() ,1]);
+
+  _gaq.push(['_trackEvent', 'Organization Name', SURFPOINT.getOrgName(), SURFPOINT.getPrefJName() + SURFPOINT.getCityJName(), , true]);
+  _gaq.push(['_trackEvent', 'Organization Name', SURFPOINT.getOrgName(), SURFPOINT.getOrgTel(), , true]);
+  _gaq.push(['_trackEvent', 'Organization Name', SURFPOINT.getOrgName(), SURFPOINT.getOrgUrl(), , true]);
+  _gaq.push(['_trackEvent', 'Organization Name', SURFPOINT.getOrgName(), SURFPOINT.getOrgIndustrialCategoryM(), , true]);
+
+  _gaq.push(['_trackPageview']);
+  _gaq.push(['_trackPageLoadTime']);
+
+  setTimeout("_gaq.push(['_trackEvent', 'Read the Page', '600Time', document.title, , true])",600000);
+
+  jQuery(function() {
+    jQuery("a").click(function(e) {
+      var ahref = jQuery(this).attr('href');
+      if (typeof ahref == 'undefined') {
+        return;
+      }
+      if ('#' == ahref.substring(0, 1)) {
+        return;
+      }
+      if (ahref == "javascript:void(0);") {
+        ahref = jQuery(this).attr('onclick');
+      }
+      if (!ahref || ahref.indexOf("http") == -1) {
+        return;
+      }
+      var domain = ahref.split('/')[2];
+      if (domain.indexOf(".zenrin-datacom.net") == -1) {
+         _gaq.push(['_trackEvent', 'Outbound Links', domain, document.title, , true]);
+//         setTimeout(function() {
+//           document.location.href = ahref;
+//         }, 100);
+      }
+    });
+  });
+
+ (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  init_func.push(function() {
+      // Debug flag
+      var debugMode = false;
+
+      // Default time delay before checking location
+      var callBackTime = 100;
+
+      // # px before tracking a reader
+      var readerLocation = 150;
+
+      // Set some flags for tracking and execution
+      var timer = 0;
+      var scroller = false;
+      var endContent = false;
+      var didComplete = false;
+
+      // Set some time variables to calculate reading time
+      var startTime = new Date();
+      var beginning = startTime.getTime();
+      var totalTime = 0;
+
+      // Check the location and track user
+      function trackLocation() {
+          bottom = $(window).height() + $(window).scrollTop();
+          height = $(document).height();
+
+          // GAEventTrack starts to scroll
+          if (bottom > readerLocation && !scroller) {
+              currentTime = new Date();
+              scrollStart = currentTime.getTime();
+              timeToScroll = Math.round((scrollStart - beginning) / 1000);
+              if (!debugMode) {
+                  _gaq.push(['_trackEvent', 'Read the Page', 'ページスクロール開始', document.title, timeToScroll, true]);
+              } else {
+                  alert('started reading ' + timeToScroll);
+              }
+              scroller = true;
+          }
+
+          // GAEventTrack bottom of the content
+          if (bottom >= $('.content').scrollTop() + $('.content').innerHeight() && !endContent) {
+              currentTime = new Date();
+              contentScrollEnd = currentTime.getTime();
+              timeToContentEnd = Math.round((contentScrollEnd - scrollStart) / 1000);
+              if (!debugMode) {
+                  if (timeToContentEnd < 60) _gaq.push(['_trackEvent', 'Read the Page', 'コンテンツ最下部', document.title, timeToContentEnd, true]);
+              } else {
+                  if (timeToContentEnd < 60) {
+                      alert('SCANNER: end content section ' + timeToContentEnd);
+                  } else {
+                      alert('READER: end content section ' + timeToContentEnd);
+                  }
+              }
+              endContent = true;
+          }
+
+          // GAEventTrack bottom of page
+          if (bottom >= height && !didComplete) {
+              currentTime = new Date();
+              end = currentTime.getTime();
+              totalTime = Math.round((end - scrollStart) / 1000);
+              if (!debugMode) {
+                  _gaq.push(['_trackEvent', 'Read the Page', 'ページ最下部', document.title, totalTime, true]);
+              } else {
+                  alert('bottom of page ' + totalTime);
+              }
+              didComplete = true;
+          }
+      }
+
+      // Track the scrolling and track location
+      $(window).scroll(function () {
+          if (timer) {
+              clearTimeout(timer);
+          }
+
+          // GAEventTrack Referral
+          timer = setTimeout(trackLocation, callBackTime);
+      });
+  });
+//-->
+</script>
+
+<script type="text/javascript">
+if (document.referrer.match(/google\.(com|co\.jp)/gi) && document.referrer.match(/cd/gi)) {
+  var myString = document.referrer;
+  var r        = myString.match(/cd=(.*?)&/);
+  var rank     = parseInt(r[1]);
+  var kw       = myString.match(/q=(.*?)&/);
+  if (kw[1].length > 0) {
+    var keyWord  = decodeURI(kw[1]);
+  } else {
+    keyWord = "(not provided)";
+  }
+  var p        = document.location.pathname;
+  _gaq.push(['_trackEvent', 'Keyword Ranking', keyWord, p, rank, true]);
+}
+</script>
+</head>
+<body class="business">
+<header id="headerContents">
+	<div class="headerInner">
+		<h1 id="corporateLogo"><a href="/index.html"><img src="/common02/images/com_logo01.png" alt="ZENRIN DataCom" width="216" height="14"></a></h1>
+		<div id="langLink">
+			<p><a href="/en/index.html" class="png_bg">English</a></p>
+		</div>
+		<nav id="globalNav">
+			<ul>
+				<li class="service"><a href="/service/index.html">個人向け<span>サービス</span></a>
+					<div class="dropDownContents">
+						<div class="linkArea">
+							<ul class="childNav">
+								<li><a href="/service/android_au_softbank/index.html">いつもNAVI for Android</a>
+									<div class="detail">
+										<figure><a href="/service/android_au_softbank/index.html"><img src="/common02/images/com_ph02.jpg" width="220" height="160" alt=""></a></figure>
+										<dl>
+											<dt>いつもNAVI for Android</dt>
+											<dd>周辺情報やルート検索など多彩な機能がつまった高機能ナビゲーションアプリです。</dd>
+										</dl>
+									</div>
+								</li>
+								<li><a href="/service/pcsoft/index.html">いつもNAVI for PCソフト</a>
+									<div class="detail">
+										<figure><a href="/service/pcsoft/index.html"><img src="/common02/images/com_ph03.jpg" width="220" height="160" alt=""></a></figure>
+										<dl>
+											<dt>いつもNAVI for PCソフト</dt>
+											<dd>ゼンリンの地図でドライブルートや、行きたい場所をすばやく検索できます。</dd>
+										</dl>
+									</div>
+								</li>
+								<li><a href="/service/itsnav_india/index.html">It's NAV India</a>
+									<div class="detail">
+										<figure><a href="/service/itsnav_india/index.html"><img src="/common02/images/com_ph04.jpg" width="220" height="160" alt=""></a></figure>
+										<dl>
+											<dt>It's NAV India</dt>
+											<dd>インドで利用可能なAndroid向けナビゲーションアプリ</dd>
+										</dl>
+									</div>
+								</li>
+								<li><a href="/service/itsnav_se_asia/index.html">It's NAV SE Asia</a>
+									<div class="detail">
+										<figure><a href="/service/itsnav_se_asia/index.html"><img src="/common02/images/com_ph05.jpg" width="220" height="160" alt=""></a></figure>
+										<dl>
+											<dt>It's NAV SE Asia</dt>
+											<dd>東南アジアで利用可能なiOS/Android向けナビゲーションアプリ</dd>
+										</dl>
+									</div>
+								</li>
+								<li><a href="/service/pinpoint_weather/index.html">ピンポイント★天気</a>
+									<div class="detail">
+										<figure><a href="/service/pinpoint_weather/index.html"><img src="/common02/images/com_ph06.jpg" width="220" height="160" alt=""></a></figure>
+										<dl>
+											<dt>ピンポイント★天気</dt>
+											<dd>知りたい場所や今いる場所の天気予報をあなたの携帯にメールで届けるサービスです。</dd>
+										</dl>
+									</div>
+								</li>
+								<li><a href="/service/tuno/index.html">TUNO(ツウノ)</a>
+									<div class="detail">
+										<figure><a href="/service/tuno/index.html"><img src="/common02/images/com_ph07.jpg" width="220" height="160" alt=""></a></figure>
+										<dl>
+											<dt>TUNO(ツウノ)</dt>
+											<dd>街のツウが良く行くお店から、あなた好みのお店を探せるアプリです。</dd>
+										</dl>
+									</div>
+								</li>
+							</ul>
+							<p class="all"><a href="/service/index.html">すべての個人向けサービス</a></p>
+						</div>
+					</div>
+				</li>
+				<li class="business"><a href="/business/index.html">法人向け<span>サービス</span></a>
+					<div class="dropDownContents">
+						<div class="linkArea">
+							<ul class="childNav">
+								<li><a href="/business/develop/index.html">いつもNAVI API/SDK</a>
+									<div class="detail">
+										<figure><a href="/business/develop/index.html"><img src="/common02/images/com_ph08.jpg" width="220" height="160" alt=""></a></figure>
+										<dl>
+											<dt>いつもNAVI API/SDK</dt>
+											<dd>地図機能やインターフェースのカスタマイズが行え、Webやアプリケーションなどに組み込めるサービスです。</dd>
+										</dl>
+									</div>
+								</li>
+								<li><a href="/business/gmapsapi/index.html">Google Maps API for Work</a>
+									<div class="detail">
+										<figure><a href="/business/gmapsapi/index.html"><img src="/common02/images/com_ph09.jpg" width="220" height="160" alt=""></a></figure>
+										<dl>
+											<dt>Google Maps API for Work</dt>
+											<dd>使いやすさはそのままに、法人、商用で活用するための最適な拡張機能を付加した有償版のビジネスソリューションです。</dd>
+										</dl>
+									</div>
+								</li>
+								<li><a href="/business/package/index.html">店舗案内パッケージサービス</a>
+									<div class="detail">
+										<figure><a href="/business/package/index.html"><img src="/common02/images/com_ph10.jpg" width="220" height="160" alt=""></a></figure>
+										<dl>
+											<dt>店舗案内パッケージサービス</dt>
+											<dd>ホームページで案内したい店舗情報をより手軽に案内できる、地図と店舗検索機能が１つとなったパッケージサービスです。</dd>
+										</dl>
+									</div>
+								</li>
+								<li><a href="/business/areacutter/index.html">AreaCutter</a>
+									<div class="detail">
+										<figure><a href="/business/areacutter/index.html"><img src="/common02/images/com_ph11.jpg" width="220" height="160" alt=""></a></figure>
+										<dl>
+											<dt>AreaCutter</dt>
+											<dd>お絵かき機能などで地図のデザインをカスタマイズし、必要な場所の地図を画像化し取得する、地図作成サービスです。</dd>
+										</dl>
+									</div>
+								</li>
+								<li><a href="/business/tracking/index.html">動態管理</a>
+									<div class="detail">
+										<figure><a href="/business/tracking/index.html"><img src="/common02/images/com_ph12.jpg" width="220" height="160" alt=""></a></figure>
+										<dl>
+											<dt>動態管理</dt>
+											<dd>スマートフォン、タブレットを活用し、移動を伴う様々な業種・業務の効率アップを図るクラウド型サービスです。</dd>
+										</dl>
+									</div>
+								</li>
+								<li><a href="/business/casestudy/index.html">お客様事例</a>
+									<div class="detail">
+										<dl>
+											<dt><a href="/business/casestudy/index.html">お客様事例</a></dt>
+											<dd>ゼンリンデータコムのサービスを導入しているお客様の事例をご紹介しています。</dd>
+										</dl>
+									</div>
+								</li>
+							</ul>
+							<p class="all"><a href="/business/index.html">すべての法人向けサービス</a></p>
+						</div>
+					</div>
+				</li>
+				<li class="company"><a href="/company/index.html">企業情報</a></li>
+				<li class="contact"><a href="/contact/index.html">お問い合わせ</a></li>
+			</ul>
+		</nav>
+	</div>
+</header><div id="contents">
+	<div id="topicPath">
+		<ul>
+			<li><a href="/index.html">ゼンリンデータコム トップ</a></li>
+			<li><a href="/business/index.html">法人向けサービス</a></li>
+			<li>多言語地図</li>
+		</ul>
+	</div>
+	<h1 id="serviceVisual"><img src="/business/multilingual/images/multilingual_main01.jpg" width="960" height="411" alt="ようこそ！と迎えられる　多言語地図"></h1>
+	<div id="mainContents" class="clear">
+			<section>
+				<h2 class="headline02 mt0">ゼンリンデータコムの多言語地図は、海外からのお客さまの満足度を高めます。</h2>
+        <h3 class="headline03">地図がわかりやすい！</h3>
+        <p class="aC"><img src="images/index_il08.png" width="591" height="380" alt=""></p>
+      </section>
+			<section>
+				<h2 class="headline02">日本語・英語・韓国語・中国語の4言語に対応。</h2>
+				<div class="columnFour">
+					<div class="innerCol">
+						<p class="aC imgZoom"><a href="/business/multilingual/images/index_il01.png" class="lightbox" rel="lightbox[color]"><img src="/business/multilingual/images/index_il01.png" alt="" width="150"></a></p>
+						<p class="textCaption">英語</p>
+					</div>
+					<div class="innerCol">
+						<p class="aC imgZoom"><a href="/business/multilingual/images/index_il02.png" class="lightbox" rel="lightbox[color]"><img src="/business/multilingual/images/index_il02.png" alt="" width="150"></a></p>
+						<p class="textCaption">韓国語</p>
+					</div>
+					<div class="innerCol">
+						<p class="aC imgZoom"><a href="/business/multilingual/images/index_il03.png" class="lightbox" rel="lightbox[color]"><img src="/business/multilingual/images/index_il03.png" alt="" width="150"></a></p>
+						<p class="textCaption">中国語繁体</p>
+					</div>
+					<div class="innerCol">
+						<p class="aC imgZoom"><a href="/business/multilingual/images/index_il04.png" class="lightbox" rel="lightbox[color]"><img src="/business/multilingual/images/index_il04.png" alt="" width="150"></a></p>
+						<p class="textCaption">中国語簡体</p>
+					</div>
+				</div>
+			</section>
+			<section>
+				<h2 class="headline02">様々なサービスに対応可能で、多言語地図の活用シーンが広がります。</h2>
+        <section>
+					<div class="varImgCol">
+						<div class="innerColR"><img src="images/index_il05.jpg" width="220" height="160" alt=""></div>
+						<div>
+							<h3 class="headline03">いつもNAVI API</h3>
+							<p>PC・スマートフォン・タブレットなど端末を問わず、各種Webサービスやアプリケーションにおいて地図表示や検索を多言語で実現できるサービスです。<br>お客様の目的に応じて柔軟な開発が可能です。</p>
+              <div class="linkBtn02">
+              <p class="btnL"><a href="/business/develop/apicgi/index.html">いつもNAVI APIの詳細をチェック</a></p>
+              </div>
+						</div>
+					</div>
+				</section>
+        <section>
+					<div class="varImgCol">
+						<div class="innerColR"><img src="images/index_il06.jpg" width="220" height="160" alt=""></div>
+						<div>
+							<h3 class="headline03">店舗案内パッケージサービス</h3>
+							<p>お客様がお持ちの店舗（拠点）情報を、ホームページでより便利＆手軽にご案内できるサービスです。多言語地図と検索機能をパッケージにしてご提供いたしますので、お客様側の開発は不要です。</p>
+              <div class="linkBtn02">
+              <p class="btnL"><a href="/business/package/index.html">店舗案内パッケージサービスの<br>詳細をチェック</a></p>
+              </div>
+						</div>
+					</div>
+				</section>
+        <section>
+					<div class="varImgCol">
+						<div class="innerColR"><img src="images/index_il07.jpg" width="220" height="160" alt=""></div>
+						<div>
+							<h3 class="headline03">AreaCutter</h3>
+							<p>書き込み機能などで地図のデザインをカスタマイズし、必要な場所の地図を画像化し取得する地図作成サービスです。多言語で作成した地図は、各種印刷物やチラシ、ホームページ、店頭シート、報告書、出版物内の案内図などにご利用いただけます。</p>
+              <div class="linkBtn02">
+              <p class="btnL"><a href="/business/areacutter/index.html">AreaCutterの詳細をチェック</a></p>
+              </div>
+						</div>
+					</div>
+				</section>
+      </section>
+			<section>
+				<div class="columnBox02">
+					<p class="txt">多言語地図に関する<br>
+						資料請求、お見積りはこちらから</p>
+					<div class="linkBtn01">
+						<p class="btnS"><a href="https://www.zenrin-datacom.net/contact/business/index/7" target="_blank"><img src="/common02/images/com_ic23.png" alt="別ウィンドウで開く" width="12" height="11">お問い合わせ</a></p>
+					</div>
+				</div>
+			</section>
+		
+	</div>
+	<aside id="subContents">
+		<dl id="contactBox">
+			<dt>お問い合わせ</dt>
+			<dd class="linkBtn"><a href="https://www.zenrin-datacom.net/contact/business/index/7" target="_blank"><img src="/common02/images/com_ic23.png" alt="別ウィンドウで開く" width="12" height="11">WEBでのお問い合わせ</a></dd>
+			<dd class="linkText01"><a href="/contact/faq/index.html">よくあるご質問はこちら</a></dd>
+		</dl>
+				<nav id="localNav" class="mt30">
+			<h1><a href="/business/index.html">法人向けサービス</a></h1>
+			<ul>
+				<li><a href="/business/develop/index.html">いつもNAVI API / SDK</a>
+									</li>
+				<li><a href="/business/gmapsapi/index.html">Google Maps API for Work</a>
+									</li>
+				<li><a href="/business/package/index.html">店舗案内パッケージサービス</a>
+									</li>
+				<li><a href="/business/areacutter/index.html">AreaCutter</a>
+									</li>
+				<li><a href="/business/tracking/index.html">動態管理</a>
+									</li>
+				<li class="on"><a href="/business/multilingual/index.html">多言語地図</a></li>
+				<li><a href="/business/lifeline/index.html">全国避難所データベース</a>
+									</li>
+			</ul>
+		</nav>
+		<dl id="caseBox">
+			<dt><a href="/business/casestudy/index.html">お客様事例</a></dt>
+			<!--<dd class="linkBtn"><a href="/business/casestudy/bussiness/index.html">業種別に事例を探す</a></dd>-->
+			<dd class="linkBtn"><a href="/business/casestudy/service/index.html">サービス別に事例を探す</a></dd>
+		</dl>
+    <ul id="bannerArea">
+    	<li><a href="http://www.its-mo.com/stc/j-map/" class="j-map" target="_blank">ゼンリン住宅地図<br />B4・A4のご購入は<br />こちらから<img alt="別ウィンドウで開く" src="/common02/images/com_ic09.png" class="popup"></a></li>
+    </ul>	</aside>
+</div>
+<footer id="footerContents">
+	<div class="footerInner">
+		<p class="toPageTop"><a href="#headerContents"><img src="/common02/images/com_bt01.png" width="38" height="55" alt="TOP" class="rollover"></a></p>
+		<nav id="footerNav">
+			<ul>
+				<li><a href="/copyright.html">地図の著作権について</a></li>
+				<li><a href="/privacy_policy.html">プライバシーポリシー</a></li>
+				<li><a href="/asct.html">特定商取引に関する法律に基づく表示</a></li>
+				<li><a href="/trademark.html">登録商標</a></li>
+			</ul>
+		</nav>
+    <p id="footerSitemapBtn"><a id="toggle" class="plus"><span>サイトマップ</span></a></p>
+	</div>
+	<div class="footerBottom">
+		<div id="footerSitemap">
+			<div class="serviceLink">
+				<div class="col">
+					<p class="category01 personal"><a href="/service/index.html">個人向けサービス</a></p>
+					<ul>
+            <li><a href="http://app.its-mo.com/multi/" target="_blank" class="linkBlank">ゼンリンいつもNAVI [マルチ]</a></li>
+            <li><a href="http://app.its-mo.com/drive/" target="_blank" class="linkBlank">ゼンリンいつもNAVI [ドライブ]</a></li>
+            <li><a href="http://app.its-mo.com/share/" target="_blank" class="linkBlank">みんなで位置共有</a></li>
+            <li><a href="http://app.its-mo.com/route/" target="_blank" class="linkBlank">ルート沿い検索</a></li>
+            <li><a href="http://app.its-mo.com/tdc/" target="_blank" class="linkBlank">東京 DELICIOUS CLUB</a></li>
+		        <li><a href="http://app.its-mo.com/ott/" target="_blank" class="linkBlank">オービス&amp;取締通知</a></li>
+						<li><a href="/service/pcsoft/index.html">いつもNAVI for PCソフト</a></li>
+						<li><a href="/service/iosmap/index.html">いつもNAVI [マップ]</a></li>
+						<li><a href="/service/drive/index.html">いつもNAVI [ドライブ]2015年版</a></li>
+						<li><a href="http://www.nttdocomo.co.jp/service/information/map_navi/" target="_blank" class="linkBlank">ドコモ地図ナビ powered by いつもNAVI</a></li>
+						<li><a href="/service/itsnav_india/index.html">It's NAV India</a></li>
+						<li><a href="/service/itsnav_se_asia/index.html">It's NAV SE Asia</a></li>
+						<li><a href="/service/japanmap/index.html">Japan Map(English)</a></li>
+						<li><a href="/service/orbismap/index.html">オービスマップ</a></li>
+					</ul>
+				</div>
+				<div class="col">
+					<ul class="personal02">
+						<li><a href="/service/iphone/index.html">いつもNAVI for iOS</a></li>
+						<li><a href="/service/android_au_softbank/index.html">いつもNAVI for Android</a></li>
+						<li><a href="/service/sightseeing/index.html">観光マップ</a></li>
+						<li><a href="/service/pinpoint_weather/index.html">ピンポイント★天気</a></li>
+						<li><a href="/service/tuno/index.html">TUNO(ツウノ)</a></li>
+						<li><a href="http://cycle-tt.com/" target="_blank" class="linkBlank">CycleTT</a></li>
+						<li><a href="http://manga-drive.com/?utm_source=zenrin-datacom1&utm_medium=banner&utm_campaign=mangadrive/" target="_blank" class="linkBlank">漫画ドライブ</a></li>
+						<li><a href="/service/local_gourmet/index.html">全国ご当地グルメ</a></li>
+						<li><a href="/service/navilink/index.html">地図ナビリンク</a></li>
+						<li><a href="http://www.zenrin.co.jp/product/gis/mb-jmap/" target="_blank" class="linkBlank">ゼンリン住宅地図</a></li>
+						<li><a href="/service/driveplaza/index.html">ドラぷらアプリ</a></li>
+						<li><a href="http://koisurumap.com/index.html" target="_blank" class="linkBlank">恋するマップ～女子ちず～</a></li>
+						<li><a href="/service/smart_eye_glass/index.html">いつもNAVI for SmartEyeglass &beta;</a></li>
+						<li><a href="/service/android_wear/index.html">いつもNAVI for Android Wear &beta;</a></li>
+						<li><a href="http://www.namiaru.tv/guidemap/" target="_blank" class="linkBlank">SURFING GUIDE MAP by なみある？＆いつもNAVI</a></li>
+					</ul>
+				</div>
+				<div class="col">
+					<p class="category01"><a href="/business/index.html">法人向けサービス</a></p>
+					<ul>
+						<li><a href="/business/develop/index.html">いつもNAVI API / SDK</a></li>
+						<li><a href="/business/package/index.html">店舗案内パッケージサービス</a></li>
+						<li><a href="/business/gmapsapi/index.html">Google Maps API for Work</a></li>
+						<li><a href="/business/areacutter/index.html">AreaCutter</a></li>
+						<li><a href="/business/tracking/index.html">動態管理</a></li>
+						<li><a href="/business/multilingual/index.html">多言語地図</a></li>
+						<li><a href="/business/lifeline/index.html">全国避難所データベース</a></li>
+						<li><a href="/business/casestudy/index.html">お客様事例</a></li>
+					</ul>
+				</div>
+				<div class="col">
+					<ul class="category02">
+						<li><a href="/contact/index.html">お問い合わせ</a></li>
+						<li><a href="/newsrelease/">ニュースリリース</a></li>
+						<li><a href="/topics/index.html">お知らせ</a></li>
+						<li><a href="/cm/index.html">ギャラリー</a></li>
+						<li><a href="/ad/index.html">広告媒体資料</a></li>
+						<li><a href="/sitemap.html">サイトマップ</a></li>
+					</ul>
+				</div>
+			</div>
+			<dl class="corporateLink">
+				<dt><a href="/company/index.html">企業情報</a></dt>
+				<dd>
+					<ul>
+						<li><a href="/company/message.html">メッセージ/ビジョン</a></li>
+						<li><a href="/company/advantage.html">当社の強み</a></li>
+						<li><a href="/company/overview.html">会社概要</a></li>
+						<li><a href="/company/history.html">沿革・組織図</a></li>
+					</ul>
+					<ul>
+						<li><a href="/company/brand.html">ブランド</a></li>
+						<li><a href="/company/departments/index.html">事業紹介</a></li>
+						<li><a href="/company/access.html">アクセス</a></li>
+						<li><a href="/recruit/index.html">採用情報</a></li>
+					</ul>
+				</dd>
+			</dl>
+		</div>
+		<p id="serviceText"><small>当社のサービスは、株式会社ゼンリンのデジタル地図を使用しております。</small></p>
+		<p id="copyright"><small>Copyright&copy; 2000-2015 ZENRIN DataCom CO., LTD. All Rights Reserved.</small></p>
+	</div>
+</footer></body>
+</html>

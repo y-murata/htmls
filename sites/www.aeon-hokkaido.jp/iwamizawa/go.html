@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" dir="ltr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta name="copyright" content="Copyrigt(C)AEON Hokkaido Corp. All Right Reserved" />
+<meta name="Description" content="北海道内の店舗情報、オトクなチラシ情報、ネットスーパーの情報などを発信しているＷＥＢサイトです。" />
+<meta name="keyword" content="イオン北海道, ジャスコ, ポスフール, イオンスーパーセンター" />
+<link rel="shortcut icon" href="../img/common/favicon.ico" />
+<link rel="stylesheet" href="../css/import.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../css/popup.css" type="text/css" media="all" />
+<script type="text/javascript" src="../js/jquery.js" charset="utf-8"></script>
+<script type="text/javascript" src="../js/yuga.js" charset="utf-8"></script>
+<script type="text/javascript" src="../js/jquery-1.4.2.min.js" charset="utf-8"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21728439-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+        <link rel="index" href="index.html" />
+        <link rel="stylesheet" href="/css/map.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="/css/map_sp.css" type="text/css" media="all" />
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+        <script>
+            $(function() {
+                $.getJSON('/aeon_hokkaido_map.txt', function(data) {
+                    //店舗ID
+                    storeID=12;
+                    //common_mapscript
+                     len = data.length;
+        for(var m = 0; m < len; m++){
+            if(data[m].id == storeID){
+        var StoreName = data[m].store;
+        var StoreLat = data[m].lat;
+        var StoreLng = data[m].lng;
+        var StoreAddress = data[m].address;
+        //googleMap内の表記に合わせた駅名にすること
+        var startSpot= data[m].station;
+//var endSpot= data[m].address;
+var endSpot= data[m].endPoint;
+        }
+        }
+
+        //ルート設定
+        var renderFLG=false;
+        var directionsDisplay;
+        var directionsService=new google.maps.DirectionsService();
+        var map,mode;
+        var currentDirections=null;
+
+        //html周りの設定
+        document.title = StoreName+"の地図|イオン北海道株式会社";
+//$("h2#title").html(StoreName+"への行き方");
+        $("h1#title").append(StoreName);
+        $("p#shopAddress").html(StoreAddress+" 付近");
+
+        initialize();
+
+         function initialize() {
+                var myOptions={
+                    zoom:14,
+                    center: new google.maps.LatLng(StoreLat, StoreLng),
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                }
+                /* 地図オブジェクト生成 */
+                map=new google.maps.Map(document.getElementById("info"), myOptions);
+            //マーカーオプションの指定
+            var image = '/img/aeonGicon.png';
+            var markerOption = {
+                icon: image,
+                position : new google.maps.LatLng(StoreLat, StoreLng), //マーカーを表示させる座標
+                map : map,  //マーカーを表示させる地図
+                title : StoreName  //マウスオーバーした際に表示させる文字列
+            };
+            //マーカー追加
+            var marker = new google.maps.Marker(markerOption);
+                if(!renderFLG) render();
+                //calcRoute(startSpot,endSpot);
+                if(startSpot==""){
+                    $(".inner").html("10km圏内に最寄り駅がありません。")
+                }
+            }
+
+
+            /* ルート検索結果を描画 */
+            function render(){
+                dbg("render:"+renderFLG);
+                renderFLG=true;
+                /* ルートをレンダリング */
+                directionsDisplay=new google.maps.DirectionsRenderer({
+                    "map": map,
+                    "preserveViewport": true,
+                    "draggable": true
+                });
+                /* 右カラムにルート表示 */
+                directionsDisplay.setPanel(document.getElementById("directions_panel"));
+                /* 出発地点・到着地点マーカーが移動された時 */
+                google.maps.event.addListener(directionsDisplay, 'directions_changed',function() {
+                    currentDirections=directionsDisplay.getDirections();
+                    var route=currentDirections.routes[0];
+                    var s="";
+                    for(var i=0; i<route.legs.length; i++) {
+                        var routeSegment=i+1;
+                        s+=route.legs[i].start_address+'to';
+                        s+=route.legs[i].end_address+'\n';
+                        s+=route.legs[i].distance.text;
+                    }
+                    dbg("directions_changed:"+s);
+                });
+            }
+            /* モード変更 */
+            $("#mode").bind("change",function(){
+                $(".button-group button").removeClass("active");
+                calcRoute(startSpot,endSpot);
+                $("#show").addClass("active");
+            });
+            /* ルート算出 */
+            function calcRoute(startSpot,endSpot){
+                switch($("#mode").val()){
+                    case "driving":
+                        mode=google.maps.DirectionsTravelMode.DRIVING;
+                        break;
+                    case "bicycling":
+                        mode=google.maps.DirectionsTravelMode.BICYCLING;
+                        break;
+                    case "transit":
+                        mode=google.maps.DirectionsTravelMode.TRANSIT;
+                        break;
+                    case "walking":
+                        mode=google.maps.DirectionsTravelMode.WALKING;
+                        break;
+                }
+                if(!renderFLG) render();
+                var request={
+                    origin:startSpot,            /* 出発地点 */
+                    destination:endSpot,        /* 到着地点 */
+                    travelMode:mode                /* 交通手段 */
+                };
+                /* ルート描画 */
+                directionsService.route(request, function(response, status) {
+                    if (status==google.maps.DirectionsStatus.OK) {
+                        dbg(response);
+                        directionsDisplay.setDirections(response);
+                    }else{
+                        dbg("status:"+status);
+                    }
+                });
+            }
+            /* ルート表示・非表示切り替え */
+            $(".button-group button").click(function(e){
+                $(".button-group button").removeClass("active");
+                var id=$(this).attr("id");
+                if(id=="show"){
+                    calcRoute(startSpot,endSpot);
+                    $(this).addClass("active");
+                }else{
+                    $(this).addClass("active");
+                    reset();
+                }
+            });
+            /* ルート削除 */
+            function reset(){
+                currentDirections=null;
+                directionsDisplay.setMap(null);
+                renderFLG=false;
+                $("#directions_panel").html("");
+            }
+        });
+         });
+
+
+
+
+        var dbg=function(str){
+            try{
+                if(window.console && console.log){
+                    console.log(str);
+                }
+            }catch(err){
+                //alert("error:"+err);
+            }
+        }
+$(function() {
+var BKFootHTML = '<img src="../img/footer/footer_copyright.gif" alt="Copyright(C)2011 AEON Hokkaido Corp. All Right Reserved." width="375" height="18" class="firstChild lastChild empty">';
+		var FootHTML = "Copyright(C)2014 AEON Hokkaido Corp. All Right Reserved."
+
+		var w = $(window).width();
+		var x = 320;
+		if (w <= x) {
+		$('#footer li').html(FootHTML);
+	}else{
+		$('#footer li').html(BKFootHTML);
+	}
+});
+        </script>
+        <title></title>
+    </head>
+ <body>
+<div class="wrapper">
+    <h1 id="title"><a href="http://www.aeon.info/" class="externalLink firstChild lastChild">
+        <img class="footerimg firstChild lastChild empty" src="http://www.aeon-hokkaido.jp/img2012/common/footer_aeon.jpg">
+    </a></h1>
+    <div id="contents" class="clearfix">
+        <h2 id="name">お店への行き方</h2>
+        <p class="sp_hide mapTxt">最寄りの駅からのアクセスルートをご紹介します。</p>
+        <p class="sp_show mapTxt">最寄りの駅からの<br />アクセスルートをご紹介します。</p>
+        <p id="shopAddress"></p>
+        <div id="info"></div>
+        <div id="side">
+            <div class="inner">
+                <p>
+                    <label for="mode">
+                        最寄り駅からの経路検索：
+                        <select id="mode" name="mode">
+                        <option value="driving" selected>自動車</option>
+                        <option value="bicycling">自転車</option>
+                        <option value="walking">徒歩</option>
+                        </select>
+                    </label>
+                </p>
+                <div class="button-group">
+                    <button id="show" class="button active">ルート表示</button>
+                    <button id="hide" class="button">ルート非表示</button>
+                </div>
+                <div id="directions_panel" style="width:100%"></div>
+            </div>
+        </div>
+        <!-- #side -->
+    </div>
+
+<!--Contents_end-->
+<div id="footer" class="clear lastChild">
+            <div class="aeonlogo">
+                <a href="http://www.aeon.info/">
+                <img class="footerimg" src="http://www.aeon-hokkaido.jp/img2012/common/footer_aeon.jpg">
+                </a>
+            </div>
+            <ul>
+                <li><img src="../img/footer/footer_copyright.gif" alt="Copyright(C)2011 AEON Hokkaido Corp. All Right Reserved." width="375" height="18"></li>
+            </ul>
+            <p>
+                <a href="http://www.aeon.info/environment/" target="_blank">
+                <img src="../img/footer/footer_tree.gif" alt="木を植えています" width="114" height="25">
+                </a>
+            </p>
+        </div>
+
+ </div>
+</body>
+</html>

@@ -1,0 +1,379 @@
+<!--
+-- *********************************************************
+-- システム名　　：外為ASP デモ画面
+-- 作成日　　　　：２００５年１月３１日
+-- ＣＯＰＹＲＩＧＨＴ  株式会社ＮＴＴデータ　２００７－２０１１
+-- *********************************************************
+-->
+
+<HTML><HEAD><TITLE>TOPPAGE</TITLE>
+
+<META http-equiv=Content-Type content="text/html; charset=shift_jis">
+<LINK href="css/ja_jp/ntt.css" type=text/css rel=stylesheet>
+<script type="text/javascript">
+ 
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36474957-5']);
+  _gaq.push(['_trackPageview']);
+	  _gaq.push(['b._setAccount', 'UA-36474957-7']);
+	  _gaq.push(['b._trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+ 
+</script>
+
+</HEAD>
+
+<SCRIPT language=javascript src="js/common.js"></SCRIPT>
+<SCRIPT language=JavaScript>
+<!--
+ function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+
+function DispLogo(){
+		document.images[1].src = "images/ja_jp/" + LOGO_FILE;
+}
+
+
+// -->
+</SCRIPT>
+
+
+<BODY leftMargin=0 topMargin=0 marginheight="0" marginwidth="0" onload="DispLogo()">
+
+<SCRIPT language=JavaScript>
+	document.onkeydown = checkkeys;
+</SCRIPT>
+
+<FORM name=etfhome method=post>
+<INPUT type=hidden value=eTFHome name=requestType>
+<INPUT type=hidden name=selectedMenu> 
+
+<!-- ****************** コメント **************** -->
+
+<!-- コメント①　-->
+<div style="position:absolute; left:98px; top:125px;">
+<CENTER>
+ <table cellpading=0 cellspacing=0>
+  <tr>
+   <td><font color=#008000 size=4 ><center><B>↑</B></center></font></td>
+  </tr>
+ </table></CENTER></div>
+
+<div style="position:absolute; left:43px; top:145px;">
+<CENTER>
+ <table width="140" cellpading=3 cellspacing=0 border=5 style="border-color:#00FF00">
+  <tr>
+   <TD BGCOLOR="white">
+    <font size=2><B>各種取引の申込み<BR>手続きはここから</B></font>
+   </td>
+  </tr>
+ </table>
+</CENTER>
+</div style>
+
+<!-- コメント②　-->
+<div style="position:absolute; left:287px; top:125px;">
+<CENTER>
+ <table cellpading=0 cellspacing=0>
+  <tr>
+   <td>
+    <font color=#008000 size=4 ><B>↑</B></font>
+   </td>
+  </tr>
+ </table>
+</CENTER>
+</div>
+
+<div style="position:absolute; left:190px; top:145px;">
+<CENTER>
+ <table width="215" cellpading=3 cellspacing=0 border=5 style="border-color:#00FF00">
+ <tr>
+  <TD BGCOLOR="white">
+   <font size=2><B>各種取引の承認手続きはここから<BR>取引依頼を銀行へ送付する機能</B></font></tr></td>
+  </td>
+ </tr>
+</table>
+</CENTER>
+</div style>
+
+
+<!-- コメント③　-->
+<div style="position:absolute; left:475px; top:125px;">
+<CENTER>
+ <table cellpading=0 cellspacing=0>
+  <tr>
+   <td>
+    <font color=#008000 size=4 ><B>↑</B></font>
+   </td>
+  </tr>
+ </table>
+</CENTER>
+</div>
+
+
+<div style="position:absolute; left:415px; top:145px;">
+<CENTER>
+ <table width="150" cellpading=3 cellspacing=0 border=5 style="border-color:#00FF00">
+  <tr>
+   <TD BGCOLOR="white">
+    <font size=2><B>取引履歴・各種情報の<BR>照会はここから</B></font></tr></td>
+   </td>
+  </tr>
+ </table>
+</CENTER>
+</div style>
+
+
+<!-- ****************** ログイン情報 **************** -->
+
+<table width="1004" border="0" cellspacing="0" cellpadding="0">
+  <TR>
+    <td width="1%"><img src="images/ja_jp/spacer1.gif" width="13" height="32"></td>
+   	<TD width="99%">
+        <table width="99%"  cellspacing="0" cellpadding="0" border="0">
+      <TR>
+        <td width="14%"><img src="ImageDisplay.do" width=981 height=79></td>
+       </TD>
+      </TR>
+      <TR>
+       <TD>
+        <TABLE class=menurow cellSpacing=0 cellPadding=0 width=981 border=0>
+          <TR>
+           <TD class=pagebgrow height=24>
+            <TABLE class=menurow cellSpacing=0 cellPadding=1 width="100%" border=0>
+              <TR>
+               <TD>
+                <TABLE class=pagebgrow cellSpacing=0 cellPadding=0 width="100%" border=0>
+                  <TR>
+                   <TD>
+                    <FONT class=userinfonormal>&nbsp;ログインID :&nbsp;</FONT>
+                    <FONT class=userinfobold>
+			G<SCRIPT language=JavaScript>document.write(BANK_CODE);</SCRIPT>ABC</FONT>
+                   </TD>
+                  <TD>
+                   <DIV align=right><A class=userinfobold style="TEXT-DECORATION: none" href="javascript:"> 外為取引を終了</A>
+				　　<A class=userinfobold style="TEXT-DECORATION: none" href="javascript:">ログアウト</A></DIV>
+                  </TD>
+                 </TR>
+               </TABLE>
+              </TD>
+             </TR>
+           </TABLE>
+          </TD>
+         </TR>
+         <TR>
+          <TD height=22>&nbsp;</TD>
+         </TR>
+         <TR>
+          <TD class="pagebgrow" height=22>&nbsp;</TD>
+         </TR>
+       </TABLE>
+      </TD>
+     </TR>
+   </TABLE>
+  </TD>
+ </TR>
+</TABLE>
+
+
+<!-- ****************** メイン **************** -->
+
+<BR><BR><BR>
+
+<TABLE cellSpacing=0 cellPadding=0 width="1004" border=0>
+  <TBODY>
+  <TR>
+    <TD width="1%"><IMG height=32 src="images/ja_jp/spacer1.gif" width=13></TD>
+    <TD vAlign=top width="99%">
+      <TABLE class=menurow cellSpacing=0 cellPadding=1 width="99%" border=0>
+        <TBODY>
+        <TR>
+          <TD>
+            <TABLE class=pagebgrow cellSpacing=0 cellPadding=0 width="100%"  border=0>
+              <TBODY>
+              <TR vAlign=top>
+                <TD>
+                  <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                    <TBODY>
+                    <TR><TD class=heading1 colSpan=5>&nbsp;&nbsp; お知らせ...</TD></TR>
+                    <TR>
+                      <TD class=bodytext width="2%">&nbsp;</TD>
+                      <TD class=bodytext width="2%">&nbsp;</TD>
+                      <TD class=bodytext width="14%">&nbsp;</TD>
+                      <TD class=bodytext width="3%">&nbsp;</TD>
+                      <TD class=bodytext width="79%">&nbsp;</TD></TR>
+                    <TR>
+                      <TD colSpan=8>
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%">
+                          <TBODY>
+                          <TR>
+                            <TD width=70><IMG height=1 src="images/ja_jp/spacer1.gif" width=70></TD>
+                            <TD align=left height=20>
+                              <DIV id=bulletinlayer style="Z-INDEX: 1; OVERFLOW: auto; WIDTH: 825px; POSITION: relative; HEIGHT: 20px">
+                              <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                <TBODY>
+                                <TR><TD class=bodytext vAlign=top noWrap width="18%"></TD><TR>
+															</TBODY>
+															</TABLE></DIV>
+		</TD>
+		</TR>
+		</TBODY>
+		</TABLE>
+		</TD>
+		</TR>
+ 
+
+
+                    <TR>
+                      <TD width="3%">&nbsp;</TD>
+                      <TD class=bodytext colSpan=4>ご利用にあたっての動作確認対象OSおよびブラウザ ...</TD></TR>
+                      <TD class=bodytext colSpan=4>&nbsp;&nbsp;&nbsp;&nbsp;</TD></TR>
+                      <TD class=bodytext colSpan=4>&nbsp;&nbsp;&nbsp;&nbsp;［動作確認対象OS］ </TD></TR>
+                    <TR>
+                      <TD width="3%">&nbsp;</TD>
+                      <TD width="3%">
+                        <DIV align=center><IMG height=7 
+                        src="images/ja_jp/dotp.gif" width=7></DIV></TD>
+                      <TD class=bodytext colSpan=3>Windows XP(SP3)、Windows Vista、Windows 7
+                        </TD></TR>
+                    <TR>
+                      <TD class=bodytext width="3%">&nbsp;</TD>
+                      <TD class=bodytext colSpan=4>&nbsp;</TD></TR>
+                    <TR>
+                      <TD width="3%">&nbsp;</TD>
+                      <TD class=bodytext colSpan=4>［動作確認対象ブラウザ］ </TD></TR>
+                    <TR>
+                      <TD width="3%">&nbsp;</TD>
+                      <TD width="3%">
+                        <DIV align=center><IMG height=7 
+                        src="images/ja_jp/dotp.gif" width=7></DIV></TD>
+                      <TD class=bodytext colSpan=3>Internet Explorer 6、Internet Explorer 7、Internet Explorer 8</TD></TR>
+                    <TR>
+                      <TD class=bodytext width="3%">&nbsp;</TD>
+                      <TD class=bodytext colSpan=4>&nbsp;</TD></TR>
+
+
+                    <TR>
+                      <TD class=bodytext width="3%">&nbsp;</TD>
+                      <TD class=bodytext width="3%">&nbsp;</TD>
+                      <TD class=bodytext colSpan=3>&nbsp;</TD></TR>
+
+                    </TR>
+                    </TBODY>
+                   </TABLE>
+                  </TD>
+                 </TR>
+                 </TBODY>
+                </TABLE>
+               </TD>
+              </TR>
+             </TBODY>
+            </TABLE>
+           </TD>
+          </TR>
+         </TBODY>
+        </TABLE>
+       </FORM>
+
+<IMG id=awmMenuPathImg-menu_poc alt="" src="images/ja_jp/awmmenupath.gif" name=awmMenuPathImg-menu_poc>
+
+<SCRIPT type=text/javascript>var MenuLinkedBy='AllWebMenus [2]', awmBN='496'; awmAltUrl='';</SCRIPT>
+
+<SCRIPT language=JavaScript1.2 src="js/menu_poc.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT language=JavaScript1.2 type=text/javascript>
+
+function onMenuClick(strLink,strId){
+	var f = document.etfhome;
+	f.action=strLink; 
+	f.selectedMenu.value = strId;
+	var UserRole = "CGM";
+
+	if((strId == "MREP040") && !((UserRole=="PWA") || (UserRole=="PWN")) ){
+		var winReportURL = "ReportAction.do?selectedMenu="+strId;
+		var winReport = window.open(winReportURL,"child","directories=no,location=no,menubar=no,status=no,titlebar=no,toolbar=no,scrollbars=yes,width=750,height=580,resizable=yes,top=100,left=200");
+	}
+	else if((strId == "MREP050") && !((UserRole=="PWA") || (UserRole=="PWN")) ){
+		var winReportURL = "ReportAction.do?selectedMenu="+strId;
+		var winReport = window.open(winReportURL,"child","directories=no,location=no,menubar=no,status=no,titlebar=no,toolbar=no,scrollbars=yes,width=750,height=580,resizable=yes,top=100,left=200");
+	}
+	else if( (strId == "MREP080") && !( (UserRole=="PWA") ||(UserRole=="PWN") ) ){
+		var winReportURL = "ReportAction.do?selectedMenu="+strId;
+		var winReport = window.open(winReportURL,"child","directories=no,location=no,menubar=no,status=no,titlebar=no,toolbar=no,scrollbars=yes,width=750,height=580,resizable=yes,top=100,left=200");
+	}
+	else if(strId == "MREP030"){
+		var winReportURL = "ReportAction.do?selectedMenu="+strId;
+		var winReport = window.open(winReportURL,"child","directories=no,location=no,menubar=no,status=no,titlebar=no,toolbar=no,scrollbars=yes,width=750,height=580,resizable=yes,top=100,left=200");		
+	}else if((strId == "MREP020") && ((UserRole=="PWA") || (UserRole=="PWN"))){
+		var winReportURL = "ReportAction.do?selectedMenu="+strId;
+		var winReport = window.open(winReportURL,"child","directories=no,location=no,menubar=no,status=no,titlebar=no,toolbar=no,scrollbars=yes,width=750,height=580,resizable=yes,top=100,left=200");
+	}
+	else{
+		//if not reports without filters and all other links submit the page
+		f.submit();
+	}
+}
+
+function awmBuildMenu(){
+
+	if (awmSupported){
+	awmCreateCSS(1,2,1,'#FFFFFF','#5B5B5B',n,'4mm sans-serif',n,'none',2,n,0,0)
+	awmCreateCSS(0,1,0,n,n,n,n,n,'none',1,'#C0C0C0',0,0);
+	awmCreateCSS(1,2,1,'#4171B1','#DBE1EE',n,'bold 13px MS Gothic',n,'none',1,n,3,0)
+	awmCreateCSS(0,2,1,'#DBE1EE','#4171B1',n,'bold 13px MS Gothic',n,'none',1,n,3,0)
+	awmCreateCSS(0,2,1,'#4171B1','#DBE1EE',n,'bold 13px MS Gothic',n,'none',1,n,3,0)
+	awmCreateCSS(0,1,0,n,n,n,n,n,'outset',1,'#000000',0,0);
+	awmCreateCSS(1,2,0,'#000000','#EEF1F7',n,'13px MS Gothic',n,'none',1,n,2,1)
+	awmCreateCSS(0,2,0,'#000000','#DBE1EE',n,'13px MS Gothic',n,'none',1,n,2,1)
+
+	var s0=awmCreateMenu(0,0,0,0,1,0,0,0,0,15,104,0,1,1,0,n,"",n,1,0,1,1,n,n);
+
+	it=s0.addItem(2,3,4,"&nbsp&nbsp 依頼 &nbsp&nbsp",n,n,"","",n,n,n,n,"new");
+	var s1=it.addSubmenu(0,0,0,0,0,0,0,5,0,n,"",n,1,0,1,0,n,n);
+	it=s1.addItem(6,7,7,"&nbsp 輸入信用状開設依頼&nbsp",n,n,"","",n,n,"javascript:location.href='LCOpenRequest1data.html'",n,n);
+	it=s1.addItem(6,7,7,"&nbsp 輸入信用状条件変更依頼&nbsp",n,n,"","",n,n,"javascript:location.href='lcAmend1.html'",n,n);
+  	it=s1.addItem(6,7,7,"&nbsp 外国送金依頼&nbsp",n,n,"","",n,n,"javascript:location.href='OMTRequest1temp.html'",n,n);
+<!-- 	it=s1.addItem(6,7,7,"&nbsp 外貨預金振替依頼&nbsp",n,n,"","",n,n,"javascript:location.href='FXTRequestInput.html'",n,n); -->
+
+  	it=s0.addItem(2,3,4,"&nbsp&nbsp 登録 &nbsp&nbsp",n,n,"","",n,n,n,n,"new");
+	var s1=it.addSubmenu(0,0,0,0,0,0,0,5,0,n,"",n,1,0,1,0,n,n);
+	it=s1.addItem(6,7,7,"&nbsp 輸入信用状開設依頼受付&nbsp",n,n,"","",n,n,"javascript:location.href='lcOpenSearchResult1.html'",n,n);
+	it=s1.addItem(6,7,7,"&nbsp 輸入信用状条件変更依頼受付&nbsp",n,n,"","",n,n,"javascript:location.href='LcAmendSearchResult1.html'",n,n);
+	it=s1.addItem(6,7,7,"&nbsp 外国送金依頼受付&nbsp",n,n,"","",n,n,"javascript:location.href='OMTListSearchResult1.html'",n,n);
+<!-- 	it=s1.addItem(6,7,7,"&nbsp 外貨預金振替依頼受付&nbsp",n,n,"","",n,n,"javascript:location.href='FXTApprovalList.html'",n,n); -->
+
+	it=s0.addItem(2,3,4,"&nbsp&nbsp 照会 &nbsp&nbsp",n,n,"","",n,n,n,n,"new");
+	var s1=it.addSubmenu(0,0,0,0,0,0,0,5,0,n,"",n,1,0,1,0,n,n);
+	it=s1.addItem(6,7,7,"&nbsp 輸入信用状開設取引照会&nbsp",n,n,"","",n,n,"javascript:location.href='LCOpenRequest11.html'",n,n);
+	it=s1.addItem(6,7,7,"&nbsp 輸入信用状条件変更取引照会&nbsp",n,n,"","",n,n,"javascript:location.href='LcAmendSearchResult2.html'",n,n);
+<!-- 	it=s1.addItem(6,7,7,"&nbsp 輸入書類到着照会&nbsp",n,n,"","",n,n,"javascript:location.href='idaList.html'",n,n);	  -->
+	it=s1.addItem(6,7,7,"&nbsp 外国送金取引照会&nbsp",n,n,"","",n,n,"javascript:location.href='OMTListSearchResult2.html'",n,n);
+<!-- 	it=s1.addItem(6,7,7,"&nbsp 被仕向送金照会&nbsp",n,n,"","",n,n,"javascript:location.href='icrList.html'",n,n); -->
+<!-- 	it=s1.addItem(6,7,7,"&nbsp 外貨預金振替取引照会&nbsp",n,n,"","",n,n,"javascript:location.href='FXTInquiryList.html'",n,n); -->
+<!-- 	it=s1.addItem(6,7,7,"&nbsp 外貨預金入出金明細照会&nbsp",n,n,"","",n,n,"javascript:location.href='fx_search1.html'",n,n); -->
+<!-- 	it=s1.addItem(6,7,7,"&nbsp 相場情報照会&nbsp",n,n,"","",n,n,"javascript:location.href='EXRate.html'",n,n); -->
+
+	it=s0.addItem(2,3,4,"&nbsp&nbsp データメンテナンス &nbsp&nbsp",n,n,"","",n,n,n,n,"new");
+	var s1=it.addSubmenu(0,0,0,0,0,0,0,5,0,n,"",n,1,0,1,0,n,n);
+	it=s1.addItem(6,7,7,"&nbsp 利用者権限設定&nbsp",n,n,"","",n,n,"javascript:location.href='javascript:'",n,n);
+	it=s1.addItem(6,7,7,"&nbsp 依頼人情報メンテナンス&nbsp",n,n,"","",n,n,"javascript:location.href='javascript:'",n,n);
+	it=s1.addItem(6,7,7,"&nbsp 受益者情報メンテナンス&nbsp",n,n,"","",n,n,"javascript:location.href='javascript:'",n,n);
+	it=s1.addItem(6,7,7,"&nbsp 送金目的コードメンテナンス&nbsp",n,n,"","",n,n,"javascript:location.href='javascript:'",n,n);
+	it=s1.addItem(6,7,7,"&nbsp データテンプレートメンテナンス&nbsp",n,n,"","",n,n,"javascript:location.href='javascript:'",n,n);
+	s0.pm.buildMenu();
+}
+}
+</SCRIPT>
+
+<SCRIPT type=text/javascript>awmBuildMenu();</SCRIPT>
+</BODY></HTML>

@@ -1,0 +1,326 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<meta name="description" content="総合商研株式会社「よくあるご質問」のページです。私たち総合商研は販売促進支援企業です。消費者ニーズへのソリューションを前提とした販促支援業務を行っております。">
+<meta name="keywords" content="よくあるご質問,総合商研,総合商研株式会社,shouken">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+
+<link rel="icon" href="http://www.shouken.co.jp/sp/wp-content/themes/shouken/common/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="http://www.shouken.co.jp/sp/wp-content/themes/shouken/common/favicon.ico" type="image/x-icon">
+
+<link rel="stylesheet" type="text/css" href="http://www.shouken.co.jp/sp/wp-content/themes/shouken/css/basic.css">
+
+<link rel="stylesheet" type="text/css" href="http://www.shouken.co.jp/sp/wp-content/themes/shouken/css/base.css">
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.shouken.co.jp/feed/" />
+
+
+<link rel='stylesheet' id='lightboxStyle-css'  href='http://www.shouken.co.jp/sp/wp-content/plugins/lightbox-plus/css/black/colorbox.css?ver=2.6' type='text/css' media='screen' />
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js?ver=1.8.3'></script>
+<link rel='canonical' href='http://www.shouken.co.jp/recruit/faq/' />
+<script type="text/javascript" src="http://www.shouken.co.jp/sp/wp-content/themes/shouken/js/jquery.cookie.js"></script>
+<script type="text/javascript">
+$(function(){
+    //ddの数を変数に代入  
+    var ddlen = $("dd").length;  
+      
+    //初期設定部分  
+    for (i = 0; i < ddlen ; i = i +1){  
+        if ($.cookie("opendd" + i)) {//既にcookieがあれば表示
+        $("dd").eq(i).show();
+		$("dd").eq(i).prev("dt").addClass("opened");
+        } else {//cookieが無ければ非表示  
+            $("dd").eq(i).hide();
+        }  
+    }  
+      
+    //クリック時のfunction設定  
+    $("dt").click(function(){  
+        //何番目のdtなのかを変数に代入  
+        var index = $("dt").index(this);  
+        //クリックされたら対応するddにイベントを割り当てる  
+        $("dd").eq(index).slideToggle("slow");  
+		$(this).toggleClass("opened");
+
+          
+        //cookieの名前となる変数を作成  
+        var name = "opendd" + index;  
+          
+        if ($.cookie(name)) {//既に対応するcookieを持っていたら  
+            $.cookie(name, '', { expires: -1 });//cookieを削除
+        } else {  
+             $.cookie(name,1,{expires:7});//cookieをセットする  
+        }  
+          
+    });  
+});  
+</script>
+<script type="text/javascript" src="http://www.shouken.co.jp/sp/wp-content/themes/shouken/js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="http://www.shouken.co.jp/sp/wp-content/themes/shouken/js/scroller.js"></script>
+<script type="text/javascript" src="http://www.shouken.co.jp/sp/wp-content/themes/shouken/js/jquery.animate-colors-min.js"></script>
+<script type="text/javascript" src="http://www.shouken.co.jp/sp/wp-content/themes/shouken/js/jquery-contained-sticky-scroll.js"></script>
+<script type="text/javascript" src="http://www.shouken.co.jp/sp/wp-content/themes/shouken/js/inner.js"></script>
+<script type="text/javascript" src="http://www.shouken.co.jp/sp/wp-content/themes/shouken/js/common.js"></script>
+
+<!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="http://www.shouken.co.jp/sp/wp-content/themes/shouken/css/ie8.css">
+	<script type="text/javascript" src="http://www.shouken.co.jp/sp/wp-content/themes/shouken/js/html5.js"></script>
+	<script type="text/javascript" src="http://www.shouken.co.jp/sp/wp-content/themes/shouken/js/PIE.js"></script>
+	<script type="text/javascript" src="http://www.shouken.co.jp/sp/wp-content/themes/shouken/js/selectivizr-min.js"></script>
+<![endif]-->
+
+<title>よくあるご質問 | 総合商研株式会社</title>
+
+</head>
+
+<body>
+<header>
+<div class="header-inner">
+	<h1><a href="http://www.shouken.co.jp/"><img src="http://www.shouken.co.jp/sp/wp-content/themes/shouken/common/logo.gif" alt="総合商研株式会社" width="200" height="19"></a></h1>
+
+	<nav>
+		<ul id="headNav">
+			<li><a href="http://www.shouken.co.jp/"><img src="http://www.shouken.co.jp/sp/wp-content/themes/shouken/common/btn_home_off.png" alt="HOME" width="46" height="14"></a></li>
+			<li><a href="http://www.shouken.co.jp/info/"><img src="http://www.shouken.co.jp/sp/wp-content/themes/shouken/common/btn_info_off.png" alt="お知らせ" width="55" height="14"></a>
+			<ul>
+				<li><a href="http://www.shouken.co.jp/info/news/">ニュースリリース</a></li>
+				<li><a href="http://www.shouken.co.jp/info/press/">プレスリリース</a></li>
+			</ul>
+			</li>
+			<li><a href="http://www.shouken.co.jp/business/"><img src="http://www.shouken.co.jp/sp/wp-content/themes/shouken/common/btn_business_off.png" alt="事業内容" width="56" height="14"></a>
+			<ul>
+				<li><a href="http://www.shouken.co.jp/business/shoin/">商業印刷</a></li>
+				<li><a href="http://www.shouken.co.jp/business/nenga/">年賀状印刷</a></li>
+				<li><a href="http://www.shouken.co.jp/business/fripper/">フリーペーパー</a></li>
+				<li><a href="http://www.shouken.co.jp/business/event/">イベントプロモーション</a></li>
+				<li><a href="http://www.shouken.co.jp/business/creative/">クリエイティブデザイン</a></li>
+				<li><a href="http://www.shouken.co.jp/business/its/">ITソリューション</a></li>
+				<li><a href="http://www.shouken.co.jp/business/seal_package/">シール・パッケージ</a></li>
+				<li><a href="http://www.shouken.co.jp/business/ajiken/">味香り戦略研究所</a></li>
+				<li><a href="http://www.shouken.co.jp/business/printhouse/">プリントハウス</a></li>
+				<li><a href="http://www.shouken.co.jp/business/ledsaien/">LED菜園工場</a></li>
+			</ul>
+			</li>
+			<li><a href="http://www.shouken.co.jp/company/"><img src="http://www.shouken.co.jp/sp/wp-content/themes/shouken/common/btn_company_off.png" alt="企業情報" width="56" height="14"></a>
+			<ul>
+				<li><a href="http://www.shouken.co.jp/company/message/">トップメッセージ</a></li>
+				<li><a href="http://www.shouken.co.jp/company/vision/">企業理念</a></li>
+				<li><a href="http://www.shouken.co.jp/company/philosophy/">社是・心訓</a></li>
+				<li><a href="http://www.shouken.co.jp/company/outline/">会社概要</a></li>
+				<li><a href="http://www.shouken.co.jp/company/history/">沿革</a></li>
+				<li><a href="http://www.shouken.co.jp/company/location/">事業所一覧</a></li>
+				<li><a href="http://www.shouken.co.jp/company/organization/">組織図</a></li>
+				<li><a href="http://www.shouken.co.jp/company/digitalbook/">デジタルブック版会社案内</a></li>
+			</ul>
+			</li>
+			<li><a href="http://www.shouken.co.jp/ir/"><img src="http://www.shouken.co.jp/sp/wp-content/themes/shouken/common/btn_ir_off.png" alt="IR情報" width="41" height="14"></a>
+			<ul>
+				<li><a href="http://www.shouken.co.jp/ir/message/">株主の皆様へ</a></li>
+				<li><a href="http://www.shouken.co.jp/ir/public/">電子公告</a></li>
+				<li><a href="http://www.shouken.co.jp/ir/calendar/">IRカレンダー</a></li>
+				<li><a href="http://www.shouken.co.jp/ir/highlight/">財務ハイライト</a></li>
+				<li><a href="http://www.shouken.co.jp/ir/data/">財務データ・報告書</a></li>
+				<li><a href="http://www.shouken.co.jp/ir/stockinfo/">株式データ</a></li>
+				<li><a href="http://www.shouken.co.jp/ir/benefit/">株主優待のご案内</a></li>
+				<li><a href="http://stocks.finance.yahoo.co.jp/stocks/detail/?code=7850.T" target="_blank" class="window">株価情報</a></li>
+			</ul>
+			</li>
+			<li class="current"><a href="http://www.shouken.co.jp/recruit/"><img src="http://www.shouken.co.jp/sp/wp-content/themes/shouken/common/btn_recruit_off.png" alt="採用情報" width="56" height="14"></a>
+			<ul>
+				<li><a href="http://www.shouken.co.jp/recruit/new_graduate/">新卒採用情報</a></li>
+				<li><a href="http://www.shouken.co.jp/recruit/career/">キャリア採用情報</a></li>
+				<li><a href="http://www.shouken.co.jp/recruit/guideline/">募集要項</a></li>
+				<li><a href="http://www.shouken.co.jp/recruit/faq/">よくあるご質問</a></li>
+				<li><a href="http://www.shouken.co.jp/recruit/policy/">採用活動に関する個人情報のお取り扱いについて</a></li>
+			</ul>
+			</li>
+		</ul>
+	</nav>
+</div>
+</header>
+
+
+<div id="container" class="recruit">
+	
+<nav class="topicPath">
+<ul>
+<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="home"><a href="http://www.shouken.co.jp/" itemprop="url">HOME</a></li>
+<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://www.shouken.co.jp/recruit/">採用情報</a></li>
+<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">よくあるご質問</li>
+</ul>
+</nav>
+
+
+<div id="detail">
+<article>
+<h1><img src="http://www.shouken.co.jp/sp/wp-content/themes/shouken/recruit/images/title_faq.png" alt="よくあるご質問"></h1>
+
+<p class="mb20">採用に関して、皆さんから多く寄せられたご質問について、回答を掲載しています。</p>
+
+<dl class="faq">
+	<dt><span>Q1</span>入社後の配属はどのように決まるのですか？希望は聞いてもらえますか？</dt>
+	<dd>本人の希望と研修中の実習などをもとに適正を判断した上で、勤務地／職種への配属を決定します。あくまでも、入社されるみなさんの希望を最大限実現したいと当社では考えています。</dd>
+	
+	<dt><span>Q2</span>入社後はどこに勤務するのですか？転勤はありますか？</dt>
+	<dd>本州での営業拡大に伴い、北海道内をはじめ、営業部や営業所がある旭川、東京、大阪、青森、盛岡、仙台、和歌山、福岡、生産拠点となる伊勢原工場へ転勤する可能性があります。本人の意思を基本的に尊重して決定しています。</dd>
+	
+	<dt><span>Q3</span>従業員の平均年齢、男女比率はどのくらいですか？</dt>
+	<dd>当社の従業員の平均年齢は39.1歳、男女比は男性が約7割、女性が約3割となっています。</dd>
+	
+	<dt><span>Q4</span>休日はどうですか？</dt>
+	<dd>当社では、年間休日があらかじめ決められています。日祭日のほか、隔週土曜日が休日となります。有給休暇は就業１年目が10日（有給休暇は入社半年後から利用可能）、2年目が11日、3年目が12日、4年目が14日、5年目が、18日、6年目以降は年間20日となります。また、使わなかった休暇は、最大20日まで翌年に繰越すことができます。</dd>
+	
+	<dt><span>Q5</span>どのような社風ですか？</dt>
+	<dd>平均年齢が30代のため、若い空気にあふれ、忙しい中でも明るく元気な雰囲気です。また、平成13年にJASDAQへの上場を果たしたことにより、社員一人ひとりの意識が高まり、個人それぞれがスキルアップを目指して自己研鑽を積むなど、常に前向きであるよう心がけています。</dd>
+	
+	<dt><span>Q6</span>どのような人事制度を採用していますか？</dt>
+	<dd>当社では、年齢、学歴、勤続年数には関係なく、実力本位の人事制度を採用しています。以前は、年齢、勤続年数を勘案した評価を行っておりましたが、平成13年春から能力主義／成果主義を採用し、職務レベルに応じた達成度合いや、期間内にどれだけの成果を挙げられたか（貢献度があったか）に評価の重点をおいています。</dd>
+	
+	<dt><span>Q7</span>研修は、どのくらいの期間行われますか？また実務が始まるのはいつ頃ですか？</dt>
+	<dd>新人研修は2週間程、本社で行われます。研修中に学ぶのは、当社の価値観や経営理念、事業方針、販売促進支援業の基本的な考え方、各部署の役割や機能などです。その後、各自配属部署にて実務を始めます。それ以降の研修スケジュールは、配属先によって異なります。半年間に一度上司とミーティングを通して、向こう半年間の個人別目標を決め、それに向かって努力することになります。</dd>
+	
+	<dt><span>Q8</span>結婚後も続けて働くことは可能ですか？</dt>
+	<dd>もちろん可能です。結婚後も変わらず活躍している社員が多数います。</dd>
+	
+	<dt><span>Q9</span>どのような人材を求めていますか？</dt>
+	<dd>現在、時代の流れが非常に速くなっているので、当社では新しく入社されるみなさんに、柔軟な対応力だけでなく、企画力、判断力、コミュニケーション能力を求めます。当社の即戦力となるべく、「人に与えられた仕事のみをするのではなく、自ら仕事を創造してゆけるような人材」になっていただきたいと当社では考えています。</dd>
+	
+	<dt><span>Q10</span>販売促進支援業とはなんですか？</dt>
+	<dd>販売促進支援業とは、お客様の販売促進活動（広告活動）を総合的にサポートして、売上・利益に貢献し、お客様の企業価値を高めることです。当社では、自らの事業分野を販売促進支援業と位置づけています。さらに、お客様と消費者との架け橋となるべく、マーケティング分析に基づいた効果的な広告制作、販売促進ツールの制作を行っております。</dd>
+	
+	<dt><span>Q11</span>総合商研の強みはどこですか？</dt>
+	<dd>当社ではお客様が抱える問題点を解決するため、マーケティング分析の結果をもとに、より効果的な販促媒体を考案し、企画提案をしています。また、当社ではデザインの制作から印刷までの全行程をフルデジタル化して自社一貫体制を敷いたため、お客様のご要望に柔軟かつ素早く対応できるようになりました。さらに、当社では早くからマルチメディア機能に着目し、ワンソース・マルチユースを実践しています。このような先見性も当社の強みとなっています。</dd>
+	
+	<dt><span>Q12</span>給与はどのように決定されるのですか？</dt>
+	<dd>平成25年4月実績の月給は以下の通りです。
+	<ul>
+		<li>【新卒定期入社の場合】<br>
+大学卒18万円、大学院卒20万円。（基本給、各種手当別。）賞与は年2回（平成25年実績）です。</li>
+	<li>【中途入社の場合】<br>経験者の方には、過去の職務経験と期待される成果のレベルをベースに前職での給与水準を加味して決定します。</li>
+	</ul>
+	</dd>
+
+	<dt><span>Q13</span>退職金制度はありますか？</dt>
+	<dd>退職金制度は採用しておりません。当社では、実力主義、成果主義を採用していますので、現職の時の能力に応じて給与を支払う基本方針をとっています。また、最近入社した社員の一部は、年俸制を採用しており、今後も積極的に年俸制を採用する予定です。</dd>
+	
+	<dt><span>Q14</span>勤務形態について教えてください。</dt>
+	<dd>当社の勤務時間は、8：30から17：30です。途中、休憩時間が90分あり、実質労働時間は7時間30分です。※部署により一部異なります。</dd>
+</dl>	
+	
+</article>
+</div><!--.//detail-->
+
+<aside id="additionalNavi">
+	<nav>
+	<h3><a href="http://www.shouken.co.jp/recruit/"><img src="http://www.shouken.co.jp/sp/wp-content/themes/shouken/recruit/images/title.png" alt="採用情報"></a></h3>
+
+	<ul>
+		<li><a href="http://www.shouken.co.jp/recruit/new_graduate/">新卒採用情報</a></li>
+		<li><a href="http://www.shouken.co.jp/recruit/career/">キャリア採用情報</a></li>
+		<li><a href="http://www.shouken.co.jp/recruit/guideline/">募集要項</a></li>
+		<li class="current"><span>よくあるご質問</span></li>
+		<li><a href="http://www.shouken.co.jp/recruit/policy/">採用活動に関する個人情報のお取り扱いについて</a></li>
+	</ul>
+	</nav>
+		</aside><!--//.additionalNavi-->
+
+<p id="pagetop"><a href="#top"><img src="http://www.shouken.co.jp/sp/wp-content/themes/shouken/common/pagetop.png" alt="このページの先頭に戻る"></a></p>
+
+</div><!--//.container-->
+
+
+<footer>
+	<nav id="footerNavi">
+	<ul>
+		<li>お知らせ
+			<ul>
+				<li><a href="http://www.shouken.co.jp/info/news/">ニュースリリース</a></li>
+				<li><a href="http://www.shouken.co.jp/info/press/">プレスリリース</a></li>
+				<li><a href="http://www.shouken.co.jp/cpu/column/theme01/">お役立ちコラム集</a></li>
+			</ul>
+		</li>
+
+		<li>事業内容
+			<ul>
+				<li><a href="http://www.shouken.co.jp/business/shoin/">商業印刷</a></li>
+				<li><a href="http://www.shouken.co.jp/business/nenga/">年賀状印刷</a></li>
+				<li><a href="http://www.shouken.co.jp/business/fripper/">フリーペーパー</a></li>
+				<li><a href="http://www.shouken.co.jp/business/event/">イベントプロモーション</a></li>
+				<li><a href="http://www.shouken.co.jp/business/creative/">クリエイティブデザイン</a></li>
+				<li><a href="http://www.shouken.co.jp/business/its/">ITソリューション</a></li>
+				<li><a href="http://www.shouken.co.jp/business/seal_package/">シール・パッケージ</a></li>
+				<li><a href="http://www.shouken.co.jp/business/ajiken/">味香り戦略研究所</a></li>
+				<li><a href="http://www.shouken.co.jp/business/printhouse/">プリントハウス</a></li>
+				<li><a href="http://www.shouken.co.jp/business/ledsaien/">LED菜園工場</a></li>
+			</ul>
+		</li>
+	
+		<li>企業情報
+			<ul>
+				<li><a href="http://www.shouken.co.jp/company/message/">トップメッセージ</a></li>
+				<li><a href="http://www.shouken.co.jp/company/vision/">企業理念</a></li>
+				<li><a href="http://www.shouken.co.jp/company/philosophy/">社是・心訓</a></li>
+				<li><a href="http://www.shouken.co.jp/company/outline/">会社概要</a></li>
+				<li><a href="http://www.shouken.co.jp/company/history/">沿革</a></li>
+				<li><a href="http://www.shouken.co.jp/company/location/">事業所一覧</a></li>
+				<li><a href="http://www.shouken.co.jp/company/organization/">組織図</a></li>
+				<li><a href="http://www.shouken.co.jp/company/digitalbook/">デジタルブック版会社案内</a></li>
+			</ul>
+		</li>
+	
+		<li>IR情報
+			<ul>
+				<li><a href="http://www.shouken.co.jp/ir/message/">株主の皆様へ</a></li>
+				<li><a href="http://www.shouken.co.jp/ir/public/">電子公告</a></li>
+				<li><a href="http://www.shouken.co.jp/ir/calendar/">IRカレンダー</a></li>
+				<li><a href="http://www.shouken.co.jp/ir/highlight/">財務ハイライト</a></li>
+				<li><a href="http://www.shouken.co.jp/ir/data/">財務データ・報告書</a></li>
+				<li><a href="http://www.shouken.co.jp/ir/stockinfo/">株式データ</a></li>
+				<li><a href="http://www.shouken.co.jp/ir/benefit/">株主優待のご案内</a></li>
+				<li><a href="http://stocks.finance.yahoo.co.jp/stocks/detail/?code=7850.T" target="_blank" class="window">株価情報</a></li>
+			</ul>
+		</li>
+	
+		<li>採用情報
+			<ul>
+				<li><a href="http://www.shouken.co.jp/recruit/new_graduate/">新卒採用情報</a></li>
+				<li><a href="http://www.shouken.co.jp/recruit/career/">キャリア採用情報</a></li>
+				<li><a href="http://www.shouken.co.jp/recruit/guideline/">募集要項</a></li>
+				<li><a href="http://www.shouken.co.jp/recruit/faq/">よくあるご質問</a></li>
+				<li><a href="http://www.shouken.co.jp/recruit/policy/">採用活動に関する個人情報のお取り扱いについて</a></li>
+			</ul>
+		</li>
+	</ul>
+	</nav>
+	
+<div class="footer-bottom">
+<ul>
+	<li><a href="http://www.shouken.co.jp/policy/"><img src="http://www.shouken.co.jp/sp/wp-content/themes/shouken/common/btn_policy.png" alt="プライバシーポリシー"></a></li>
+	<li><a href="http://www.shouken.co.jp/sitemap/"><img src="http://www.shouken.co.jp/sp/wp-content/themes/shouken/common/btn_sitemap.png" alt="サイトマップ"></a></li>
+	<li><a href="https://www.shouken.co.jp/inq/"><img src="http://www.shouken.co.jp/sp/wp-content/themes/shouken/common/btn_inq.png" alt="お問い合わせ"></a></li>
+</ul>
+
+<p id="copy">&copy; 2002-2015 SOUGOU SHOUKEN CO., LTD All Rights Reserved.</p>
+</div>
+
+</footer>
+
+<!-- Lightbox Plus ColorBox v2.6/1.3.32 - 2013.01.24 - Message: 1-->
+<script type="text/javascript">
+jQuery(document).ready(function($){
+  $("a[rel*=lightbox]").colorbox({speed:0,innerWidth:false,innerHeight:false,initialWidth:false,initialHeight:false,maxWidth:false,maxHeight:false,rel:"nofollow",opacity:0.7,preloading:false,current:" {current}  {total}",previous:"",next:"",close:"",loop:false,scrolling:false,arrowKey:false,top:false,right:false,bottom:false,left:false});
+  $(".lbp_secondary").colorbox({speed:300,width:"60%",innerWidth:"50%",innerHeight:"50%",initialWidth:"30%",initialHeight:"40％",maxWidth:"90%",maxHeight:"90%",opacity:0.8,iframe:true});
+});
+</script>
+<script type='text/javascript' src='http://www.shouken.co.jp/sp/wp-content/plugins/lightbox-plus/js/jquery.colorbox.1.3.32.js?ver=1.3.32'></script>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">
+	_uacct = "UA-1674403-2";
+	urchinTracker();
+</script>
+ 
+</body>
+</html>

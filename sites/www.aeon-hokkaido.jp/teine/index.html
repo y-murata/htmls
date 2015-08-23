@@ -1,0 +1,501 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="copyright" content="Copyrigt(C)AEON Hokkaido Corp. All Right Reserved" />
+<meta name="Description" content="北海道のイオンの店舗情報。売場案内、アクセス、専門店案内、チラシ・キャンペーン案内、リサイクル、駐車場、ＡＴＭ、ＷＡＯＮほか。" />
+<meta name="keyword" content="イオン北海道, ジャスコ, ポスフール, イオンスーパーセンター" />
+<!--toppage_word<meta name="copyright" content="Copyrigt(C)AEON Hokkaido Corp. All Right Reserved" />
+<meta name="Description" content="北海道内の店舗情報、オトクなチラシ情報、ネットスーパーの情報などを発信しているＷＥＢサイトです。" />
+<meta name="keyword" content="イオン北海道, イオンスーパーセンター" />toppage_word_end-->
+<link rel="shortcut icon" href="http://www.aeon-hokkaido.jp/img/favicon.ico">
+
+
+<link rel="stylesheet" href="../css/common.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../css/top.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../css/top_sp.css" type="text/css" media="all" />
+
+<!--bootstrap-->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="../css/slider.css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script type="text/javascript" src="../js/jquery.aw-showcase.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+
+<script type="text/javascript" src="/js2012/jquery-ui-1.8.17.custom.min.js"></script>
+<script type="text/javascript" src="/js2012/rollover.js"></script>
+<script type="text/javascript" src="/js2012/accordion2.js"></script>
+<script type="text/javascript" src="/js2012/jquery.bxSlider.js"></script>
+
+<script type="text/javascript" language="javascript">
+/* <![CDATA[ */
+var yahoo_retargeting_id = 'LDHX81BTHB';
+var yahoo_retargeting_label = '';
+/* ]]> */
+</script>
+<script type="text/javascript" language="javascript" src="//b92.yahoo.co.jp/js/s_retargeting.js"></script>
+<title>イオン手稲山口店 | イオン北海道株式会社</title>
+<!--AnchorSmooth-->
+<script type="text/javascript">
+$(function(){
+    $('a[href^=#]').click(function(){
+        var speed = 800;
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $("html, body").animate({scrollTop:position}, speed, "swing");
+        return false;
+    });
+});
+</script>
+<!--AnchorSmooth_end-->
+
+
+<script charset="Shift_JIS"  src="http://asp.shufoo.net/t/asp_client/src/js/asp_chirashi_list.js" ></script>
+<script type="text/javascript"> 
+
+leafletUrl = "http://www.shufoo.net/sh/asp/common/shopDetailXML.do?un=aeonhokkaido&shopId=18573&referer=www.shufoo.net";
+		var shopIDs = getParam('shopId',leafletUrl)
+		var UNs = getParam('un',leafletUrl);
+</script> 
+</head>
+<body>
+
+<div class="wrapper">
+
+<!--global_navi-->
+
+  <div id="header_navi">
+      <div id="logo" class="row" style="float:none;">
+          <div class="logo-img">
+                <img class="hidden-xs pull-left" src="../img2015/common/aeonh_logo.jpg" alt="AEON　イオン北海道株式会社" usemap="#map" width="290" style="margin-bottom:1px;">
+                <div class="clearfix"></div>
+                <img class="visible-xs" src="../img/common/aeonh_logo.jpg" alt="AEON　イオン北海道株式会社" usemap="#spmap">
+          </div>
+          <map name="map">
+                <area href="http://www.aeon.info/" shape="rect" alt="aeon" coords="0,0,70,30">
+                <area href="/home.html" shape="rect" alt="イオン北海道株式会社" coords="71,0,290,30">
+          </map>
+          <map name="spmap">
+                <area href="http://www.aeon.info/" shape="rect" alt="aeon" coords="0,0,50,30">
+          </map>
+        </div>
+        <div id="navi" class="hidden-xs">
+          <ul>
+              <li><a href="/home.html"><img src="http://www.aeon-hokkaido.jp/img2012/header/gnavi01_off.jpg" alt="トップページへ" width="192" height="36" /></a></li><!--
+                --><li><a href="/news/index.html"><img src="http://www.aeon-hokkaido.jp/img2012/header/gnavi02_off.jpg" alt="ニュースリリース" width="192" height="36" /></a></li><!--
+                --><li><a href="/shoplist.html"><img src="http://www.aeon-hokkaido.jp/img2012/header/gnavi03_off.jpg" alt="店舗一覧" width="192" height="36" /></a></li><!--
+                --><li><a href="/netshop.html"><img src="http://www.aeon-hokkaido.jp/img2012/header/gnavi04_off.jpg" alt="ネットショップ" width="192" height="36" /></a></li><!--
+                --><li><a href="/corporation/index.html"><img src="http://www.aeon-hokkaido.jp/img2012/header/gnavi05_off.jpg" alt="企業情報" width="192" height="36" /></a></li>
+            </ul>
+        </div>
+    </div>
+<!--global_navi_end-->
+
+
+<div id="slider-sp">
+</div>
+
+<!--shopinfo-->
+    
+    <div id="shopinfo_box">
+        <div class="row">
+            <div class="col-sm-4 store-name">
+                <img style="height:19px;" src="../img/store_name/store_name_sc.gif">
+                <div class="vissible-xs"></div>
+                <img style="height:36px;" src="../img/store_name/store_name_teine.gif">
+            </div>
+            <div class="col-sm-7 col-sm-offset-1 text-right hidden-xs">
+                <ul class="list-inline">
+                    <li><a href="go.html" onClick="window.open('go.html','win','width=860,height=600,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img style="height:21px;" src="../img/common/header_link01.png" alt=""></a></li>
+                <li><a href="park.html" onClick="window.open('park.html','win','width=860,height=600,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img style="height:21px;" src="../img/common/header_link03.png" alt=""></a></li>
+
+                </ul>
+            </div>
+        </div>
+    	<div class="shopinfo-detail">
+            <dl class="list-inline">
+                <dt class="address">住所：</dt>
+                <dd>〒006-0861 北海道札幌市手稲区明日風6丁目1-1</dd><!--郵便番号・住所-->
+                <dt class="address-type">電話番号：</dt>
+                <dd class="address-data">(011)699-8201</dd><!--電話番号-->
+            </dl>
+            <dl class="list-inline">
+                <dt class="address-type">営業時間：</dt>
+                <dd class="address-data">直営売場/8:00～23:00 その他の売場/9:00～23:00<span class="annotation">※一部営業時間が異なる売場がございます。</span></dd><!--営業時間-->
+            </dl>
+        </div>
+        <div class="text-center visible-xs sp-top-nav">
+            <ul>
+                    <li><a href="go.html" onClick="window.open('go.html','win','width=860,height=600,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img style="height:21px;" src="../img/common/header_link01.png" alt=""></a></li>
+                <li><a href="park.html" onClick="window.open('park.html','win','width=860,height=600,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img style="height:21px;" src="../img/common/header_link03.png" alt=""></a></li>
+
+            </ul>
+        </div>
+    </div>
+    
+<!--shopinfo_end-->
+
+<div id="slider" class="showcase">
+    <div class="showcase-slide">
+            <div class="showcase-content">
+            <a href="/premium_cp/"><img src="/premium_cp/bnr.jpg" alt="プレミアム商品券"></a>
+            </div>
+            <div class="showcase-thumbnail">
+                <img src="/premium_cp/bnr.jpg" alt="プレミアム商品券">
+            </div>
+        </div>
+        <div class="showcase-slide">
+            <div class="showcase-content">
+            <a href="http://www.aeonretail.jp/campaign/24htv/" target="_blank"><img src="/img201506/bnr_24htv.jpg" alt="24時間テレビ38「チャリティー募金にご協力下さい」"></a>
+            </div>
+            <div class="showcase-thumbnail">
+                <img src="/img201506/bnr_24htv.jpg" alt="24時間テレビ38「チャリティー募金にご協力下さい」">
+            </div>
+        </div>
+        <div class="showcase-slide">
+            <div class="showcase-content">
+            <a href="/ajiwauhitotoki/"><img src="/ajiwauhitotoki/bnr.jpg" alt="ajiwauhitotoki(あじわうひととき)"></a>
+            </div>
+            <div class="showcase-thumbnail">
+                <img src="/ajiwauhitotoki/bnr.jpg" alt="ajiwauhitotoki(あじわうひととき)">
+            </div>
+        </div>
+        <div class="showcase-slide">
+            <div class="showcase-content">
+            <a href="/asahikawa_waon/"><img src="/asahikawa_waon/bnr.jpg" alt="あさひかわWAON誕生！"></a>
+            </div>
+            <div class="showcase-thumbnail">
+                <img src="/asahikawa_waon/bnr.jpg" alt="あさひかわWAON誕生！">
+            </div>
+        </div>
+        <div class="showcase-slide">
+            <div class="showcase-content">
+                <a href="/fresh_gift/"><img src="/fresh_gift/bnr.jpg" alt="フレッシュギフト"></a>
+            </div>
+            <div class="showcase-thumbnail">
+                <img src="/fresh_gift/bnr.jpg" alt="フレッシュギフト">
+            </div>
+        </div>
+        <div class="showcase-slide">
+            <div class="showcase-content">
+            <img src="/img201503/bnr_tax.jpg" alt="免税のご案内">
+            </div>
+            <div class="showcase-thumbnail">
+                <img src="/img201503/bnr_tax.jpg" alt="免税のご案内">
+            </div>
+        </div>
+        <div class="showcase-slide">
+            <div class="showcase-content">
+            <a href="/waonpoint/"><img src="/waonpoint/bnr.jpg" alt="タッチでwaon"></a>
+            </div>
+            <div class="showcase-thumbnail">
+                <img src="/waonpoint/bnr.jpg" alt="タッチでwaon">
+            </div>
+        </div>
+        <div class="showcase-slide">
+            <div class="showcase-content">
+                <a href="http://www.aeon.info/environment/shokuju/"><img src="/img2013/bnr/bnr_syokujyu.jpg" alt="イオン植樹1000万本"></a>
+            </div>
+            <div class="showcase-thumbnail">
+                <img src="/img2013/bnr/bnr_syokujyu.jpg" alt="イオン植樹1000万本">
+            </div>
+        </div>
+         <div class="showcase-slide">
+            <div class="showcase-content">
+                <a href="http://www.aeonretail.jp/campaign/yellow_receipt/"><img src="/img2013/bnr/bnr_yellowreceipt.jpg" alt="幸せの黄色いレシート毎月11日"></a>
+            </div>
+            <div class="showcase-thumbnail">
+                <img src="/img2013/bnr/bnr_yellowreceipt.jpg" alt="幸せの黄色いレシート毎月11日">
+            </div>
+        </div>
+        <div class="showcase-slide">
+            <div class="showcase-content">
+                <a href="/contents/201302/waonyukoukigen.html"><img src="/img2013/bnr/bnr_waonyukoukigen.jpg" alt="WAONポイント有効期限"></a>
+            </div>
+            <div class="showcase-thumbnail">
+                <img src="/img2013/bnr/bnr_waonyukoukigen.jpg" alt="WAONポイント有効期限">
+            </div>
+        </div>
+        <div class="showcase-slide">
+            <div class="showcase-content">
+                <a href="http://www.aeonretail.jp/chirashi/app/"><img src="/img2012/bnr/bnr_chirashiappli.jpg" alt="チラシアプリ"></a>
+            </div>
+            <div class="showcase-thumbnail">
+                <img src="/img2012/bnr/bnr_chirashiappli.jpg" alt="チラシアプリ">
+            </div>
+        </div>
+
+</div>
+
+<div id="contents" class="clearfix">
+
+<!--information-->
+    <div class="information">
+        <div class="info-left-col pull-left">
+        
+        	<div class="recommend">
+	            <h3 class="info-headline text-center">お店情報</h3>
+
+            <ul class="row no-spacing text-center">
+                    <li class="col-xs-6 col-sm-6"><a href="floorguide.html#aeon_area" target="_blank"><img src="../img/bnr/banner_recommend_floor.jpg" alt=""></a></li>
+                    <li class="col-xs-6 col-sm-6"><a href="floorguide.html" target="_blank"><img src="../img/bnr/banner_recommend_tenant2.jpg" alt=""></a></li>
+                    <li class="col-xs-12 col-sm-12 full-width"><img src="../img_time/open8_full_ex.jpg" alt=""></li>
+                </ul>
+            </div>
+
+            
+        </div>
+        
+        <div class="info-right-col pull-right">
+        
+            <div class="flyer pull-left">
+                 <h3 class="info-headline text-center">チラシ情報</h3>
+                 <div class="flyer-data text-center">
+                    <a style="display:block;color:#666;" href="/s_help.html"><img src="/img/common/howto_flyer.gif" style="width:14px;vertical-align: -2px;">チラシをご覧いただくには</a>
+                    <div id="chirashiList"> <script>
+						SHUFOO.ASP.create({
+							 number:3
+							,direction:"vertical"
+							,shopId:shopIDs
+							,un:UNs
+						});
+					</script></div>
+                 </div>
+            </div>
+
+            
+            <div class="calendar pull-right text-center">
+                <h3 class="info-headline">イオンカレンダー8月</h3>
+            <img style="max-width:210px;max-height:235px;" src="/img_calendar/calender_08.jpg" alt="">
+            </div>
+
+
+        </div>
+        <div class="clearfix"></div>
+    </div> 
+<!--information_end-->
+<!--goto shop-->
+
+    <div id="goto-shop" class="contents-goto-shop">
+        <h3 class="main-headline"><img src="../img/common/headline01.jpg" alt="" style="margin-right:13px;"><span class="main-headline-txt">イオンへのアクセス情報や配送サービスはこちら。</span></h3>
+        <div class="row section-contents-wrap">
+            <div class="col-xs-12 col-sm-6 no-spacing">
+                <a class="col-xs-6 col-sm-6" href="park.html" onClick="window.open('park.html','win','width=860,height=600,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img src="../img/common/btn_go02.png" alt=""></a>
+                <a class="col-xs-6 col-sm-6" href="go.html" onClick="window.open('go.html','win','width=860,height=600,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img src="../img/common/btn_go04.png" alt=""></a>
+            </div>
+            <div class="col-xs-12 col-sm-6 no-spacing">
+                <a class="col-xs-6 col-sm-6" href="delivery.html" onClick="window.open('delivery.html','win','width=860,height=600,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img src="../img/common/btn_go03.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+         
+<!--goto shop_end-->
+
+
+<!--look-->
+
+<div id="look" class="contents-look">
+    <h3 class="main-headline"><img src="../img/common/headline02.jpg" alt="" style="margin-right:13px;"><span class="main-headline-txt">おトクな情報や特集をご案内いたします。</span></h3>
+    <div class="row section-contents-wrap">
+        <div class="col-xs-12 col-sm-12 contents-look-bnr">
+            <!-- 
+<div class="col-xs-12 col-sm-3 bnr210-wrap">
+<a href="/otoku/"><img src="/otoku/bnr_otoku_210.jpg"></a>
+</div>-->
+
+
+            <!--<div class="col-xs-12 col-sm-3 bnr210-wrap">
+     <a href="/shokuju/"><img src="/shokuju/bnr_210.jpg"  alt="北海道厚真町植樹 植樹ボランティア募集!!"></a>
+</div>
+-->
+
+            <div class="col-xs-6 col-sm-3 fit-img"><a href="http://www.aeonretail.jp/otoku/kansyaday.html" target="_blank"><img src="/look_bnr/thanks.jpg" alt="お客さま感謝デー"></a></div>
+            <div class="col-xs-6 col-sm-3"><a href="http://www.aeonretail.jp/otoku/ggkansyaday/index.html" target="_blck"><img src="/look_bnr/gg.jpg" alt="GG感謝デー"></a></div>
+            <div class="col-xs-6 col-sm-3"><a href="http://www.aeonretail.jp/otoku/wakuwakuday.html" target="_blck"><img src="/look_bnr/wakuwaku.jpg" alt="わくわくデー"></a></div>
+            <div class="col-xs-6 col-sm-3 fit-img"><img src="/look_bnr/kayouichi.jpg" alt="火曜市"></div>
+            <div class="col-xs-6 col-sm-3"><a href="/contents/201212/sukusuku201212.html"><img src="/look_bnr/sukusuku.jpg" alt="すくすく"></a></div>
+            <div class="col-xs-6 col-sm-3"><a href="http://www.cedyna.co.jp/service/om/shop/day_a.html" target="_blank"><img src="/look_bnr/omc.jpg" alt="OMCカード"></a></div>
+            <div class="col-xs-6 col-sm-3"><a href="/aeonbank_atm/index.html"><img src="/look_bnr/atm.jpg" allt="ATM"></a></div>
+            <div class="col-xs-6 col-sm-3"><a href="http://www.ure-seed.com/card/index.php" target="_blank"><img src="/look_bnr/ureseed.jpg" alt="うれしーど"></a></div>
+        </div>
+    </div>
+</div>
+         
+<!--look_end-->
+
+<!--buy-->
+
+    <div id="buy" class="contents-buy">
+        <h3 class="main-headline"><img src="../img/common/headline03.jpg" alt="" style="margin-right:13px;"><span class="main-headline-txt">ネット注文や配送情報をご案内いたします。</span></h3>
+
+        <div class="row section-contents-wrap">
+            <div class="col-xs-12 col-sm-12 contents-buy-bnr">
+                <div class="col-xs-12 col-sm-3"><a href="https://ec.aeon-hokkaido.jp/rakutaku/"><img src="/netshop/bnr_buy01.jpg" alt="ネットで楽宅便"></a></div>
+                <!--
+            <div class="col-xs-12 col-sm-3"><a href="/summer_gift/"><img src="/netshop/bnr_buy_summer.jpg" alt="夏ギフト"></a></div>                
+                <div class="col-xs-12 col-sm-3"><a href="/harugift/"><img src="/netshop/bnr_buy_harugift.jpg" alt="春ギフト"></a></div>
+                -->
+                <div class="col-xs-12 col-sm-3"><a href="/fresh_gift/"><img src="/netshop/bnr_buy03.jpg" alt="フレッシュギフト"></a></div>
+            </div>
+        </div>
+    </div>
+         
+<!--buy_end-->
+
+
+<div class="sv-banner-area row">
+    <h4><img src="/img/common/sv_bnr_title1.jpg" alt="イオンのオリジナルブランド" style="width:216px;"></h4>
+    <div class="col-xs-6 col-sm-3 sv-banner-single"><a href="http://www.topvalu.net/" target="_blank"><img src="/img2012/svbnr216/sv_tv.jpg" alt="TOPVALU トップバリュ"></a></div>
+    <div class="clearfix"></div>
+    
+    <h4><img src="/img/common/sv_bnr_title2.jpg" alt="イオンの便利なサービス" style="width:216px;"></h4>
+    <!--<div class="col-xs-6 col-sm-3 sv-banner-single"><a href="http://www.aeonmarketing.co.jp/cp/einfo_140602.php" target="_blank"><img src="/img201406/sv_kazasu.jpg" alt="かざすキャンペーン"></a></div>-->
+    <div class="col-xs-6 col-sm-3 sv-banner-single"><a href="http://www.aeonretail.jp/campaign/mobile/index.html" target="_blank"><img src="/img2012/svbnr216/sv_aeonsuquare.jpg" alt="AEON SQUARE イオンスクエアモバイル【入会無料】"></a></div>
+    <div class="col-xs-6 col-sm-3 sv-banner-single"><a href="http://v6.advg.jp/adpv6/r/1ll_3dh" target="_blank"><img src="/img2012/svbnr216/sv_aeoncard.jpg" alt="イオンカード"></a></div>
+    <div class="col-xs-6 col-sm-3 sv-banner-single"><a href="http://www.waon.net/index.html" target="_blank"><img src="/img2012/svbnr216/sv_waon.jpg" alt="お買物のたびにポイントがたまる、おトクな電子マネー waon[ワオン]"></a></div>
+    <div class="col-xs-6 col-sm-3 sv-banner-single"><a href="http://www.aeonbank.co.jp/?sid=2201" target="_blank"><img src="/img2012/svbnr216/sv_bank.jpg" alt="イオン銀行ATM｜いろいろなカードが使えてとっても便利!!(waonチャージもOK!!)"></a></div>
+    <div class="col-xs-6 col-sm-3 sv-banner-single"><a href="http://www.aeongiftcard.com/" target="_blank"><img src="/img2012/svbnr216/sv_giftcard.jpg" alt="1000円からチャージして贈れるAEON GIFT CARD｜贈り物に便利なカードタイプのイオンギフトカード"></a></div>
+    <div class="col-xs-6 col-sm-3 sv-banner-single"><a href="http://www.aeonlife.jp/" target="_blank"><img src="/img2012/svbnr216/sv_sousiki.jpg" alt="葬儀・お葬式ならイオンのお葬式"></a></div>
+    <div class="col-xs-6 col-sm-3 sv-banner-single"><a href="http://www.aeonbank.co.jp/saving/campaign/150601_01.html?trcd=g100000369" target="_blank"><img src="/img2012/svbnr216/bnr_aeonbankteiki.png" alt="夏の定期預金キャンペーン｜イオン銀行"></a></div>
+    <div class="clearfix"></div>
+    
+    <h4><img src="/img/common/sv_bnr_title3.jpg" alt="イオン北海道の環境理念" style="width:216px;"></h4>
+    <div class="col-xs-6 col-sm-3 sv-banner-single"><a href="http://www.aeon-hokkaido.jp/eco/index.html" target="_blank"><img src="/img2012/svbnr216/sv_eco.jpg" alt="まいにちのeco｜レジ袋無料配布中止のお知らせ"></a></div>
+    <div class="col-xs-6 col-sm-3 sv-banner-single"><a href="http://www.aeon.info/environment/" target="_blank"><img src="/img2012/svbnr216/sv_kankyou.jpg" alt="イオン北海道の環境社会貢献活動"></a></div>
+    <div class="col-xs-6 col-sm-3 sv-banner-single"><a href="http://www.aeonretail.jp/campaign/yellow_receipt/index.html" target="_blank"><img src="/img2012/svbnr216/sv_yellow.jpg" alt="イオン幸せの黄色いレシート｜毎月11日イオン・デー"></a></div>
+    <div class="col-xs-6 col-sm-3 sv-banner-single"><a href="http://www.aeon.info/1p/" target="_blank"><img src="/img2012/svbnr216/sv_1p.jpg" alt="AEON 1% CLUB イオンワン%クラブ｜税引前利益1%を使い環境と社会のために役立てています"></a></div>
+</div>
+
+
+<div class="fixnav hidden-xs">
+    <ul>
+    <li><a href="#"><img src="../img/common/inner_link_top.jpg" alt=""></a></li>
+    <li><a href="#goto-shop"><img src="../img/common/inner_link_go.jpg" alt=""></a></li>
+    <li><a href="#look"><img src="../img/common/inner_lnk_look.jpg" alt=""></a></li>
+    <li><a href="#buy"><img src="../img/common/inner_link_buy.jpg" alt=""></a></li>
+    </ul>
+</div>
+
+
+</div>
+
+<!--Contents_end-->
+
+<!--footer-->
+
+    <div id="footer">
+  
+      <div class="footer_top">
+            <ul class="footer_l">
+                <li class="start"><a href="/houshin.html">当サイトの運営方針</a></li><!--
+                --><li class="inline"><a href="/policy.html">個人情報保護方針</a></li><!--
+                --><li class="inline"><a href="/sitemap.html">サイトマップ</a></li><!--
+                --><li class="last"><a href="/information/index.html">お問合せ</a></li>
+            </ul>
+<p class="footer">Copyright&copy; 2014 AEON Hokkaido Co.,Ltd. All rights Reserved.</p>
+          
+        </div>
+        <div class="footer_btm">
+          <a href="http://www.aeon.info/"><img class="footerimg" src="/img2012/common/footer_aeon.jpg" /></a>
+          <ul class="footer_btmmenu">
+            <li class="btmmenu"><a href="http://www.aeon.jp/">お客さまサイトへ</a></li><!--
+            --><li class="btmmenu"><a href="http://www.aeon.info/">グループ情報サイトへ</a></li>
+          </ul>
+          <!-- Google Code for &#36092;&#20837;&#23436;&#20102;&#12506;&#12540;&#12472; Conversion Page -->
+          <table class="hidden-xs" style="width:115px;float:left;" summary="Google Site Stats"><tr><td style="font-family: arial, sans-serif; font-size: 11px; color: #000000;" align="center">Google Site Stats<br/><a href="http://www.google.com/gwt/n?u=http://services.google.com/sitestats/en.html" style="color: #000000">send feedback</a></td></tr></table><img height="1" width="1" alt="" src="http://www.googleadservices.com/pagead/conversion/989547674/imp.gif?value=0&amp;label=StfPCJ6p3wQQmpnt1wM&amp;guid=ON&amp;script=0"/>
+          <a style="float:right;" href="http://www.aeon.info/environment/"><img class="tree" src="/img2012/common/footer_tree.jpg" /></a>
+        </div>
+        <div class="sp_footer">
+            <p class="goto-corporate text-center"><a href="/home.html">企業ページトップへ</span></a></p>
+            <p class="copyright">Copyright&copy; 2014 AEON Hokkaido Co.,Ltd. All rights Reserved.</p>
+        </div>
+    </div>
+
+</div>
+<!-- Google Code for &#12522;&#12510;&#12540;&#12465;&#12486;&#12451;&#12531;&#12464; &#12479;&#12464; -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 989547674;
+var google_conversion_label = "8kLcCKao3wQQmpnt1wM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/989547674/?value=0&amp;label=8kLcCKao3wQQmpnt1wM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+<!-- リマーケティング タグの Google コード -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 962648677;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/962648677/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+<!--otoku cv-->
+<!-- Google Code for &#35370;&#21839; Conversion Page -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 962648677;
+var google_conversion_language = "en";
+var google_conversion_format = "2";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "HKsxCNDUwFgQ5bSDywM";
+var google_remarketing_only = false;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/962648677/?label=HKsxCNDUwFgQ5bSDywM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+<!--/otoku cv-->
+
+<!--YDN-->
+<script type="text/javascript" language="javascript">
+  /* <![CDATA[ */
+  var yahoo_ydn_conv_io = "X5GrDigOLDVcUycidg5q";
+  var yahoo_ydn_conv_label = "TQP2G3N02F65ULK63QAQ43438";
+  var yahoo_ydn_conv_transaction_id = "";
+  var yahoo_ydn_conv_amount = "0";
+  /* ]]> */
+</script>
+<script type="text/javascript" language="javascript" charset="UTF-8" src="//b90.yahoo.co.jp/conv.js"></script>
+
+</body>
+</html>
+
+<!--footer_end-->
+
+</body>
+</html>

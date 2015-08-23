@@ -1,0 +1,413 @@
+<html lang="ja">
+
+
+
+<head>
+
+<meta http-equiv="CONTENT-TYPE" content="text/html; charset=Shift_JIS">
+
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+
+<meta http-equiv="Content-Style-Type" content="text/css">
+
+<meta name="robots" content="index,nofollow">
+
+<meta name="keywords" content="">
+
+<meta name="description" content="">
+
+<TITLE>操作体験版－北洋ビジネスダイレクト－</TITLE>
+
+<LINK href="img/style.css" type="text/css" rel="stylesheet">
+
+<LINK REL="stylesheet" HREF="../style.css" TYPE="TEXT/CSS">
+
+<SCRIPT type="ext/javascript" language="JavaScript">
+
+<!--
+
+	var varSendFlag = false;
+
+	function checkSendFlag(){
+
+		if(varSendFlag==false){
+
+			varSendFlag = true;
+
+			return true;
+
+		}else{
+
+			return false;
+
+		}
+
+	}
+
+// -->
+
+</SCRIPT>
+
+<!-- 業務用JavaScript設定 -->
+
+<SCRIPT type="text/javascript" language="JavaScript">
+
+<!--
+
+/*「次へ」ボタン押下*/
+
+function doSubmit(varButtonID) {
+
+	if (CIBMUS01_ContHitCheck(varSendFlag)) {
+
+		if (inputCheck()) {
+
+			if(checkSendFlag()) {
+
+				document.forms["form01_send"].elements["S002"].value =
+
+					document.forms["form01"].elements["S002"].value;
+
+				document.forms["form01_send"].elements["S003"].value =
+
+					document.forms["form01"].elements["S003"].value;
+
+				document.forms["form01_send"].elements["S023"].value =
+
+					document.forms["form01"].elements["S023"].value;
+
+				document.forms["form01"].elements["S002"].value = "";
+
+				document.forms["form01"].elements["S003"].value = "";
+
+				document.forms["form01"].elements["S023"].value = "";
+
+				document.forms["form01_send"].BTID.value = varButtonID;
+
+				document.forms["form01_send"].submit();
+
+				return false;
+
+			}
+
+		} else {
+
+			return false ;
+
+		}
+
+	}
+
+}
+
+
+
+/*「クリア」ボタン押下*/
+
+function doClear() {
+
+     	document.forms["form01"].reset();
+
+}
+
+
+
+/*「閉じる」ボタン押下*/
+
+function winclose() {
+
+     		window.close();
+
+}
+
+
+
+/* 入力欄のJavaScriptチェック */
+
+function inputCheck(){
+
+	var len;
+
+	var ch;
+
+	var CorpNum;
+
+	var UserNum;
+
+	var UserCodeNum;
+
+
+
+	CorpNum = document.forms["form01"].elements["S002"].value;
+
+	UserNum = document.forms["form01"].elements["S003"].value;
+
+	UserCodeNum = document.forms["form01"].elements["S023"].value;
+
+
+
+	len = CIBMZS01_TextLength( CorpNum );
+
+	ch = CIBMUS01_AlphaNum( CorpNum );
+
+	if ( len == 0 ) {
+
+		alert("契約法人ＩＤが入力されていません。");
+
+		return false ;
+
+	} else if ( len > 30 || ch == false ) {
+
+		alert("契約法人ＩＤを正しく入力してください。");
+
+		return false ;
+
+	}
+
+	len = CIBMZS01_TextLength( UserNum );
+
+	ch = CIBMUS01_AlphaNum( UserNum );
+
+	if ( len == 0 ) {
+
+		alert("利用者ＩＤが入力されていません。");
+
+		return false ;
+
+	} else if ( len > 30 || ch == false ) {
+
+		alert("利用者ＩＤを正しく入力してください。");
+
+		return false ;
+
+	}
+
+	len = CIBMZS01_TextLength( UserCodeNum );
+
+	ch = CIBMUS01_PassCheck( UserCodeNum );
+
+	if ( len == 0 ) {
+
+		alert("利用者暗証番号が入力されていません。");
+
+		return false ;
+
+	} else if ( len < 4 || len > 12 || ch == false ) {
+
+		alert("利用者暗証番号を正しく入力してください。");
+
+		return false ;
+
+	}
+
+	return true ;
+
+}
+
+// -->
+
+</SCRIPT>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50191699-1', 'hokuyobank.co.jp');
+  ga('send', 'pageview');
+
+</script>
+</HEAD>
+
+<BODY class=bg3 bgcolor="#ffffff">
+
+<center>
+
+<img src="img/header.jpg" width="750" height="130" alt="事業者向けインターネットバンキング「北洋ビジネスダイレクト」"><br><br><img src="img/trial.gif" width="200" height="38" alt="操作体験版"><br>
+
+
+
+<br>
+
+
+
+<table border="0" cellpadding="3" cellspacing="0" width="750">
+
+	<tr><td align="center"class="text2">
+
+		<table border="0" cellpadding="0" cellspacing="11" width="600" bgcolor="#eeeeee">
+
+			<tr><td class="text2">北洋ビジネスダイレクトでは、取引画面のイメージや使い勝手を体験いただくため、「操作体験版」をご用意しました。<br>下記の注意事項をお読みいただき、ログオンボタンを押してお進みください。</td>
+
+			</tr>
+
+		</table></td>
+
+	</tr>
+
+	
+
+	<tr><td><img src="img/spacer.gif" width="1" height="20" alt=""></td>
+
+	</tr>
+
+	
+
+	<tr><td>
+
+		<table border="0" cellpadding="1" cellspacing="0">
+
+			<tr><td class="text2" valign="top">●</td><td class="text2">本サービス未対応のOS・ブラウザではご利用になれません。</td>
+
+			</tr>
+
+			
+
+			<tr><td class="text2" valign="top">●</td><td class="text2">この「操作体験版」では、オンラインサービスの「残高照会」「入出金明細照会」「資金移動（振込・振替）」およびデータ伝送サービスの「総合振込」を体験いただけます。</td>
+
+			</tr>
+
+			
+
+			<tr><td class="text2" valign="top">●</td><td class="text2">実際の取引画面とは一部相違する場合があります。</td>
+
+			</tr>
+
+			
+
+			<tr><td class="text2" valign="top">●</td><td class="text2">取引画面の項目について、暗証番号や口座番号などが未入力の場合に、エラーメッセージを表示する場合があります。体験版ですので、任意にご入力のうえお進みください。</td>
+
+			</tr>
+
+			
+
+			<tr><td class="text2" valign="top">●</td><td class="text2">残高照会結果等の印刷を行なっていただき、プリンターの接続状況もご確認ください。<br>※印刷はブラウザの印刷機能により行なえます。</td>
+
+			</tr>
+
+		</table></td>
+
+	</tr>
+
+	
+
+	<tr><td><hr></td>
+
+	</tr>
+
+	
+
+	<tr><td>
+
+		<FORM class=formnormal name=form01_send onsubmit="return false" action=/IBSample/IBServlet method=post>
+
+		<INPUT type=hidden value=U501 name=BTID>
+
+		<INPUT type=hidden value=2760 name=S001> <INPUT type=hidden value="" name=MDLHDN>
+
+		<INPUT type=hidden name=S002> <INPUT type=hidden name=S003> <INPUT type=hidden name=S023>
+
+		</FORM>
+
+		
+
+		<FORM class=formnormal name=form01 onsubmit="return inputCheck()" action=/IBSample/IBServlet method=post>
+
+		<TABLE width=750 border=0>
+
+			<TBODY>
+
+			<TR><TD class=title align=left>利用者ログオン</TD>
+
+			</TR>
+
+			</TBODY>
+
+		</TABLE>
+
+		<TABLE cellPadding=5 width=750 border=0>
+
+			<TBODY>
+
+			<TR><TD class=ftnormal1>契約法人ＩＤ、利用者ＩＤ、利用者暗証番号を入力し、<IMG src="img/Bts00001.gif" align=absMiddle width="80" height="25" alt="ログオン">を押してください。<BR><BR>
+
+				<TABLE cellspacing=0 border="0">
+
+					<TBODY>
+
+					<TR><TD class=fttitle1 noWrap>契約法人ＩＤ</TD>
+
+						<TD width=15></TD>
+
+						<TD><INPUT class=formnormal maxLength=30 name=S002 value="123456"></TD>
+
+					</TR>
+
+					
+
+					<TR><TD class=fttitle1 noWrap>利用者ＩＤ</TD>
+
+						<TD width=15></TD>
+
+						<TD><INPUT class=formnormal maxLength=30 name=S003 value="abcdef"></TD>
+
+					</TR>
+
+					
+
+					<TR><TD class=fttitle1 noWrap>利用者暗証番号</TD>
+
+						<TD width=15></TD>
+
+						<TD><INPUT class=formnormal type=password maxLength=12 name=S023 value="123456"></TD>
+
+					</TR>
+
+					<!-- <TD> -->
+
+					</TBODY>
+
+				</TABLE></TD>
+
+			</TR>
+
+			
+
+			<TR><TD></TD>
+
+			</TR>
+
+			</TBODY>
+
+		</TABLE>
+
+		<HR SIZE=1>
+
+		<TABLE border=0>
+
+			<TBODY>
+
+			<TR><TD><A href="logon/index.html"><IMG src="img/Btn00001.gif" width="80" height="25" alt="ログオン" border="0"></A></TD>
+
+				<TD><IMG src="img/Btn00002.gif" width="80" height="25" alt="クリア" border="0"></TD>
+
+				<TD><A onclick="winclose();return false;" href="javascript:void(1)"><IMG src="img/Btn00003.gif" width="80" height="25" alt="閉じる" border="0"></A></TD>
+
+			</TR>
+
+			</TBODY>
+
+		</TABLE>
+
+		</FORM></td>
+
+	</tr>
+
+</table>
+
+</center>
+
+</BODY>
+
+</HTML>
+

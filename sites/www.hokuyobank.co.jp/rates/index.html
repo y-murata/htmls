@@ -1,0 +1,1627 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta name="keywords" content="金利一覧,円預金金利,外貨預金金利,ローン金利,お取引ポイント,北洋銀行,ほくよう,ほっくー">
+<meta name="description" content="北洋銀行の預金・ローン金利のご案内ページです。預金・ローン金利に関する最新金利やお取引ポイントを掲載しています。">
+<title>預金・ローン金利一覧｜北洋銀行</title>
+<link rel="stylesheet" type="text/css" href="../common/css/import.css" media="all">
+<link rel="stylesheet" type="text/css" href="../common/css/print.css" media="print">
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="apple-touch-icon" href="/favicon.png">
+
+<script>
+(function(){
+	'use strict';
+	var ieVer = '';
+	var ua = window.navigator.userAgent.toLowerCase();
+
+	// IE
+	if (ua.indexOf('msie') >= 0 || ua.indexOf('trident') >= 0) {
+		var array = /(msie|rv:?)\s?([\d\.]+)/.exec(ua);
+		ieVer = (array) ? array[2] : '';
+	}
+
+	if(ieVer.indexOf('11') ===0){
+		document.write('<script src="/common/js/jquery-1.11.1.min.js"><\/script>');
+	}else{
+		document.write('<script src="/common/js/jquery-1.10.1.min.js"><\/script>');
+	}
+})();
+</script>
+<script src="/common/js/jquery.bxslider.min.js"></script>
+<script src="/common/js/common.js"></script>
+<script src="/common/js/sphone_chg_data.js"></script>
+<script src="/common/js/sphone_chg_ctrl.js"></script>
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script type="text/javascript" src="/common/js/selectivizr-min.js"></script>
+<![endif]-->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50191699-1', 'hokuyobank.co.jp');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body id="other">
+<div id="contentAll">
+
+<noscript>
+当サイトをご利用になるためには、Javascript対応のブラウザが必要です。また、設定でJavascriptを有効にする必要があります。
+</noscript>
+		<div id="headLogo">
+			<p><a href="/"><img src="/common/ssi/head/image/head_logo.gif" width="190" height="33" alt="北洋銀行"></a></p>
+		<!--/headLogo--></div>
+
+		<div id="contentHeadWrapper">
+			<div id="contentHead">
+			<p class="code"><img src="/common/ssi/head/image/code.gif" width="190" height="11" alt="金融機関コード：0501"></p>
+
+			<ul class="headLink"><!--
+				--><li><a href="/sitemap/"><img src="/common/ssi/head/image/btn_navi01.gif" width="77" height="13" alt="サイトマップ" class="btn"></a></li><!--
+				--><li><a href="/reference/"><img src="/common/ssi/head/image/btn_navi02.gif" width="84" height="13" alt="お問い合わせ" class="btn"></a></li><!--
+			--></ul>
+
+			<div id="fontChange">
+			<dl><!--
+			--><dt><img src="/common/ssi/head/image/size_txt.gif" width="59" height="27" alt="文字サイズ"></dt><!--
+			--><dd class="sizeS"><a href="javascript:void(0)"><span>小</span></a></dd><!--
+			--><dd class="sizeM"><a href="javascript:void(0)"><span>中</span></a></dd><!--
+			--><dd class="sizeL"><a href="javascript:void(0)"><span>大</span></a></dd><!--
+			--></dl>
+			<!--/fontChange--></div>
+
+			<div class="siteSrarch">
+<FORM ACTION="http://is.ntt-it.co.jp/search/client.cgi" METHOD="POST" onsubmit="if(this.key.value=='サイト内検索') this.key.value='';">
+<INPUT TYPE="HIDDEN" NAME="uid"  VALUE="2eeca796126c429603007ce1fe702acf">
+<INPUT TYPE="HIDDEN" NAME="by" VALUE="D0">
+<INPUT TYPE="HIDDEN" NAME="cd" VALUE="A">
+<INPUT TYPE="HIDDEN" NAME="cw" VALUE="1">
+<INPUT TYPE="HIDDEN" NAME="in" VALUE="S">
+<INPUT TYPE="HIDDEN" NAME="nc" VALUE="1">
+<INPUT TYPE="HIDDEN" NAME="num" VALUE="10">
+<INPUT TYPE="HIDDEN" NAME="syn" VALUE="1">
+				<p class="searchTxt"><input type="text" name="key" value="サイト内検索" onblur="if(this.value==''){this.value='サイト内検索'; this.style.color = '#ccc';} else if (this.value != 'サイト内検索') {this.style.color = '#333333';}" onfocus="if(this.value == 'サイト内検索'){this.value = '';} this.style.color = '#333333';" style="color: #ccc;"></p>
+				<p class="searchBtn"><input type="submit" name="" value=""></p>
+			</form>
+			<!--/siteSrarch--></div>
+
+				<div class="globalNavi">
+				<ul><!--
+					--><li class="globalNavi01"><a href="/"><span>個人のお客さま</span></a></li><!--
+					--><li class="globalNavi02"><a href="/company/"><span>法人・個人事業主のお客さま</span></a></li><!--
+					--><li class="globalNavi03"><a href="/ir/"><span>株主・投資家の皆さま</span></a></li><!--
+					--><li class="globalNavi04"><a href="/recruit/"><span>採用のご案内</span></a></li><!--
+					--><li class="globalNavi05"><a href="/about/"><span>企業情報・CSR</span></a></li><!--
+				--></ul>
+			<!--/globalNavi--></div>
+
+			<!--/contentHead--></div>
+		<!--/contentHeadWrapper--></div>
+
+
+
+
+<div id="contentBodyWrapper">
+<div id="contentBody">
+
+
+	<div id="breadCrumb">
+		<ul><!--
+			--><li><a href="/">個人のお客さま</a></li><!--
+			--><li>預金・ローン金利一覧</li><!--
+			--></ul>
+	<!--/breadCrumb--></div>
+		
+	<div id="contentBodyMain">
+
+
+		<h1>預金・ローン金利一覧</h1>
+
+		<p>預金・ローン金利に関する最新金利をご案内しています。<br>商品の詳しい内容については、それぞれ商品説明のページをご覧ください。</p>
+
+			<ul class="pageAnchorList"><!--
+				--><li><a href="#anchor01">円預金金利</a></li><!--
+				--><li><a href="#anchor02">外貨預金金利</a></li><!--
+				--><li><a href="#anchor03">ローン金利</a></li><!--
+			--></ul>
+
+		<h2 id="anchor01">円預金金利</h2>
+		<div class="noticeArea">
+			<div class="blockL">
+				<p>金利適用期間</p>
+			<!--/blockL--></div>
+			<div class="blockR">
+			<p>金利適用日：2015年8月17日～2015年8月23日</p>
+			<p>作成日　　：2015年8月14日</p>
+			<!--/blockR--></div>
+		<!--/noticeArea--></div>
+
+		<ul class="attendList ftSmall">
+			<li><span>※</span>上記期間中においても、金利情勢等により適用する金利が変更となる場合があります。お預け入れの際には北洋銀行の本支店の窓口にてご確認願います。</li>
+			<li><span>※</span>金利は「税引き前」の年利表示となっています。</li>
+		</ul>
+
+		<h3 id="anchor01_1">普通預金・通知預金・納税準備預金 </h3>
+		<table class="tableA txtAlignL">
+		<tr>
+			<th class="w35p"><a href="/person/kouza/sougou/murisokuhutu/">普通預金</a></th>
+			<td>0.020%</td>
+		</tr>
+		<tr>
+			<th><a href="/person/manualpdf/y_tuchi.pdf" class="linkPdf" target="_blank">通知預金</a></th>
+			<td>0.020%</td>
+		</tr>
+		<tr>
+			<th><a href="/person/manualpdf/y_nouzei.pdf" class="linkPdf" target="_blank">納税準備預金</a></th>
+			<td>0.020%</td>
+		</tr>
+		</table>				
+
+		<h3 id="anchor01_2"><a href="/person/manualpdf/y_chochiku.pdf" class="linkPdf" target="_blank">貯蓄預金</a></h3>
+		<table class="tableA txtAlignL">
+		<tr>
+			<th class="w35p">300万円以上</th>
+			<td>0.020%</td>
+		</tr>
+		<tr>
+			<th>30万円以上</th>
+			<td>0.020%</td>
+		</tr>
+		<tr>
+			<th>30万円未満</th>
+			<td>0.020%</td>
+		</tr>
+		</table>				
+
+
+		<h3 id="anchor01_3"><a href="/person/deposit/teiki/">定期預金</a></h3>
+		<table class="tableA txtAlignC spaceSave">
+		<tr class="ftSmallx">
+			<th>&nbsp;</th>
+			<th class="borderDotL">スーパー<br>定期<br>(300万円<br>未満)</th>
+			<th class="borderDotL">スーパー<br>定期<br>(300万円<br>以上)</th>
+			<th class="borderDotL">自由金利型<br>定期<br>(1,000万円<br>以上)</th>
+			<th class="borderDotL">期日指定<br>定期<br>(300万円<br>未満)</th>
+			<th class="borderDotL">変動金利<br>定期<br>(300万円<br>未満)</th>
+			<th class="borderDotL">変動金利<br>定期<br>(300万円<br>以上)</th>
+			<th class="borderDotL">変動金利<br>定期<br>(1,000万円<br>以上)</th>
+		</tr>
+		<tr class="ftSmall">
+			<th>1ヵ月</th>
+			<td>0.025%</td>
+			<td>0.025%</td>
+			<td>0.025%</td>
+			<td>-</td>
+			<td>-</td>
+			<td>-</td>
+			<td>-</td>
+		</tr>
+		<tr class="ftSmall">
+			<th>2ヵ月</th>
+			<td>0.025%</td>
+			<td>0.025%</td>
+			<td>0.025%</td>
+			<td>-</td>
+			<td>-</td>
+			<td>-</td>
+			<td>-</td>
+		</tr>
+		<tr class="ftSmall">
+			<th>3ヵ月</th>
+			<td>0.025%</td>
+			<td>0.025%</td>
+			<td>0.025%</td>
+			<td>-</td>
+			<td>-</td>
+			<td>-</td>
+			<td>-</td>
+		</tr>
+		<tr class="ftSmall">
+			<th>6ヵ月</th>
+			<td>0.025%</td>
+			<td>0.025%</td>
+			<td>0.025%</td>
+			<td>-</td>
+			<td>-</td>
+			<td>-</td>
+			<td>-</td>
+		</tr>
+		<tr class="ftSmall">
+			<th>1年</th>
+			<td>0.025%</td>
+			<td>0.025%</td>
+			<td>0.025%</td>
+			<td>0.025%</td>
+			<td>0.025%</td>
+			<td>0.025%</td>
+			<td>0.025%</td>
+		</tr>
+		<tr class="ftSmall">
+			<th>2年</th>
+			<td>0.030%</td>
+			<td>0.030%</td>
+			<td>0.040%</td>
+			<td>0.030%</td>
+			<td>0.025%</td>
+			<td>0.025%</td>
+			<td>0.025%</td>
+		</tr>
+		<tr class="ftSmall">
+			<th class="noBorderB padB00">3年</th>
+			<td class="noBorderB padB00">0.030%</td>
+			<td class="noBorderB padB00">0.030%</td>
+			<td class="noBorderB padB00">0.040%</td>
+			<td class="noBorderB padB00">-</td>
+			<td class="noBorderB padB00">0.025%</td>
+			<td class="noBorderB padB00">0.025%</td>
+			<td class="noBorderB padB00">0.025%</td>
+		</tr>
+		<tr class="ftSmall">
+			<th class="padT00 ftSmall">(複利)</th>
+			<td class="padT00">(0.029%)</td>
+			<td class="padT00">(0.029%)</td>
+			<td class="padT00">&nbsp;</td>
+			<td class="padT00">(0.030%)</td>
+			<td class="padT00">&nbsp;</td>
+			<td class="padT00">&nbsp;</td>
+			<td class="padT00">&nbsp;</td>
+		</tr>
+		<tr class="ftSmall">
+			<th class="noBorderB padB00">4年</th>
+			<td class="noBorderB padB00">0.030%</td>
+			<td class="noBorderB padB00">0.030%</td>
+			<td class="noBorderB padB00">0.040%</td>
+			<td class="noBorderB padB00">-</td>
+			<td class="noBorderB padB00">-</td>
+			<td class="noBorderB padB00">-</td>
+			<td class="noBorderB padB00">-</td>
+			</tr>
+		<tr class="ftSmall">
+			<th class="padT00 ftSmall">(複利)</th>
+			<td class="padT00">(0.029%)</td>
+			<td class="padT00">(0.029%)</td>
+			<td class="padT00">&nbsp;</td>
+			<td class="padT00">&nbsp;</td>
+			<td class="padT00">&nbsp;</td>
+			<td class="padT00">&nbsp;</td>
+			<td class="padT00">&nbsp;</td>
+			</tr>
+		<tr class="ftSmall">
+			<th class="noBorderB padB00">5年</th>
+			<td class="noBorderB padB00">0.030%</td>
+			<td class="noBorderB padB00">0.040%</td>
+			<td class="noBorderB padB00">0.050%</td>
+			<td class="noBorderB padB00">-</td>
+			<td class="noBorderB padB00">-</td>
+			<td class="noBorderB padB00">-</td>
+			<td class="noBorderB padB00">-</td>
+			</tr>
+		<tr class="ftSmall">
+			<th class="padT00 ftSmall">(複利)</th>
+			<td class="padT00">(0.029%)</td>
+			<td class="padT00">(0.040%)</td>
+			<td class="padT00">&nbsp;</td>
+			<td class="padT00">&nbsp;</td>
+			<td class="padT00">&nbsp;</td>
+			<td class="padT00">&nbsp;</td>
+			<td class="padT00">&nbsp;</td>
+			</tr>
+		</table>				
+		<ul class="attendList ftSmall">
+			<li><span>※</span>期日指定定期1年・2年の適用金利は各期間経過時の金利を表示しています。</li>
+			<li><span>※</span>期日指定定期、貯蓄預金は個人のお客さまのみご利用いただけます。</li>
+			<li><span>※</span>スーパー定期の複利型は個人のお客さまのみご利用いただけます。</li>
+			<li><span>※</span>複利型の場合、期日指定定期は1年複利(元金100万円として計算)、スーパー定期は半年複利(「300万円未満」は元金100万円、「300万円以上」は元金300万円として計算)の方法により計算した年平均利回りを表示しています。</li>
+			<li><span>※</span>変動金利定期はお預け入れ期間中6ヵ月毎に適用金利を見直しします。(上記の適用金利は、お預け入れより6ヵ月間適用されます。)</li>
+		</ul>
+
+
+		<h3 id="anchor01_4">財形預金</h3>
+		<table class="tableA txtAlignL">
+		<tr>
+			<th class="w35p"><a href="/person/manualpdf/z_ippan.pdf" target="_blank" class="linkPdf">一般財形預金</a></th>
+			<td>0.030%</td>
+		</tr>
+		<tr>
+			<th><a href="/person/manualpdf/z_jutaku.pdf" target="_blank" class="linkPdf">財形住宅預金</a></th>
+			<td>0.030%</td>
+		</tr>
+		<tr>
+			<th><a href="/person/manualpdf/z_nenkin.pdf" target="_blank" class="linkPdf">財形年金預金</a></th>
+			<td>0.030%</td>
+		</tr>
+		</table>				
+		<ul class="attendList ftSmall">
+			<li><span>※</span>各財形預金の金利は、２年以上お預け入れされた場合の金利を表示しています。</li>
+		</ul>
+		
+		<p class="pageTop"><a href="#contentAll">ページの先頭へ戻る</a></p>
+
+
+
+
+		<h2 id="anchor02">外貨預金金利</h2>
+		<div class="noticeArea">
+			<div class="blockL">
+				<p>金利適用期間</p>
+			<!--/blockL--></div>
+			<div class="blockR">
+			<p>金利適用日：2015年8月17日～2015年8月21日</p>
+			<p>作成日　　：2015年8月14日</p>
+			<!--/blockR--></div>
+		<!--/noticeArea--></div>
+
+		<ul class="attendList ftSmall">
+			<li><span>※</span>掲載の金利は「税引き前」の年利表示となっております。</li>
+			<li><span>※</span>掲載以外の取扱通貨に対する適用金利は北洋銀行の本支店にご確認ください。</li>
+			<li><span>※</span>掲載の適用期間中であっても金利情勢等の変化により、適用する金利が変更となる場合があります。</li>
+			<li><span>※</span>各商品の詳しい内容につきましては、各商品の商品説明書をご覧ください。</li>
+			<li><span>※</span>掲載の金利は、当行がこの金利でお客さまとお取引をすることを確約するものではありません。</li>
+		</ul>
+
+		<!--<h3>キャンペーン情報</h3>
+		<p class="margB05">外貨定期預金金利上乗せキャンペーン<br>【対象期間】2014年6月2日（月）から2014年9月30日（火）</p>
+		<ul class="linkList margB10">
+<li><a class="linkPdf" target="_blank" href="/rates/pdf/gaikateikicampaign.pdf">詳しくはPDFでご覧ください（871KB）</a></li>
+		</ul>
+					＜キャンペーン概要＞　
+		<table class="tableA txtAlignL">
+		<tr>
+			<th class="w35p">対象通貨</th>
+			<td>米ドル/ユーロ/オーストラリアドル</td>
+		</tr>
+		<tr>
+			<th>預入期間</th>
+			<td>3ヵ月</td>
+		</tr>
+		<tr>
+			<th>適用金利</th>
+			<td>外貨定期預金（北洋ハマナス外貨定期預金を含む）<br>
+1,000通貨単位以上<br>
+<br>
+米ドル・ユーロ ： 公表レート＋3.0%<br>
+オーストラリアドル ： 公表レート＋6.0%</td>
+		</tr>
+		<tr>
+			<th>為替手数料優遇<br>（個人のお客さまのみ）</th>
+			<td>お預け入れ時のみ<br>1,000通貨単位以上3,000通貨単位未満<br>　30銭優遇<br>3,000通貨単位以上<br>　50銭優遇</td>
+		</tr>
+		</table>-->
+
+		<h3 id="anchor02_1"><a href="/person/deposit/gaika/hamanasu/">北洋ハマナス外貨定期預金（個人のお客さま）</a></h3>
+		<table class="tableA txtAlignC spaceSave">
+		<tr class="ftSmall">
+			<th rowspan="2">&nbsp;</th>
+			<th colspan="4" class="noBorderB borderDotL"><img src="../common/image/flag/usa.gif" alt="米ドル" width="32" height="21"><br>米ドル</th>
+			<th colspan="4" class="noBorderB borderDotL"><img src="../common/image/flag/eur.gif" alt="ユーロ" width="32" height="21"><br>ユーロ</th>
+			</tr>
+		<tr class="ftSmall">
+			<th class="noBorderT borderDotL">1ヵ月</th>
+			<th class="noBorderT borderDotL">3ヵ月</th>
+			<th class="noBorderT borderDotL">6ヵ月</th>
+			<th class="noBorderT borderDotL">1年</th>
+			<th class="noBorderT borderDotL">1ヵ月</th>
+			<th class="noBorderT borderDotL">3ヵ月</th>
+			<th class="noBorderT borderDotL">6ヵ月</th>
+			<th class="noBorderT borderDotL">1年</th>
+		</tr>
+		<tr class="ftSmall">
+			<th>1万通貨<br>単位未満</th>
+			<td>0.05%</td>
+			<td>0.06%</td>
+			<td>0.12%</td>
+			<td>0.15%</td>
+			<td>0.01%</td>
+			<td>0.01%</td>
+			<td>0.01%</td>
+			<td>0.01%</td>
+		</tr>
+		<tr class="ftSmall">
+			<th>1万～10万<br>通貨単位</th>
+			<td>0.05%</td>
+			<td>0.06%</td>
+			<td>0.12%</td>
+			<td>0.15%</td>
+			<td>0.01%</td>
+			<td>0.01%</td>
+			<td>0.01%</td>
+			<td>0.01%</td>
+		</tr>
+		<tr class="ftSmall">
+			<th>10万通貨<br>単位以上</th>
+			<td>0.05%</td>
+			<td>0.06%</td>
+			<td>0.12%</td>
+			<td>0.15%</td>
+			<td>0.01%</td>
+			<td>0.01%</td>
+			<td>0.01%</td>
+			<td>0.01%</td>
+		</tr>
+		</table>				
+
+
+		<table class="tableA txtAlignC spaceSave">
+		<tr class="ftSmall">
+			<th rowspan="2">&nbsp;</th>
+			<th colspan="4" class="noBorderB borderDotL"><img src="../common/image/flag/bgr.gif" alt="イギリスポンド" width="32" height="21"><br>イギリスポンド</th>
+			<th colspan="4" class="noBorderB borderDotL"><img src="../common/image/flag/aus.gif" alt="オーストラリアドル" width="32" height="21"><br>オーストラリアドル</th>
+			</tr>
+		<tr class="ftSmall">
+			<th class="noBorderT borderDotL">1ヵ月</th>
+			<th class="noBorderT borderDotL">3ヵ月</th>
+			<th class="noBorderT borderDotL">6ヵ月</th>
+			<th class="noBorderT borderDotL">1年</th>
+			<th class="noBorderT borderDotL">1ヵ月</th>
+			<th class="noBorderT borderDotL">3ヵ月</th>
+			<th class="noBorderT borderDotL">6ヵ月</th>
+			<th class="noBorderT borderDotL">1年</th>
+		</tr>
+		<tr class="ftSmall">
+			<th>1万通貨<br>単位未満</th>
+			<td>0.05%</td>
+			<td>0.05%</td>
+			<td>0.05%</td>
+			<td>0.05%</td>
+			<td>0.30%</td>
+			<td>0.40%</td>
+			<td>0.45%</td>
+			<td>0.45%</td>
+		</tr>
+		<tr class="ftSmall">
+			<th>1万～10万<br>通貨単位</th>
+			<td>0.05%</td>
+			<td>0.05%</td>
+			<td>0.05%</td>
+			<td>0.05%</td>
+			<td>0.40%</td>
+			<td>0.50%</td>
+			<td>0.55%</td>
+			<td>0.55%</td>
+		</tr>
+		<tr class="ftSmall">
+			<th>10万通貨<br>単位以上</th>
+			<td>0.05%</td>
+			<td>0.05%</td>
+			<td>0.05%</td>
+			<td>0.10%</td>
+			<td>0.50%</td>
+			<td>0.60%</td>
+			<td>0.65%</td>
+			<td>0.65%</td>
+		</tr>
+		</table>				
+
+
+		<table class="tableA txtAlignC spaceSave">
+		<tr class="ftSmall">
+			<th rowspan="2">&nbsp;</th>
+			<th colspan="4" class="noBorderB borderDotL"><img src="../common/image/flag/can.gif" alt="カナダドル" width="32" height="21"><br>カナダドル</th>
+			<th colspan="4" class="noBorderB borderDotL"><img src="../common/image/flag/nzl.gif" alt="ニュージーランドドル" width="32" height="21"><br>ニュージーランドドル</th>
+			</tr>
+		<tr class="ftSmall">
+			<th class="noBorderT borderDotL">1ヵ月</th>
+			<th class="noBorderT borderDotL">3ヵ月</th>
+			<th class="noBorderT borderDotL">6ヵ月</th>
+			<th class="noBorderT borderDotL">1年</th>
+			<th class="noBorderT borderDotL">1ヵ月</th>
+			<th class="noBorderT borderDotL">3ヵ月</th>
+			<th class="noBorderT borderDotL">6ヵ月</th>
+			<th class="noBorderT borderDotL">1年</th>
+		</tr>
+		<tr class="ftSmall">
+			<th>1万通貨<br>単位未満</th>
+			<td>0.05%</td>
+			<td>0.05%</td>
+			<td>0.05%</td>
+			<td>0.05%</td>
+			<td>0.90%</td>
+			<td>1.00%</td>
+			<td>1.00%</td>
+			<td>1.05%</td>
+		</tr>
+		<tr class="ftSmall">
+			<th>1万～10万<br>通貨単位</th>
+			<td>0.05%</td>
+			<td>0.05%</td>
+			<td>0.05%</td>
+			<td>0.05%</td>
+			<td>1.00%</td>
+			<td>1.10%</td>
+			<td>1.10%</td>
+			<td>1.15%</td>
+		</tr>
+		<tr class="ftSmall">
+			<th>10万通貨<br>単位以上</th>
+			<td>0.05%</td>
+			<td>0.05%</td>
+			<td>0.05%</td>
+			<td>0.05%</td>
+			<td>1.10%</td>
+			<td>1.20%</td>
+			<td>1.20%</td>
+			<td>1.25%</td>
+		</tr>
+		</table>
+
+
+		<h3 id="anchor02_2"><a href="/person/deposit/gaika/teiki/">外貨定期預金</a></h3>
+		<table class="tableA txtAlignC spaceSave">
+		<tr class="ftSmall">
+			<th rowspan="2">&nbsp;</th>
+			<th colspan="4" class="noBorderB borderDotL"><img src="../common/image/flag/usa.gif" alt="米ドル" width="32" height="21"><br>米ドル</th>
+			<th colspan="4" class="noBorderB borderDotL"><img src="../common/image/flag/eur.gif" alt="ユーロ" width="32" height="21"><br>ユーロ</th>
+			</tr>
+		<tr class="ftSmall">
+			<th class="noBorderT borderDotL">1ヵ月</th>
+			<th class="noBorderT borderDotL">3ヵ月</th>
+			<th class="noBorderT borderDotL">6ヵ月</th>
+			<th class="noBorderT borderDotL">1年</th>
+			<th class="noBorderT borderDotL">1ヵ月</th>
+			<th class="noBorderT borderDotL">3ヵ月</th>
+			<th class="noBorderT borderDotL">6ヵ月</th>
+			<th class="noBorderT borderDotL">1年</th>
+		</tr>
+		<tr class="ftSmall">
+			<th>1万通貨<br>単位未満</th>
+			<td>0.05%</td>
+			<td>0.05%</td>
+			<td>0.07%</td>
+			<td>0.10%</td>
+			<td>0.01%</td>
+			<td>0.01%</td>
+			<td>0.01%</td>
+			<td>0.01%</td>
+		</tr>
+		<tr class="ftSmall">
+			<th>1万～10万<br>通貨単位</th>
+			<td>0.05%</td>
+			<td>0.05%</td>
+			<td>0.07%</td>
+			<td>0.10%</td>
+			<td>0.01%</td>
+			<td>0.01%</td>
+			<td>0.01%</td>
+			<td>0.01%</td>
+		</tr>
+		<tr class="ftSmall">
+			<th>10万通貨<br>単位以上</th>
+			<td>0.05%</td>
+			<td>0.05%</td>
+			<td>0.07%</td>
+			<td>0.10%</td>
+			<td>0.01%</td>
+			<td>0.01%</td>
+			<td>0.01%</td>
+			<td>0.01%</td>
+		</tr>
+		</table>				
+
+
+		<table class="tableA txtAlignC spaceSave">
+		<tr class="ftSmall">
+			<th rowspan="2">&nbsp;</th>
+			<th colspan="4" class="noBorderB borderDotL"><img src="../common/image/flag/bgr.gif" alt="イギリスポンド" width="32" height="21"><br>イギリスポンド</th>
+			<th colspan="4" class="noBorderB borderDotL"><img src="../common/image/flag/aus.gif" alt="オーストラリアドル" width="32" height="21"><br>オーストラリアドル</th>
+			</tr>
+		<tr class="ftSmall">
+			<th class="noBorderT borderDotL">1ヵ月</th>
+			<th class="noBorderT borderDotL">3ヵ月</th>
+			<th class="noBorderT borderDotL">6ヵ月</th>
+			<th class="noBorderT borderDotL">1年</th>
+			<th class="noBorderT borderDotL">1ヵ月</th>
+			<th class="noBorderT borderDotL">3ヵ月</th>
+			<th class="noBorderT borderDotL">6ヵ月</th>
+			<th class="noBorderT borderDotL">1年</th>
+		</tr>
+		<tr class="ftSmall">
+			<th>1万通貨<br>単位未満</th>
+			<td>0.05%</td>
+			<td>0.05%</td>
+			<td>0.05%</td>
+			<td>0.05%</td>
+			<td>0.05%</td>
+			<td>0.10%</td>
+			<td>0.15%</td>
+			<td>0.15%</td>
+		</tr>
+		<tr class="ftSmall">
+			<th>1万～10万<br>通貨単位</th>
+			<td>0.05%</td>
+			<td>0.05%</td>
+			<td>0.05%</td>
+			<td>0.05%</td>
+			<td>0.10%</td>
+			<td>0.20%</td>
+			<td>0.25%</td>
+			<td>0.25%</td>
+		</tr>
+		<tr class="ftSmall">
+			<th>10万通貨<br>単位以上</th>
+			<td>0.05%</td>
+			<td>0.05%</td>
+			<td>0.05%</td>
+			<td>0.05%</td>
+			<td>0.20%</td>
+			<td>0.30%</td>
+			<td>0.35%</td>
+			<td>0.35%</td>
+		</tr>
+		</table>				
+
+
+		<table class="tableA txtAlignC spaceSave">
+		<tr class="ftSmall">
+			<th rowspan="2">&nbsp;</th>
+			<th colspan="4" class="noBorderB borderDotL"><img src="../common/image/flag/can.gif" alt="カナダドル" width="32" height="21"><br>カナダドル</th>
+			<th colspan="4" class="noBorderB borderDotL"><img src="../common/image/flag/nzl.gif" alt="ニュージーランドドル" width="32" height="21"><br>ニュージーランドドル</th>
+			</tr>
+		<tr class="ftSmall">
+			<th class="noBorderT borderDotL">1ヵ月</th>
+			<th class="noBorderT borderDotL">3ヵ月</th>
+			<th class="noBorderT borderDotL">6ヵ月</th>
+			<th class="noBorderT borderDotL">1年</th>
+			<th class="noBorderT borderDotL">1ヵ月</th>
+			<th class="noBorderT borderDotL">3ヵ月</th>
+			<th class="noBorderT borderDotL">6ヵ月</th>
+			<th class="noBorderT borderDotL">1年</th>
+		</tr>
+		<tr class="ftSmall">
+			<th>1万通貨<br>単位未満</th>
+			<td>0.05%</td>
+			<td>0.05%</td>
+			<td>0.05%</td>
+			<td>0.05%</td>
+			<td>0.60%</td>
+			<td>0.70%</td>
+			<td>0.70%</td>
+			<td>0.75%</td>
+		</tr>
+		<tr class="ftSmall">
+			<th>1万～10万<br>通貨単位</th>
+			<td>0.05%</td>
+			<td>0.05%</td>
+			<td>0.05%</td>
+			<td>0.05%</td>
+			<td>0.70%</td>
+			<td>0.80%</td>
+			<td>0.80%</td>
+			<td>0.85%</td>
+		</tr>
+		<tr class="ftSmall">
+			<th>10万通貨<br>単位以上</th>
+			<td>0.05%</td>
+			<td>0.05%</td>
+			<td>0.05%</td>
+			<td>0.05%</td>
+			<td>0.80%</td>
+			<td>0.90%</td>
+			<td>0.90%</td>
+			<td>0.95%</td>
+		</tr>
+		</table>				
+
+
+		<h3 id="anchor02_3"><a href="/person/deposit/gaika/hutu/">外貨普通預金</a></h3>
+		<table class="tableA txtAlignC">
+		<tr>
+			<th rowspan="2">&nbsp;</th>
+			<th class="noBorderB borderDotL w14p padB00">アメリカ</th>
+			<th class="noBorderB borderDotL w14p padB00">イギリス</th>
+			<th class="noBorderB borderDotL w14p padB00">欧州圏</th>
+			<th class="noBorderB borderDotL w14p padB00">オーストラリア</th>
+			<th class="noBorderB borderDotL w14p padB00">カナダ</th>
+			<th class="noBorderB borderDotL w14p padB00">ニュージーランド</th>
+		</tr>
+		<tr>
+			<th class="borderDotL w14p"><img src="../common/image/flag/usa.gif" alt="アメリカ" width="32" height="21"></th>
+			<th class="borderDotL w14p"><img src="../common/image/flag/bgr.gif" alt="イギリス" width="32" height="21"></th>
+			<th class="borderDotL w14p"><img src="../common/image/flag/eur.gif" alt="欧州圏" width="32" height="21"></th>
+			<th class="borderDotL w14p"><img src="../common/image/flag/aus.gif" alt="オーストラリア" width="32" height="21"></th>
+			<th class="borderDotL w14p"><img src="../common/image/flag/can.gif" alt="カナダ" width="32" height="21"></th>
+			<th class="borderDotL w14p"><img src="../common/image/flag/nzl.gif" alt="ニュージーランド" width="32" height="21"></th>
+			</tr>
+		<tr>
+			<th>通貨</th>
+			<td>ドル</td>
+			<td>ポンド</td>
+			<td>ユーロ</td>
+			<td>ドル</td>
+			<td>ドル</td>
+			<td>ドル</td>
+			</tr>
+		<tr>
+			<th>通貨コード</th>
+			<td>USD</td>
+			<td>GBP</td>
+			<td>EUR</td>
+			<td>AUD</td>
+			<td>CAD</td>
+			<td>NZD</td>
+			</tr>
+		<tr>
+			<th>普通預金金利</th>
+			<td>0.04%</td>
+			<td>0.01%</td>
+			<td>0.01%</td>
+			<td>0.05%</td>
+			<td>0.01%</td>
+			<td>0.05%</td>
+			</tr>
+		</table>				
+		<ul class="attendList ftSmall">
+			<li><span>※</span>上記以外の取扱通貨に対する適用金利は北洋銀行の本支店にご確認ください。</li>
+		</ul>
+		
+			<p class="pageTop"><a href="#contentAll">ページの先頭へ戻る</a></p>
+
+
+		<h2 id="anchor03">ローン金利</h2>
+		<div class="noticeArea">
+			<div class="blockL">
+				<p>金利適用基準日</p>
+			<!--/blockL--></div>
+			<div class="blockR">
+			<p>2015年8月11日現在</p>
+			<!--/blockR--></div>
+		<!--/noticeArea--></div>
+
+		<ul class="attendList ftSmall">
+			<li><span>※</span>下記金利は基準日現在の店頭基準金利であり、ご融資の際の適用利率は異なることがあります。</li>
+			<li><span>※</span>＜北洋ライフプラスローン＞は当行とのお取り引きに応じたポイントにより、下記店頭基準金利より適用金利を引き下げさせていただきます。</li>
+		</ul>
+		<p class="txtAlignC"><a href="/rates/img/transition.gif" target="_blank"><img src="../common/image/btn/btn_past_loan.gif" alt="過去の住宅ローン店頭基準金利の推移" width="322" height="37" class="btn"></a></p>
+
+		<h3 id="anchor03_1">住宅・アパートローン</h3>
+		<table class="tableA">
+		<tr>
+			<th id="anchor03_2" class="w30p txtAlignL">商品名</th>
+			<th class="borderDotL w35p">金利の種類</th>
+			<th class="borderDotL w35p">金利（年利）</th>
+		</tr>
+		<tr>
+			<th rowspan="6" class="txtAlignL"><a href="/person/loan/house/j_jloan.html">ほくよう住宅ローン</a></th>
+			<td class="txtAlignC">変動金利</td>
+			<td class="txtAlignC">2.675％</td>
+		</tr>
+		<tr>
+			<td class="txtAlignC">固定金利特約3年</td>
+			<td class="txtAlignC">2.700％</td>
+		</tr>
+		<tr>
+			<td class="txtAlignC">固定金利特約5年</td>
+			<td class="txtAlignC">2.900％</td>
+		</tr>
+		<tr>
+			<td class="txtAlignC">固定金利特約10年</td>
+			<td class="txtAlignC">3.100％</td>
+		</tr>
+		<tr>
+			<td class="txtAlignC">固定金利特約15年</td>
+			<td class="txtAlignC">4.350％</td>
+		</tr>
+		<tr>
+			<td class="txtAlignC">固定金利特約20年</td>
+			<td class="txtAlignC">4.750％</td>
+		</tr>
+		</table>				
+
+		<table class="tableA">
+		<tr>
+			<th id="anchor03_3" class="w30p txtAlignL">商品名</th>
+			<th class="borderDotL w35p">金利の種類</th>
+			<th class="borderDotL w35p">金利（年利）</th>
+		</tr>
+		<tr>
+			<th rowspan="6" class="txtAlignL"><a href="/person/loan/house/j_fudousanloan.html">ほくよう賃貸不動産<br>購入ローン</a></th>
+			<td class="txtAlignC">変動金利</td>
+			<td class="txtAlignC">2.675％</td>
+		</tr>
+		<tr>
+			<td class="txtAlignC">固定金利特約3年</td>
+			<td class="txtAlignC">2.700％</td>
+		</tr>
+		<tr>
+			<td class="txtAlignC">固定金利特約5年</td>
+			<td class="txtAlignC">2.900％</td>
+		</tr>
+		<tr>
+			<td class="txtAlignC">固定金利特約10年</td>
+			<td class="txtAlignC">3.100％</td>
+		</tr>
+		<tr>
+			<td class="txtAlignC">固定金利特約15年</td>
+			<td class="txtAlignC">4.350％</td>
+		</tr>
+		<tr>
+			<td class="txtAlignC">固定金利特約20年</td>
+			<td class="txtAlignC">4.750％</td>
+		</tr>
+		</table>				
+
+		<table class="tableA">
+		<tr>
+			<th id="anchor03_4" class="w30p txtAlignL">商品名</th>
+			<th class="borderDotL w35p">金利の種類</th>
+			<th class="borderDotL w35p">金利（年利）</th>
+		</tr>
+		<tr>
+			<th rowspan="5" class="txtAlignL"><a href="/person/loan/house/j_mutanpo_loan.html">無担保借換ローン</a></th>
+			<td class="txtAlignC">変動金利</td>
+			<td class="txtAlignC">3.175％</td>
+		</tr>
+		<tr>
+			<td class="txtAlignC">固定金利特約3年</td>
+			<td class="txtAlignC">3.200％</td>
+		</tr>
+		<tr>
+			<td class="txtAlignC">固定金利特約5年</td>
+			<td class="txtAlignC">3.400％</td>
+		</tr>
+		<tr>
+			<td class="txtAlignC">固定金利特約10年</td>
+			<td class="txtAlignC">3.600％</td>
+		</tr>
+		<tr>
+			<td class="txtAlignC">固定金利特約15年</td>
+			<td class="txtAlignC">4.850％</td>
+		</tr>
+		</table>				
+
+
+		<table class="tableA">
+		<tr>
+			<th id="anchor03_5" class="w30p txtAlignL">商品名</th>
+			<th class="borderDotL w35p">金利の種類</th>
+			<th class="borderDotL w35p">金利（年利）</th>
+		</tr>
+		<tr>
+			<th rowspan="4" class="txtAlignL"><a href="/person/loan/house/j_fudousanloan.html">アパートローン</a></th>
+			<td class="txtAlignC">変動金利</td>
+			<td class="txtAlignC">2.475％</td>
+		</tr>
+		<tr>
+			<td class="txtAlignC">固定金利特約3年</td>
+			<td class="txtAlignC">3.300％</td>
+		</tr>
+		<tr>
+			<td class="txtAlignC">固定金利特約5年</td>
+			<td class="txtAlignC">3.400％</td>
+		</tr>
+		<tr>
+			<td class="txtAlignC">固定金利特約10年</td>
+			<td class="txtAlignC">3.700％</td>
+		</tr>
+		</table>				
+
+
+
+		<h3 id="anchor03_6">目的別ローン　＜北洋ライフプラスローン＞</h3>
+		<table class="tableA">
+		<tr>
+			<th class="w30p txtAlignL">商品名</th>
+			<th class="borderDotL w35p">金利の種類</th>
+			<th class="borderDotL w35p">金利（年利）</th>
+		</tr>
+<!--
+		<tr>
+			<th rowspan="2" class="txtAlignL"><a href="/person/loan/mycar/">マイカーローン<br>(中古車・バイクをご購入、お借換えの方)</a></th>
+			<td class="txtAlignC">変動金利</td>
+			<td class="txtAlignC">4.500％</td>
+		</tr>
+		<tr>
+			<td class="txtAlignC">固定金利</td>
+			<td class="txtAlignC">6.025％</td>
+		</tr>
+-->
+		<tr>
+			<th class="txtAlignL"><a href="/person/loan/mycar/">マイカーローン</a></th>
+			<td class="txtAlignC">変動金利</td>
+			<td class="txtAlignC">4.000％</td>
+		</tr>
+		<tr>
+			<th rowspan="2" class="txtAlignL"><a href="/person/loan/education/">教育ローン</a></th>
+			<td class="txtAlignC">変動金利</td>
+			<td class="txtAlignC">4.500％</td>
+		</tr>
+		<tr>
+			<td class="txtAlignC">固定金利</td>
+			<td class="txtAlignC">7.100％</td>
+		</tr>
+		<tr>
+			<th rowspan="2" class="txtAlignL"><a href="/person/loan/reform/">リフォームローン</a><br>
+				<span class="ftSmall fwNormal">(注)10年超でのお借入の場合は変動金利のみの取り扱いとなります。</span></th>
+			<td class="txtAlignC">変動金利</td>
+			<td class="txtAlignC">4.500％</td>
+		</tr>
+		<tr>
+			<td class="txtAlignC">固定金利</td>
+			<td class="txtAlignC">6.575％</td>
+		</tr>
+		<tr>
+			<th class="txtAlignL"><a href="/person/loan/lifeplus/livingloan.html">リビングローン</a></th>
+			<td class="txtAlignC">変動金利</td>
+			<td class="txtAlignC">5.200％</td>
+		</tr>
+		<tr>
+			<th class="txtAlignL"><a href="/person/loan/lifeplus/apartreform.html">アパートリフォーム<br>ローン</a></th>
+			<td class="txtAlignC">変動金利</td>
+			<td class="txtAlignC">4.675％</td>
+		</tr>
+		</table>				
+
+
+
+		<h3 id="anchor03_7"><a href="/person/loan/freeloan/">フリーローン</a></h3>
+		<table class="tableA">
+		<tr>
+			<th class="w30p txtAlignL">商品名</th>
+			<th class="borderDotL w35p">金利の種類</th>
+			<th class="borderDotL w35p">金利（年利）</th>
+		</tr>
+		<tr>
+			<th class="txtAlignL"><a href="/person/loan/freeloan/freeloan.html">北洋フリーローン<span class="fwNormal">（注）</span></a></th>
+			<td class="txtAlignC">変動金利</td>
+			<td class="txtAlignC">4.900％　～　13.500％</td>
+		</tr>
+		<!--
+		<tr>
+			<th class="txtAlignL"><a href="/person/loan/freeloan/dont200.html">どんと200</a></th>
+			<td class="txtAlignC">変動金利</td>
+			<td class="txtAlignC">9.500％</td>
+		</tr>
+		<tr>
+			<th class="txtAlignL"><a href="/person/loan/freeloan/lady.html">レディ</a></th>
+			<td class="txtAlignC">変動金利</td>
+			<td class="txtAlignC">8.500％</td>
+		</tr>
+		<tr>
+			<th class="txtAlignL"><a href="/person/loan/freeloan/bestselection.html">ベストセレクション</a></th>
+			<td class="txtAlignC">変動金利</td>
+			<td class="txtAlignC">6.500％</td>
+		</tr>
+		</table>				
+		-->
+		<tr id="anchor03_8">
+			<th class="txtAlignL"><a href="/person/loan/jcb/index_a.html" style="display:inline-block; padding-bottom:5px;">北洋フリー＆おまとめローン（来店契約型）<span class="fwNormal">（注）</span></a><br><a href="/person/loan/jcb/index_a.html">北洋フリー＆おまとめローン（WEB完結型）<span class="fwNormal">（注）</span></a></th>
+			<td class="txtAlignC">変動金利</td>
+			<td class="txtAlignC">3.800%　～　14.000%</td>
+		</tr>
+		</table>				
+
+
+		<h3><a href="/person/manualpdf/l_12.pdf" target="_blank" class="linkPdf">資産形成・活用ローン「ゆとり」</a></h3>
+		<table class="tableA txtAlignC">
+		<tr>
+			<th class="w30p">金利の種類</th>
+			<th class="borderDotL">金利（年利）</th>
+			</tr>
+		<tr>
+			<td class="noBorderL">変動金利</td>
+			<td>3.975%</td>
+		</tr>
+		</table>				
+
+		<ul class="noteListA">
+			<li><span>（注）</span>お借入利率は、保証会社の審査により決定させていただきます。</li>
+		</ul>
+
+		<ul class="unOrderListC">
+			<li>「がん保障付団体信用生命保険」ご加入の場合<br>
+				・対象商品の店頭基準金利＋年0.200%<br>
+				「三大疾病保障付団体信用生命保険」又は「八大疾病保障付団体信用生命保険」ご加入の場合<br>
+				・対象商品の店頭基準金利＋年0.300%<br>
+				「ほくよう住実団体信用生命保険（傷病補償付）」ご加入の場合<br>
+				・対象商品の店頭基準金利＋年0.400%<br>
+				「ハートフル団体信用生命保険」ご加入の場合<br>
+				・対象商品の店頭基準金利＋年0.600%<br>
+				＜対象商品＞ほくよう住宅ローン、無担保借換ローン</li>
+			<li>上記のアパートローンおよび、リフォームローン・アパートリフォームローンの金利は第二地銀協統一団体信用生命保険にご加入されない場合の適用金利です。<br>
+				第二地銀協統一団体信用生命保険にご加入される場合は、上記の金利＋年0.300%となります。</li>
+			<li>保証料後払方式をご選択された場合<br>
+				保証料は適用金利に含まれ、この中から銀行を通じて保証会社へお支払いいただきます。<br>
+				対象商品の上記の金利に年0.200%上乗せとなります。<br>
+				＜対象商品＞ほくよう住宅ローン</li>
+		</ul>
+
+
+		<h3 id="anchor03_9">＜北洋ライフプラスローン＞商品のお取引ポイント項目</h3>
+		<table class="tableA">
+		<tr>
+			<th>お取引ポイント項目</th>
+			<th class="borderDotL w30p">ポイント</th>
+		</tr>
+		<tr>
+			<td class="noBorderL">
+			<ol class="numberList">
+				<li class="no01 padB00">clover（クレジット機能付ICキャッシュカード）をご利用いただいている方。（新規お申し込みも含みます。）</li>
+			</ol>
+			</td>
+			<td class="txtAlignC">10</td>
+		</tr>
+		<tr>
+			<td class="noBorderL">
+			<ol class="numberList">
+				<li class="no02 padB00">当行で住宅ローン、住宅金融支援機構（旧住宅金融公庫）をご利用の方。</li>
+			</ol>
+			</td>
+			<td class="txtAlignC">10</td>
+		</tr>
+		<tr>
+			<td class="noBorderL">
+			<ol class="numberList">
+				<li class="no03 padB00">当行に投資信託の残高がある方。</li>
+			</ol>
+			</td>
+			<td class="txtAlignC">10</td>
+		</tr>
+		<tr>
+			<td class="noBorderL">
+			<ol class="numberList">
+				<li class="no04 padB00">当行に公共債または外貨預金の残高がある方。</li>
+			</ol>
+			</td>
+			<td class="txtAlignC">5</td>
+		</tr>
+		<tr>
+			<td class="noBorderL">
+			<ol class="numberList">
+				<li class="no05 padB00">当行に給与振込または年金受取指定をいただいている方。</li>
+			</ol>
+			</td>
+			<td class="txtAlignC">5</td>
+		</tr>
+		<tr>
+			<td class="noBorderL">
+			<ol class="numberList">
+				<li class="no06 padB00">北洋ダイレクト（インターネットバンキングまたはモバイルバンキング）をご利用いただいている方。（新規お申し込みも含みます。）</li>
+			</ol>
+			</td>
+			<td class="txtAlignC">5</td>
+		</tr>
+		<tr>
+			<td class="noBorderL">
+			<ol class="numberList">
+				<li class="no07 padB00">当行に定期性預金20万円以上の残高がある方。（新規お申し込みも含みます。）</li>
+			</ol>
+			</td>
+			<td class="txtAlignC">2</td>
+		</tr>
+		<tr>
+			<td class="noBorderL">
+			<ol class="numberList">
+				<li class="no08 padB00">当行で電気、電話、ガス、水道、NHKの自動支払のうち2項目以上指定をいただいている方。（新規お申し込みも含みます。）</li>
+			</ol>
+			</td>
+			<td class="txtAlignC">1</td>
+		</tr>
+		</table>				
+
+		<ul class="unOrderListC">
+			<li>&lt;&lt;適用金利&gt;&gt;<br>店頭基準金利－（お取引ポイントの合計&times;0.1）%<br>お取引ポイントの合計は、最大10ポイントとさせていただきます。</li>
+		</ul>
+
+
+		<h3 id="anchor03_10">カードローン</h3>
+		<table class="tableA">
+		<tr>
+			<th class="w30p txtAlignL">商品名</th>
+			<th class="borderDotL w35p">金利の種類</th>
+			<th class="borderDotL w35p">金利（年利）</th>
+		</tr>
+		<tr>
+			<th class="txtAlignL"><a href="/superarca/">カードローン<br>
+				「スーパーアルカ」</a></th>
+			<td class="txtAlignC">変動金利</td>
+			<td class="txtAlignC">2.950％　～　14.700％</td>
+		</tr>
+		<tr>
+			<th class="txtAlignL">ほくようカードローン<br>
+				プリズム</th>
+			<td class="txtAlignC">変動金利</td>
+			<td class="txtAlignC">6.500％　～　10.500％</td>
+		</tr>
+		</table>				
+
+
+		<h3 id="anchor03_11"><a href="/person/loan/house/flat35.html">ほくよう長期安心ローン</a></h3>
+
+		<div class="noticeArea">
+			<div class="blockL">
+				<p>金利適用基準日</p>
+			<!--/blockL--></div>
+			<div class="blockR">
+			<p>2015年8月3日現在</p>
+			<!--/blockR--></div>
+		<!--/noticeArea--></div>
+
+		<table class="tableA txtAlignC">
+		<tr>
+			<th rowspan="2">金利の種類</th>
+			<th rowspan="2" class="borderDotL">融資率</th>
+			<th rowspan="2" class="borderDotL">返済期間</th>
+			<th colspan="2" class="borderDotL noBorderB">金利（年利）</th>
+			</tr>
+		<tr>
+			<th class="borderDotL noBorderT">一般型</th>
+			<th class="borderDotL noBorderT">前払型</th>
+		</tr>
+		<tr>
+			<td rowspan="4" class="txtAlignL noBorderL">固定金利</td>
+			<td rowspan="2">9割以下</td>
+			<td>15年以上20年以下</td>
+			<td>1.600%</td>
+			<td>1.350%</td>
+		</tr>
+		<tr>
+			<td>21年以上35年以下</td>
+			<td>1.830%</td>
+			<td>1.580%</td>
+		</tr>
+		<tr>
+			<td rowspan="2">9割超</td>
+			<td>15年以上20年以下</td>
+			<td>1.730%</td>
+			<td>1.480%</td>
+		</tr>
+		<tr>
+			<td>21年以上35年以下</td>
+			<td>1.960%</td>
+			<td>1.710%</td>
+		</tr>
+		</table>				
+		<ul class="unOrderListC margB05">
+			<li>お申し込みされる方が60歳以上の場合の返済期間は10年以上です。</li>
+			<li>借換え等の場合を除き、融資率が9割を超える場合に適用される金利は、お借入金額全体を対象としますのでご注意ください。</li>
+		</ul>
+		<ul class="noteListA margB05">
+			<li><span>（注）</span>融資率とは、建設費・購入額に対して【フラット35】のお借入額の占める割合をいいます。</li>
+		</ul>
+		<ul class="unOrderListC">
+			<li>ほくよう長期安心ローンは住宅金融支援機構の証券化支援事業【フラット35】を活用したローンです。</li>
+			<li>【フラット35】S（優良住宅支援制度）をご利用の場合<br>
+				＜2012年11月1日以降お申し込み受付分＞<br>
+				&#9312;【フラット35】S（金利Ａプラン）<br>
+				・上記金利から当初10年間　年0.6％の引下げとなります。 <br>
+				&#9313;【フラット35】S（金利Ｂプラン）<br>
+				・上記金利から当初5年間　年0.6％の引下げとなります。 <br>
+				【フラット35】Sの各金利プランには、住宅の条件基準があります。<br>
+				住宅ローンのお借り換えの場合にはご利用いただけません。</li>
+		</ul>
+		
+
+
+
+				<div class="noticeArea margB00 margT20">
+					<div class="blockL">
+						<p><a href="/link/common/adobe_reader.html" target="_blank"><img src="/common/image/pdf_plugin.gif" alt="Get ADOBE READER" class="btn"></a></p>
+					<!--/blockL--></div>
+					<div class="blockR">
+						<ul class="linkList">
+							<li><a href="/link/common/adobe_reader.html" target="_blank" class="linkEx">Adobe Readerのダウンロード</a></li>
+						</ul>
+						<p class="ftSmall">PDFファイルをご覧になるには、アドビシステムズ社が配布しているAdobe Reader（無償）が必要です。Adobe、Adobe ロゴ、Readerは、Adobe Systems Incorporated（アドビシステムズ社）の米国ならびに他の国における商標または登録商標です。</p>
+					<!--/blockR--></div>
+				<!--/noticeArea--></div>
+
+	<!--/contentBodyMain--></div>
+
+	<div id="contentBodySide">
+		<p class="txtAlignC margB10"><a href="/security/"><img src="/common/ssi/side/image/security.gif" alt="セキュリティ・金融犯罪について" width="230" height="40" class="btn"></a></p>
+
+
+
+		<div class="content">
+
+			<p class="margB00"><img src="/common/ssi/side/image/txt_per.gif" alt="個人のお客さま" width="228" height="23"></p>
+
+			<ul class="btnList">
+
+				<li><a href="/ib/"><img src="/common/ssi/side/image/btn_per_direct01.gif" alt="インターネットバンキング　北洋ダイレクト" width="214" height="47" class="btn"></a></li>
+
+				<li><a href="/todirect/"><img src="/common/ssi/side/image/btn_per_direct02.gif" alt="インターネット投資信託　北洋投信ダイレクト" width="214" height="47" class="btn"></a></li>
+
+			</ul>
+
+			<p class="margB00"><img src="/common/ssi/side/image/txt_com.gif" alt="法人・個人事業主のお客さま" width="228" height="34"></p>
+
+			<ul class="btnList">
+
+				<li><a href="/bdirect/"><img src="/common/ssi/side/image/btn_com_direct01.gif" alt="インターネットバンキング 北洋ビジネスダイレクト" width="214" height="47" class="btn"></a></li>
+
+				<li><a href="/densai/"><img src="/common/ssi/side/image/btn_com_densai01.gif" alt="でんさいネット 北洋でんさいサービス" width="214" height="47" class="btn"></a></li>
+
+			</ul>
+
+		<!--/content--></div>
+
+
+
+			<ul class="btnList">
+
+				<li><a href="/atm/"><img src="/common/ssi/side/image/btn_atm.gif" alt="店舗・ATMのご案内" width="236" height="50" class="btn"></a></li>
+
+				<li><a href="/person/kouza/kaisetu.html"><img src="/common/ssi/side/image/btn_account_entry.gif" alt="口座開設のお申し込み" width="236" height="50" class="btn"></a></li>
+
+			</ul>
+
+
+
+			<ul class="btnList">
+
+				<li><a href="/info/guide/"><img src="/common/ssi/side/image/btn_trable.gif" alt="お困りの方へ" width="236" height="45" class="btn"></a></li>
+
+				<li><a href="/info/guide/index.html#anchor02"><img src="/common/ssi/side/image/btn_faq.gif" alt="よくあるご質問" width="236" height="45" class="btn"></a></li>
+
+			</ul>
+
+
+
+			<ul class="btnList">
+
+				<li><a href="https://www.hokuyobank.co.jp/person/service/mail.html" target="_blank"><img src="/common/ssi/side/image/btn_mail_order.gif" alt="商品・サービス資料請求（メールオーダーサービス）" width="236" height="46" class="btn"></a></li>
+
+				<li><a href="/person/benri/tesuryo/"><img src="/common/ssi/side/image/btn_commission.gif" alt="手数料一覧" width="236" height="43" class="btn"></a></li>
+
+				<li><a href="/rates/"><img src="/common/ssi/side/image/btn_rate.gif" alt="金利一覧" width="236" height="40" class="btn"></a></li>
+
+				<li><a href="/exchange/rates.html"><img src="/common/ssi/side/image/btn_exchange.gif" alt="外国為替相場" width="236" height="40" class="btn"></a></li>
+
+				<li><a href="/link/common/wam.html" target="_blank"><img src="/common/ssi/side/image/btn_market.gif" alt="マーケット情報" width="236" height="43" class="btn"></a></li>
+
+				<li><a href="/person/insurance/consulting_plaza/pdf/seminar.pdf" target="_blank"><img src="/common/ssi/side/image/btn_per_seminar.gif" alt="セミナー情報（個人のお客さま）" width="236" height="43" class="btn"></a></li>
+
+			</ul>
+	<!--/contentBodySide--></div>
+
+
+	<p class="pageTop"><a href="#contentAll">ページの先頭へ戻る</a></p>
+
+<!--/contentBody--></div>
+<!--/contentBodyWrapper--></div>
+
+
+<div id="contentFootWrapper">
+
+		<div id="contentFootNaviWrapper">
+
+			<div id="contentFootNavi">
+				<div class="globalNavi">
+					<ul><!--
+						--><li class="globalNavi01"><a href="/"><span>個人のお客さま</span></a></li><!--
+						--><li class="globalNavi02"><a href="/company/"><span>法人・個人事業主のお客さま</span></a></li><!--
+						--><li class="globalNavi03"><a href="/ir/"><span>株主・投資家の皆さま</span></a></li><!--
+						--><li class="globalNavi04"><a href="/recruit/"><span>採用のご案内</span></a></li><!--
+						--><li class="globalNavi05"><a href="/about/"><span>企業情報・CSR</span></a></li><!--
+					--></ul>
+			<!--/globalNavi--></div>
+
+			<div class="siteSrarch">
+<FORM ACTION="http://is.ntt-it.co.jp/search/client.cgi" METHOD="POST" onsubmit="if(this.key.value=='サイト内検索') this.key.value='';">
+<INPUT TYPE="HIDDEN" NAME="uid"  VALUE="2eeca796126c429603007ce1fe702acf">
+<INPUT TYPE="HIDDEN" NAME="by" VALUE="D0">
+<INPUT TYPE="HIDDEN" NAME="cd" VALUE="A">
+<INPUT TYPE="HIDDEN" NAME="cw" VALUE="1">
+<INPUT TYPE="HIDDEN" NAME="in" VALUE="S">
+<INPUT TYPE="HIDDEN" NAME="nc" VALUE="1">
+<INPUT TYPE="HIDDEN" NAME="num" VALUE="10">
+<INPUT TYPE="HIDDEN" NAME="syn" VALUE="1">
+				<p class="searchTxt"><input type="text" name="key" value="サイト内検索" onblur="if(this.value==''){this.value='サイト内検索'; this.style.color = '#ccc';} else if (this.value != 'サイト内検索') {this.style.color = '#333333';}" onfocus="if(this.value == 'サイト内検索'){this.value = '';} this.style.color = '#333333';" style="color: #ccc;"></p>
+				<p class="searchBtn"><input type="submit" name="" value=""></p>
+			</form>
+			<!--/siteSrarch--></div>
+
+				<div class="person">
+				<div class="siteNavi JSuniformHeightWrapper"><!--
+				--><dl>
+					<dt class="JSuniformHeight01Child01"><a href="/person/kouza/">口座をひらく</a></dt>
+					<dd class="JSuniformHeight01Child02">
+					<ul>
+						<li><a href="/person/kouza/kaisetu.html">口座開設のご案内</a></li>
+						<li><a href="/person/kouza/sougou/">総合口座（普通預金）のご案内</a></li>
+						<li><a href="/person/kouza/card.html">ICキャッシュカード</a></li>
+					</ul>
+					</dd>
+				</dl><!--
+
+				--><dl>
+					<dt class="JSuniformHeight01Child01"><a href="/person/deposit/">ためる・ふやす</a></dt>
+					<dd class="JSuniformHeight01Child02">
+					<ul>
+						<li><a href="/person/deposit/teiki/">定期預金</a></li>
+						<li><a href="/person/deposit/tumitate/">積立預金</a></li>
+						<li><a href="/person/deposit/kokusai/">個人向け国債・公共債</a></li>
+						<li><a href="/person/deposit/fund/">投資信託</a></li>
+						<li><a href="/person/deposit/gaika/">外貨預金</a></li>
+					</ul>
+					</dd>
+				</dl><!--
+				--><dl>
+					<dt class="JSuniformHeight01Child01"><a href="/person/loan/">かりる</a></dt>
+					<dd class="JSuniformHeight01Child02">
+					<ul>
+						<li><a href="/person/loan/house/">住宅ローン</a></li>
+						<li><a href="/person/loan/mycar/">マイカーローン</a></li>
+						<li><a href="/person/loan/education/">教育ローン</a></li>
+						<li><a href="/person/loan/reform/">リフォームローン</a></li>
+						<li><a href="/person/loan/freeloan/">フリーローン</a></li>
+						<li><a href="/superarca/" target="_blank">カードローン「スーパーアルカ」</a></li>
+						<li><a href="/person/loan/lifeplus/livingloan.html">リビングローン</a></li>
+						<li><a href="/person/loan/sensiniryo/index_a.html">北洋先進医療ローン</a></li>
+						<li><a href="/person/loan/house/j_fudousanloan.html">アパートローン</a></li>
+						<li><a href="/person/loan/lifeplus/apartreform.html">アパートリフォームローン</a></li>
+						<li><a href="/person/loan/house/flat35.html">ほくよう長期安心ローン【フラット35】</a></li>
+						<li><a href="/person/loan/plaza/">北洋銀行ローンプラザ</a></li>
+						<li><a href="/person/loan/loan_consult/">ローン相談会のご案内</a></li>
+						<li><a href="http://www.hokuyobank-ritail.jp/" class="linkBlank" target="_blank">ローンシミュレーション</a></li>
+					</ul>
+					</dd>
+				</dl><!--
+				--><dl>
+					<dt class="JSuniformHeight01Child01"><a href="/person/insurance/">そなえる</a></dt>
+					<dd class="JSuniformHeight01Child02">
+					<ul>
+						<li><a href="/person/insurance/nenkin/">年金保険</a></li>
+						<li><a href="/person/insurance/lifelong/">終身保険</a></li>
+						<li><a href="/person/insurance/gakushi/">学資保険</a></li>
+						<li><a href="/person/insurance/401k.html">確定拠出年金（401k）</a></li>
+						<li><a href="/person/insurance/sozoku/">相続関連業務</a></li>
+						<li><a href="/person/insurance/iryou/">医療保険</a></li>
+						<li><a href="/person/insurance/cancer/">がん保険</a></li>
+						<li><a href="/person/insurance/kaigo/">介護保険</a></li>
+						<li><a href="/person/insurance/hosyou/">収入保障保険</a></li>
+						<li><a href="/person/insurance/car/">自動車保険</a></li>
+						<li><a href="/person/deposit/marriage/">結婚・子育て資金贈与専用預金　ハッピーエール</a></li>
+						<li><a href="/person/deposit/education/">教育資金贈与専用預金　エール</a></li>
+						<li><a href="/person/insurance/pdf/zoyoshintaku.pdf" class="linkPdf" target="_blank">教育資金贈与信託</a></li>
+						<li><a href="/person/insurance/consulting_plaza/">札幌駅前コンサルティングプラザ</a></li>
+					</ul>
+					</dd>
+				</dl><!--
+
+				--><dl>
+					<dt class="JSuniformHeight01Child01"><a href="/person/benri/">便利・お得</a></dt>
+					<dd class="JSuniformHeight01Child02">
+					<ul>
+						<li><a href="/ib/">北洋ダイレクト</a></li>
+						<li><a href="/todirect/">北洋投信ダイレクト</a></li>
+						<li><a href="/clover/">clover（クレジット機能付ICキャッシュカード）</a></li>
+						<li><a href="/person/benri/jcbdebit_detail.html">北洋-JCBデビット</a></li>
+						<li><a href="/person/kouza/card.html">ICキャッシュカード</a></li>
+						<li><a href="/person/benri/debit.html">デビットカードサービス</a></li>
+						<li><a href="/person/benri/webkouza.html">ほくようWeb口座振替受付サービス</a></li>
+						<li><a href="/person/benri/payeasy/kouza.html">Pay-easy口座振替受付サービス</a></li>
+						<li><a href="/person/benri/payeasy/zeiryou.html">Pay-easy税金・各種料金払込</a></li>
+						<li><a href="/person/benri/tesuryo/">手数料一覧</a></li>
+					</ul>
+					</dd>
+				</dl><!--
+
+				--><dl>
+					<dt class="JSuniformHeight01Child01"><a href="/person/service/">各種サービス</a></dt>
+					<dd class="JSuniformHeight01Child02">
+					<ul>
+						<li><a href="/person/service/atm.html">ATMサービス</a></li>
+						<li><a href="/exchange/">外国為替サービス</a></li>
+						<li><a href="/person/service/nenkin.html">年金受取予約サービス</a></li>
+						<li><a href="/person/service/prepaid.html">海外用プリペイドカード</a></li>
+					</ul>
+					</dd>
+				</dl><!--
+				--></div>
+			<!--/person--></div>
+
+
+
+				<div class="company">
+				<div class="siteNavi JSuniformHeightWrapper"><!--
+				--><dl>
+					<dt class="JSuniformHeight01Child01"><a href="/company/support/">資金面のサポート</a></dt>
+					<dd class="JSuniformHeight01Child02">
+					<ul>
+						<li><a href="/company/support/kouteki.html">公的機関の保証・制度融資等</a></li>
+						<li><a href="/company/support/index.html#anchor02">市場系ファイナンス</a></li>
+						<li><a href="/company/support/index.html#anchor03">法人系ローン商品</a></li>
+						
+						<li><a href="/company/support/index.html#anchor04">その他</a></li>
+						
+					</ul>
+					</dd>
+				</dl><!--
+
+				--><dl>
+					<dt class="JSuniformHeight01Child01"><a href="/company/kouritsu/">事務効率化</a></dt>
+					<dd class="JSuniformHeight01Child02">
+					<ul>
+						<li><a href="/company/kouritsu/index.html#anchor01">EBサービス</a></li>
+						<li><a href="/company/kouritsu/index.html#anchor02">回収の効率化</a></li>
+						<li><a href="/company/kouritsu/index.html#anchor03">財務・経理事務の効率化</a></li>
+					</ul>
+					</dd>
+				</dl><!--
+
+				--><dl>
+					<dt class="JSuniformHeight01Child01"><a href="/company/business_support/">経営・事業支援</a></dt>
+					<dd class="JSuniformHeight01Child02">
+					<ul>
+						<li><a href="/person/insurance/401k.html">確定拠出年金（401k）</a></li>
+						<li><a href="/company/business_support/community.html">地域産業支援部</a></li>
+						<li><a href="/company/business_support/shoukei.html">事業継承</a></li>
+						<li><a href="/company/business_support/ma.html">M&amp;A</a></li>
+						<li><a href="/company/business_support/matching.html">ビジネスマッチング</a></li>
+						<li><a href="/company/business_support/infoservice.html">東京情報サービス室</a></li>
+						<li><a href="/link/company/htri.html" class="linkEx" target="_blank">北洋ビジネスクラブ</a></li>
+					</ul>
+					</dd>
+				</dl><!--
+
+				--><dl>
+					<dt class="JSuniformHeight01Child01"><a href="/company/overseas/">海外ビジネスサポート</a></dt>
+					<dd class="JSuniformHeight01Child02">
+					<ul>
+						<li><a href="/exchange/">外貨のお取引一覧</a></li>
+						<li><a href="/company/overseas/asiadesk.html">海外ビジネスサポート</a></li>
+						<li><a href="/company/overseas/marketdesk.html">マーケットデスク</a></li>
+						<li><a href="/bdirect/service/index.html#gaitame">外為ダイレクトのご案内</a></li>
+					</ul>
+					</dd>
+				</dl><!--
+
+				--><dl>
+					<dt class="JSuniformHeight01Child01"><a href="/company/otherservice/">その他サービス</a></dt>
+					<dd class="JSuniformHeight01Child02">
+					<ul>
+						<li><a href="/company/otherservice/consult.html">相談業務・信託業務</a></li>
+						<li><a href="/company/otherservice/dream.html">北洋銀行ドリーム基金</a></li>
+					</ul>
+					</dd>
+				</dl><!--
+
+				--><dl>
+					<dt class="JSuniformHeight01Child01"><a href="/company/c_reference/">ご相談・お問い合わせ</a></dt>
+					<dd class="JSuniformHeight01Child02">
+					</dd>
+				</dl><!--
+
+				--></div>
+			<!--/company--></div>
+
+
+
+				<div class="other">
+				<div class="siteNavi JSuniformHeightWrapper"><!--
+
+				--><dl>
+
+					<dt class="JSuniformHeight01Child01">個人のお客さま</dt>
+					<dd class="JSuniformHeight01Child02">
+					<ul>
+						<li><a href="/person/kouza/">口座をひらく</a></li>
+						<li><a href="/person/deposit/">ためる・ふやす</a></li>
+						<li><a href="/person/loan/">かりる</a></li>
+						<li><a href="/person/insurance/">そなえる</a></li>
+						<li><a href="/person/benri/">便利・お得</a></li>
+						<li><a href="/person/service/">各種サービス</a></li>
+					</ul>
+					</dd>
+				</dl><!--
+
+				--><dl>
+					<dt class="JSuniformHeight01Child01">法人・個人事業主のお客さま</dt>
+					<dd class="JSuniformHeight01Child02">
+					<ul>
+						<li><a href="/company/support/">資金面のサポート</a></li>
+						<li><a href="/company/kouritsu/">事務効率化</a></li>
+						<li><a href="/company/business_support/">経営・事業支援</a></li>
+						<li><a href="/company/overseas/">海外ビジネスサポート</a></li>
+						<li><a href="/company/otherservice/">その他サービス</a></li>
+						<li><a href="/company/c_reference/">ご相談・お問い合わせ</a></li>
+					</ul>
+					</dd>
+				</dl><!--
+
+				--><dl>
+					<dt class="JSuniformHeight01Child01">株主・投資家の皆さま</dt>
+					<dd class="JSuniformHeight01Child02">
+					<ul>
+						<li><a href="/ir/investor/">個人投資家の皆さまへ</a></li>
+						<li><a href="/ir/shareholder/">株式・株主総会情報</a></li>
+						<li><a href="/ir/library/">決算・IRライブラリ</a></li>
+						<li><a href="/ir/d_policy.html">ディスクロージャー・ポリシー</a></li>
+						<li><a href="/ir/qa.html">よくあるご質問</a></li>
+						<li><a href="/ir/publicnotice.html">電子公告</a></li>
+					</ul>
+					</dd>
+				</dl><!--
+
+				--><dl>
+
+					<dt class="JSuniformHeight01Child01">採用のご案内</dt>
+					<dd class="JSuniformHeight01Child02">
+					<ul>
+						<li><a href="/recruit/data2015/" class="linkBlank" target="_blank">新卒採用</a></li>
+						<li><a href="/recruit/part.html">パートタイマー採用</a></li>
+						<li><a href="/recruit/koyou.html">退職行員再雇用制度</a></li>
+					</ul>
+					</dd>
+				</dl><!--
+
+				--><dl>
+					<dt class="JSuniformHeight01Child01">企業情報・CSR</dt>
+					<dd class="JSuniformHeight01Child02">
+					<ul>
+						<li><a href="/about/company/">企業情報</a></li>
+						<li><a href="/about/csr/">CSR</a></li>
+					</ul>
+					</dd>
+				</dl><!--
+
+				--><dl>
+					<dt class="JSuniformHeight01Child01">その他</dt>
+					<dd class="JSuniformHeight01Child02">
+					<ul>
+						<li><a href="/atm/">店舗・ATMのご案内</a></li>
+						<li><a href="/person/kouza/kaisetu.html">口座開設のご案内</a></li>
+						<li><a href="/info/guide/">お困りの方へ</a></li>
+						<li><a href="/person/benri/tesuryo/">手数料一覧</a></li>
+						<li><a href="/rates/">金利一覧</a></li>
+						<li><a target="_blank" class="linkBlank" href="https://www.hokuyobank.co.jp/person/service/mail.html">商品・サービス資料請求</a></li>
+						<li><a href="/exchange/rates.html">外国為替相場情報</a></li>
+						<li><a href="/link/common/wam.html" class="linkBlank" target="_blank">マーケット情報</a></li>
+						<li><a href="/info/guide/index.html#anchor02">よくあるご質問</a></li>
+						<li><a href="/person/insurance/consulting_plaza/pdf/seminar.pdf" class="linkPdf" target="_blank">セミナー情報（個人のお客さま）</a></li>
+					</ul>
+					</dd>
+				</dl><!--
+				--></div>
+
+			<!--/other--></div>
+			<!--/contentFootNavi--></div>
+		<!--/contentFootNaviWrapper--></div>
+
+
+
+			<div id="contentFootExtra">
+
+				<ul><!--
+					--><li><a href="/privacy/">個人情報保護宣言</a></li><!--
+					--><li><a href="/info/kokyaku.html">お客さま保護等管理方針</a></li><!--
+					--><li><a href="/info/rieki.html">利益相反管理基本ポリシー</a></li><!--
+					--><li><a href="/info/law/receipt.html">「受取証」の発行について</a></li><!--
+					--><li><a href="/info/mng_guarantee.html">経営者保証に関するガイドラインについて</a></li><!--
+				--></ul>
+
+				<ul><!--
+					--><li><a href="/ir/publicnotice.html">電子公告</a></li><!--
+					--><li><a href="/about/company/antisocial.html">札幌北洋グループの反社会的勢力への対応に係る基本方針</a></li><!--
+					--><li><a href="/info/law/">金融取引に関する方針等</a></li><!--
+					--><li><a href="/info/site.html">本サイトのご利用にあたって</a></li><!--
+					--><li><a href="/link/">リンク</a></li><!--
+				--></ul>
+
+			<!--/contentFootExtra--></div>
+
+
+
+	<div id="contentFootCredit">
+		<p>株式会社北洋銀行　登録金融機関　北海道財務局長（登金）第3号<br>加入協会：日本証券業協会　一般社団法人金融先物取引業協会</p>
+		<p class="copyright">Copyright(C) 2000-2015 North Pacific Bank,LTD. All rights reserved.</p>
+	<!--/contentFootCredit--></div>
+
+<!--/contentFootWrapper--></div>
+
+<!--/contentAll--></div>
+</body>
+</html>

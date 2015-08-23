@@ -1,0 +1,381 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-store" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="keywords" content="インターネットでのお問い合わせ" />
+<meta name="description" content="北海道ガス株式会社のお問い合わせ　家庭用ガス機器に関するお問い合わせ・資料のご請求のページです。" />
+<title>北海道ガス株式会社：家庭用ガス機器に関するお問い合わせ・資料のご請求</title>
+<link rel="stylesheet" type="text/css" href="/common/styles/import.css" media="screen,print" />
+<link rel="stylesheet" type="text/css" href="/common/styles/module/component.css" media="screen, all" />
+<link rel="stylesheet" type="text/css" href="/common/styles/module/utility.css" media="screen,print" />
+<link rel="stylesheet" type="text/css" href="/common/styles/font/font.css" title="default" />
+<link rel="alternate stylesheet" type="text/css" href="/common/styles/font/fontS.css" title="small" />
+<link rel="alternate stylesheet" type="text/css" href="/common/styles/font/fontL.css" title="large" />
+<script type="text/javascript" src="/common/scripts/default.js"></script>
+</head>
+<body onload="initialize();">
+<div id="wrap">
+	<!-- header -->
+	<div id="header">
+		<div id="header_wrap">
+			<div class="hdr_identity">
+				<p class="tagline">北のくらし、もっとできること</p>
+				<h1><a href="http://www.hokkaido-gas.co.jp/index.html"><img src="/common/images/hdr_logo.gif" width="175" height="47" alt="KITAGAS" /></a></h1>
+			</div>
+			<div class="hdr_link">
+				<ul>
+					<li><a href="http://www.hokkaido-gas.co.jp/utility/index.html"><img class="rollover" src="/common/images/btn_hdrlink_01.gif" width="86" height="28" alt="お問い合わせ" /></a></li>
+					<li><a href="http://www.hokkaido-gas.co.jp/utility/madoguchi/index.html"><img class="rollover" src="/common/images/btn_hdrlink_02.gif" width="119" height="28" alt="お近くのサービス窓口" /></a></li>
+					<li><a href="http://www.hokkaido-gas.co.jp/utility/faq/index.html"><img class="rollover" src="/common/images/btn_hdrlink_03.gif" width="90" height="28" alt="よくあるご質問" /></a></li>
+					<li><a href="http://www.hokkaido-gas.co.jp/english/index.html"><img class="rollover" src="/common/images/btn_hdrlink_04.gif" width="62" height="28" alt="English" /></a></li>
+				</ul>
+			</div>
+			<div class="hdr_utility" style="width:312px;">
+				<ul id="hdr_ul">
+					<li><a href="http://www.hokkaido-gas.co.jp/utility/sitemap.html"><img class="rollover" src="/common/images/btn_hdrutility_01.gif" width="89" height="16" alt="サイトマップ" /></a></li>
+					<li><a href="http://www.hokkaido-gas.co.jp/utility/mobile.html"><img class="rollover" src="/common/images/btn_hdrutility_02.gif" width="78" height="16" alt="携帯サイト" /></a></li>
+				</ul>
+				<dl>
+					<dt><img src="/common/images/txt_fontnavi.gif" width="88" height="16" alt="文字サイズ変更" /></dt>
+					<dd>
+						<ul id="font_navi">
+							<li id="font_navi_s"><a href="#" onclick="setActiveStyleSheet('small');return false;" title="文字を小さく"><span>文字を小さく</span></a></li>
+							<li id="font_navi_d"><a href="#" onclick="setActiveStyleSheet('default');return false;" title="文字を標準に"><span>文字を標準に</span></a></li>
+							<li id="font_navi_l"><a href="#" onclick="setActiveStyleSheet('large');return false;" title="文字を大きく"><span>文字を大きく</span></a></li>
+						</ul>
+					</dd>
+				</dl>
+			</div>
+			<div class="global_navi">
+				<ul class="gl_menu_01">
+					<li><a href="http://www.hokkaido-gas.co.jp/home/index.html"><img class="rollover" src="/common/images/btn_glnavi_01.gif" width="143" height="34" alt="個人のお客さま" /></a></li>
+					<li><a href="http://www.hokkaido-gas.co.jp/business/index.html"><img class="rollover" src="/common/images/btn_glnavi_02.gif" width="142" height="34" alt="法人のお客さま" /></a></li>
+					<li><a href="http://www.hokkaido-gas.co.jp/ir/index.html"><img class="rollover" src="/common/images/btn_glnavi_03.gif" width="142" height="34" alt="企業情報・IR情報" /></a></li>
+					<li><a href="http://www.hokkaido-gas.co.jp/recruit/index.html"><img class="rollover" src="/common/images/btn_glnavi_04.gif" width="141" height="34" alt="採用情報" /></a></li>
+				</ul>
+				<ul class="gl_menu_02">
+					<li><a href="http://www.hokkaido-gas.co.jp/safety/index.html"><img class="rollover" src="/common/images/btn_glnavi_05.gif" width="142" height="34" alt="安全使用のために" /></a></li>
+					<li><a href="http://www.hokkaido-gas.co.jp/support/index.html"><img class="rollover" src="/common/images/btn_glnavi_06.gif" width="142" height="34" alt="暮らしサポート" /></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- /header -->
+	<!-- contents -->
+	<div id="contents">
+		<div id="contents_wrap">
+                   <p id="location"><a href="http://www.hokkaido-gas.co.jp/index.html">総合トップ</a>&nbsp;&gt;&nbsp;<a href="http://www.hokkaido-gas.co.jp/utility/index.html">お問い合わせ</a>&nbsp;&gt;&nbsp;<a href="http://www.hokkaido-gas.co.jp/utility/inquiry/index.html">インターネットでのお問い合わせ</a>&nbsp;&gt;&nbsp;家庭用ガス機器に関するお問い合わせ・資料のご請求</p>
+      <!-- main_contents -->
+      <div id="main_contents">
+        <div class="block btmMg20">
+          <h1 class="h1lineHead h1colorGreen"><span>家庭用ガス機器に関するお問い合わせ・資料のご請求</span></h1>
+          <p>ガス機器の資料をご請求いただけます。<br />
+            (プライバシー保護のため、SSL暗号化通信を採用しています。)</p>
+          <p>※お急ぎの場合は、お近くの<a href="http://www.hokkaido-gas.co.jp/utility/madoguchi/index.html">北ガス</a>までお申し込みください。</p>
+        </div>
+                <div class="block">
+          <h2 class="iconHead hdIcGreen"><span>入力必須項目</span></h2>
+          <ul class="formtopicpathlong">
+            <li><img src="/form/images/form-topic-path-long-01on.gif" alt="入力" /></li><li><img src="/form/images/form-topic-path-long-02.gif" alt="確認" /></li><li><img src="/form/images/form-topic-path-long-03.gif" alt="完了" /></li>
+          </ul>
+          <form method="post" name="form" action="/form/gaskiki/confirm/">
+            <table border="0" cellpadding="0" cellspacing="0" class="valueTable01 btmMg35" summary="">
+              <tr class="gryColor">
+                <th scope="row" class="posiLeft w30">お名前：</th>
+                <td class="noBdr w20"><input name="name" type="text" class="lengthSM" /></td>
+                <td><span class="sizeS txtClRed">※必須</span></td>
+              </tr>
+              <tr class="gryColor">
+                <th scope="row" class="posiLeft">フリガナ：</th>
+                <td class="noBdr w20"><input name="kana" type="text" class="lengthSM" /></td>
+                <td><span class="sizeS txtClRed">※必須</span></td>
+              </tr>
+              <tr class="gryColor">
+                <th scope="row" class="posiLeft">性別：</th>
+                <td class="noBdr w20"><select name="sex">
+                    <option value="" selected="selected">選択してください</option>
+                    <option value="m">男性</option>
+                    <option value="w">女性</option>
+                  </select>
+                  <span class="sizeS txtClRed"> ※必須</span></td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr class="gryColor">
+                <th scope="row" class="posiLeft">年齢：</th>
+                <td class="noBdr w20"><select name="age">
+                    <option value="" selected="selected">選択してください</option>
+ 
+                     
+                    <option value="1">10代</option> 
+                    <option value="2">20代</option> 
+                    <option value="3">30代</option> 
+                    <option value="4">40代</option> 
+                    <option value="5">50代</option> 
+                    <option value="6">60代</option> 
+                    <option value="7">70代</option> 
+                    <option value="8">80代以上</option>                  </select>
+                  <span class="sizeS txtClRed"> ※必須</span></td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr class="gryColor">
+                <th scope="row" class="posiLeft">ご検討事項：</th>
+                <td class="w20" colspan="2">
+                <select name="kento">
+                    <option value="" selected="selected">選択してください</option>
+ 
+                     
+                    <option value="1">住宅の新築・建て替えを検討</option> 
+                    <option value="2">ガス機器の取り替え・増設等を検討</option>                </select>
+                <span class="sizeS txtClRed"> ※必須</span></td>
+              </tr>
+              <tr class="gryColor">
+                <th colspan="3" class="posiLeft" scope="col">資料送付先</th>
+              </tr>
+              <tr class="gryColor">
+                <th scope="row" class="posiLeft top">郵便番号：</th>
+                <td colspan="2"><input name="zip" type="text" class="lengthXS" />
+                  <span class="example">（半角数字）（例060-8530）</span> <span class="sizeS txtClRed">※必須</span></td>
+              </tr>
+              <tr class="gryColor">
+                <th scope="row" class="posiLeft top">ご住所：</th>
+                <td colspan="2"><textarea name="address" rows="4" cols="40"></textarea>
+                  <span class="sizeS txtClRed"> ※必須</span></td>
+              </tr>
+              <tr class="gryColor">
+                <th scope="row" class="posiLeft">お電話番号：</th>
+                <td class="noBdr"><input name="tel" type="text" class="lengthSM" /></td>
+                <td><span class="example">（半角数字）（例011-231-9511）</span><span class="sizeS txtClRed"> ※必須</span></td>
+              </tr>
+              <tr class="gryColor">
+                <th rowspan="2" scope="row" class="posiLeft">E-mail：</th>
+                <td class="noBdr"><input name="email" type="text" class="lengthSM" /></td>
+                <td><span class="example">（半角英数字のみ）</span> <span class="sizeS txtClRed">※必須</span></td>
+              </tr>
+              <tr>
+              <td colspan="2"><span class="example">ご入力いただいた内容について、確認のためご連絡をさせていただく場合がございます。@kitagas.com　を、受信可能なドメインとして設定してください。</span></td>
+              </tr>
+            </table>
+            <h2 class="iconHead hdIcGreen"><span>現在のお住まいについて（できるだけお答え下さい）</span></h2>
+            <table border="0" cellpadding="0" cellspacing="0" class="valueTable01 btmMg35" summary="">
+              <tr class="gryColor">
+                <th scope="row" class="posiLeft w30">家族構成人数：</th>
+                <td colspan="2"><input name="people" type="text" class="lengthS" />
+                  人 <span class="example">(半角数字)</span></td>
+              </tr>
+              <tr class="gryColor">
+                <th scope="row" class="posiLeft">住宅形態：</th>
+                <td class="noBdr w20"><select name="house">
+                    <option value="" selected>選択してください</option>
+ 
+                     
+                    <option value="1">集合分譲</option> 
+                    <option value="2">集合賃貸</option> 
+                    <option value="3">戸建持家</option> 
+                    <option value="4">戸建賃貸</option>                  </select></td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr class="gryColor">
+                <th scope="row" class="posiLeft">居住年数：</th>
+                <td class="noBdr w20"><select name="hage">
+                    <option value="" selected>選択してください</option>
+ 
+                     
+                    <option value="1">1年未満</option> 
+                    <option value="2">3年未満</option> 
+                    <option value="3">5年未満</option> 
+                    <option value="4">10年未満</option> 
+                    <option value="5">10年以上</option>                  </select></td>
+                <td>&nbsp;</td>
+              </tr>
+            </table>
+            <h2 class="iconHead hdIcGreen"><span>資料を請求されるガス機器について</span></h2>
+            <p>(チェックしたところを消したい場合は、もう一度クリックしてください)</p>
+	    <span class="sizeS txtClRed">※「資料を請求」の選択、もしくはお「問い合わせ内容（任意）」の入力はどちらか必須となります。</span>
+            <table border="0" cellpadding="0" cellspacing="0" class="valueTable01 btmMg35" summary="">
+              <tr class="gryColor">
+                <th scope="row" class="posiLeft">機種</th>
+                <th scope="row" class="posiCenter w15">資料を<br />請求</th>
+                <th scope="row" class="posiCenter w15">詳しい説明<br />も希望</th>
+              </tr>
+              <tr class="gryColor">
+                <td class="posiLeft"><img width="15" height="9" alt="" src="/common/images/blt_list_06.gif" /><a target="_blank" href="http://www.hokkaido-gas.co.jp/catalog/book/kyutodanbo/kyutodanbo.html">給湯器・暖房機器</a></td>
+                <td class="posiCenter"><input type="checkbox" name="material[0]" value="1" /></td>
+                <td class="posiCenter"><input type="checkbox" name="explan[0]" value="1" /></td>
+              </tr>
+              <tr class="gryColor">
+                <td class="posiLeft"><img width="15" height="9" alt="" src="/common/images/blt_list_06.gif" /><a target="_blank" href="http://www.hokkaido-gas.co.jp/catalog/book/tyorikiki/tyorikiki.html">調理機器</a></td>
+              <td class="posiCenter"><input type="checkbox" name="material[1]" value="1" /></td>
+                <td class="posiCenter"><input type="checkbox" name="explan[1]" value="1"  /></td>
+              </tr>
+              <tr class="gryColor">
+                <td class="posiLeft"><img width="15" height="9" alt="" src="/common/images/blt_list_06.gif" /><a target="_blank" href="http://www.hokkaido-gas.co.jp/catalog/book/eco/2014-2015/ecojozu.htm">エコジョーズ</a></td>
+                <td class="posiCenter"><input type="checkbox" name="material[3]"  value="1" /></td>
+                <td class="posiCenter"><input type="checkbox" name="explan[3]" value="1"  /></td>
+              </tr>
+              <tr class="gryColor">
+                <td class="posiLeft"><img width="15" height="9" alt="" src="/common/images/blt_list_06.gif" /><a target="_blank" href="http://www.hokkaido-gas.co.jp/catalog/book/enefarm/enefarm.htm">エネファーム</a></td>
+                <td class="posiCenter"><input type="checkbox" name="material[5]"  value="1" /></td>
+                <td class="posiCenter"><input type="checkbox" name="explan[5]" value="1"  /></td>
+              </tr>
+              <tr class="gryColor">
+                <td class="posiLeft"><img width="15" height="9" alt="" src="/common/images/blt_list_06.gif" /><a target="_blank" href="http://www.hokkaido-gas.co.jp/catalog/book/coremo/coremo.htm">コレモ</a></td>
+                <td class="posiCenter"><input type="checkbox" name="material[6]"  value="1" /></td>
+                <td class="posiCenter"><input type="checkbox" name="explan[6]" value="1"  /></td>
+              </tr>
+            </table>
+            <h2 class="iconHead hdIcGreen"><span>お問い合わせ内容（任意）</span></h2>
+            <p>※新築をご検討中の方で、建設予定エリアや時期、ごハウスメーカー等がお決まりの場合は、できるだけご記入ください。</p>
+            <p class="btmMg20">
+              <textarea name="content" rows="4" cols="40"></textarea>
+            </p>
+            <div class="backBoxYel">
+              <p class="sizeS">ご記入いただいたお客さまの個人情報は、資料の発送の他、北ガスからの情報提供等に使用させていただく場合がございますが、お客さまの同意なしに第三者へ提供することはありません。</p>
+            </div>
+            <div class="centerBtn"> <img alt="リセット" style="cursor:pointer" id="imageField" src="/utility/inquiry/images/btn_reset.gif" onclick="document.form.reset()"/>
+              <input type="image" alt="確認" name="" id="imageField" src="/utility/inquiry/images/btn_kakunin.gif" />
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- /main_contents -->
+
+			<!-- side_contents -->
+            			<div id="side_contents"><div class="btmMg15"><a href="https://user.hokkaido-gas.co.jp/Member/" target="ns"><img class="rollover" src="/images/btn_top_lnav01.gif" width="210" height="80" alt="ご使用量・料金照会 ログイン＆新規登録はこちら" /></a></div>
+				<dl class="menu rmGreen">
+					<dt><a href="http://www.hokkaido-gas.co.jp/utility/index.html"><img src="/utility/inquiry/images/ttl_inquiry.gif" alt="お問い合わせ" width="210" height="35" /></a></dt>
+					<dd>
+						<ul>
+							<li><a href="http://www.hokkaido-gas.co.jp/utility/notice/index.html">緊急連絡先</a></li>
+							<li><a href="http://www.hokkaido-gas.co.jp/utility/madoguchi/index.html">お問い合わせ先・お客さまサービス窓口</a></li>
+							<li class="sub_menu stayL"><a href="http://www.hokkaido-gas.co.jp/utility/inquiry/index.html">インターネットでのお問い合わせ</a>
+								<ul>
+									<li class="first"><a href="http://www.hokkaido-gas.co.jp/utility/inquiry/hojin.html">業務用のガス機器等に関するお問い合わせ</a></li>
+									<li class=""><a href="http://www.hokkaido-gas.co.jp/utility/inquiry/pamphlet.html">会社案内・パンフレットのご請求</a></li>
+									<li class="stay"><a href="http://www.hokkaido-gas.co.jp/utility/inquiry/gas_kiki.html">家庭用ガス機器に関するお問い合わせ・資料のご請求</a></li>
+									<li class=""><a href="http://www.hokkaido-gas.co.jp/utility/inquiry/kouzafurikae.html">口座振替申込書のご請求</a></li>
+									<li class=""><a href="http://www.hokkaido-gas.co.jp/utility/inquiry/credit.html">クレジット決済申込書のご請求</a></li>
+									<li class=""><a href="http://www.hokkaido-gas.co.jp/utility/inquiry/ir.html">IR情報についてのご意見・ご質問</a></li>
+									<li class=""><a href="http://www.hokkaido-gas.co.jp/utility/inquiry/kankyo.html">北ガスグループの現況についてのご意見・ご感想</a></li>
+									<li class=""><a href="http://www.hokkaido-gas.co.jp/utility/inquiry/cookingschool.html">クッキングスクールのお問い合わせ・資料請求</a></li>
+									<li class=""><a href="/form/stop">ガスご利用中止のお申込み</a></li>
+                                    <li class=""><a href="/form/start">ガスご利用開始のお申込み</a></li>
+                                    <li class=""><a href="/form/startstop">ガスご利用中止・開始両方を行う場合のお申込み</a></li>
+									<li class=""><a href="/form/onemeter">ガス料金試算のお申し込み</a></li>
+								  <li class=""><a href="/form/otoku">他燃料から都市ガスへの切り替えに関するお問い合わせ</a></li>
+								  <li class="last"><a href="http://www.hokkaido-gas.co.jp/utility/inquiry/etc.html">その他のお問い合わせ</a></li>
+								</ul>
+							</li>
+						</ul>
+					</dd>
+				</dl>
+				<div class="banner">
+					<ul>
+						<li><a href="http://www.hokkaido-gas.co.jp/support/recipe/index.html"><img src="/common/images/bnr_gascooking.gif" width="202" height="61" alt="お料理レシピ「北ガスクッキング」" /></a></li>
+						<li><a href="http://www.hokkaido-gas.co.jp/utility/kyouiku/index.html "><img src="/common/images/bnr_kengaku.gif" width="202" height="60" alt="施設見学 環境教育のご案内" /></a></li>
+						<li><a href="http://www.gasdemori.jp/" target="_blank"><img src="/common/images/bnr_blue.gif" width="202" height="60" alt="ガスで森をつくる。BLUE&amp;GREEN PROJECT" /></a></li>
+						<li><a href="http://www.meti.go.jp/policy/safety_security/industrial_safety/sangyo/citygas/aikotobademinaoshitai/index.html" target="_blank"><img src="/common/images/bnr_safe.gif" width="202" height="60" alt="ガスの安全見直し隊" /></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /side_contents -->
+			<div class="category_footer">
+				<p><a href="javascript:scrollToTop();"><img class="rollover" src="/common/images/btn_pagetop.gif" width="124" height="30" alt="このページの先頭へ" /></a></p>
+			</div>
+		</div>
+	</div>
+	<!-- /contents -->
+		<!-- footer -->
+		<div id="footer">
+				<div id="footer_wrap">
+						<ul>
+								<li><a href="http://www.hokkaido-gas.co.jp/index.html">北海道ガス総合トップ</a></li>
+								<li><a href="http://www.hokkaido-gas.co.jp/home/index.html">個人のお客さま</a></li>
+								<li><a href="http://www.hokkaido-gas.co.jp/business/index.html">法人のお客さま</a></li>
+								<li><a href="http://www.hokkaido-gas.co.jp/ir/index.html">企業情報・IR情報</a></li>
+								<li><a href="http://www.hokkaido-gas.co.jp/recruit/index.html">採用情報</a></li>
+								<li><a href="http://www.hokkaido-gas.co.jp/safety/index.html">安全使用のために</a></li>
+								<li><a href="http://www.hokkaido-gas.co.jp/support/index.html">暮らしサポート情報</a></li>
+						</ul>
+						<ul>
+								<li><a href="http://www.hokkaido-gas.co.jp/utility/index.html">お問い合わせ</a></li>
+								<li><a href="http://www.hokkaido-gas.co.jp/utility/madoguchi/index.html">お近くのサービス窓口</a></li>
+								<li><a href="http://www.hokkaido-gas.co.jp/utility/privacy.html">お客さま情報の取扱いについて</a></li>
+								<li><a href="http://www.hokkaido-gas.co.jp/utility/attention.html">このサイトについて</a></li>
+								<li><a href="http://www.hokkaido-gas.co.jp/utility/link.html">リンク</a></li>
+						</ul>
+						<div class="copyright">
+								<div><img src="/common/images/ftr_logo.gif" width="152" height="18" alt="北海道ガス株式会社" /></div>
+								<p>Copyright Hokkaido Gas Co.,Ltd. All Rights Reserved.</p>
+						</div>
+				</div>
+		</div>
+		<!-- /footer -->
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ?
+"https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost +
+"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+    var pageTracker = _gat._getTracker("UA-8450454-1");
+    pageTracker._trackPageview();
+} catch(err) {}</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 963834829;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/963834829/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+<script type="text/javascript" language="javascript">
+/* <![CDATA[ */
+var yahoo_retargeting_id = 'JNM4TUD7IK';
+var yahoo_retargeting_label = '';
+/* ]]> */
+</script>
+<script type="text/javascript" language="javascript" src="//b92.yahoo.co.jp/js/s_retargeting.js"></script>
+<script type="text/javascript" language="javascript">
+  /* <![CDATA[ */
+  var yahoo_ydn_conv_io = "idn1ht0OLDUY0hGfzSHm";
+  var yahoo_ydn_conv_label = "HGB38PG2NFUW3CQYKN6J34064";
+  var yahoo_ydn_conv_transaction_id = "";
+  var yahoo_ydn_conv_amount = "0";
+  /* ]]> */
+</script>
+<script type="text/javascript" language="javascript" charset="UTF-8"
+src="//b90.yahoo.co.jp/conv.js"></script>
+<!-- Yahoo Code for your Conversion Page -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var yahoo_conversion_id = 1000134467;
+var yahoo_conversion_label = "XEsaCLe_4loQgseK1AM";
+var yahoo_conversion_value = 0;
+/* ]]> */
+</script>
+<script type="text/javascript"
+src="https://s.yimg.jp/images/listing/tool/cv/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt=""
+src="https://b91.yahoo.co.jp/pagead/conversion/1000134467/?value=0&amp;label
+=XEsaCLe_4loQgseK1AM&amp;guid=ON&amp;script=0&amp;disvt=true"/>
+</div>
+</noscript>
+</body>
+</html>

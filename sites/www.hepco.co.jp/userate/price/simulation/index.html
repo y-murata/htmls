@@ -1,0 +1,361 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="ja">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="description" content="電気料金の試算やご契約を変更した場合の電気料金との比較ができる「電気料金シミュレーション」です。">
+<meta name="keywords" content="ほくでん,北海道電力,北電,電気料金,シミュレーション">
+<link rel="stylesheet" href="../../../common/css/import.css" type="text/css" media="screen,print">
+<script type="text/javascript" src="../../../common/js/common.js"></script>
+<script type="text/javascript" src="../../../common/js/device.js"></script>
+<script type="text/javascript" src="../../../common/module/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="../../../common/js/run.js"></script>
+<title>電気料金シミュレーション - 北海道電力</title>
+</head>
+<body>
+<div id="wrapper"><span class="navihidden"><a name="pagetop"><img src="../../../common/img/spacer.gif" alt="このページの先頭です" width="1" height="1"></a></span>
+	<div id="header">
+		<div id="guide_smt-print"><div id="guide_smt"><a href="javascript:void(0);" onClick="runSmtPage(); return false;"><img src="../../../common/img/guide_smt.gif" alt="スマートフォンページはこちら" width="759" height="102"></a></div></div>
+		<div id="logo"><a href="../../../index.html"><img src="../../../common/img/logo.gif" alt="ほくでん ともに輝く明日のために" width="146" height="78"></a><span class="navihidden"><a href="#contentsstart"><img src="../../../common/img/spacer.gif" alt="このページの本文へ" width="1" height="1"></a></span></div>
+		<div id="headernavi">
+			<div id="headerlinksearch">
+				<div id="headerlink">
+					<ul>
+						<li id="faq"><a href="../../../faq/faq.html">よくあるご質問</a></li>
+						<li id="contact"><a href="../../../mailpost/mailpost.html">お問い合わせ</a></li>
+						<li id="sitemap"><a href="../../../sitemap/sitemap.html">サイトマップ</a></li>
+						<li id="mobile"><a href="../../../mobile/mobile.html">モバイル</a></li>
+						<li id="english" class="headerlinkend"><a href="../../../english/index.html">ENGLISH</a></li>
+					</ul>
+				</div>
+				<div id="searcharea">
+					<form method="post" action="/cgi-bin/search.cgi"><input type="hidden" name="enc" value="utf-8">
+						<input type="text" name="phrase" id="search" size="24" value="">
+						<input type="image" src="../../../common/img/searchbtn.gif" alt="検索" name="search" id="submit" value="検索">					</form>
+				</div>
+			</div>
+<!--ChMark_Start_3-->
+<div id="gnavi">
+<ul>
+<li id="gnaviuserate"><a href="/userate/userate.html" class="selected">電気のご使用・料金</a></li>
+<li id="gnaviato_anv_ene"><a href="/ato_env_ene/ato_env_ene.html">原子力・環境・エネルギー</a></li>
+<li id="gnaviinfo"><a href="/info/press.html">お知らせ</a></li>
+<li id="gnavicorporate"><a href="/corporate/corporate.html">会社案内</a></li>
+</ul>
+</div>
+<!--ChMark_End_3-->
+		</div>
+	</div>
+	<div id="breadcrumbs">
+		<p><a href="../../../index.html">HOME</a>&nbsp;&gt;&nbsp;<a href="../../userate.html">電気のご使用・料金</a>&nbsp;&gt;&nbsp;<a href="../price.html">電気料金のご案内</a>&nbsp;&gt;&nbsp;電気料金シミュレーション</p>
+	</div>
+	<div id="contentsarea"><span class="navihidden"><a name="contentsstart"><img src="../../../common/img/spacer.gif" alt="ここから本文です" width="1" height="1"></a></span>
+		<h1>電気料金シミュレーション</h1>
+		<div id="contentsmain">
+
+			<ul class="gradation hdnodatemgn" id="CALCULATION">
+				<li><span class="bold txxlarge">電気料金計算シミュレーション</span></li>
+			</ul> 
+
+			<div class="hdnodatemgn btmmgn25">
+			  <p class="nobtmmgn">電気のご契約内容、ご使用量などを入力していただくことで、月額の電気料金を試算できます。<br>電気のご契約内容などは、「電気ご使用量のお知らせ（検針票）」などでご確認いただけます。</p>
+				<p class="otherpage"><a href="../viewpoint/viewpoint.html">「電気ご使用量のお知らせ」の見方</a></p> 
+
+					<ol class="listnum2 txsmall topmgn1em">
+						<li>※&nbsp;試算結果は、実際のご請求額と異なる場合があります。</li>
+						<li>※&nbsp;値上げ前の電気料金との比較や、軽減期間（平成26年11月1日から平成27年3月31日まで）の電力量料金単価により試算する場合につきましては、下記をご利用ください。</li>
+					</ol>
+					<p class="otherctgy"><span class="navihidden"><img src="../../../common/img/spacer.gif" alt="別のカテゴリページへ移動" width="1" height="1"></span><a href="../../../price_revise/home/simulation.html">電気料金シミュレーション［値上げ前の電気料金との比較］</a></p>
+			</div>
+
+      		<div class="bluegray btmmgn10 width70">
+				<p class="nobtmmgn bold">Step1</p>
+				<p class="nobtmmgn padlft1em">ご契約メニューを選択します。</p>
+			</div>
+			<div class="btmmgn25">
+                <div class="width70">
+                    <p align="center" class="btmmgn5"><img src="../../../common/img/yaji_bul.gif" alt="" width="100" height="28"></p>
+                </div>
+                <div class="bluegray btmmgn10 width70">
+                    <p class="nobtmmgn bold">Step2</p>
+                    <p class="nobtmmgn padlft1em">電気ご使用量などを入力します。</p>
+                </div>
+                <div class="width70">
+                    <p align="center" class="btmmgn5"><img src="../../../common/img/yaji_bul.gif" alt="" width="100" height="28"></p>
+                </div>
+                <div class="bluegray btmmgn10 width70">
+                    <p class="nobtmmgn bold">Step3</p>
+                    <p class="nobtmmgn padlft1em">電気料金の試算結果が表示されます。</p>
+                </div>
+			</div>
+
+			<h2>Step1<br>ご契約メニューの選択</h2>
+<!--サービス停止のお知らせ ここから-->
+<!--
+			<div class="noticearea hdnodatemgn btmmgn25">
+				<p><span class="bold red">＜サービス停止のお知らせ＞</span></p>
+				<p>下記日程でシステムメンテナンスを実施させていただきます。<br>
+				メンテナンス時間帯は、本サービスをご利用いただくことができませんので、予めご了承ください。ご迷惑をおかけしますことをお詫び申し上げます。</p>
+				<div class="topmgn1em">
+				<p><span class="bold red">【サービス停止時間】<br>
+				2014年2月17日（月）午前0時00分～午前6時15分まで</span><br>
+				※停止時間については多少前後する場合がございます。</p>
+				</div>
+			</div>
+-->
+<!--サービス停止のお知らせ ここまで-->
+
+      	<p class="topmgn1em">下記のご契約メニューを選択してください。</p>
+				<p class="notes">※&nbsp;電気料金計算シミュレーションは別ウィンドウで開きます。</p>	
+				<div class="blueboxsquare2 btmmgn25">
+					<div class="pricesimulationlistleft btmmgn15">
+						<p class="change_bt btmmgn5"><span class="navihidden"><img src="../../../common/img/spacer.gif" alt="別のウィンドウで開く" width="1" height="1"></span><a href="https://www11.hepco.co.jp/FW15/FWPs01101JuryodentoBShokika.do" target="_blank"><img src="img/pricesmln21_bt.gif" alt="従量電灯B" width="240" height="42"></a></p>
+						<p class="change_bt btmmgn5"><span class="navihidden"><img src="../../../common/img/spacer.gif" alt="別のウィンドウで開く" width="1" height="1"></span><a href="https://www11.hepco.co.jp/FW15/FWPs01102JuryodentoCShokika.do" target="_blank"><img src="img/pricesmln31_bt.gif" alt="従量電灯C" width="240" height="42"></a></p>
+						<p class="change_bt btmmgn5"><span class="navihidden"><img src="../../../common/img/spacer.gif" alt="別のウィンドウで開く" width="1" height="1"></span><a href="https://www11.hepco.co.jp/FW15/FWPs01103TeiatsudenryokuShokika.do" target="_blank"><img src="img/pricesmln51_bt.gif" alt="低圧電力" width="240" height="42"></a></p>
+						<p class="change_bt btmmgn5"><span class="navihidden"><img src="../../../common/img/spacer.gif" alt="別のウィンドウで開く" width="1" height="1"></span><a href="https://www11.hepco.co.jp/FW15/FWPs01104Dream8Shokika.do" target="_blank"><img src="img/pricesmln33_bt.gif" alt="時間帯別電灯（ドリーム8）" width="240" height="42"></a></p>
+						<p class="change_bt btmmgn5"><span class="navihidden"><img src="../../../common/img/spacer.gif" alt="別のウィンドウで開く" width="1" height="1"></span><a href="https://www11.hepco.co.jp/FW15/FWPs01105Dream8ecoShokika.do" target="_blank"><img src="img/pricesmln33_eco_bt.gif" alt="ピーク抑制型時間帯別電灯（ドリーム8エコ）" width="240" height="42"></a></p>
+						<p class="change_bt btmmgn5"><span class="navihidden"><img src="../../../common/img/spacer.gif" alt="別のウィンドウで開く" width="1" height="1"></span><a href="https://www11.hepco.co.jp/FW15/FWPs01106Etime3Shokika.do" target="_blank"><img src="img/pricesmln33_time_bt.gif" alt="3時間帯別電灯（eタイム3）" width="240" height="42"></a></p>
+					</div>
+
+					<div class="pricesimulationlistright">
+						<p class="change_bt btmmgn5"><span class="navihidden"><img src="../../../common/img/spacer.gif" alt="別のウィンドウで開く" width="1" height="1"></span><a href="https://www11.hepco.co.jp/FW15/FWPs01107Hottime19Shokika.do" target="_blank"><img src="img/pricesmln96_bt.gif" alt="融雪用電力A（ホットタイム19）" width="240" height="42"></a></p>
+						<p class="change_bt btmmgn5"><span class="navihidden"><img src="../../../common/img/spacer.gif" alt="別のウィンドウで開く" width="1" height="1"></span><a href="https://www11.hepco.co.jp/FW15/FWPs01108Hottime22Shokika.do" target="_blank"><img src="img/pricesmln97_bt.gif" alt="融雪用電力B（ホットタイム22）" width="240" height="42"></a></p>
+						<p class="change_bt btmmgn5"><span class="navihidden"><img src="../../../common/img/spacer.gif" alt="別のウィンドウで開く" width="1" height="1"></span><a href="https://www11.hepco.co.jp/FW15/FWPs01109Hottime22longShokika.do" target="_blank"><img src="img/pricesmln97_long_bt.gif" alt="融雪用電力L（ホットタイム22ロング）" width="240" height="42"></a></p>
+						<p class="change_bt btmmgn5"><span class="navihidden"><img src="../../../common/img/spacer.gif" alt="別のウィンドウで開く" width="1" height="1"></span><a href="https://www11.hepco.co.jp/FW15/FWPs01110ShinyadenryokuBShokika.do" target="_blank"><img src="img/pricesmln92_bt.gif" alt="深夜電力B" width="240" height="42"></a></p>
+					</div>
+                    <br class="clearboth">
+                    <div class="padlft1em"><p class="notes nobtmmgn">※&nbsp;上記以外の試算については、お近くのほくでんまでお問い合わせください。</p></div>
+                    <p><span class="navihidden"><img src="../../../common/img/spacer.gif" alt="別のカテゴリページへ移動" width="1" height="1"></span><a href="/cgi-bin/branch/adrs_list.cgi" class="otherctgy">お近くのほくでん一覧</a></p>	 
+					<p class="nobtmmgn">詳しい契約メニューの詳細は下記をご覧ください。<br>
+<a href="../ratemenu/menu_regular/menu_regular.html" class="otherpage">一般家庭、商店などのお客さま向けメニュー</a></p>
+				</div>
+
+        		<h2>サービスご利用可能時間</h2>  
+				<p class="topmgn1em">毎日午前6時15分から翌午前3時30分まで</p>
+				<p class="notes btmmgn25">※&nbsp;システムメンテナンスなど、やむを得ず予告なしにサービスを停止する場合がありますので、あらかじめご了承ください。</p>	 
+
+				<div class="boxnomgn">
+					<p class="topagetop"><a href="#pagetop">ページの先頭へ</a></p>
+				</div>
+
+				<ul class="gradation" id="CHANGEMENU">
+					<li><span class="bold txxlarge">ご契約メニュー変更シミュレーション</span></li>
+				</ul> 
+
+				<div class="hdnodatemgn btmmgn25">
+				  <p class="nobtmmgn">ご契約メニューを変更した場合の電気料金を比較することができます。<br>
+                  ご利用は、従量電灯Bまたは従量電灯Cから下記のご契約メニューに変更する場合の試算に限らせていただきます。</p> 
+
+					<div class="mgnlft15">
+						<ul class="listtype2">
+							<li>時間帯別電灯（ドリーム8）</li>
+							<li>ピーク抑制型時間帯別電灯（ドリーム8エコ）</li>
+							<li>3時間帯別電灯（eタイム3）</li>
+						</ul> 
+				   </div>
+
+					<ol class="listnum2 txsmall topmgn1em">
+						<li>※&nbsp;試算結果は、あくまでも試算条件に基づいた想定値のため、実際の料金とは異なります。</li>
+						<li>※&nbsp;上記以外のご契約メニュー変更に関する試算は、お近くのほくでんまでお問い合わせください。</li>
+					</ol>
+					<p class="otherctgy"><span class="navihidden"><img src="../../../common/img/spacer.gif" alt="別のカテゴリページへ移動" width="1" height="1"></span><a href="/cgi-bin/branch/adrs_list.cgi">お近くのほくでん一覧</a></p>
+			   </div>
+
+				<div class="bluegray btmmgn10 width70">
+        	<p class="nobtmmgn bold">Step1</p>
+        	<p class="nobtmmgn padlft1em">現在のご契約メニューを選択します。</p>
+        </div>
+        <div class="width70">
+         	<p align="center" class="btmmgn5"><img src="../../../common/img/yaji_bul.gif" alt="" width="100" height="28"></p>
+        </div>
+        <div class="bluegray btmmgn10 width70">
+          <p class="nobtmmgn bold">Step2</p>
+          <p class="nobtmmgn padlft1em">ご使用量や変更するご契約メニューを選択します。</p>
+        </div>
+        <div class="width70">
+        	<p align="center" class="btmmgn5"><img src="../../../common/img/yaji_bul.gif" alt="" width="100" height="28"></p>
+        </div>
+        <div class="bluegray btmmgn10 width70">
+         	<p class="nobtmmgn bold">Step3</p>
+          <p class="nobtmmgn padlft1em">自動計算した月別のご使用量を確認・修正します。</p>
+        </div>
+        <div class="width70">
+        	<p align="center" class="btmmgn5"><img src="../../../common/img/yaji_bul.gif" alt="" width="100" height="28"></p>
+        </div>
+        <div class="bluegray btmmgn25 width70">
+         	<p class="nobtmmgn bold">Step4</p>
+          <p class="nobtmmgn padlft1em">現在のご契約と変更後の比較が表示されます。</p>
+        </div>
+
+				<h2>Step1<br>ご契約メニューの選択</h2>
+<!--サービス停止のお知らせ ここから-->
+<!--
+			<div class="noticearea hdnodatemgn btmmgn25">
+				<p><span class="bold red">＜サービス停止のお知らせ＞</span></p>
+				<p>下記日程でシステムメンテナンスを実施させていただきます。<br>
+				メンテナンス時間帯は、本サービスをご利用いただくことができませんので、予めご了承ください。ご迷惑をおかけしますことをお詫び申し上げます。</p>
+				<div class="topmgn1em">
+				<p><span class="bold red">【サービス停止時間】<br>
+				2014年2月17日（月）午前0時00分～午前6時15分まで</span><br>
+				※停止時間については多少前後する場合がございます。</p>
+				</div>
+			</div>
+-->
+<!--サービス停止のお知らせ ここまで-->
+
+				<p class="topmgn1em">現在のご契約メニューを選択してください。</p>
+				<p class="notes">※&nbsp;ご契約メニュー変更シミュレーションは別ウィンドウで開きます。</p>	
+
+				<div class="blueboxsquare2 btmmgn25">
+					<div class="pricesimulationlistleft">
+						<p class="change_bt btmmgn5"><span class="navihidden"><img src="../../../common/img/spacer.gif" alt="別のウィンドウで開く" width="1" height="1"></span><a href="https://www11.hepco.co.jp/FW15/FWPs22101GenkoHenkogoMenuShokikaJuryodentoB.do" target="_blank"><img src="img/pricesmln21_bt.gif" alt="従量電灯B" width="240" height="42"></a></p>
+					</div>
+
+					<div class="pricesimulationlistright">
+						<p class="change_bt btmmgn5"><span class="navihidden"><img src="../../../common/img/spacer.gif" alt="別のウィンドウで開く" width="1" height="1"></span><a href="https://www11.hepco.co.jp/FW15/FWPs22101GenkoHenkogoMenuShokikaJuryodentoC.do" target="_blank"><img src="img/pricesmln31_bt.gif" alt="従量電灯C" width="240" height="42"></a></p>
+					</div>
+					<br class="clearboth">
+				</div>
+
+        <h2>サービスご利用可能時間</h2>  
+				<p class="topmgn1em">毎日午前6時15分から翌午前3時30分まで</p>
+				<p class="notes btmmgn25">※&nbsp;システムメンテナンスなど、やむを得ず予告なしにサービスを停止する場合がありますので、あらかじめご了承ください。</p>	 
+
+				<div class="boxnomgn">
+					<p class="topagetop"><a href="#pagetop">ページの先頭へ</a></p>
+				</div>
+			<ul class="gradation" id="ATTENTION">
+				<li><span class="bold txxlarge">ご利用上の注意点</span></li>
+			</ul> 
+
+				<p class="boldheading topmgn1em">【動作環境について】</p>
+
+				<p>本サービスでは、JavaScriptというスクリプト言語や、Cookie（クッキー）という技術を使用しています。<br>お使いのブラウザで、JavaScriptとCookieの設定を無効にしている場合には、画面が正しく表示されない、もしくは正しく機能しない場合があります。</p>
+
+				<p class="boldheading topmgn1em">【試算条件・試算結果について】</p>
+
+				<ol class="listnum2">
+				 <li class="bold">（1）電気料金計算シミュレーション</li>
+				</ol>
+
+				<ul class="listtype2 padlft1em">
+				 <li>試算結果は、実際のご請求額と異なる場合があります。</li>
+				 <li>再生可能エネルギー発電促進賦課金は、試算月（試算を行った日が属する月）の単価で試算しています。</li>
+				</ul>
+
+				<ol class="listnum2 topmgn1em">
+				 <li class="bold">（2）ご契約メニュー変更シミュレーション</li>
+				</ol>
+
+				<ul class="listtype2 padlft1em">
+					<li>試算結果は、あくまでも当社の試算条件に基づいた想定値のため、実際の料金とは異なります。</li>
+					<li>試算結果には、消費税等相当額を含み、燃料費調整額、再生可能エネルギー発電促進賦課金を含みません。</li>
+					<li>各月の月間使用量および昼間、夜間、ピークなどの各時間帯のご使用量は、ご入力いただいた月のご使用量と、一般的な住宅の平均使用量などをもとに、当社の試算条件により算定しておりますので、実際のご使用量とは異なります。<br>
+           <p class="notes">※&nbsp;ご使用量は、お客さまにより修正することができます。</p></li>
+					<li>ご契約メニュー変更後1年間は、原則、ご契約メニューを変更することはできませんので、ご了承ください。</li>
+					<li>ご契約メニューの変更を希望される場合は、お近くのほくでんまでお問い合わせください。</li>
+				</ul>
+				<p class="otherctgy topmgn1em btmmgn25"><span class="navihidden"><img src="../../../common/img/spacer.gif" alt="別のカテゴリページへ移動" width="1" height="1"></span><a href="/cgi-bin/branch/adrs_list.cgi">お近くのほくでん一覧</a></p>
+				<p class="nobtmmgn"><img src="img/pricesimulation01.gif" alt="参考情報" width="524" height="636" usemap="#pricesimulation01"></p>
+		</div>
+		<div id="localnaviarea">
+			<div id="localnavi">
+				<ul>
+					<li>
+						<p class="liststarts"><a href="../../move/move01.html">電気のお引越し</a></p>
+					</li>
+					<li>
+						<p><a href="../../contract_change/cc01.html">電気のご契約・お支払い方法の変更</a></p>
+					</li>
+					<li>
+						<p><a href="../price.html" class="opensnavi">電気料金のご案内</a></p>
+						<ul>
+							<li>
+								<p><a href="../ratemenu/ratemenu.html">料金メニュー</a></p>
+							</li>
+							<li>
+								<p><a href="../unitprice/unitprice.html">電気料金単価表</a></p>
+							</li>
+							<li>
+								<p><a href="../viewpoint/viewpoint.html">「電気ご使用量のお知らせ」の見方</a></p>
+							</li>
+							<li>
+								<p><a href="../calculate/calculate.html">電気料金の計算方法</a></p>
+							</li>
+							<li>
+								<p><a href="../payment/payment.html">電気料金のお支払いの期限</a></p>
+							</li>
+							<li>
+								<p><a href="../system/system.html">燃料費調整制度</a></p>
+							</li>
+							<li>
+								<p><a href="../recyclable_promotion/recyclable_promotion.html">再生可能エネルギー発電促進賦課金</a></p>
+						  	</li>
+							<li>
+								<p><a href="../price_info/index.html">Web料金お知らせサービス</a></p>
+							</li>
+                            <li>
+								<p><a href="../service/index.html">電気ご使用量・料金実績照会サービス</a></p>
+							</li>
+							<li>
+								<p><a href="index.html" class="selected">電気料金シミュレーション</a></p>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<p><a href="../../contract/contract.html">電気の契約のしくみ</a></p>
+					</li>
+					<li>
+						<p><a href="../../stipulation/stipulation.html">各種約款</a></p>
+					</li>
+					<li>
+						<p><a href="../../retail/retail.html">電力自由化情報</a></p>
+					</li>
+					<li>
+						<p><a href="../../live_hint/live_hint.html">くらしのヒント</a></p>
+					</li>
+					<li>
+						<p><a href="../../electrical_work_shop/electrical_work_shop.html">電気工事店さま専用</a></p>
+					</li>
+				</ul>
+			</div>
+			<div id="relatedpages" class="btmmgn20">
+				<p class="linkstitle">関連ページ</p>
+				<ul class="linkbox">					<li>
+						<p class="otherctgy"><span class="navihidden"><img src="../../../common/img/spacer.gif" alt="別のカテゴリページへ移動" width="1" height="1"></span><a href="/cgi-bin/branch/adrs_list.cgi">お近くのほくでん一覧</a></p>
+					</li>
+					<li>
+						<p class="otherctgy"><span class="navihidden"><img src="../../../common/img/spacer.gif" alt="別のカテゴリページへ移動" width="1" height="1"></span><a href="../../../faq/userate1/01.html">電気のご使用・料金に関するよくあるご質問</a></p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="longpageend">
+		<p class="topagetop"><a href="#pagetop">ページの先頭へ</a></p>
+	</div>
+	<div id="footerarea">
+		<div id="footer">
+			<div id="footerlink">
+				<ul>
+					<li id="privacypolicy"><a href="../../../privacy_policy/privacy_policy.html">個人情報保護方針</a></li>
+					<li id="using"><a href="../../../using/using.html">ご利用にあたって</a></li>
+					<li id="accessibility"><a href="../../../using/accessibility.html">アクセシビリティについて</a></li>
+					<li id="link"><a href="../../../link/link1.html">リンク集</a></li>
+				</ul>
+			</div>
+			<div id="siteinfo">
+				<div id="companyname"><img src="../../../common/img/hokkaidodenryokukk.gif" alt="北海道電力株式会社" width="127" height="15"></div>
+				<div id="copyright"><img src="../../../common/img/copyright.gif" alt="All Rights Reserved. Copyright&copy; HEPCO Hokkaido Electric Power Co.,Inc." width="305" height="13"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<map name="pricesimulation01">
+  <area href="../system/system.html" target="_self" shape="rect" coords="120,360,314,405" alt="詳しくは「燃料費調整制度」をご覧ください。">
+  <area href="../recyclable_promotion/recyclable_promotion.html" target="_self" shape="rect" coords="69,583,379,625" alt="詳しくは「再生可能エネルギー発電促進賦課金」をご覧ください。">
+  <area shape="default" nohref alt="">
+</map></body>
+</html>

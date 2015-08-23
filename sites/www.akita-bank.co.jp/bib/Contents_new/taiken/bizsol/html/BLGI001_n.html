@@ -1,0 +1,242 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex,nofollow">
+<link rel="stylesheet" href="../css/import.css" type="text/css">
+<style type="text/css">
+<!--
+body {
+behavior: url("../js/csshover3.htc");
+}
+-->
+</style>
+<script type="text/javascript" src="../js/jquery-1.4.2.min.js" language="javascript"></script>
+<script type="text/javascript" src="../js/jquery.hoverIntent.js" language="javascript"></script>
+<script type="text/javascript" src="../js/mousehover_subNav.js" language="javascript"></script>
+<script type="text/javascript" src="../js/jquery.jfontsizer.js" language="javascript"></script>
+<script type="text/javascript" src="../js/bizsol-common.js" language="javascript"></script>
+<title>
+ログイン
+</title>
+<script type="text/javascript" src="../js/BLGI001.js" language="javascript"></script>
+<style type="text/css" media="all">
+table.listtable {
+width: 100%;
+}
+table.listtable td {
+padding: 15px 10px;
+text-align: center;
+}
+</style>
+<script type="text/javascript">
+$(document).ready(function(){
+var fncBtnCtrl = controlSoftwareKeyboardCheckBox(
+"skloginpwdshiyoumu",
+"お客様の取引をより安全にお守りするために、ソフトウェアキーボードの使用をお勧めいたします。\nこのまま、ソフトウェアキーボードを使わないということでよろしいですか？",
+[
+"blGI001InfoLoginPwd","blGI001InfoLoginPwd1","blGI001InfoLoginPwd2","blGI001InfoLoginPwd3"
+],
+[
+"loginBtn",
+"../images/disabled/dis_login_btn.png",
+"../images/login_btn.png"
+],
+[
+"blGI001Info.loginId"
+]
+);
+var obj = document.getElementById("blGI001InfoLoginId");
+if (obj) {
+obj.focus();
+}
+});
+function executeAlert() {
+if (!isLoaded() || isClicked()) {
+return false;
+}
+var browserName = navigator.appName;
+var browserVer = parseInt(navigator.appVersion);
+var requiredBrowserNumMS = 4;
+if (browserName != "Microsoft Internet Explorer") {
+} else {
+if (browserVer < requiredBrowserNumMS) {
+} else {
+}
+}
+if (!blockMultiPost()) {
+return false;
+}
+return true;
+};
+</script>
+<script type="text/javascript" src="../resource/js/transition.js" language="javascript"></script>
+</head>
+<body>
+<div id="outerwrapper" class="rblouterwrapper">
+<div id="wrapper">
+<div id="header" class="rblheader">
+<div id="logo">
+<img src="../images/logo.png" alt="">
+</div>
+<div id="logininfo">
+<table id="headernomenutable">
+<tr>
+<td id="fontcontroler">
+<div id="fontcontrol">
+<ul class="fsizer">
+<li class="fontcontroltext">文字サイズを変更</li>
+<li id="fontsizes"><a id="selfontsizes" class="" href="javascript:void(0);">小</a></li>
+<li id="fontsizem"><a id="selfontsizem" class="fsactive" href="javascript:void(0);">中</a></li>
+<li id="fontsizel"><a id="selfontsizel" class="" href="javascript:void(0);">大</a></li>
+</ul>
+</div>
+</td>
+<td id="timestamp">
+2010年10月01日&nbsp;09時31分05秒
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="container">
+<div id="containerheader">
+<div class="pagetitle">
+<ul>
+<li class="titlename">ログイン</li>
+<li class="screenid">BLGI001</li>
+</ul>
+</div>
+<div class="screenhelp"><a href="javascript:void(0);" onclick="return false;"></a></div>
+<noscript><div class="noscripterrormessage ">JavaScriptを有効にしてください。</div></noscript>
+<p>電子証明書をお持ちの方は、「電子証明書ログイン」ボタンを押してください。<br>ログインIDとログインパスワードでログインする場合は、ログインIDとログインパスワードを入力の上、「ログイン」ボタンを押してください。</p>
+</div>
+<form name="_BLGI001Form" id="blGI001Info" method="post" action="/wingol/asp/wgParamCheck.asp"><input type="hidden" name="hiddenbankcode" value="0119"><input type="hidden" name="hiddenslv" value=""><input type="hidden" name="hiddenscreenid" value="BLGI001"><input type="hidden" name="hiddencentercode" value=""><input type="hidden" name="hiddenTEST" value="false">
+<div class="contents">
+<div id="logincustomers">
+<div id="dscustomers">
+<table class="listtable" cellspacing="0">
+<tr>
+<th>電子証明書方式のお客様</th>
+</tr>
+<tr>
+<td>
+<input type="image" name="forward_rblgi01_s01" src="../images/densi_syomeisyo_login_btn.png" onclick="window.open('../resource/certificate/Client.html','guide', 'width=500,height=300'); return false;" alt="電子証明書ログイン">
+<div class="hrbox"><hr class="hrline"></div>
+<p>証明書を取得されていない方、もしくは証明書を再取得される方は、「電子証明書発行」ボタンより証明書の発行を行ってください。</p>
+<div class="smallspace"></div>
+<input type="image" name="forward_rblgi01_s02" src="../images/densi_syomeisyo_hakko_b_btn.png" onclick="go('BSMS001.html'); return false;" alt="電子証明書発行">
+</td>
+</tr>
+</table>
+</div>
+<div id="ipcustomers">
+<table class="listtable" cellspacing="0">
+<tr>
+<th>ID・パスワード方式のお客様</th>
+</tr>
+<tr>
+<td>
+<table class="inneripcustomers borderless2" cellspacing="0">
+<tbody>
+<tr>
+<td nowrap><label for="blGI001InfoLoginId">ログインID</label>：</td>
+<td>
+<input type="text" name="blGI001Info.loginId" maxlength="12" size="22" value="taro01" id="blGI001InfoLoginId" autocomplete="off">
+</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>
+</td>
+</tr>
+<tr>
+<td nowrap><label for="blGI001InfoLoginPwd">ログインパスワード</label>：</td>
+<td>
+<input type="password" name="blGI001Info.loginPwd" maxlength="12" size="32" value="login02" id="blGI001InfoLoginPwd" autocomplete="off">&nbsp;
+<input type="image" name="" src="../images/softkey_btn.png" onclick="displaySoftKeyboard.url = 'BSSK204.html'; displaySoftKeyboard('blIS006Info','blGI001InfoLoginPwd');  return false;" alt="ソフトウェアキーボードを開く"><br>
+</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<input type="image" name="forward_rblgi01_s03" src="../images/login_btn.png" onclick="go('BLGI006.html#BTOP001'); return false;" id="loginBtn" alt="ログイン">
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="loginbox1">
+<table class="listtable" cellspacing="0">
+<tr><th>初めてご利用されるお客様</th></tr>
+<tr>
+<td>
+<p>初めてご利用の方は、最初にログインID取得を行ってください。</p>
+<div class="smallspace"></div>
+<input type="image" name="forward_rblgi01_s06" src="../images/login_id_syutoku_btn.png" onclick="go('BLIS005.html'); return false;" alt="">
+</td>
+</tr>
+</table>
+</div>
+</div>
+<input type="hidden" name="FES" value="0"/>
+<input type="hidden" name="DEN" value="0"/>
+<input type="hidden" name="MPN" value="0"/>
+<input type="hidden" name="skno" value="0"/>
+<input type="hidden" name="bptn" value="0"/>
+<input type="hidden" name="bill" value="0"/>
+<input type="hidden" name="approve" value="0"/>
+<input type="hidden" name="infolink" value="0"/>
+<input type="hidden" name="JSaaS" value="0"/>
+<input type="hidden" name="centercode" value="0"/>
+<input type="hidden" name="bankcode" value="0"/>
+<input type="hidden" name="slv" value="0"/>
+<input type="hidden" name="TEST" value="0"/>
+</form>
+<form name="_BLGI001Form" id="hiddenForm" method="post" action="/wingol/asp/wgParamCheck.asp"><input type="hidden" name="hiddenbankcode" value="0119"><input type="hidden" name="hiddenslv" value=""><input type="hidden" name="hiddenscreenid" value="BLGI001"><input type="hidden" name="hiddencentercode" value=""><input type="hidden" name="hiddenTEST" value="false">
+<input type="hidden" name="centercode" value="0"/>
+<input type="hidden" name="bankcode" value="0"/>
+<input type="hidden" name="slv" value="0"/>
+<input type="hidden" name="TEST" value="0"/>
+</form>
+<form name="_BLGI001Form" id="domainForm" method="post" action="/wingol/asp/wgParamCheck.asp"><input type="hidden" name="hiddenbankcode" value="0119"><input type="hidden" name="hiddenslv" value=""><input type="hidden" name="hiddenscreenid" value="BLGI001"><input type="hidden" name="hiddencentercode" value=""><input type="hidden" name="hiddenTEST" value="false">
+<input type="hidden" name="FES" value="0"/>
+<input type="hidden" name="DEN" value="0"/>
+<input type="hidden" name="MPN" value="0"/>
+<input type="hidden" name="skno" value="0"/>
+<input type="hidden" name="bptn" value="0"/>
+<input type="hidden" name="bill" value="0"/>
+<input type="hidden" name="approve" value="0"/>
+<input type="hidden" name="infolink" value="0"/>
+<input type="hidden" name="JSaaS" value="0"/>
+<input type="hidden" name="centercode" value="0"/>
+<input type="hidden" name="bankcode" value="0"/>
+<input type="hidden" name="slv" value="0"/>
+<input type="hidden" name="TEST" value="0"/>
+</form>
+<input type="hidden" id="ltype" name="ltype" value="1"/>
+<div id="contaierbottombox">&nbsp;</div>
+</div>
+<span class="noprint">
+<div id="footer">
+<p id="borderline">&nbsp;</p>
+<p id="copyright"></p>
+<p id="serviceinfo">
+<span>
+【操作方法についてのお問合せ窓口】<br>秋田銀行　ビジネスＩＢサポートセンター<br>
+TEL:&nbsp;0120-856-506
+<a href="mailto:"></a>
+</span>
+</p>
+</div>
+</span>
+</div>
+</div>
+</body>
+</html>

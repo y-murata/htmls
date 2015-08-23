@@ -1,0 +1,720 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-store" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="keywords" content="インターネットでのお問い合わせ" />
+<meta name="description" content="北海道ガス株式会社のお問い合わせ　ガスご使用中止・開始両方を行う場合のお申込み" />
+<title>北海道ガス株式会社：ガスご使用中止・開始両方を行う場合のお申込み</title>
+<link rel="stylesheet" type="text/css" href="/common/styles/import.css" media="screen,print" />
+<link rel="stylesheet" type="text/css" href="/common/styles/module/component.css" media="screen, all" />
+<link rel="stylesheet" type="text/css" href="/common/styles/module/utility.css" media="screen,print" />
+<link rel="stylesheet" type="text/css" href="/common/styles/font/font.css" title="default" />
+<link rel="alternate stylesheet" type="text/css" href="/common/styles/font/fontS.css" title="small" />
+<link rel="alternate stylesheet" type="text/css" href="/common/styles/font/fontL.css" title="large" />
+<script type="text/javascript" src="/common/scripts/default.js"></script>
+<script type="text/javascript" src="/common/scripts/jquery.js"></script><script type="text/javascript" src="/common/scripts/zip.js"></script></head>
+<body onload="initialize();">
+<div id="wrap">
+	<!-- header -->
+	<div id="header">
+		<div id="header_wrap">
+			<div class="hdr_identity">
+				<p class="tagline">北のくらし、もっとできること</p>
+				<h1><a href="http://www.hokkaido-gas.co.jp/index.html"><img src="/common/images/hdr_logo.gif" width="175" height="47" alt="KITAGAS" /></a></h1>
+			</div>
+			<div class="hdr_link">
+				<ul>
+					<li><a href="http://www.hokkaido-gas.co.jp/utility/index.html"><img class="rollover" src="/common/images/btn_hdrlink_01.gif" width="86" height="28" alt="お問い合わせ" /></a></li>
+					<li><a href="http://www.hokkaido-gas.co.jp/utility/madoguchi/index.html"><img class="rollover" src="/common/images/btn_hdrlink_02.gif" width="119" height="28" alt="お近くのサービス窓口" /></a></li>
+					<li><a href="http://www.hokkaido-gas.co.jp/utility/faq/index.html"><img class="rollover" src="/common/images/btn_hdrlink_03.gif" width="90" height="28" alt="よくあるご質問" /></a></li>
+					<li><a href="http://www.hokkaido-gas.co.jp/english/index.html"><img class="rollover" src="/common/images/btn_hdrlink_04.gif" width="62" height="28" alt="English" /></a></li>
+				</ul>
+			</div>
+			<div class="hdr_utility" style="width:312px;">
+				<ul id="hdr_ul">
+					<li><a href="http://www.hokkaido-gas.co.jp/utility/sitemap.html"><img class="rollover" src="/common/images/btn_hdrutility_01.gif" width="89" height="16" alt="サイトマップ" /></a></li>
+					<li><a href="http://www.hokkaido-gas.co.jp/utility/mobile.html"><img class="rollover" src="/common/images/btn_hdrutility_02.gif" width="78" height="16" alt="携帯サイト" /></a></li>
+				</ul>
+				<dl>
+					<dt><img src="/common/images/txt_fontnavi.gif" width="88" height="16" alt="文字サイズ変更" /></dt>
+					<dd>
+						<ul id="font_navi">
+							<li id="font_navi_s"><a href="#" onclick="setActiveStyleSheet('small');return false;" title="文字を小さく"><span>文字を小さく</span></a></li>
+							<li id="font_navi_d"><a href="#" onclick="setActiveStyleSheet('default');return false;" title="文字を標準に"><span>文字を標準に</span></a></li>
+							<li id="font_navi_l"><a href="#" onclick="setActiveStyleSheet('large');return false;" title="文字を大きく"><span>文字を大きく</span></a></li>
+						</ul>
+					</dd>
+				</dl>
+			</div>
+			<div class="global_navi">
+				<ul class="gl_menu_01">
+					<li><a href="http://www.hokkaido-gas.co.jp/home/index.html"><img src="/common/images/btn_glnavi_01_v.gif" width="143" height="34" alt="個人のお客さま" /></a></li>
+					<li><a href="http://www.hokkaido-gas.co.jp/business/index.html"><img class="rollover" src="/common/images/btn_glnavi_02.gif" width="142" height="34" alt="法人のお客さま" /></a></li>
+					<li><a href="http://www.hokkaido-gas.co.jp/ir/index.html"><img class="rollover" src="/common/images/btn_glnavi_03.gif" width="142" height="34" alt="企業情報・IR情報" /></a></li>
+					<li><a href="http://www.hokkaido-gas.co.jp/recruit/index.html"><img class="rollover" src="/common/images/btn_glnavi_04.gif" width="141" height="34" alt="採用情報" /></a></li>
+				</ul>
+				<ul class="gl_menu_02">
+					<li><a href="http://www.hokkaido-gas.co.jp/safety/index.html"><img class="rollover" src="/common/images/btn_glnavi_05.gif" width="142" height="34" alt="安全使用のために" /></a></li>
+					<li><a href="http://www.hokkaido-gas.co.jp/support/index.html"><img class="rollover" src="/common/images/btn_glnavi_06.gif" width="142" height="34" alt="暮らしサポート" /></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- /header -->
+	<!-- contents -->
+	<div id="contents">
+		<div id="contents_wrap">
+             			<p id="location"><a href="http://www.hokkaido-gas.co.jp/index.html">総合トップ</a>&nbsp;&gt;&nbsp;<a href="http://www.hokkaido-gas.co.jp/home/index.html">個人のお客さま</a>&nbsp;&gt;&nbsp;<a href="http://www.hokkaido-gas.co.jp/home/procedure/index.html">各種お手続き</a>&nbsp;&gt;&nbsp;<a href="http://www.hokkaido-gas.co.jp/home/procedure/move/">引越のお手続き（ガスの使用開始/中止）</a>&nbsp;&gt;&nbsp;ガスご使用中止・開始両方を行う場合のお申込み</p>
+	    <!-- main_contents -->
+			<div id="main_contents">
+				<div class="block">
+					<h1 class="h1lineHead h1colorRed"><span>ガスご使用中止・開始両方を行う場合のお申込み</span></h1>
+
+              <div class="encloseHead hdEnRed">
+						<h3><span>ご使用中止のお申込み</span></h3>
+			  </div>
+                  <ul class="formtopicpath">
+                        <li><img src="/form/images/form-topic-path-startstop-01on.gif" alt="使用中止の入力" /></li>
+                        <li><img src="/form/images/form-topic-path-startstop-02.gif" alt="使用開始の入力" /></li>
+                        <li><img src="/form/images/form-topic-path-startstop-03.gif" alt="確認" /></li>
+                    <li><img src="/form/images/form-topic-path-startstop-04.gif" alt="完了" /></li>
+                  </ul>
+				</div>
+
+<div class="block">   <form method="post" name="form" action="/form/startstop/form2/">
+      <table border="0" cellpadding="0" cellspacing="0" class="inqTable">
+      <tr>
+        <th colspan="4" scope="col">（1）ガスのご使用を中止される場所の住所</th>
+      </tr>
+      <tr class="inqTop">
+        <td class="indespens">必須</td>
+        <td class="inputName">お客さま番号</td>
+        <td class="inputArea"><input name="cno1" type="text" class="lengthXS" />
+          -
+          <input name="cno2" type="text" class="lengthXS" />
+          -
+          <input name="cno3" type="text" class="lengthXS" />
+          <br />
+          <span class="sizeS">※お客さま番号は、「検針票」等でご確認ください。<br />
+          ※メーターが2個ある場合はどちらか一方のお客さま番号を入力してください。
+          </span></td>
+        <td class="example sizeM">例：1203-456-7890 </td>
+      </tr>
+      <tr class="inqBtm">
+        <td class="indespens">必須</td>
+        <td>郵便番号</td>
+        <td>〒<input name="stop_zip1" type="text" class="lengthXXS" id="zip1" maxlength="3"/>
+          -
+          <input name="stop_zip2" type="text" class="lengthXXS" id="zip2" maxlength="4"/></td>
+        <td class="example sizeM">例：060-0042</td>
+      </tr>
+      <tr class="inqBtm">
+        <td class="indespens">必須</td>
+        <td>市区町村</td>
+        <td>北海道　
+          <input name="stop_address1" type="text"/></td>
+        <td class="example sizeM">例：札幌市中央区大通西</td>
+      </tr>
+      <tr class="inqBtm">
+        <td class="indespens">必須</td>
+        <td>丁目番地</td>
+        <td><input name="stop_address2" type="text" class="lengthSM" /></td>
+        <td class="example sizeM">例：7丁目3番地1</td>
+      </tr>
+      <tr class="inqBtm">
+        <td class="indespens">必須</td>
+        <td>建物形態</td>
+        <td>           <label>
+          <input type="radio" name="stop_shape" value="mansion" />
+          集合住宅</label>
+                    <label>
+          <input type="radio" name="stop_shape" value="home" />
+          一戸建</label>
+           </td>
+        <td class="example">&nbsp;</td>
+      </tr>
+      <tr class="inqBtm">
+        <td class="indespens">&nbsp;</td>
+        <td>建物名</td>
+        <td><textarea name="stop_address3" cols="25" rows="3"></textarea>
+        <br /><span class="sizeS">※集合住宅のお客さまはご入力ください。</span></td>
+        <td class="example sizeM">例：マンション名など</td>
+      </tr>
+      <tr class="inqBtm">
+        <td class="indespens">&nbsp;</td>
+        <td>棟・<br />
+          部屋番号</td>
+        <td><input name="stop_address4" type="text" class="lengthSM" />
+          <br />
+          <span class="sizeS">※集合住宅のお客さまはご入力ください。</span></td>
+        <td class="example sizeM">例：棟番号・部屋番号など </td>
+      </tr>
+      <tr class="inqBtm">
+        <td class="indespens">&nbsp;</td>
+        <td>オートロックの<br />
+有無</td>
+      <td>           <label>
+          <input type="radio" name="stop_lock" value="y" />
+          有</label>
+                    <label>
+          <input type="radio" name="stop_lock" value="n" />
+          無</label>
+          <br/>
+          <span class="sizeS">※集合住宅のお客さまはご選択ください</span> </td>
+        <td class="example">&nbsp;</td>
+      </tr>
+      <tr>
+        <th colspan="4" scope="col">（2）ご使用者の名義</th>
+      </tr>
+      <tr class="inqTop">
+        <td class="indespens">必須</td>
+        <td class="inputName">漢字</td>
+        <td class="inputArea"><input name="stop_name" type="text" class="lengthSM" /></td>
+        <td class="example sizeM">例：北海道　太郎</td>
+      </tr>
+      <tr class="inqBtm">
+        <td class="indespens">必須</td>
+        <td><div>フリガナ</div></td>
+        <td><input name="stop_kana" type="text" class="lengthSM" /></td>
+        <td class="example sizeM">例：ホッカイドウ　タロウ</td>
+      </tr>
+      <tr>
+        <th colspan="4" scope="col">（3）ご連絡先<span class="example">　※お分かりになる場合のみご入力ください。</span></th>
+      </tr>
+      <tr class="inqTop">
+        <td class="indespens">&nbsp;</td>
+        <td>お電話番号<br />
+          （自宅）</td>
+        <td><input name="stop_tel1" type="text" class="lengthXXS" />
+          -
+          <input name="stop_tel2" type="text" class="lengthXXS" />
+          -
+          <input name="stop_tel3" type="text" class="lengthXS" /></td>
+        <td class="example sizeM">例：011-231-9511(半角) </td>
+      </tr>
+      <tr class="inqBtm">
+        <td class="indespens">&nbsp;</td>
+        <td>携帯番号</td>
+        <td><input name="stop_mobile1" type="text" class="lengthXXS" />
+          -
+          <input name="stop_mobile2" type="text" class="lengthXXS" />
+          -
+          <input name="stop_mobile3" type="text" class="lengthXS" /></td>
+        <td class="example sizeM">例：090-0000-0000(半角) </td>
+      </tr>
+      <tr>
+        <th colspan="4" scope="col">（4）ガスを止める日時</th>
+      </tr>
+      <tr class="inqTop">
+        <td class="indespens">必須</td>
+        <td>日にち</td>
+        <td><select name="stop_day">
+            <option value="" selected>-選んでください-</option>
+            
+            
+                                										
+            
+            <option value="8月23日(日)">8月23日(日)</option>
+            
+            
+                                										
+            
+            <option value="8月24日(月)">8月24日(月)</option>
+            
+            
+                                										
+            
+            <option value="8月25日(火)">8月25日(火)</option>
+            
+            
+                                										
+            
+            <option value="8月26日(水)">8月26日(水)</option>
+            
+            
+                                										
+            
+            <option value="8月27日(木)">8月27日(木)</option>
+            
+            
+                                										
+            
+            <option value="8月28日(金)">8月28日(金)</option>
+            
+            
+                                										
+            
+            <option value="8月29日(土)">8月29日(土)</option>
+            
+            
+                                										
+            
+            <option value="8月30日(日)">8月30日(日)</option>
+            
+            
+                                										
+            
+            <option value="8月31日(月)">8月31日(月)</option>
+            
+            
+                                										
+            
+            <option value="9月1日(火)">9月1日(火)</option>
+            
+            
+                                										
+            
+            <option value="9月2日(水)">9月2日(水)</option>
+            
+            
+                                										
+            
+            <option value="9月3日(木)">9月3日(木)</option>
+            
+            
+                                										
+            
+            <option value="9月4日(金)">9月4日(金)</option>
+            
+            
+                                										
+            
+            <option value="9月5日(土)">9月5日(土)</option>
+            
+            
+                                										
+            
+            <option value="9月6日(日)">9月6日(日)</option>
+            
+            
+                                										
+            
+            <option value="9月7日(月)">9月7日(月)</option>
+            
+            
+                                										
+            
+            <option value="9月8日(火)">9月8日(火)</option>
+            
+            
+                                										
+            
+            <option value="9月9日(水)">9月9日(水)</option>
+            
+            
+                                										
+            
+            <option value="9月10日(木)">9月10日(木)</option>
+            
+            
+                                										
+            
+            <option value="9月11日(金)">9月11日(金)</option>
+            
+            
+                                										
+            
+            <option value="9月12日(土)">9月12日(土)</option>
+            
+            
+                                										
+            
+            <option value="9月13日(日)">9月13日(日)</option>
+            
+            
+                                										
+            
+            <option value="9月14日(月)">9月14日(月)</option>
+            
+            
+                                										
+            
+            <option value="9月15日(火)">9月15日(火)</option>
+            
+            
+                                										
+            
+            <option value="9月16日(水)">9月16日(水)</option>
+            
+            
+                                										
+            
+            <option value="9月17日(木)">9月17日(木)</option>
+            
+            
+                                										
+            
+            <option value="9月18日(金)">9月18日(金)</option>
+            
+            
+                                										
+            
+            <option value="9月19日(土)">9月19日(土)</option>
+            
+            
+                                										
+            
+            <option value="9月20日(日)">9月20日(日)</option>
+            
+            
+                                										
+            
+            <option value="9月21日(月)">9月21日(月)</option>
+            
+            
+                                                                
+          
+          </select></td>
+        <td class="example">&nbsp;</td>
+      </tr>
+      <tr class="inqBtm">
+        <td class="indespens">必須</td>
+        <td>時間帯</td>
+        <td><select name="stop_time">
+            
+            
+                                                                    
+            
+            <option value="0">-選んでください-</option>
+            
+            
+                                                                    
+            
+            <option value="1">9:00～12:00</option>
+            
+            
+                                                                    
+            
+            <option value="2">13:00～15:00</option>
+            
+            
+                                                                    
+            
+            <option value="3">13:00～17:00</option>
+            
+            
+                                                                    
+            
+            <option value="4">14:00～16:00</option>
+            
+            
+                                                                    
+            
+            <option value="5">15:00～17:00</option>
+            
+            
+                                                                
+          
+          </select></td>
+        <td class="example">&nbsp;</td>
+      </tr>
+      <tr>
+        <th colspan="4" scope="col">（5）ガス料金の請求方法</th>
+      </tr>
+      <tr class="inqTop">
+        <td class="indespens">&nbsp;</td>
+        <td colspan="3">口座・クレジットでの精算は毎月のガス料金のお支払いに口座振替、クレジットカード払いをご利用されている方のみご指定できます。</td>
+      </tr>
+      <tr class="inqBtm">
+        <td class="indespens">必須</td>
+        <td>精算方法</td>
+        <td>           <label>
+          <input type="radio" name="stop_method" value="kouza" />
+          これまでご利用の口座振替</label>
+          <br />
+                              <label>
+          <input type="radio" name="stop_method" value="credit" />
+          これまでご利用のクレジット決済</label>
+          <br />
+                              <label>
+          <input type="radio" name="stop_method" value="seikyu" />
+          払込請求書郵送</label>
+                            <td class="example sizeM">
+        ※移転先が北ガスの場合、口座・クレジットが継続できます。<br/>
+        ※口座振替、クレジット決済の場合は、後日おハガキにて金額などをお知らせいたします。
+        </td>
+      </tr>
+      <tr>
+        <td class="indespens">必須</td>
+        <td class="inputName">請求書等の<br />
+          送付先</td>
+          <td class="inputArea" >           <label>
+          <input type="radio" name="stop_demand_about" value="new" />
+          移転先</label>
+          <br />
+                    <label>
+          <input type="radio" name="stop_demand_about" value="old" />
+          使用場所</label>
+          <br />
+                    <label>
+          <input type="radio" name="stop_demand_about" value="other" />
+          その他</label>
+          <br />
+                    <input name="stop_demand_about_etc" type="text" class="lengthSM" /></td>
+        <td class="example sizeM">※ 勤務先・実家等必ず入力願います。</td>
+        
+      </tr>
+      <tr class="inqBtm">
+        <td class="indespens">必須</td>
+      <td class="inputName" style="vertical-align:">住所</td>
+        
+        <td class="inputArea">〒<input name="stop_demand_zip1" type="text" class="lengthXXS" id="demand_zip1" maxlength="3"/>-<input name="stop_demand_zip2" type="text" class="lengthXXS" id="demand_zip2" maxlength="4"/>
+          <br />
+          <textarea style="margin-top:5px" class="btmMg10" name="stop_demand_address" cols="25" rows="5"></textarea>
+          </td>
+        <td class="example sizeM"> 例）&nbsp;060-0042<br/>北海道　札幌市中央区大通西7丁目3番地1　○○マンション　101号室<br /></td>
+      </tr>
+      <tr>
+        <th colspan="4" scope="col">（6）当日のお立会者</th>
+      </tr>
+      <tr class="inqTop">
+        <td class="indespens">必須</td>
+        <td class="inputName">ご使用者との<br />
+          関係</td>
+        <td colspan="2" class="inputArea">           <label>
+          <input type="radio" name="stop_attend_type" value="mine" />
+          本人</label>
+                              <label>
+          <input type="radio" name="stop_attend_type" value="family" />
+          家族</label>
+                              <label>
+          <input type="radio" name="stop_attend_type" value="admin" />
+          管理人</label>
+          <br/>
+                              <label>
+          <input type="radio" name="stop_attend_type" value="owner" />
+          大家</label>
+                              <label>
+          <input type="radio" name="stop_attend_type" value="other" />
+          その他</label>
+                              <input name="stop_attend_type_etc" type="text" class="lengthSM" />
+        </td>
+      </tr>
+      <tr class="inqTop">
+        <td class="indespens">&nbsp;</td>
+        <td class="inputName">お名前<br />
+          （漢字）</td>
+        <td class="inputArea"><input name="stop_attend_name" type="text" class="lengthSM" />
+          <br />
+          <span class="example txtClRed">※ご本人以外の場合は入力してください。</span></td>
+        <td class="example sizeM">例：北海道　太郎</td>
+      </tr>
+      <tr class="inqBtm">
+        <td class="indespens">&nbsp;</td>
+        <td>お名前<br />
+          （フリガナ）</td>
+        <td><input name="stop_attend_kana" type="text" class="lengthSM" />
+          <br />
+          <span class="example txtClRed">※ご本人以外の場合は入力してください。</span></td>
+        <td class="example sizeM">例：ホッカイドウ　タロウ</td>
+      </tr>
+      <tr class="inqBtm">
+        <td class="indespens" style="vertical-align:text-top">必須</td>
+        <td class="inputName" style="vertical-align:text-top">電話番号</td>
+        <td class="inputArea" style="vertical-align:text-top">           <label>
+          <input type="radio" name="stop_attend_teltype" value="home" />
+          自宅</label>
+                    <label>
+          <input type="radio" name="stop_attend_teltype" value="mobile" />
+          携帯</label>
+                    <label>
+          <input type="radio" name="stop_attend_teltype" value="other" />
+          その他</label>
+           <br />
+          <input name="stop_attend_tel1" type="text" class="lengthXXS" />
+          -
+          <input name="stop_attend_tel2" type="text" class="lengthXXS" />
+          -
+          <input name="stop_attend_tel3" type="text" class="lengthXS" />
+          <br />
+          <span class="sizeS">※日中ご連絡がとれる電話番号を入力してください。</span></td>
+        <td class="example sizeM">例：011-231-9511(半角) <br />
+          <span class="example sizeM" style="vertical-align:text-top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;090-XXXX-XXXX(半角) </span></td>
+      </tr>
+      <tr>
+        <th colspan="4" scope="col">（7）お申込者のご連絡先</th>
+      </tr>
+      <tr class="inqTop">
+        <td class="indespens">必須</td>
+        <td class="inputName">お申込者</td>
+        <td colspan="2" class="inputArea">           <label>
+          <input type="radio" name="stop_proposal_type" value="mine" />
+          本人</label>
+                              <label>
+          <input type="radio" name="stop_proposal_type" value="family" />
+          家族</label>
+                              <label>
+          <input type="radio" name="stop_proposal_type" value="admin" />
+          管理人</label>
+          <br/>
+                              <label>
+          <input type="radio" name="stop_proposal_type" value="owner" />
+          大家</label>
+                              <label>
+          <input type="radio" name="stop_proposal_type" value="other" />
+          その他</label>
+                              <input name="stop_proposal_type_etc" type="text" class="lengthSM" /></td>
+      </tr>
+      <tr class="inqTop">
+        <td class="indespens">&nbsp;</td>
+        <td class="inputName">お名前<br />
+          （漢字）</td>
+        <td class="inputArea"><input name="stop_proposal_name" type="text" class="lengthSM" />
+          <br />
+          <span class="example txtClRed">※ご本人以外の場合は入力してください。</span></td>
+        <td class="example sizeM">例：北海道　太郎</td>
+      </tr>
+      <tr class="inqBtm">
+        <td class="indespens">&nbsp;</td>
+        <td>お名前<br />
+          （フリガナ）</td>
+        <td><input name="stop_proposal_kana" type="text" class="lengthSM" />
+          <br />
+          <span class="example txtClRed">※ご本人以外の場合は入力してください。</span></td>
+        <td class="example sizeM">例：ホッカイドウ　タロウ</td>
+      </tr>
+      <tr class="inqTop">
+        <td class="indespens" style="vertical-align:text-top">必須</td>
+        <td class="inputName" style="vertical-align:text-top">電話番号</td>
+        <td class="inputArea" style="vertical-align:text-top">           <label>
+          <input type="radio" name="stop_proposal_teltype" value="home" />
+          自宅</label>
+                    <label>
+          <input type="radio" name="stop_proposal_teltype" value="mobile" />
+          携帯</label>
+                    <label>
+          <input type="radio" name="stop_proposal_teltype" value="other" />
+          その他</label>
+           <br />
+          <input name="stop_proposal_tel1" type="text" class="lengthXXS" />
+          -
+          <input name="stop_proposal_tel2" type="text" class="lengthXXS" />
+          -
+          <input name="stop_proposal_tel3" type="text" class="lengthXS" />
+          <br />
+          <span class="sizeS">※日中ご連絡がとれる電話番号を入力してください。</span></td>
+        <td class="example sizeM" style="vertical-align:text-top">例：011-231-9511(半角) <br />
+          <span class="example sizeM" style="vertical-align:text-top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;090-XXXX-XXXX(半角) </span></td>
+      </tr>
+      <tr class="inqBtm">
+        <td class="indespens">必須</td>
+        <td class="inputName">Eメール<br />アドレス</td>
+        <td class="inputArea"><input name="stop_proposal_email" type="text" class="lengthSM" /><br>
+<span class="example txtClRed">※携帯電話のメールアドレスをご使用される場合は、｢hp-application@hokkaido-gas.co.jp｣の受信設定をしてください。</span>
+</td>
+        <td class="example sizeM">例：hp-info2@hokkaido-gas.co.jp(半角) </td>
+      </tr>
+        <tr class="inqTop inqBtm">
+            <td class="indespens">必須</td>
+          <td class="inputName">Eメール<br />
+            アドレス<br />
+            (確認用)</td>
+          <td class="inputArea"><input name="stop_proposal_email2" type="text" class="lengthSM" /><br />
+<span class="sizeS">※確認のため、もう一度メールアドレスをご記入ください。</span></td>
+<td class="example sizeM">&nbsp;</td>
+							</tr>
+    </table>
+    <div class="backBoxYel">
+      <p class="sizeS">ご記入いただいたお客さまの個人情報は、カタログ・パンフレットの発送の他、北ガスからの情報提供等に使用させていただく場合がございますが、お客さまの同意なしに第三者へ提供することはありません。<br />
+        その他詳細は<img src="/common/images/blt_list_03.gif" alt="" width="15" height="9" class="icMdl" /><a href="http://www.hokkaido-gas.co.jp/utility/privacy.html" target="_blank">お客さま情報の取扱いについて</a>をご覧下さい。</p>
+    </div>
+    <div class="centerBtn">
+      <input type="image" alt="確認" name="" id="imageField" src="/utility/inquiry/images/btn_kakunin.gif" />
+       </div>
+  </form>
+</div>			</div>
+			<!-- /main_contents -->
+
+			<!-- side_contents -->
+            			<!-- side_contents -->
+			<div id="side_contents"><div class="btmMg15"><a href="https://user.hokkaido-gas.co.jp/Member/" target="ns"><img class="rollover" src="/images/btn_top_lnav01.gif" width="210" height="80" alt="ご使用量・料金照会 ログイン＆新規登録はこちら" /></a></div>
+<!--
+				<div class="btmMg15"><a href="#"><img class="rollover" src="/images/btn_top_lnav01.gif" width="210" height="69" alt="ご使用量・料金照会 ログイン＆新規登録はこちら" /></a></div>
+//-->
+				<dl class="menu rmRed">
+					<dt><a href="http://www.hokkaido-gas.co.jp/home/procedure/index.html"><img src="/home/procedure/images/ttl_procedure.gif" alt="各種お手続き" width="210" height="35" /></a></dt>
+					<dd>
+						<ul>
+                            <li class="sub_menu stayL"><a href="/home/procedure/move/">引越のお手続き（ガスの使用開始/中止）</a>
+                                <ul>
+                                    <li class="first"><a href="/home/procedure/move/start.html">ガスの使用開始</a></li>
+                                    <li class="last"><a href="/home/procedure/move/stop.html">ガスの使用中止</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/home/consult/kikisupport/repair.html">ガス機器の修理</a></li>
+							<li><a href="http://www.hokkaido-gas.co.jp/home/procedure/old.html">古くなったガス管の交換</a></li>
+							<li><a href="http://www.hokkaido-gas.co.jp/home/procedure/change/index.html">新しく都市ガスに切替えたい</a></li>
+							<li class="last"><a href="http://www.hokkaido-gas.co.jp/utility/faq/procedure.html">よくあるご質問</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl class="rellink">
+					<dt>関連リンク</dt>
+					<dd>
+						<ul>
+							<li><a href="http://www.hokkaido-gas.co.jp/home/ryo-kin/oshiharai01.html">ガス料金の計算方法とお支払い方法</a></li>
+							<li><a href="http://www.hokkaido-gas.co.jp/home/ryo-kin/simuration/index.html">ガス料金シミュレーション</a></li>
+							<li><a href="http://www.hokkaido-gas.co.jp/home/knowledge/toshi_gas/index.html">都市ガスの基礎知識</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<div class="banner">
+					<ul>
+						<li><a href="http://www.hokkaido-gas.co.jp/support/recipe/index.html"><img src="/common/images/bnr_gascooking.gif" width="202" height="61" alt="お料理レシピ「北ガスクッキング」" /></a></li>
+						<li><a href="http://www.hokkaido-gas.co.jp/support/mansion/index.html"><img src="/common/images/bnr_mansion.gif" alt="新着マンション情報" width="203" height="61" /></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /side_contents -->
+			<div class="category_footer">
+				<p><a href="javascript:scrollToTop();"><img class="rollover" src="/common/images/btn_pagetop.gif" width="124" height="30" alt="このページの先頭へ" /></a></p>
+			</div>
+		</div>
+	</div>
+	<!-- /contents -->
+		<!-- footer -->
+		<div id="footer">
+				<div id="footer_wrap">
+						<ul>
+								<li><a href="http://www.hokkaido-gas.co.jp/index.html">北海道ガス総合トップ</a></li>
+								<li><a href="http://www.hokkaido-gas.co.jp/home/index.html">個人のお客さま</a></li>
+								<li><a href="http://www.hokkaido-gas.co.jp/business/index.html">法人のお客さま</a></li>
+								<li><a href="http://www.hokkaido-gas.co.jp/ir/index.html">企業情報・IR情報</a></li>
+								<li><a href="http://www.hokkaido-gas.co.jp/recruit/index.html">採用情報</a></li>
+								<li><a href="http://www.hokkaido-gas.co.jp/safety/index.html">安全使用のために</a></li>
+								<li><a href="http://www.hokkaido-gas.co.jp/support/index.html">暮らしサポート情報</a></li>
+						</ul>
+						<ul>
+								<li><a href="http://www.hokkaido-gas.co.jp/utility/index.html">お問い合わせ</a></li>
+								<li><a href="http://www.hokkaido-gas.co.jp/utility/madoguchi/index.html">お近くのサービス窓口</a></li>
+								<li><a href="http://www.hokkaido-gas.co.jp/utility/privacy.html">お客さま情報の取扱いについて</a></li>
+								<li><a href="http://www.hokkaido-gas.co.jp/utility/attention.html">このサイトについて</a></li>
+								<li><a href="http://www.hokkaido-gas.co.jp/utility/link.html">リンク</a></li>
+						</ul>
+						<div class="copyright">
+								<div><img src="/common/images/ftr_logo.gif" width="152" height="18" alt="北海道ガス株式会社" /></div>
+								<p>Copyright Hokkaido Gas Co.,Ltd. All Rights Reserved.</p>
+						</div>
+				</div>
+		</div>
+		<!-- /footer -->
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ?
+"https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost +
+"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+    var pageTracker = _gat._getTracker("UA-8450454-1");
+    pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

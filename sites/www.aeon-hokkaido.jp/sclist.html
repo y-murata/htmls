@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="copyright" content="Copyrigt(C)AEON Hokkaido Corp. All Right Reserved" />
+<meta name="Description" content="北海道のイオンの店舗情報。売場案内、アクセス、専門店案内、チラシ・キャンペーン案内、リサイクル、駐車場、ＡＴＭ、ＷＡＯＮほか。" />
+<meta name="keyword" content="イオン北海道, ジャスコ, ポスフール, イオンスーパーセンター" />
+<!--toppage_word<meta name="copyright" content="Copyrigt(C)AEON Hokkaido Corp. All Right Reserved" />
+<meta name="Description" content="北海道内の店舗情報、オトクなチラシ情報、ネットスーパーの情報などを発信しているＷＥＢサイトです。" />
+<meta name="keyword" content="イオン北海道, イオンスーパーセンター" />toppage_word_end-->
+<link rel="stylesheet" href="css2012/import.css" type="text/css" media="all" />
+<!--basicCSS_Loading:header.css,corner.css,footer.css-->
+<link rel="stylesheet" href="css2012/shop_styles.css" type="text/css" media="all" />
+<link type="text/css" href="css2012/theme/jquery-ui-1.8.17.custom.css" rel="stylesheet" />
+<link rel="stylesheet" href="css2012/slide.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css2014/sc_storelist.css" type="text/css" media="all" />
+<script type="text/javascript" src="js2012/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js2012/jquery-ui-1.8.17.custom.min.js"></script>
+<script type="text/javascript" src="js2012/rollover.js"></script>
+<script type="text/javascript" src="js2012/accordion2.js"></script>
+<script type="text/javascript" src="js2012/jquery.bxSlider.js"></script>
+<script src="Examples/js/ui.tabs.pack.js" type="text/javascript"></script>
+<script src="Examples/js/ui.tabs.ext.pack.js" type="text/javascript"></script>
+<link rel="stylesheet" href="../Examples/css/ui.tabs.css" type="text/css" media="print, projection, screen">
+
+<!--use_for_table_class="table1"-->
+<script type="text/javascript">
+$(function(){
+    $('table.table1 tr:even').addClass('bg_even'); // 偶数行
+    $('table.table1 tr:odd').addClass('bg_odd');   // 奇数行
+});
+</script>
+<script type="text/javascript">
+            $(function() {
+                $('#header > ul').tabs({ fx: { opacity: 'toggle' } }).tabs('rotate', 10000,true);
+            });
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21728439-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" language="javascript">
+/* <![CDATA[ */
+var yahoo_retargeting_id = 'LDHX81BTHB';
+var yahoo_retargeting_label = '';
+/* ]]> */
+</script>
+<script type="text/javascript" language="javascript" src="//b92.yahoo.co.jp/js/s_retargeting.js"></script>
+<script type="text/javascript">
+  $(function(){
+  var slider = $('#slider1').bxSlider({
+    controls: false
+  });
+
+  $('#go-prev').click(function(){
+    slider.goToPreviousSlide();
+    return false;
+  });
+
+  $('#go-next').click(function(){
+    slider.goToNextSlide();
+    return false;
+  });
+}); 
+</script>
+
+<!--[if IE 6]>
+<script src="../js2012/dd_pngfix.js" type="text/javascript"></script>
+<script type="text/javascript" charset="utf-8">
+DD_belatedPNG.fix("img");
+</script>
+<![endif]-->
+
+<!--header_end-->
+<!--title_pure-->
+<title>スーパーセンター 一覧 | イオン北海道株式会社</title>
+<!--title_pure_end-->
+
+<!--global_navi-->
+</head>
+
+<body>
+
+<div id="page">
+
+  <div id="header_navi">
+    <div id="logo">
+        <img src="../img2015/common/aeonh_logo.jpg" alt="AEON　イオン北海道株式会社" usemap="#logo">
+        <map name="logo">
+          <area href="http://www.aeon.info/" shape="rect" alt="aeon" coords="0,0,70,30">
+        <area href="/home.html" shape="rect" alt="aeon" coords="71,0,290,30">
+        </map>
+
+        </div>
+        
+        
+        <div id="navi">
+          <ul>
+              <li><a href="/home.html"><img src="../img2012/header/gnavi01_off.jpg" alt="トップページへ" width="192" height="36" /></a></li><!--
+                --><li><a href="/news/index.html"><img src="../img2012/header/gnavi02_off.jpg" alt="ニュースリリース" width="192" height="36" /></a></li><!--
+                --><li><a href="/shoplist.html"><img src="../img2012/header/gnavi03_off.jpg" alt="店舗一覧" width="192" height="36" /></a></li><!--
+                --><li><a href="/netshop.html"><img src="../img2012/header/gnavi04_off.jpg" alt="ネットショップ" width="192" height="36" /></a></li><!--
+                --><li><a href="/corporation/index.html"><img src="../img2012/header/gnavi05_off.jpg" alt="企業情報" width="192" height="36" /></a></li>
+
+            </ul>
+        </div>
+    </div>
+
+
+<!--global_navi_end-->
+
+  <p class="toptext"><img src="img2014/toppage/storelist.png" alt="AEON" width="958" height="123" /></p>
+  <div id="shoplist_listbox">
+    <div class="boxheadfat_left"></div>
+    <div class="boxheadfat760_center">
+      <p class="headfat">イオンスーパーセンター</p>
+    </div>
+    <div class="boxheadfat_right"></div>
+    <div id="shoplist_inner" class="floatcontainer">
+      <dl class="shop_title floatcontainer first">
+        <dt><a href="/mikasa/index.html" target="_top">イオンスーパーセンター 三笠店</a></dt>
+        <dd>〒068-2165 北海道三笠市岡山1059-1<br />
+          電話番号：（01267）4-5100　営業時間：直営売場/8:00～23:00　その他の売場/9:00～23:00</dd>
+      </dl>
+      <dl class="shop_title floatcontainer">
+        <dt><a href="/ishikari/index.html" target="_top">イオンスーパーセンター 石狩緑苑台店</a></dt>
+        <dd>〒061-3230 北海道石狩市緑苑台中央1丁目2<br />
+          電話番号：（0133）75-9800　営業時間：直営売場/8:00～23:00　その他の売場/9:00～21:00</dd>
+      </dl>
+       <dl style="border-bottom:none;" class="shop_title last">
+        <dt><a href="/teine/index.html" target="_top">イオンスーパーセンター 手稲山口店</a></dt>
+        <dd>〒006-0861 北海道札幌市手稲区明日風6丁目1-1<br />
+          電話番号：（011）699-8201　営業時間：直営売場/8:00～23:00　その他の売場/9:00～23:00</dd>
+      </dl>
+    </div>
+    <!--shoplist_inner-->
+    
+    <div class="boxbottom_left"></div>
+    <div class="boxbottom944_center"></div>
+    <div class="boxbottom_right"></div>
+  </div>
+  <div class="clearbox"></div>
+  
+  <!--footer-->
+  <!--footer-->
+
+    <div id="footer">
+  
+      <div class="footer_top">
+            <ul class="footer_l">
+                <li class="start"><a href="/houshin.html">当サイトの運営方針</a></li><!--
+                --><li class="inline"><a href="/policy.html">個人情報保護方針</a></li><!--
+                --><li class="inline"><a href="/sitemap.html">サイトマップ</a></li><!--
+                --><li class="last"><a href="/information/index.html">お問合せ</a></li>
+            </ul>
+<p class="footer">Copyright&copy; 2014 AEON Hokkaido Co.,Ltd. All rights Reserved.</p>
+          
+        </div>
+        <div class="footer_btm">
+          <a href="http://www.aeon.info/"><img class="footerimg" src="/img2012/common/footer_aeon.jpg" /></a>
+          <ul class="footer_btmmenu">
+            <li class="btmmenu"><a href="http://www.aeon.jp/">お客さまサイトへ</a></li><!--
+            --><li class="btmmenu"><a href="http://www.aeon.info/">グループ情報サイトへ</a></li>
+          </ul>
+          <!-- Google Code for &#36092;&#20837;&#23436;&#20102;&#12506;&#12540;&#12472; Conversion Page -->
+          <table class="hidden-xs" style="width:115px;float:left;" summary="Google Site Stats"><tr><td style="font-family: arial, sans-serif; font-size: 11px; color: #000000;" align="center">Google Site Stats<br/><a href="http://www.google.com/gwt/n?u=http://services.google.com/sitestats/en.html" style="color: #000000">send feedback</a></td></tr></table><img height="1" width="1" alt="" src="http://www.googleadservices.com/pagead/conversion/989547674/imp.gif?value=0&amp;label=StfPCJ6p3wQQmpnt1wM&amp;guid=ON&amp;script=0"/>
+          <a style="float:right;" href="http://www.aeon.info/environment/"><img class="tree" src="/img2012/common/footer_tree.jpg" /></a>
+        </div>
+        <div class="sp_footer">
+            <p class="goto-corporate text-center"><a href="/home.html">企業ページトップへ</span></a></p>
+            <p class="copyright">Copyright&copy; 2014 AEON Hokkaido Co.,Ltd. All rights Reserved.</p>
+        </div>
+    </div>
+
+</div>
+<!-- Google Code for &#12522;&#12510;&#12540;&#12465;&#12486;&#12451;&#12531;&#12464; &#12479;&#12464; -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 989547674;
+var google_conversion_label = "8kLcCKao3wQQmpnt1wM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/989547674/?value=0&amp;label=8kLcCKao3wQQmpnt1wM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+<!-- リマーケティング タグの Google コード -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 962648677;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/962648677/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+<!--otoku cv-->
+<!-- Google Code for &#35370;&#21839; Conversion Page -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 962648677;
+var google_conversion_language = "en";
+var google_conversion_format = "2";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "HKsxCNDUwFgQ5bSDywM";
+var google_remarketing_only = false;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/962648677/?label=HKsxCNDUwFgQ5bSDywM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+<!--/otoku cv-->
+
+</body>
+</html>
+
+<!--footer_end-->
+<!--footer_end-->

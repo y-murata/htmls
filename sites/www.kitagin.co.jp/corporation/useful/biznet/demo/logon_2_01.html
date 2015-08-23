@@ -1,0 +1,178 @@
+<HTML>
+<HEAD>
+<!-- ヘッダＨＴＭＬ取得 -->
+<META http-equiv="Content-Type" content="text/html;charset=Shift_JIS">
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+<TITLE>北日本銀行</TITLE>
+	<script src="js/common.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+
+	<script src="js/CIBMUS01.js" type="text/javascript"></script>
+	<script src="js/CIBMZS01.js" type="text/javascript"></script>
+
+<SCRIPT LANGUAGE="JavaScript">
+	var varSendFlag = false;
+	function checkSendFlag(){
+		if(varSendFlag==false){
+			varSendFlag = true;
+			return true;
+		}else{
+			return false;
+		}
+	}
+</SCRIPT>
+
+<!-- 業務用JavaScript設定 -->
+<SCRIPT LANGUAGE="JavaScript">
+
+myPlat  = navigator.platform;
+myBsr   = navigator.appName;
+myAgent = navigator.userAgent;
+
+/*「次へ」ボタン押下*/
+	function doSubmit(varButtonID) {
+		if (CIBMUS01_ContHitCheck(varSendFlag)) {
+			if (inputCheck()) {
+				if(checkSendFlag()) {
+					window.location.href	= "index_2.html";
+				}
+			} else {
+				return false ;
+			}
+		}
+	}
+
+/*「クリア」ボタン押下*/
+	function doClear() {
+		if (CIBMUS01_ContHitCheck(varSendFlag)) {
+//	     		document.forms["form01"].reset();
+				document.form01.S002.value	= "";
+				document.form01.S007.value	= "";
+		}
+	}
+
+/*「閉じる」ボタン押下*/
+	function winclose() {
+		if (CIBMUS01_ContHitCheck(varSendFlag)) {
+	     		window.close();
+		}
+	}
+
+/* 入力欄のJavaScriptチェック */
+	function inputCheck(){
+		var len;
+		var ch;
+		var CorpNum;
+		var CorpCodeNum;
+
+		CorpNum = document.forms["form01"].elements["S002"].value;
+		CorpCodeNum = document.forms["form01"].elements["S007"].value;
+
+		len = CIBMZS01_TextLength( CorpNum );
+		ch = CIBMUS01_AlphaNum( CorpNum );
+		if ( len == 0 ) {
+			alert("契約法人ＩＤが入力されていません。");
+			return false ;
+		} else if ( len > 30 || ch == false ) {
+			alert("契約法人ＩＤを正しく入力してください。");
+			return false ;
+		}
+
+		len = CIBMZS01_TextLength( CorpCodeNum );
+		ch = CIBMUS01_PassCheck( CorpCodeNum );
+		if ( len == 0 ) {
+			alert("契約法人暗証番号が入力されていません。");
+			return false ;
+		} else if ( len < 4 || len > 12 || ch == false ) {
+			alert("契約法人暗証番号を正しく入力してください。");
+			return false ;
+		}
+
+		return true ;
+	}
+
+var SoftKey_flgSkyOpen = 0;
+
+function OpenSoftKey(g_Type) {
+    SoftKey_winObj = window.open("softkey_06.html","softkeyboard","width=450,height=400,toolbar=no,location=no,directories=no,status=no,menubar=no,resizable=no,scrollbars=yes");
+    SoftKey_winObj.focus();
+    SoftKey_flgSkyOpen = 1;
+}
+
+function CloseSoftKey() {
+    if ( SoftKey_flgSkyOpen == 1 ){
+        if(!SoftKey_winObj.closed) SoftKey_winObj.close();
+    }
+}
+
+function getSoftKey(p) {
+	document.form01.S007.value	= p;
+}
+
+</SCRIPT>
+</HEAD>
+
+<BODY CLASS="bg3" onunload="CloseSoftKey()">
+
+<FORM action="/IB_AP/IBServlet" method="POST" name="form01" class="formnormal" onsubmit ="return inputCheck()">
+
+<!--タイトル表示部-->
+<TABLE BORDER="0" WIDTH="750">
+  <TR>
+    <TD><FONT SIZE=0><IMG SRC="images/Inf00001.gif" ALIGN=absMiddle BORDER=0><BR></FONT></TD>
+  </TR>
+  <TR>
+    <TD ALIGN="LEFT" CLASS="title">契約法人ログオン</TD>
+  </TR>
+</TABLE>
+
+<!--業務個別部-->
+<TABLE BORDER="0" WIDTH="750" CELLPADDING="20">
+  <TR>
+    <TD CLASS="ftnormal1">
+      契約法人ＩＤ、契約法人暗証番号を入力し、
+      <IMG SRC="images/Bts00001.gif" BORDER="0"  ALIGN=absmiddle>
+      を押してください。<BR><BR>
+      <TABLE BORDER="0" CELLSPACING="0">
+        <TR>
+          <TD NOWRAP CLASS="fttitle1">契約法人ＩＤ</TD>
+          <TD WIDTH="15"></TD>
+          <TD><INPUT TYPE="text" CLASS="formnormal" NAME="S002" SIZE="20" MAXLENGTH="30" style="ime-mode: inactive;" value="0123456789"></TD>
+        </TR>
+        <TR>
+          <TD NOWRAP CLASS="fttitle1">契約法人暗証番号</TD>
+          <TD WIDTH="15"></TD>
+          <TD><INPUT TYPE="password"  CLASS="formnormal" NAME="S007" SIZE="20" MAXLENGTH="12" value="password"></TD>
+          <TD><a href="JavaScript:void(1)" onClick="OpenSoftKey(2);return false;"><img src="images/Btn00134.gif" alt="ｿﾌﾄｳｪｱｷｰﾎﾞｰﾄﾞ表示" border="0"></a></TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD HEIGHT="10"></TD>
+  </TR>
+</TABLE>
+
+<!-- 業務取引部分終了 -->
+
+<TABLE BORDER="0" WIDTH="750">
+  <TR>
+    <TD><FONT SIZE=0><IMG SRC="images/Inf00002.gif" ALIGN=absMiddle BORDER=0><BR></FONT></TD>
+ </TR>
+</TABLE>
+
+<!--ボタン部-->
+<HR SIZE="1">
+
+<TABLE BORDER="0">
+  <TR>
+    <TD><a href="JavaScript:void(1)" onClick="CloseSoftKey();doSubmit('U501'); return false"><img src="images/Btn00001.gif" alt="ログオン" border="0"></a></TD>
+    <TD><a href="JavaScript:void(1)" onClick="CloseSoftKey();doClear();return false;"><img src="images/Btn00002.gif" alt="クリアボタン" border="0"></a></TD>
+    <TD><a href="JavaScript:void(1)" onClick="CloseSoftKey();winclose();return false;"><img src="images/Btn00003.gif" alt="閉じる" border="0"></a></TD>
+  </TR>
+</TABLE>
+
+</FORM>
+</BODY>
+</HTML>

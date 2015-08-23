@@ -1,0 +1,119 @@
+<!-- リンクチェック動作確認の為の編集です。 -->
+<html lang="ja">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <title>あきぎんビジネスIB - オンラインマニュアル</title>
+  <link href="style/style.css" rel="stylesheet" type="text/css" media="all">
+  <link href="style/font_medium.css" rel="alternate stylesheet" type="text/css" title="medium" media="all">
+  <link href="style/font_small.css" rel="alternate stylesheet" type="text/css" title="small" media="all">
+  <link href="style/font_large.css" rel="alternate stylesheet" type="text/css" title="large" media="all">
+  <link href="style/print.css" rel="stylesheet" type="text/css" media="print">
+  <script type="text/javascript" src="js/styleswitcher.js"></script>
+  <script type="text/javascript" src="js/jquery/jquery-1.6.1.min.js"></script>
+  <script type="text/javascript" src="js/menu.js"></script>
+  <script type="text/javascript"> 
+        moveTo(screen.width - 730,0);
+        resizeTo(730,screen.availHeight);
+  </script>
+</head>
+<body>
+  <noscript>
+    <div class="noscript">
+      お客様がご利用されているブラウザでは、メニュー一覧の表示ができません。<br>
+      「目次」ボタンから表示いただくか、ブラウザの設定をJavaScriptが動作する環境に変更願います。
+    </div>
+  </noscript>
+
+  <div id="outerwrapper" class="rblouterwrapper">
+   <div id="header" class="rblheader">
+      <!-- ロゴ -->
+      <div id="logo">
+        <a href="#"><img src="img/header.png" alt="秋田銀行" title="秋田銀行"></a>
+      </div>
+    <!-- /header --></div>
+
+    <div id="contents">
+      <div id="sideArea">
+        <div id="menu" class="menu">
+          <p style="padding-bottom:10px;"><a href="index.html"><img src="img/m_mokuji.gif" alt="" title=""></a></p>
+        </div>
+      <!-- /sideArea --></div>
+
+      <div id="mainArea">
+        <div id="fontsizeChange">
+          <ul>
+            <li><img src="img/fontsize.gif" alt="" title=""></li>
+            <li id="fontsmall"><a href="javascript:void(0)" onclick="setActiveStyleSheet('small'); return false;" onkeypress="setActiveStyleSheet('small'); return false;">小</a></li>
+            <li id="fontmedium"><a href="javascript:void(0)" onclick="setActiveStyleSheet('medium'); return false;" onkeypress="setActiveStyleSheet('medium'); return false;">中</a></li>
+            <li id="fontlarge" class="last"><a href="javascript:void(0)" onclick="setActiveStyleSheet('large'); return false;" onkeypress="setActiveStyleSheet('large'); return false;">大</a></li>
+          </ul>
+        <!-- /fontsizeChange --></div>
+
+        <p><img src="img/image.gif" alt="" title=""></p>
+        <h1><img src="img/t_08_mail.gif" alt="取引明細Ｍａｉｌ（メール）の操作" title="取引明細Ｍａｉｌ（メール）の操作"></h1>
+        <h2>取引明細Ｍａｉｌ</h2>
+        <div class="indent">
+          <p>
+            　「取引明細Ｍａｉｌ」は、口座に入出金やお振込といったお取引が発生した場合に、そのお取引の発生を電子メールでお伝えするサービスです。<br><br>
+          また、「取引明細Ｍａｉｌメニュー」画面よりお取引の明細を帳票として、PDFファイルでダウンロードすることができます。
+          </p>
+          <br>
+          <p class="ftred">
+            （実際の操作画面ではメニューボタンの配置と形状が異なります。）
+          </p>
+        <!-- /indent --></div>
+        <h3>取引明細照会</h3>
+        <div class="info" id="p1">
+          <div class="num">1.</div>
+          <div class="text">
+            「業務選択」画面の［取引明細Ｍａｉｌ］ボタンをクリックしてください。
+          </div>
+        <!-- /info --></div>
+        <div class="gaido">
+          <img src="img/BSSK001_4.gif" alt="［BSSK001］業務選択画面" title="［BSSK001］業務選択画面">
+        <!-- /gaido --></div>
+
+
+				<div class="info" id="p2">
+          <div class="num">2.</div>
+          <div class="text">
+            「取引明細Ｍａｉｌメニュー」画面が表示されます。<br>
+照会したい明細を選択し、[照会]ボタンをクリックしてください。
+          </div>
+        <!-- /info --></div>
+        <div class="gaido">
+          <img src="img/MPT001.gif" alt="[MPT001]取引明細Ｍａｉｌメニュー画面" title="[MPT001]取引明細Ｍａｉｌメニュー画面">
+        <!-- /gaido --></div>
+
+        <div class="info" id="BLGI001">
+          <div class="num">3.</div>
+          <div class="text">
+            「取引明細照会結果」画面が表示されます。<br>
+ご確認後、[取引明細Ｍａｉｌへ]ボタンをクリックすると、「取引明細Ｍａｉｌメニュー」画面へ戻ることができます。
+          </div>
+        <!-- /info --></div>
+        <div class="gaido">
+          <p>
+            ※ [PDFダウンロード]ボタンをクリックすると、照会された結果をPDFファイルでダウンロードすることができます。（上限は1,000明細です。）<br>
+また、ダウンロードされたPDFファイルを開くには、管理者が登録したPDFパスワードを入力する必要があります。<br><br>
+※ 「ANSER連携ソフトウェアへダウンロード」をクリックすると、CSVファイル形式（タブ区切りのテキストファイル。）のファイルを取り込むことができます。
+          </p>
+        <!-- /gaido --></div>
+
+
+        <div id="gototop">
+          <a href="#header">△ページ上部へ</a>
+        <!-- /gototop --></div>
+
+      <!-- /mainArea --></div>
+    <!-- /contents --></div>
+
+    <div id="footer">
+      Copyright (c) Akita Bank, Ltd. All Rights Reserved.
+    <!-- /footer --></div>
+
+  <!-- /outerwrapper --></div>
+</body>
+</html>

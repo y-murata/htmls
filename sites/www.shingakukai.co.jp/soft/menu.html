@@ -1,0 +1,116 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=x-sjis">
+<meta http-equiv="imagetoolbar" content="no">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta name="GENERATOR" content="Microsoft FrontPage Express 2.0">
+<title>Super Interactive School</title>
+<link rel="stylesheet" href="mnstyle.css" type="text/css">
+<!-- ver2006.05.15 ver2-->
+</head>
+
+<body topmargin="0" style="margin:0; text-align:center;">
+<script language="javascript">
+	<!--
+	// タイマー変数の初期化
+	timer = "";
+	
+	// スワップイメージ
+	function SwapImage(img) {
+		obj = document.getElementById("image");
+		obj.src = img;
+		clearTimeout(timer);
+		timer=setTimeout('DefaultImage()',300000);
+	}
+	
+	// イメージ画像の初期化
+	function DefaultImage() {
+		obj = document.getElementById("image");
+		obj.src = 'picture/default.jpg';
+		clearTimeout(timer);
+	}
+
+var SwImg; SwImg = new Array;
+ImgPreload('menu1', 'picture/button1a.gif', 'picture/button1b.gif');
+ImgPreload('menu2', 'picture/button2a.gif', 'picture/button2b.gif');
+ImgPreload('menu3', 'picture/button3a.gif', 'picture/button3b.gif');
+ImgPreload('menu4', 'picture/button4a.gif', 'picture/button4b.gif');
+ImgPreload('menu5', 'picture/button5a.gif', 'picture/button5b.gif');
+ImgPreload('menu6', 'picture/button6a.gif', 'picture/button6b.gif');
+
+function ImgPreload() {
+	var N = ImgPreload.arguments[0];
+	SwImg[N] = new Image();
+	SwImg[N][0] = new Image();
+	SwImg[N][0].src = ImgPreload.arguments[1];
+	SwImg[N][1] = new Image();
+	SwImg[N][1].src = ImgPreload.arguments[2];
+}
+
+function ImgChenge() {
+	var ID = ImgChenge.arguments[0];
+	var N  = ImgChenge.arguments[1];
+	document.images[ID].src = SwImg[ID][N].src;
+}
+ //-->
+</script>
+
+<table border="0" cellpadding="0" cellspacing="0" style="width:750px; display:block; margin:0 auto;">
+    <tr>
+        <td><p align="center"><img src="picture/top.gif"
+        width="750" height="90"> </p>
+        </td>
+    </tr>
+</table>
+
+<!-- メニューのリンク先　-->
+
+<table border="0" cellpadding="0" cellspacing="0" style="width:750px; display:block; margin:0 auto;">
+    <tr>
+        <td><p align="left"><a href="top.html" target="top"
+        onfocus="this.blur()" onMouseOut="ImgChenge('menu1', 0)"
+        onmouseover="ImgChenge('menu1', 1)"><img
+        src="picture/button1a.gif" border="0" width="125"
+        height="26" id="menu1"></a></p>
+        </td>
+        <td><p align="left"><a href="html/karen.html"
+        target="top" onFocus="this.blur()"
+        onmouseout="ImgChenge('menu2', 0)"
+        onmouseover="ImgChenge('menu2', 1)"><img
+        src="picture/button2a.gif" border="0" width="125"
+        height="26" id="menu2"></a></p>
+        </td>
+        <td><p align="left"><a href="html/seihin.html"
+        target="top" onFocus="this.blur()"
+        onmouseout="ImgChenge('menu3', 0)"
+        onmouseover="ImgChenge('menu3', 1)"><img
+        src="picture/button3a.gif" border="0" width="125"
+        height="26" id="menu3"></a></p>
+        </td>
+        <td><p align="left"><a href="html/sapo.html"
+        target="top" onFocus="this.blur()"
+        onmouseout="ImgChenge('menu4', 0)"
+        onmouseover="ImgChenge('menu4', 1)"><img
+        src="picture/button4a.gif" border="0" width="125"
+        height="26" id="menu4"></a></p>
+        </td>
+        <td><p align="left"><a href="html/otoiawase_01.html"
+        target="top" onFocus="this.blur()"
+        onmouseout="ImgChenge('menu5', 0)"
+        onmouseover="ImgChenge('menu5', 1)"><img
+        src="picture/button5a.gif" border="0" width="125"
+        height="26" id="menu5"></a></p>
+        </td>
+        <td><p align="left"><a href="html/taikenb.html"
+        target="top" onFocus="this.blur()"
+        onmouseout="ImgChenge('menu6', 0)"
+        onmouseover="ImgChenge('menu6', 1)"><img
+        src="picture/button6a.gif" border="0" width="125"
+        height="26" id="menu6"></a></p>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

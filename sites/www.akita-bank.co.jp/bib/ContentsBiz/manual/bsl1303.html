@@ -1,0 +1,200 @@
+<html lang="ja">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <title>あきぎんビジネスIB - オンラインマニュアル</title>
+  <link href="style/style.css" rel="stylesheet" type="text/css" media="all">
+  <link href="style/font_medium.css" rel="alternate stylesheet" type="text/css" title="medium" media="all">
+  <link href="style/font_small.css" rel="alternate stylesheet" type="text/css" title="small" media="all">
+  <link href="style/font_large.css" rel="alternate stylesheet" type="text/css" title="large" media="all">
+  <link href="style/print.css" rel="stylesheet" type="text/css" media="print">
+  <script type="text/javascript" src="js/styleswitcher.js"></script>
+  <script type="text/javascript" src="js/jquery/jquery-1.6.1.min.js"></script>
+  <script type="text/javascript" src="js/menu.js"></script>
+  <script type="text/javascript"> 
+        moveTo(screen.width - 730,0);
+        resizeTo(730,screen.availHeight);
+  </script>
+</head>
+<body>
+  <noscript>
+    <div class="noscript">
+      お客様がご利用されているブラウザでは、メニュー一覧の表示ができません。<br>
+      「目次」ボタンから表示いただくか、ブラウザの設定をJavaScriptが動作する環境に変更願います。
+    </div>
+  </noscript>
+
+  <div id="outerwrapper" class="rblouterwrapper">
+   <div id="header" class="rblheader">
+      <!-- ロゴ -->
+      <div id="logo">
+        <a href="#"><img src="img/header.png" alt="秋田銀行" title="秋田銀行"></a>
+      </div>
+    <!-- /header --></div>
+
+    <div id="contents">
+      <div id="sideArea">
+        <div id="menu" class="menu">
+          <p style="padding-bottom:10px;"><a href="index.html"><img src="img/m_mokuji.gif" alt="" title=""></a></p>
+        </div>
+      <!-- /sideArea --></div>
+
+      <div id="mainArea">
+        <div id="fontsizeChange">
+          <ul>
+            <li><img src="img/fontsize.gif" alt="" title=""></li>
+            <li id="fontsmall"><a href="javascript:void(0)" onclick="setActiveStyleSheet('small'); return false;" onkeypress="setActiveStyleSheet('small'); return false;">小</a></li>
+            <li id="fontmedium"><a href="javascript:void(0)" onclick="setActiveStyleSheet('medium'); return false;" onkeypress="setActiveStyleSheet('medium'); return false;">中</a></li>
+            <li id="fontlarge" class="last"><a href="javascript:void(0)" onclick="setActiveStyleSheet('large'); return false;" onkeypress="setActiveStyleSheet('large'); return false;">大</a></li>
+          </ul>
+        <!-- /fontsizeChange --></div>
+
+        <p><img src="img/image.gif" alt="" title=""></p>
+        <h1><img src="img/t_05_inter.gif" alt="伝送での操作" title="伝送での操作"></h1>
+        <h2>口座振替</h2>
+        <h3>請求データの新規作成</h3>
+        <h4>新規の請求先指定</h4>
+        <div class="indent">
+          <p>
+            　お取引の都度、当行の支店コード、支店名を検索して、登録されていない請求先への請求データを作成することができます。<br>
+            　<span class="ftred">今後も請求先として利用する場合は、「請求先情報の入力」画面で「請求先に登録する」にチェックしてください。</span>
+          </p>
+        <!-- /indent --></div>
+
+        <div class="info" id="BSSK001">
+          <div class="num">1.</div>
+          <div class="text">
+            ［伝送］メニューをクリックしてください。<br>
+            「業務選択」画面が表示されますので、［口座振替］ボタンをクリックしてください。
+          </div>
+        <!-- /info --></div>
+        <div class="gaido">
+          <img src="img/BSSK001-14.gif" alt="[BSSK001]業務選択" title="[BSSK001]業務選択">
+        <!-- /gaido --></div>
+
+        <div class="info" id="BKZF001">
+          <div class="num">2.</div>
+          <div class="text">
+            「作業内容選択」画面が表示されます。<br>
+            ［請求データの新規作成］ボタンをクリックしてください。
+          </div>
+        <!-- /info --></div>
+        <div class="gaido">
+          <img src="img/BKZF001-6.gif" alt="[BKZF001]口座振替&nbsp;作業内容選択" title="[BKZF001]口座振替&nbsp;作業内容選択">
+        <!-- /gaido --></div>
+
+        <div class="info" id="BKZF002">
+          <div class="num">3.</div>
+          <div class="text">
+            「入金先情報入力」画面が表示されます。<br>
+            入金口座を選択のうえ、引落指定日を入力し、［次へ］ボタンをクリックしてください。
+          </div>
+        <!-- /info --></div>
+        <div class="gaido">
+          <img src="img/BKZF002.gif" alt="[BKZF002]口座振替&nbsp;入金先情報入力" title="[BKZF002]口座振替&nbsp;入金先情報入力">
+          <p>
+            　［カレンダーを表示］ボタンをクリックすると、引落指定日を設定することができます。<br><br>
+            　取引名はお客様任意の文字列を入力することができます。<br>
+            　取引名が未入力の場合は、「○○月○○日作成分」として登録されます。
+          </p>
+        <!-- /gaido --></div>
+
+        <div class="info" id="BKZF003">
+          <div class="num">4.</div>
+          <div class="text">
+            「請求先口座指定方法選択」画面が表示されます。<br>
+            ［新規に請求先口座を入力］ボタンをクリックしてください。
+          </div>
+        <!-- /info --></div>
+        <div class="gaido">
+          <img src="img/BKZF003.gif" alt="[BKZF003]口座振替&nbsp;請求先口座指定方法選択" title="[BKZF003]口座振替&nbsp;請求先口座指定方法選択">
+        <!-- /gaido --></div>
+
+        <div class="info" id="BKZF008">
+          <div class="num">5.</div>
+          <div class="text">
+            「新規請求先口座入力」画面が表示されます。<br>
+             請求先として登録する金融機関名、支店名、科目 口座番号、預金者名、顧客番号、引落金額を入力し、［次へ］ボタンをクリックしてください。
+          </div>
+        <!-- /info --></div>
+        <div class="gaido">
+          <img src="img/BKZF008.gif" alt="[BKZF008]口座振替&nbsp;新規請求先口座入力" title="[BKZF008]口座振替&nbsp;新規請求先口座入力">
+          <p>
+           　［文字ボタンによる入力］ボタンをクリックすると、現在選択されている金融機関または支店を変更することができます。<br><br>
+           　登録名はお客様任意の文字列を入力することができます。登録名が未入力の場合は、「預金者名」が登録されます。<br><br>
+           　今後も請求先として利用する場合は、「請求先に登録する」にチェックしてください。（グループを指定する場合は、該当のグループもチェックしてください。）<br>
+           　その際、登録された請求先には今回入力した引落金額が登録引落金額として登録されます。
+          </p>
+        <!-- /gaido --></div>
+
+        <div class="info" id="BKZF009">
+          <div class="num">6.</div>
+          <div class="text">
+            「引落金額入力」画面が表示されます。<br>
+            全ての請求先の引落金額を入力し、［次へ］ボタンをクリックしてください。
+          </div>
+        <!-- /info --></div>
+        <div class="gaido">
+          <img src="img/BKZF009.gif" alt="[BKZF009]口座振替&nbsp;引落金額入力" title="[BKZF009]口座振替&nbsp;引落金額入力">
+          <p>
+            　請求先一覧から明細の［修正］ボタンをクリックすると、明細を修正することができます。<br>
+            　また、［削除］ボタンをクリックすると、該当の明細を削除することができます。<br><br>
+            　［請求先の追加］ボタンをクリックすると、請求先を追加することができます。<br><br>
+            　［クリア］ボタンをクリックすると、入力項目がクリアされます。<br><br>
+            　［一時保存］ボタンをクリックすると、作成しているデータを一時的に保存することができます。
+
+          </p>
+        <!-- /gaido --></div>
+
+        <div class="info" id="BKZF010">
+          <div class="num">7.</div>
+          <div class="text">
+            「内容確認[画面入力] 」画面が表示されます。<br>
+            内容をご確認後、承認者を選択し、［確定］ボタンをクリックしてください。
+          </div>
+        <!-- /info --></div>
+        <div class="gaido">
+          <img src="img/BKZF010.gif" alt="[BKZF010]口座振替&nbsp;内容確認［画面入力］" title="[BKZF010]口座振替&nbsp;内容確認［画面入力］">
+          <p>
+            　コメントの入力は省略することができます。<br><br>
+            　確定後の承認待ちデータを修正する場合は、引戻しの処理が必要です。
+            　データの引戻方法については「承認待ちデータの引戻し」をご参照ください。<br><br>
+            　承認権限のあるユーザで、自身を承認者として設定した場合、［確定して承認へ］ボタンをクリックすると、続けて請求データの承認を行うことができます。<br><br>
+            　［取引・入金先情報の修正］ボタンをクリックすると、入金先情報を修正することができます。<br><br>
+            　［明細の修正］ボタンをクリックすると、「引落金額入力」画面が表示されます。請求先一覧の［修正］ボタンをクリックすると明細を修正することができます。<br>
+            　また、［削除］ボタンをクリックすると、請求データから該当の明細を削除することができます。<br><br>
+            　［一時保存］ボタンをクリックすると、作成しているデータを一時的に保存することができます。<br><br>
+            　［印刷］ボタンをクリックすると、印刷用PDFファイルが表示されます。
+          </p>
+        <!-- /gaido --></div>
+
+        <div class="info" id="p8">
+          <div class="num">8.</div>
+          <div class="text">
+            「確定結果[画面入力]」画面が表示されます。<br>
+            ご確認後、［トップページへ］ボタンをクリックすると、「トップページ」画面へ戻ることができます。
+          </div>
+        <!-- /info --></div>
+        <div class="gaido">
+          <p>
+            　ご依頼の内容は、「作業内容選択」画面の［請求データの状況照会］ボタンから確認することができます。<br><br>
+            　確定依頼されたデータは、最終操作日より70日を過ぎると有効期限切れとなります。<br><br>
+            　［印刷］ボタンをクリックすると、印刷用PDFファイルが表示されます。
+          </p>
+        <!-- /gaido --></div>
+
+        <div id="gototop">
+          <a href="#header">△ページ上部へ</a>
+        <!-- /gototop --></div>
+
+      <!-- /mainArea --></div>
+    <!-- /contents --></div>
+
+    <div id="footer">
+      Copyright (c) Akita Bank, Ltd. All Rights Reserved.
+    <!-- /footer --></div>
+
+  <!-- /outerwrapper --></div>
+</body>
+</html>
