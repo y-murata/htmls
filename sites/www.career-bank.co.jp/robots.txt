@@ -1,8 +1,0 @@
-User-Agent: Yetibot
-Disallow: /weblog/
-
-User-Agent: Yeti
-Disallow: /weblog/
-
-User-Agent: *
-Disallow: /tli/jaic-vc/

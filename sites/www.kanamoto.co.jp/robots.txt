@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /wp/wp-admin/
-
-Sitemap: http://www.kanamoto.co.jp/sitemap.xml

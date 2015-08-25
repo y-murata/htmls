@@ -1,8 +1,0 @@
-User-agent: *
-Disallow: /*.xls$
-Disallow: /*.csv$
-Disallow: /saiyo/form/csv/
-Disallow: /info/csv/
-Disallow: /recruit2016/entry_career/csv/
-Disallow: /recruit2016/entry_new/csv/
-Disallow: /inquiry/csv/

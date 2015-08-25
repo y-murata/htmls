@@ -1,6 +1,0 @@
-User-Agent: *
-Disallow: /wp-admin/
-Disallow: /02_ir/
-Disallow: /06_okyaku/
-Disallow: /03_news/
-Allow: /
