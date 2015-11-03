@@ -1,0 +1,20 @@
+# IntelliJ プロジェクト
+/*.iml
+/.idea
+
+# MACシステムフォルダ
+.DS_Store
+
+# Windows サムネイルキャッシュ
+Thumbs.db
+
+# eclipse プロジェクト向け
+/.buildpath
+/.project
+/.settings/
+
+# Apacheデフォルト
+/icons
+/cgi-bin
+/error
+/html
