@@ -1,7 +1,9 @@
 # encoding:utf-8
 
 import os
-
+os.system("git add .")
+os.system("git commit -a")
+"""
 with open("../work/company.csv") as f:
     url = f.read()
 
@@ -13,3 +15,4 @@ with open("../work/company.csv") as f:
 
     # 変更をコミット
     os.system("git commit -a")
+"""
