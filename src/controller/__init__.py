@@ -1,8 +1,9 @@
 # encoding:utf-8
 
 import os
-os.system("git add .")
-os.system("git commit -a")
+os.system("git commit -a -m pywget1")
+os.system("git push origin master")
+
 """
 with open("../work/company.csv") as f:
     url = f.read()
