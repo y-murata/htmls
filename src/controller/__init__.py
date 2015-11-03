@@ -1,6 +1,7 @@
 # encoding:utf-8
 
 import os
+os.system("git add .")
 os.system("git commit -a -m pywget1")
 os.system("git push origin master")
 
