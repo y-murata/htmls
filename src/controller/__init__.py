@@ -3,8 +3,7 @@
 import os
 from datetime import datetime
 
-with open("../work/company.csv") as f:
-    url = f.readline()
+for url in open("../work/company.csv", "r"):
     print(url)
 
     # html取得
