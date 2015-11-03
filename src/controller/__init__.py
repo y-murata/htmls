@@ -1,11 +1,7 @@
 # encoding:utf-8
 
 import os
-#os.system("git add ../../sites/")
-os.system("git commit -a -m pywget2")
-#os.system("git push origin master")
 
-"""
 with open("../work/company.csv") as f:
     url = f.read()
 
@@ -15,6 +11,7 @@ with open("../work/company.csv") as f:
     # 文字コード変換
     os.system("nkf -Xw --overwrite ../../sites/**/*.html")
 
-    # 変更をコミット
-    os.system("git commit -a")
-"""
+    # wgetによる変更をプッシュ
+    os.system("git add ../../sites/")
+    os.system("git commit -a -m 'auto commit'")
+    os.system("git push origin master")
