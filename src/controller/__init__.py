@@ -3,7 +3,7 @@
 import os
 
 with open("../work/company.csv") as f:
-    url = f.read()
+    url = f.readline()
     print(url)
 
     # html取得
