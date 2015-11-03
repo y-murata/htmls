@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>講義パート - はてなサマーインターン2015 レポートサイト</title>
+
+    <meta name="description" content="はてなサマーインターンシップは、はてなでのサービス開発や研究を体験できる学生向けのインターンシッププログラムです。カリキュラムでは、学生のみなさんに、Web開発の技術を見につけてもらったあと、実際のプロダクションで動作しているサービスやインフラ環境での業務を体験してもらいます。カリキュラムでの体験を通じて、Webサービス開発者として働くイメージ持ってもらったり、技術者としての自信をつけてもらうことを目的にしています。2008年よりはてな京都オフィスで開催をスタート。2015年で8年目を迎えました。" />
+    <meta name="keywords" content="はてなインターン, はてなサマーインターン, はてな, インターン, 2015, hatena, intern, internship" />
+    <meta property="og:url" content="http://hatenacorp.jp/intern2015/" />
+    <meta property="og:title" content="はてなサマーインターン2015 レポートサイト" />
+    <meta property="og:image" content="http://hatenacorp.jp/images/hatenaportal/company/intern2015/ogimage.jpg" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="はてなサマーインターンはWebエンジニアとして働くことに興味がある学生のためのインターンシップです。「Webエンジニアとしての技術を身につける」「実際にはてなのサービスのコードを書き、リリースする体験を得る」という2つの目的を持っています。2008年よりはてな京都オフィスで開催をスタート。2015年で8年目を迎えました。" />
+    <meta property="og:site_name" content="はてなサマーインターン2015 レポートサイト" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@hatenatech" />
+    <link type="text/css" rel="stylesheet" href="/css/hatenaportal/intern2015.css" />
+    <link rel="shortcut icon" href="/images/hatenaportal/company/favicon.ico" />
+    <meta name=viewport content="width=device-width" />
+    <!--[if lt IE 9]>
+    <script>
+      (function (elements) {
+        for (var i = 0, l = elements.length; i < l; ++i)
+          document.createElement(elements[i]);
+      })('abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output progress section summary template time video'.split(/\s+/));
+    </script>
+    <![endif]-->
+  </head>
+  <body id="page-lecture">
+
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WVHPVP"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WVHPVP');</script>
+    <!-- End Google Tag Manager -->
+
+    <header id="global-header">
+      <div class="container">
+        <nav>
+          <div class="global-title">
+            <h1>
+              <a href="http://www.hatena.ne.jp/"><img class="global-logo" src="/images/hatenaportal/company/intern2015/global-logo.svg" alt="hatena"></a><a href="/intern2015/">はてなサマーインターン2015</a>
+            </h1>
+          </div>
+          <ul id="global-nav">
+            <li><a href="/intern2015/" >トップ</a></li>
+            <li><a href="/intern2015/lecture/"  class="is-current">講義パート</a></li>
+            <li><a href="/intern2015/projects/" >実践パート</a></li>
+            <li><a href="/intern2015/photos/" >写真集</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="section-header lecture-header">
+      <div class="container">
+        <h1>前半 講義パート</h1>
+        <h2>はてなでのWeb開発を社員と同等の品質で行えるように、講義と課題による集中的なトレーニングを行いました。言語やオブジェクト指向の知識から始まり、データベース、サーバーサイドプログラミング、クライアントサイドプログラミング、と順を追ってWebアプリケーションの開発について学びます。今年はサーバーサイド言語として、これまでの「Perl」に加え、「Scala」の講義を追加し、コースにより必要な言語を選択して学べるようにしました。また「iOSアプリ開発コース」選択者には加えて「Swift」の講義も行われました。これらの充実した講義の内容は、「はてな教科書」として無料で公開する予定です。</h2>
+        <nav>
+          <ul class="lecture-nav">
+            <li><a href="#day1">言語基礎</a></li>
+            <li><a href="#day2">データベース</a></li>
+            <li><a href="#day3">Webアプリ</a></li>
+            <li><a href="#day4">JavaScript</a></li>
+            <li><a href="#day5">自由課題</a></li>
+            <li><a href="#day6">インフラ</a></li>
+            <li><a href="#day7">iOS</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+<!-- 講義パート 1日目 -->
+    <section id="day1" class="day1 lecture-right">
+      <div class="container">
+        <div class="section-wrapper">
+          <div class="section-inner">
+          <div class="section-header">
+            <span class="part">1日目</span><br>
+            <h1>Perl/Scalaによる<br>プログラミングの基礎</h1>
+          </div>
+          <p>サーバーサイドプログラミングに利用される「Perl」「Scala」を2つのコースに別れて行われました。オブジェクト指向、関数型プログラミングなど、言語のパラダイムの説明から、データ構造や制御構文などの言語仕様、テストの書き方までを学習します。データモデリング、モデリングに対応するオブジェクトの実装、そしてテストについての課題を提出し、言語についての習熟をしてもらいます。</p>
+          <div class="teacher">
+            <span class="part">講師</span><br>
+            <div class="teacher-inner"><img src="/images/hatenaportal/company/intern2015/icon-astj.png"><br><span class="teacher-id"><span class="perl">Perl</span><br>id:astj</span></div>
+            <div class="teacher-inner"><img src="/images/hatenaportal/company/intern2015/icon-daiksy.png"><br><span class="teacher-id"><span class="scala">Scala</span><br>id:daiksy</span></div>
+          </div>
+        </div>
+
+        <div class="section-images">
+          <div class="lecture-images"><img src="/images/hatenaportal/company/intern2015/day1-1.jpg"></div>
+          <div class="lecture-images"><img src="/images/hatenaportal/company/intern2015/day1-2.jpg"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- 講義パート 2日目 -->
+    <section id="day2" class="day2 lecture-left">
+      <div class="container">
+        <div class="section-wrapper">
+          <div class="section-inner">
+          <div class="section-header">
+            <span class="part">2日目</span><br>
+            <h1>Perl/Scalaによる<br>データベースプログラミング</h1>
+          </div>
+          <p>アプリケーションで取り扱うデータを効率性や信頼性に考慮して操作するにはデータベース管理システムを活用することが重要です。最もよく利用される関係データベースを中心に、データベースの基礎的な概念や、Perl/Scalaで書かれたプログラムからデータベースを利用する方法について学びます。また、ソフトウェアのモデリングや設計についても学びます。課題ではCLIで動作するブログシステムの実装に取り組みます。</p>
+          <div class="teacher">
+            <span class="part">講師</span><br>
+            <div class="teacher-inner"><img src="/images/hatenaportal/company/intern2015/icon-ntakanashi.png"><br><span class="teacher-id"><span class="perl">Perl</span><br>id:ntakanashi</span></div>
+            <div class="teacher-inner"><img src="/images/hatenaportal/company/intern2015/icon-mechairoi.png"><br><span class="teacher-id"><span class="scala">Scala</span><br>id:mechairoi</span></div>
+          </div>
+        </div>
+
+        <div class="section-images">
+          <div class="lecture-images"><img src="/images/hatenaportal/company/intern2015/day2-1.jpg"></div>
+          <div class="lecture-images"><img src="/images/hatenaportal/company/intern2015/day2-2.jpg"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- 講義パート 3日目 -->
+    <section id="day3" class="day3 lecture-right">
+      <div class="container">
+        <div class="section-wrapper">
+          <div class="section-inner">
+          <div class="section-header">
+            <span class="part">3日目</span><br>
+            <h1>Perl/Scalaによる<br>Webアプリケーション開発</h1>
+          </div>
+          <p>Webアプリケーションフレームワークの使い方や、MVCパターンによる設計の仕方、セキュリティに関する知識を学び、Webアプリケーション開発における基礎的な技術を身につけます。課題では、前日の講義で作ったCLIのブログシステムをベースに、Webアプリケーションとして動作するブログシステムを実装します。</p>
+          <div class="teacher">
+            <span class="part">講師</span><br>
+            <div class="teacher-inner"><img src="/images/hatenaportal/company/intern2015/icon-tarao.png"><br><span class="teacher-id"><span class="perl">Perl</span><br>id:tarao</span></div>
+            <div class="teacher-inner"><img src="/images/hatenaportal/company/intern2015/icon-songmu.png"><br><span class="teacher-id"><span class="scala">Scala</span><br>id:Songmu</span></div>
+          </div>
+        </div>
+
+        <div class="section-images">
+          <div class="lecture-images"><img src="/images/hatenaportal/company/intern2015/day3-1.jpg"></div>
+          <div class="lecture-images"><img src="/images/hatenaportal/company/intern2015/day3-2.jpg"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- 講義パート 4日目 -->
+    <section id="day4" class="day4 lecture-left">
+      <div class="container">
+        <div class="section-wrapper">
+          <div class="section-inner">
+          <div class="section-header">
+            <span class="part">4日目</span><br>
+            <h1>JavaScriptによる<br>イベント・ドリブン<br>プログラミング</h1>
+          </div>
+          <p>JavaScriptによる動的なページ操作について学びます。講義では言語のコアになる部分から、jQueryの利用方法まで、重要なポイントをひと通り学習します。筋の良い基礎技術を身につけることで、応用部分に対しても自己で対処できる力を身につけ、クライアントサイドに必要な技能の基盤作りをこの1日で完了することを目標としています。課題ではこれまでに作成したブログシステムに対して、非同期でページ内容を変更するなどの機能追加を行います。</p>
+          <div class="teacher">
+            <span class="part">講師</span><br>
+            <div class="teacher-inner"><img src="/images/hatenaportal/company/intern2015/icon-hatz48.png"><br><span class="teacher-id">id:hatz48</span></div>
+          </div>
+        </div>
+
+        <div class="section-images">
+          <div class="lecture-images"><img src="/images/hatenaportal/company/intern2015/day4-1.jpg"></div>
+          <div class="lecture-images"><img src="/images/hatenaportal/company/intern2015/day4-2.jpg"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- 講義パート 5日目 -->
+    <section id="day5" class="day5 lecture-right">
+      <div class="container">
+        <div class="section-wrapper">
+          <div class="section-inner">
+          <div class="section-header">
+            <span class="part">5日目</span><br>
+            <h1>自由課題</h1>
+          </div>
+          <p>これまでの講義を通して作ってきたブログシステムに新機能を追加する自由課題です。サービスの企画、アイデアをどのように出すかのワークショップとしてエレベーターピッチを行い、自分で企画した新機能を実際に実装してみます。作った機能をプレゼン形式で発表し、スタッフ投票により成果を競う発表イベントも行われました。</p>
+          <div class="teacher">
+            <span class="part">講師</span><br>
+            <div class="teacher-inner"><img src="/images/hatenaportal/company/intern2015/icon-hakobe932.png"><br><span class="teacher-id">id:hakobe932</span></div>
+          </div>
+        </div>
+
+        <div class="section-images">
+          <div class="lecture-images"><img src="/images/hatenaportal/company/intern2015/day5-1.jpg"></div>
+          <div class="lecture-images"><img src="/images/hatenaportal/company/intern2015/day5-2.jpg"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- 講義パート 6日目 -->
+    <section id="day6" class="day6 lecture-left">
+      <div class="container">
+        <div class="section-wrapper">
+          <div class="section-inner">
+          <div class="section-header">
+            <span class="part">6日目</span><br>
+            <h1>インフラ</h1>
+          </div>
+          <p>「ウェブアプリケーションフレームワークの向こう側」と題して、後半課程に向けて、はてなの本番システムのインフラがどのように構成され、フレームワークの奥でどのようなサービスが動いているかを学びます。Webサービスの3層構造、障害に強くスケールするインフラの勘所について、「はてなブログ」や「Mackerel」の実例を元に説明されます。</p>
+          <div class="teacher">
+            <span class="part">講師</span><br>
+            <div class="teacher-inner"><img src="/images/hatenaportal/company/intern2015/icon-y_uuki.png"><br><span class="teacher-id">id:y_uuki</span></div>
+          </div>
+        </div>
+
+        <div class="section-images">
+          <div class="lecture-images"><img src="/images/hatenaportal/company/intern2015/day6-1.jpg"></div>
+          <div class="lecture-images"><img src="/images/hatenaportal/company/intern2015/day6-2.jpg"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- 講義パート 7日目 -->
+    <section id="day7" class="day7 lecture-right">
+      <div class="container">
+        <div class="section-wrapper">
+          <div class="section-inner">
+          <div class="section-header">
+            <span class="part">7日目</span><br>
+            <h1>SwiftでのiOSアプリ開発</h1>
+          </div>
+          <p>2014年のWWDCで発表された新言語Swift、その最新版であるSwift 2の言語仕様の解説から、SwiftでiOSアプリを作るまで。iOSアプリでのMVC、ネットワーク通信、Xcodeを利用した開発についての知識を習得し、実際にアプリを作ってシミュレータで実行できるところまでを行います。学んだ知識を活かし、これまで作ってきたWebアプリケーションにAPIを作成し、それと通信を行うiOSアプリを作成するという課題に挑んでもらいます。<br>
+          <a href="http://developer.hatenastaff.com/entry/2015/09/18/162337" target="_blank">本講義資料はインターン終了後に公開されました！</a></p>
+          <div class="teacher">
+            <span class="part">講師</span><br>
+            <div class="teacher-inner"><img src="/images/hatenaportal/company/intern2015/icon-cockscomb.png"><br><span class="teacher-id">id:cockscomb</span></div>
+          </div>
+        </div>
+
+        <div class="section-images">
+          <div class="lecture-images"><img src="/images/hatenaportal/company/intern2015/day7-1.jpg"></div>
+          <div class="lecture-images"><img src="/images/hatenaportal/company/intern2015/day7-2.jpg"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- 講義パート振り返り -->
+  <section class="lecture-intern-voice">
+    <div class="container">
+      <div class="section-header">
+        <h1>インターン生の、<br>講義を終えた感想</h1>
+      </div>
+      <ul class="ul-voice">
+        <li class="voice-1 voice-content afterlectuer-voice-content">楽しくて分かりやすい講義でした。一人でやったら2,3週間かかってしまいそうな内容を1日でひと通り体験できたので凄い充実感が得られました。</li>
+        <li class="voice-2 voice-content afterlectuer-voice-content">難しかったがとても刺激的だった。ModelとServiceに分けて設計したり、SQLデータベース操作の作法を学ぶことができたので達成感を得られる課題内容でした。</li>
+        <li class="voice-1 voice-content afterlectuer-voice-content">なかなかインフラまわりの話を聞ける機会はないので、非常に勉強になりました。帰ってからまたブログを読んでさらに勉強しようと思います。</li>
+        <li class="voice-2 voice-content afterlectuer-voice-content">テキストにハマりポイントが詳しく載っており解説がとてもわかりやすかったので、ハマらずにすみました。</li>
+      </ul>
+      <p class="btn-wrapper">
+        <a class="btn" href="/intern2015/projects/">いよいよ、後半実践パートへ</a>
+      </p>
+    </div>
+  </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="intern-afterblog footer-list">
+            <h2>インターン感想ブログ</h2>
+            <ul class="list-dot">
+              <li><a href="http://tombo2.hatenablog.com/entry/2015/09/07/023655" target="_blank">はてなサマーインターン2015に参加してきた - tom__bo’s blog</a><a href="http://b.hatena.ne.jp/entry/http://tombo2.hatenablog.com/entry/2015/09/07/023655" class="http-bookmark" target="_blank"> <img src="http://b.hatena.ne.jp/entry/image/http://tombo2.hatenablog.com/entry/2015/09/07/023655" alt="" class="http-bookmark"></a></li>
+              <li><a href="http://leptont.hatenablog.jp/entry/hatenaintern2015" target="_blank">最高のはてなサマーインターン - うに</a><a href="http://b.hatena.ne.jp/entry/http://leptont.hatenablog.jp/entry/hatenaintern2015" class="http-bookmark" target="_blank"> <img src="http://b.hatena.ne.jp/entry/image/http://leptont.hatenablog.jp/entry/hatenaintern2015" alt="" class="http-bookmark"></a></li>
+              <li><a href="http://daiiz.hatenablog.com/entry/2015/09/11/101815" target="_blank">はてなサマーインターンが終わり、エンジニアへの道が始まった - daizの日記</a><a href="http://b.hatena.ne.jp/entry/http://daiiz.hatenablog.com/entry/2015/09/11/101815" class="http-bookmark" target="_blank"> <img src="http://b.hatena.ne.jp/entry/image/http://daiiz.hatenablog.com/entry/2015/09/11/101815" alt="" class="http-bookmark"></a></li>
+              <li><a href="http://swimath2.hatenablog.com/entry/2015/09/29/181805" target="_blank">中2の頃から大好きなはてなのインターンで最高の経験をした話 - クフでダローバルな日記</a><a href="http://b.hatena.ne.jp/entry/http://swimath2.hatenablog.com/entry/2015/09/29/181805" class="http-bookmark" target="_blank"> <img src="http://b.hatena.ne.jp/entry/image/http://swimath2.hatenablog.com/entry/2015/09/29/181805" alt="" class="http-bookmark"></a></li>
+              <li><a href="http://emon18.hateblo.jp/entry/2015/09/30/222214" target="_blank">はてなサマーインターンシップ2015に行ってきました - e-mon</a><a href="http://b.hatena.ne.jp/entry/http://emon18.hateblo.jp/entry/2015/09/30/222214" class="http-bookmark" target="_blank"> <img src="http://b.hatena.ne.jp/entry/image/http://emon18.hateblo.jp/entry/2015/09/30/222214" alt="" class="http-bookmark"></a></li>
+              <li><a href="http://tyage.hatenablog.com/entry/2015/09/30/235943" target="_blank">Scalaの夏、はてなインターンの夏 - tyage's diary</a><a href="http://b.hatena.ne.jp/entry/http://tyage.hatenablog.com/entry/2015/09/30/235943" class="http-bookmark" target="_blank"> <img src="http://b.hatena.ne.jp/entry/image/http://tyage.hatenablog.com/entry/2015/09/30/235943" alt="" class="http-bookmark"></a></li>
+            </ul>
+          </div>
+
+          <div class="past-intern footer-list">
+            <h2>いままでのサマーインターン</h2>
+            <ul class="list-dot">
+              <li><a href="http://www.hatena.ne.jp/company/staff/intern2008/">はてなサマーインターン2008</a></li>
+              <li><a href="http://www.hatena.ne.jp/company/intern2009/">はてなサマーインターン2009</a></li>
+              <li><a href="http://www.hatena.ne.jp/company/intern2010/">はてなサマーインターン2010</a></li>
+              <li><a href="http://www.hatena.ne.jp/company/intern2011/">はてなサマーインターン2011</a></li>
+              <li><a href="http://intern.hatenastaff.com/entry/2012/11/28/153418">はてなサマーインターン2012</a></li>
+              <li><a href="http://hatenacorp.jp/intern2013/">はてなサマーインターン2013</a></li>
+              <li><a href="http://hatenacorp.jp/intern2014/">はてなサマーインターン2014</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-wrapper">
+          <div class="hatena-link footer-list">
+            <h2>はてな関連リンク</h2>
+            <ul class="list-dot">
+              <li><a href="http://hatenacorp.jp/information/">はてな 会社紹介</a></li>
+              <li><a href="http://hatenacorp.jp/recruit/">はてな 求人情報</a></li>
+              <li><a href="http://developer.hatenastaff.com/">はてな技術ブログ</a></li>
+              <li><a href="http://design.hatenastaff.com/">はてなデザイナーブログ</a></li>
+              <li><a href="http://hatenacorp.jp/contact/">お問い合わせ</a></li>
+            </ul>
+          </div>
+          <div class="social-btn footer-list">
+            <ul>
+              <li class="twitter">
+                <a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja" data-url="http://hatenacorp.jp/intern2015/" data-text="はてなサマーインターン2015 レポートサイト" data-count="vertical">ツイート</a>
+              </li>
+              <li class="fb">
+                <div class="fb-share-button" data-href="http://hatenacorp.jp/intern2015/" data-layout="box_count"></div>
+              </li>
+              <li>
+                <a href="http://b.hatena.ne.jp/entry/http://hatenacorp.jp/intern2015/" class="hatena-bookmark-button" data-hatena-bookmark-title="はてなサマーインターン2015 レポートサイト" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">© Hatena Co., Ltd.</div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/hatenaportal/intern2015.js"></script>
+
+    <!-- HatenaBookmark -->
+    <script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+    <!-- Twitter -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    <!-- Facebook -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+  </body>
+</html>

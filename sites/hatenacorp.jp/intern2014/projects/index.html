@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>実践パート - はてなサマーインターン2014 レポートサイト</title>
+    <meta name="description" content="はてなサマーインターンはWebエンジニアとして働くことに興味がある学生のためのインターンシップです。「Webエンジニアとしての技術を身につける」「実際にはてなのサービスのコードを書き、リリースする体験を得る」という2つの目的を持っています。2008年よりはてな京都オフィスで開催をスタート。2014年で7年目を迎えました。" />
+    <meta name="keywords" content="はてなインターン, はてなサマーインターン, はてな, インターン, 2014, hatena, intern, internship" />
+    <meta property="og:url" content="http://hatenacorp.jp/intern2014/" />
+    <meta property="og:title" content="はてなサマーインターン2014 レポートサイト" />
+    <meta property="og:image" content="http://hatenacorp.jp/images/hatenaportal/recruit/intern2014/ogimage.jpg?20141009" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="はてなサマーインターンはWebエンジニアとして働くことに興味がある学生のためのインターンシップです。「Webエンジニアとしての技術を身につける」「実際にはてなのサービスのコードを書き、リリースする体験を得る」という2つの目的を持っています。2008年よりはてな京都オフィスで開催をスタート。2014年で7年目を迎えました。" />
+    <meta property="og:site_name" content="はてなサマーインターン2014 レポートサイト" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@hatenatech" />
+    <link type="text/css" rel="stylesheet" href="/css/hatenaportal/intern2014.css?20141009" />
+    <link rel="shortcut icon" href="/images/hatenaportal/company/favicon.ico" />
+    <meta name=viewport content="width=device-width" />
+    <!--[if lt IE 9]>
+    <script>
+      (function (elements) {
+        for (var i = 0, l = elements.length; i < l; ++i)
+          document.createElement(elements[i]);
+      })('abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output progress section summary template time video'.split(/\s+/));
+    </script>
+    <![endif]-->
+  </head>
+  <body id="page-projects">
+
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WVHPVP"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WVHPVP');</script>
+    <!-- End Google Tag Manager -->
+
+    <div id="globalheader">
+      <div class="header-inner">
+      <h1><a href="/intern2014/">はてなサマーインターン2014</a></h1>
+      <ul id="service-menu">
+        <li><a href="http://www.hatena.ne.jp/">Hatena</a></li>
+      </ul>
+      <div id="touch-nav-button">menu</div>
+      <ul id="global-nav" class="close">
+        <li><a href="/intern2014/">トップ</a></li>
+        <li class="nav-width"><a href="/intern2014/lecture/">講義パート</a></li>
+        <li class="current" class="nav-width"><a href="/intern2014/projects/">実践パート</a></li>
+        <li><a href="/intern2014/timeline/">インターン生の一日</a></li>
+        <li class="nav-width"><a href="/intern2014/voices/">参加者の声</a></li>
+      </ul>
+    </div>
+    </div>
+
+    <div id="content">
+  <h2>実践パート</h2>
+  <p class="description">後半課程では各チームに配属され、新機能の企画と開発を行います。<br>自分で考えて実装した機能をリリースし、ユーザーの反応を受け止めるまで開発は続きます。<br>最終日にはそれぞれのチームが開発した機能を持ち寄り、<br class="nonbreaking">スタッフの前でプレゼンテーションを行う成果発表会を開催しました。</p>
+  <section class="project-contents" id="project-blogcard">
+    <div class="project-outline">
+      <div class="project-text right">
+      <h3>Webページを魅力的に紹介しよう！<br class="nonbreaking">ブログカード機能</h3>
+      <span class="tag">Blog team</span>
+      <p>「ブログカード」は、記事のリンクをカード形式で美しくはてなブログに貼り付けられる機能です。ブログの編集画面に紹介したいWebページのURLをペーストするだけで、タイトルや概要、アイキャッチ画像などを表示させることができます。ブログカードを使えば、さまざまなWebサイトをより魅力的に紹介できます。</p>
+      <aside><span class="release">リリース</span><a href="http://staff.hatenablog.com/entry/2014/09/05/143600" target="_blank">「ブログカード」をOGPなどに対応しました。さまざまなWebページをコンパクトに整形して掲載できます</a></aside>
+      <aside><span class="release">リリース</span><a href="http://staff.hatenablog.com/entry/2014/08/29/141633" target="_blank">はてなブログの記事を紹介しやすくしました。URLを貼るだけで、コンパクトに整ったブログカードを貼り付けることができます【追記あり】</a></aside>
+      </div>
+      <figure class="left p-r">
+        <img src="/images/hatenaportal/recruit/intern2014/project1-main.png" alt="ブログカード">
+      </figure>
+    </div>
+    <div class="project-photo">
+      <img src="/images/hatenaportal/recruit/intern2014/project1-1.jpg" alt="">
+      <img src="/images/hatenaportal/recruit/intern2014/project1-2.jpg" alt="">
+      <img src="/images/hatenaportal/recruit/intern2014/project1-3.jpg" alt="">
+    </div>
+    <ul>
+      <li>
+        <div class="intern-icon">
+          <figure><img src="/images/hatenaportal/recruit/intern2014/icon-mactkg.png" alt="mactkg"></figure>
+          <figcaption>
+            <p>id:mactkg</p>
+          </figcaption>
+        </div>
+        <div class="intern-comment">
+          <p>ユーザさんからの反応が非常に素早いのが印象的でした。告知してから、1時間ほどではてブを通じてコメントが付き、実際に使ってみた記事が溢れ出す。自分たちの書いたコードが実際に様々な人の手にわたっていることを肌で感じることが出来るのは、大変よい経験でした。実際にリリースした後、自分でも気に入ったものを作ることが出来たので満足しています。</p>
+        </div>
+      </li>
+      <li>
+        <div class="intern-icon">
+          <figure>
+            <img src="/images/hatenaportal/recruit/intern2014/icon-windymelt.png" alt="Windymelt">
+          </figure>
+          <figcaption>
+            <p>id:Windymelt</p>
+          </figcaption>
+        </div>
+        <div class="intern-comment">
+          <p>リリースの瞬間にはチームでともに祝いあい、これまでに無いようなとても大きな達成感を得られました。機能がリリースされた後もユーザさんからコメントを頂いたり記事で紹介して頂いた事がチームに伝わってきた時も、インターネットに働きかけたという実感が湧いてきました。</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <section class="project-contents" id="project-atodeyomu">
+    <div class="project-outline">
+      <div class="project-text left">
+      <h3>読み忘れをなくそう！<br>「あとで読む」通知機能</h3>
+      <span class="tag">Bookmark Team</span>
+      <p>はてなブックマークの「あとで読む」機能は、自分のブックマークで「あとで読む」または「後で読む」タグを付けた記事のうち読んでいないものを、任意のタイミングで通知する機能です。未読記事の通知先は、はてな各サービスのヘッダーにある「あなたへのお知らせ」欄と、iPhoneへのプッシュ通知の2つ。通知の日時は「通勤中に読むから平日の朝に」「休日の昼にまとめて読むので土日に」など、都合のいいタイミングに設定できます。</p>
+      <aside><span class="release">リリース</span><a href="http://bookmark.hatenastaff.com/entry/2014/09/30/112357" target="_blank">「あとで読む」機能を追加しました。タグ「あとで読む」または「後で読む」を付けてブックマークした記事のうち、未読の記事を一覧で確認できます</a></aside>
+      </div>
+      <figure class="right p-r">
+        <img src="/images/hatenaportal/recruit/intern2014/project2-main.png" width="500px" alt="">
+      </figure>
+    </div>
+    <div class="project-photo">
+      <img src="/images/hatenaportal/recruit/intern2014/project2-1.jpg" alt="">
+      <img src="/images/hatenaportal/recruit/intern2014/project2-2.jpg" alt="">
+      <img src="/images/hatenaportal/recruit/intern2014/project2-3.jpg" alt="">
+    </div>
+    <ul>
+      <li>
+        <div class="intern-icon">
+          <figure><img src="/images/hatenaportal/recruit/intern2014/icon-doughnutomo.png" alt="doughnutomo"></figure>
+          <figcaption>
+            <p>id:doughnutomo</p>
+          </figcaption>
+        </div>
+        <div class="intern-comment">
+          <p>はてなブックマークをつかって毎日ネット巡回をしていて、ふと思ったこと(「あとで読む」を通知してほしい！)が今回の開発のネタになりました。また、インターンにくるまでははてなブックマーク本体アプリはつかっておらず、その理由としては機能がブラウザとほぼ同じだから、というのがありました。でも、今回の機能を実装したら、アプリはネットにないアドバンテージができるとおもいます。</p>
+        </div>
+      </li>
+      <li>
+        <div class="intern-icon">
+          <figure><img src="/images/hatenaportal/recruit/intern2014/icon-spring_raining.png" alt="spring_raining"></figure>
+          <figcaption>
+            <p>id:spring_raining</p>
+          </figcaption>
+        </div>
+        <div class="intern-comment">
+          <p>普段からよく使っているはてなブックマークの機能を開発したいと思っていました。ブックマークのページを後で通知してくれるというアイディア自体はid:doughnutomoさんが出してくれたものですが、純粋に自分が欲しい機能として開発しました。</p>
+        </div>
+      </li>
+
+    </ul>
+  </section>
+  <section class="project-contents" id="project-reference">
+    <div class="project-outline">
+      <div class="project-text right">
+      <h3>「言及の一覧」パネル・<br>過去記事貼り付け機能の実装</h3>
+      <span class="tag">Blog Team</span>
+      <p>
+        「言及の一覧」では、はてなブログ内のどのユーザーのどの記事が、自分のブログのどの記事にいつ言及したのかを一覧表で閲覧できます。リンクをたどって言及元の記事を確認できるので、返信を書く際などに参照することができます。また、過去記事貼り付け機能では、編集サイドバーから過去の記事を貼り付けられるように。自分のブログを振り返りやすくなりました。</p>
+      <aside><span class="release">リリース</span><a href="http://staff.hatenablog.com/entry/2014/09/05/112000" target="_blank">記事へのリアクションがわかる「言及の一覧」パネルを追加しました</a></aside>
+      <aside><span class="release">リリース</span><a href="http://staff.hatenablog.com/entry/2014/08/29/141633" target="_blank">はてなブログの記事を紹介しやすくしました。URLを貼るだけで、コンパクトに整ったブログカードを貼り付けることができます【追記あり】</a></aside>
+      </div>
+      <figure class="left p-r">
+        <img src="/images/hatenaportal/recruit/intern2014/project3-main.png" alt="" width="500px">
+      </figure>
+    </div>
+    <div class="project-photo">
+      <img src="/images/hatenaportal/recruit/intern2014/project3-1.jpg" alt="">
+      <img src="/images/hatenaportal/recruit/intern2014/project3-2.jpg" alt="">
+      <img src="/images/hatenaportal/recruit/intern2014/project3-3.jpg" alt="">
+    </div>
+    <ul>
+      <li>
+        <div class="intern-icon">
+          <figure><img src="/images/hatenaportal/recruit/intern2014/icon-masawada.png" alt="masawada"></figure>
+          <figcaption>
+            <p>id:masawada</p>
+          </figcaption>
+        </div>
+        <div class="intern-comment">
+          <p>最初のミーティングでだいたいやりたい機能を絞りこみ, 開発を始める日に最終決定しました。もともとブログカード機能と過去記事の貼り付けは連動する機能で,ブログチーム一丸となって意見を出し合って開発を進めました. はてなブログの目指したい方向性とよくマッチしていて結果的にそれなりに満足の行くものができあがりました.</p>
+        </div>
+      </li>
+      <li>
+        <div class="intern-icon">
+          <figure><img src="/images/hatenaportal/recruit/intern2014/icon-yebis0942.png" alt="yebis0942"></figure>
+          <figcaption>
+            <p>id:yebis0942</p>
+          </figcaption>
+        </div>
+        <div class="intern-comment">
+          <p>プロダクトがリリースされて使われるのを見ることができるのはいいところで、自分では便利な機能だとか、分かりやすい説明だと思っていても、他の人にはそう見えないというギャップがよくあります。個人で開発しているとそういうことに気づく機会がないことも多いのですが、インターンが作ったものが実際にリリースされるということもあって、多くの人から真剣なレビューを頂けました。そしてもちろん、最後は自分たちの開発したものを多数のユーザーに使ってもらうことができます。これははてなインターンの他では得難い体験だと思います。</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <section class="project-contents" id="project-chatops">
+    <div class="project-outline">
+      <div class="project-text left">
+      <h3>ChatOpsによるデプロイと<br>オートスケールの制御と自動化</h3>
+      <span class="tag">System Platform</span>
+      <p>大規模ウェブサービスの爆発的な負荷に耐え、さらにその開発をスピードアップするサーバ基盤の構築を行いました。負荷の増減に応じたサーバ台数の動的な調整や、新規機能のリリースと不具合時の対応という、サービス開発に欠かせない処理をチャット上から誰でも簡単に行うことができます。Slack、Hubot、AWS、Docker、Serf、Mackerelなど最新のツールやサービスを使用したモダンな構成で構築しました。</p>
+      </div>
+      <figure class="right p-r">
+        <img src="/images/hatenaportal/recruit/intern2014/project4-main.png" alt="" width="500px">
+      </figure>
+    </div>
+    <div class="project-photo">
+      <img src="/images/hatenaportal/recruit/intern2014/project4-2.jpg" alt="">
+      <img src="/images/hatenaportal/recruit/intern2014/project4-1.jpg" alt="">
+      <img src="/images/hatenaportal/recruit/intern2014/project4-3.jpg" alt="">
+    </div>
+    <ul>
+      <li>
+        <div class="intern-icon">
+          <figure>
+            <img src="/images/hatenaportal/recruit/intern2014/icon-flankyhiro.png" alt="flankyhiro"></figure>
+          <figcaption>
+            <p>id:flankyhiro</p>
+          </figcaption>
+        </div>
+        <div class="intern-comment">
+          <p>前半のときから社員さんからImmutable Infrastructureで行くという話を頂いていたので、アイデアを考えていたが結局凡庸なネタになってしまったのが少し残念。hubotでのインフラ操作というのは以前やったことがあったので、それにプラスでDockerやSerfというナウナウな技術を導入するというのは、ありきたりだが面白い試みだったのではないでしょうか。</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+</div>
+
+    <footer id="footer">
+      <div id="footer-inner">
+        <div class="left">
+          <h4>インターン参加者のブログ記事</h4>
+          <ul class="footer-list">
+            <li><a href=http://masawada.hatenablog.jp/entry/2014/09/08/071415 target="_blank">はてなインターンに参加してクレジットカードを作ってアイロンを買った話</a><a href="http://b.hatena.ne.jp/entry/http://masawada.hatenablog.jp/entry/2014/09/08/071415" target="_blank"><img class="bookmark-count-img" src="http://b.hatena.ne.jp/entry/image/http://masawada.hatenablog.jp/entry/2014/09/08/071415" alt="はてなブックマーク - はてなインターンに参加してクレジットカードを作ってアイロンを買った話" title="はてなブックマーク - はてなインターンに参加してクレジットカードを作ってアイロンを買った話" /></a></li>
+            <li><a href=http://biscuitomo.hatenablog.com/entry/2014/09/08/103415 target="_blank">「はてなインターン」という革命について</a><a href="http://b.hatena.ne.jp/entry/http://biscuitomo.hatenablog.com/entry/2014/09/08/103415" target="_blank"><img class="bookmark-count-img" src="http://b.hatena.ne.jp/entry/image/http://biscuitomo.hatenablog.com/entry/2014/09/08/103415" alt="はてなブックマーク - 「はてなインターン」という革命について" title="はてなブックマーク - 「はてなインターン」という革命について" /></a></li>
+            <li><a href=http://windymelt.hatenablog.com/entry/2014/09/11/003128 target="_blank">打ちのめされるようなすごいインターン - はてなサマーインターンに行ってきました</a><a href="http://b.hatena.ne.jp/entry/http://windymelt.hatenablog.com/entry/2014/09/11/003128" target="_blank"><img class="bookmark-count-img" src="http://b.hatena.ne.jp/entry/image/http://windymelt.hatenablog.com/entry/2014/09/11/003128" alt="はてなブックマーク - 打ちのめされるようなすごいインターン - はてなサマーインターンに行ってきました" title="はてなブックマーク - 打ちのめされるようなすごいインターン - はてなサマーインターンに行ってきました" /></a></li>
+            <li><a href=http://mactkg.hateblo.jp/entry/2014/09/24/123345 target="_blank">はてなインターンに行って高2から使ってるはてなブログのコードを触った</a><a href="http://b.hatena.ne.jp/entry/http://mactkg.hateblo.jp/entry/2014/09/24/123345" target="_blank"><img class="bookmark-count-img" src="http://b.hatena.ne.jp/entry/image/http://mactkg.hateblo.jp/entry/2014/09/24/123345" alt="はてなブックマーク - はてなインターンに行って高2から使ってるはてなブログのコードを触った" title="はてなブックマーク - はてなインターンに行って高2から使ってるはてなブログのコードを触った" /></a></li>
+            <li><a href=http://spring-raining.hatenablog.com/entry/2014/09/27/134010 target="_blank">はてなサマーインターンに参加してきました(写真多めで)</a><a href="http://b.hatena.ne.jp/entry/http://spring-raining.hatenablog.com/entry/2014/09/27/134010" target="_blank"><img class="bookmark-count-img" src="http://b.hatena.ne.jp/entry/image/http://spring-raining.hatenablog.com/entry/2014/09/27/134010" alt="はてなブックマーク - はてなサマーインターンに参加してきました(写真多めで)" title="はてなブックマーク - はてなサマーインターンに参加してきました(写真多めで)" /></a></li>
+          </ul>
+        </div>
+        <div class="right">
+          <h4 class="past-interns">これまでのインターン</h4>
+          <ul class="footer-list">
+            <li><a href="/intern2013/" target="_blank">はてなサマーインターン2013</a></li>
+            <li><a href="http://intern.hatenastaff.com/entry/2012/11/28/153418" target="_blank">はてなサマーインターン2012</a></li>
+            <li><a href="http://www.hatena.ne.jp/company/intern2011/" target="_blank">はてなサマーインターン2011</a></li>
+            <li><a href="http://www.hatena.ne.jp/company/intern2010/" target="_blank">はてなサマーインターン2010</a></li>
+            <li><a href="http://www.hatena.ne.jp/company/intern2009/" target="_blank">はてなサマーインターン2009</a></li>
+            <li><a href="http://www.hatena.ne.jp/company/staff/intern2008/" target="_blank">はてなサマーインターン2008</a></li>
+          </ul>
+          <h4>はてな関連リンク</h4>
+          <ul class="footer-list">
+            <li><a href="http://developer.hatenastaff.com/">はてな技術ブログ</a></li>
+            <li><a href="/information/culture">はてな 会社紹介</a></li>
+            <li><a href="/recruit/">はてな 求人情報</a></li>
+          </ul>
+        </div>
+        <div class="left">
+          <ul class="social-btn">
+            <li>
+              <a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja" data-url="http://hatenacorp.jp/intern2014/" data-text="はてなサマーインターン2014 レポートサイト" data-count="vertical">ツイート</a>
+            </li>
+            <li class="fb">
+              <div class="fb-share-button" data-href="http://hatenacorp.jp/intern2014/" data-layout="box_count"></div>
+            </li>
+            <li>
+              <a href="http://b.hatena.ne.jp/entry/http://hatenacorp.jp/intern2014/" class="hatena-bookmark-button" data-hatena-bookmark-title="はてなサマーインターン2014 レポートサイト" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a>
+            </li>
+          </ul>
+        </div>
+        <div id="copyright" class="left">&copy; Hatena Co., Ltd.</div>
+      </div>
+    </footer>
+
+    <!-- intern2014.js -->
+    <script src="/js/hatenaportal/jquery-1.10.2.min.js"></script>
+    <script src="/js/hatenaportal/intern2014.js"></script>
+    <!-- HatenaBookmark -->
+    <script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+    <!-- Twitter -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    <!-- Facebook -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+  </body>
+</html>

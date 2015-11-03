@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>後半課程 - はてなサマーインターン2013 レポートサイト
+    </title>
+    <meta name="description" content="はてなサマーインターンはWebエンジニアとして働くことに興味がある学生のためのインターンシップです。「Webエンジニアとしての技術を身につける」「実際にはてなのサービスのコードを書き、リリースする体験を得る」という2つの目的を持っています。2008年よりはてな京都オフィスで開催をスタート。2013年で6年目を迎えました。" />
+    <meta name="keywords" content="はてなインターン, はてなサマーインターン, はてな, インターン, 2013, hatena, intern, internship" />
+    <meta property="og:url" content="http://hatenacorp.jp/intern2013/" />
+    <meta property="og:title" content="はてなサマーインターン2013 レポートサイト" />
+    <meta property="og:image" content="http://www.hatena.ne.jp/images/hatenaportal/company/intern2013/ogimage.jpg" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="はてなサマーインターンはWebエンジニアとして働くことに興味がある学生のためのインターンシップです。「Webエンジニアとしての技術を身につける」「実際にはてなのサービスのコードを書き、リリースする体験を得る」という2つの目的を持っています。2008年よりはてな京都オフィスで開催をスタート。2013年で6年目を迎えました。" />  
+    <meta property="og:site_name" content="はてなサマーインターン2013 レポートサイト" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@hatenatech" />
+    <link type="text/css" rel="stylesheet" href="/css/hatenaportal/intern2013.css" />
+    <noscript>
+      <link type="text/css" rel="stylesheet" href="/css/hatenaportal/intern2013_noscript.css" />
+    </noscript>
+    <meta name=viewport content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!--[if lt IE 9]>
+    <script>
+      (function (elements) {
+        for (var i = 0, l = elements.length; i < l; ++i)
+          document.createElement(elements[i]);
+      })('abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output progress section summary template time video'.split(/\s+/));
+    </script>
+    <![endif]-->
+  </head>
+  <body id="page-projects">
+
+    <div id="globalheader">
+      <h1><a href="/intern2013/">はてなサマーインターン2013</a></h1>
+      <ul id="service-menu">
+        <li><a href="//www.hatena.ne.jp/"><img src="//cdn.www.st-hatena.com/images/header/global-logo.png" alt="Hatena"></a></li>
+      </ul>
+    </div>
+
+      <nav id="global-nav">
+        <p id="global-nav-button"><img src="/images/hatenaportal/company/intern2013/global-nav-button@2x.png" alt="開く／閉じる"></p>
+        <ul>
+          <li id="global-nav-index"><a href="/intern2013/">トップ</a></li>
+          <li id="global-nav-study"><a href="/intern2013/study/">前半課程</a></li>
+          <li id="global-nav-projects"><a href="/intern2013/projects/">後半課程</a></li>
+          <li id="global-nav-students"><a href="/intern2013/students/">参加者の声</a></li>
+          <li id="global-nav-photos"><a href="/intern2013/photos/">写真集</a></li>
+        </ul>
+      </nav><div id="content">
+ 
+     <header id="content-header">
+        <h2 id="content-header-title">後半課程</h2>
+        <div id="content-header-image-wrapper">
+          <div id="content-header-image" class="lazy-background" data-background-image="/images/hatenaportal/company/intern2013/projects-header.jpg"></div>
+        </div>
+      </header>
+
+      <div class="section">
+        <section id="lead-text">
+          <p>後半課程では「ブックマークチーム」「ブログチーム」「システムプラットフォーム部」に配属され、新機能の企画と開発を行います。自分で考えて実装した機能をリリースし、ユーザーさんの反応を受け止めるまで開発は続きます。最終日にはそれぞれのチームが開発した機能を持ち寄り、社長をはじめとするスタッフの前でプレゼンテーションを行う成果発表会を開催しました。</p>
+        </section>
+        <section id="projects-list">
+          <h3>開発内容一覧</h3>
+          <ul class="fl-l">
+            <li id="#teambookmarka"><a href="#teambookmarka"><span>ブックマークチーム</span>コメント一覧ページの関連商品の<br />精度改善</a></li>
+            <li id="#teambookmarkb"><a href="#teambookmarkb"><span>ブックマークチーム</span>Google Chrome 拡張の新機能を追加・<br />利便性向上</a></li>
+          </ul>
+          <ul class="fl-l">
+            <li id="#teambloga"><a href="#teambloga"><span>ブログチーム</span>はてなブログiOSアプリのユニバーサル化</a></li>
+            <li id="#teamblogb"><a href="#teamblogb"><span>ブログチーム</span>リアルタイムプレビュー機能・<br />Gist/Flickr 貼り付け機能</a></li>
+            <li id="#teamblogc"><a href="#teamblogc"><span>ブログチーム</span>はてなブログ AtomPub APIの公開</a></li>
+          </ul>
+          <ul class="fl-r">
+            <li id="#teamplatforma"><a href="#teamplatforma"><span>システムプラットフォーム部</span>HTTP リクエスト・レンダリング時間<br />測定ツールの作成</a></li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="section" id="teambookmark">
+        <header class="section-image">
+          <div class="section-image-image section-image-teambookmark lazy-background" data-background-image="/images/hatenaportal/company/intern2013/teambookmark-header.jpg">
+            <div class="section-image-inner">
+              <h2>Bookmark Team</h2>
+            </div>
+          </div>
+        </header>
+
+        <div id="teambookmarka" class="subsection">
+          <section class="section">
+            <div class="section-header">
+              <div class="col4 fl-l title">
+                <hgroup>
+                  <h4>自然言語処理を用いたデータマイニング・機械学習</h4>
+                  <h3>コメント一覧ページの関連商品の精度改善！</h3>
+                </hgroup>
+              </div>
+              <div class="fl-r students">
+                <div class="student">
+                  <p><span class="lazy-container lazy colp"><noscript><img src="/images/hatenaportal/company/intern2013/astj.jpg" alt="" class="colp" /></noscript><img data-src="/images/hatenaportal/company/intern2013/astj.jpg" data-alt="" alt="" /></span></p>
+                  <p>id:astj</p>
+                </div>
+                <div class="student">
+                  <p><span class="lazy-container lazy colp"><noscript><img src="/images/hatenaportal/company/intern2013/tonerorin.jpg" alt="" class="colp" /></noscript><img data-src="/images/hatenaportal/company/intern2013/tonerorin.jpg" data-alt="" alt="" /></span></p>
+                  <p>id:tonerorin</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="col4 fl-r">
+              <h3>スコアリング方法を見直し、より適切な商品を表示する</h3>
+              <p>コメント一覧ページの一番下に表示されている「関連商品」の精度を向上させる改善を行いました。コメント一覧ページの「関連商品」は、ブックマーク先のページのキーワードやタグから独自の手法でスコアリングし、スコアが高い商品を表示しています。この手法自体を見直し、ページのキーワードやタグのカテゴリーと商品のカテゴリーの関係も考慮することで、よりページの内容に関連する商品が表示されるようになりました。</p>
+              <h3 class="inline-margin" style="margin-top: 60px;">はてなキーワードとの連携により精度向上を実現</h3>
+              <p>コメント一覧ページの「関連商品」の精度の向上は以前よりユーザーさんからご要望・ご指摘いただいており、また、社内でも改善しようという気運が高まっていました。そんな折にチームに配属されたインターンのおふたりは特にアルゴリズムに明るいため挑戦していただくこととなりました。今回の改善では新たにはてなキーワードをアルゴリズムに取り入れることにより精度を向上させることに成功しました。「関連商品」のクリック率もリリース前と比べて上昇しており、定量的な成果も見られます。華々しい新機能の追加ではありませんでしたが意欲的に取り組んでいただき、またリリースされた後のパフォーマンスにも注意を払っていた様子が印象的でした。</p>
+            </div>
+            <div class="col2 fl-l">
+              <p><span class="lazy-container lazy" style="width:304px;height:379px;"><noscript><img src="/images/hatenaportal/company/intern2013/bookmark-a-ss2.png" alt="" style="width:304px;height:379px;" /></noscript><img data-src="/images/hatenaportal/company/intern2013/bookmark-a-ss2.png" data-alt="" style="width:304px;height:379px;" alt="" /></span></p>
+            </div>
+          </section>
+          <section>
+            <p class="ta-c"><span class="lazy-container lazy col3 m-w"><noscript><img src="/images/hatenaportal/company/intern2013/teambookmark-a-1.jpg" alt="" class="col3 m-w" /></noscript><img data-src="/images/hatenaportal/company/intern2013/teambookmark-a-1.jpg" data-alt="" alt="" /></span><span class="lazy-container lazy col3"><noscript><img src="/images/hatenaportal/company/intern2013/teambookmark-a-2.jpg" alt="" class="col3" /></noscript><img data-src="/images/hatenaportal/company/intern2013/teambookmark-a-2.jpg" data-alt="" alt="" /></span></p>
+          </section>
+          <section>
+            <div class="col4 fl-l">
+              <div class="director">
+                <p><span class="lazy-container lazy colp"><noscript><img src="/images/hatenaportal/company/intern2013/yanbe-sq.jpg" alt="" class="colp" /></noscript><img data-src="/images/hatenaportal/company/intern2013/yanbe-sq.jpg" data-alt="" alt="" /></span></p>
+                <p>id:yanbe<span>ディレクター</span></p>
+              </div>
+              <p class="director-comment">新規性があり難易度の高いタスクを、2週間という時間的な制約も大きい中、よくやり遂げてくれたと思います。今回改善された手法は、コメント一覧ページの「関連商品」の改善に適用されました。しかし手法自体は、ページのタイトルや本文といった汎用性のあるデータから、それに含まれるキーワード自体のカテゴリーを考慮し、そのコンテンツの代表的なキーワードをいくつか選出するという、汎用性のあるものです。そのため、今後の展開として、はてなブックマークのエントリーのカテゴリー判定の精度向上に応用することや、はてなの他のサービスでの利用、サービスを横断したユーザーへの情報推薦の際に利用するなど、幅広い応用が期待できます。</p>
+            </div>
+            <div class="col2 fl-r release">
+              <h3>リリース</h3>
+              <h4><a href="http://bookmark.hatenastaff.com/entry/2013/09/05/203819" target="_blank">コメント一覧ページの関連商品の精度を改善し、Google Chrome 拡張から人気のコメントが確認出来るようになりました</a></h4>
+              <p class="thumb"><a href="http://bookmark.hatenastaff.com/entry/2013/09/05/203819" target="_blank"><span class="lazy-container lazy ss"><noscript><img src="/images/hatenaportal/company/intern2013/bookmark-a-ss.png" alt="" class="ss" /></noscript><img data-src="/images/hatenaportal/company/intern2013/bookmark-a-ss.png" data-alt="" alt="" /></span></a></p>
+              <blockquote>コメント一覧ページの一番下に表示されている「関連商品」の精度を向上させる改善を行いました。コメント一覧ページの「関連商品」は、ブックマーク先…</blockquote>
+            </div>
+          </section>
+        </div>
+
+        <div id="teambookmarkb" class="subsection even">
+          <section class="section">
+            <div class="section-header">
+              <div class="col4 fl-l">
+                <hgroup>
+                  <h4>クライアントサイドの実装</h4>
+                  <h3>Google Chrome拡張の新機能を追加・利便性向上！</h3>
+                </hgroup>
+              </div>
+              <div class="fl-r students">
+                <div class="student">
+                  <p><span class="lazy-container lazy colp"><noscript><img src="/images/hatenaportal/company/intern2013/cocodrips.jpg" alt="" class="colp" /></noscript><img data-src="/images/hatenaportal/company/intern2013/cocodrips.jpg" data-alt="" alt="" /></span></p>
+                  <p>id:cocodrips</p>
+                </div>
+                <div class="student">
+                  <p><span class="lazy-container lazy colp"><noscript><img src="/images/hatenaportal/company/intern2013/pasta-k.jpg" alt="" class="colp" /></noscript><img data-src="/images/hatenaportal/company/intern2013/pasta-k.jpg" data-alt="" alt="" /></span></p>
+                  <p>id:Pasta-K</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="col3 fl-r">
+              <h3>細かな開発も使いやすさを<br />向上させるために大事なこと</h3>
+              <p>はてなブックマークGoogle Chrome拡張をより便利に使いやすくすることを目的に、機能追加や改善を行いました。追加された機能は、コメント一覧画面で「人気コメント」を表示する機能や、コンテキストメニューへのはてなブックマーク関係の項目の追加などです。また、ブックマーク追加画面において「以下のURLに変更」ボタンをクリックしたときに入力中のコメントが消えないようにするなどの改善も行いました。</p>
+            </div>
+            <div class="col3 fl-l">
+              <p><span class="lazy-container lazy col3"><noscript><img src="/images/hatenaportal/company/intern2013/teambookmarkb-1.jpg" alt="" class="col3" /></noscript><img data-src="/images/hatenaportal/company/intern2013/teambookmarkb-1.jpg" data-alt="" alt="" /></span></p>
+            </div>
+          </section>
+          <section>
+            <div class="col4 fl-l">
+              <h3>実際に使ってみながら答えを探る</h3>
+              <p>Chrome拡張をより便利にしてほしいという声はこれまでもあり、インターン生の1人も「より便利にしたい」という思いをかつてから持っていたということでしたので、Chrome拡張の開発に携わってもらいました。「人気コメント」を表示する機能については、既存のコメント表示機能のオプションの設定値や人気コメントの有無、といった複数の条件の下での表示の出し分け処理が難しい箇所だったと思います。コメントの切り替えのUIをどうするかという点も大いに悩むところでした。コンテキストメニューへの項目の追加に関しても、コンテキストメニューに表示する項目をどうするか<a id="bookmarka-note1" href="#bookmarka-note1a">[1]</a>、ブックマーク追加時は新しいウィンドウを開くべきかページ中にブックマーク追加フォームを開くべきか<a id="bookmarka-note2" href="#bookmarka-note2a">[2]</a>、といったUI的な点で悩む箇所が多くありました。いくつかの案を実際に実装して使用してみる、といった方法で開発を進めて、最終的に良いUIになったと思います。</p>
+            </div>
+            <div class="col2 fl-r">
+              <p><span class="lazy-container lazy" style="width: 304px; height: 266px;"><noscript><img src="/images/hatenaportal/company/intern2013/teambookmarkb-ss.png" alt="" style="width: 304px; height: 266px;" /></noscript><img data-src="/images/hatenaportal/company/intern2013/teambookmarkb-ss.png" data-alt="" style="width: 304px; height: 266px;" alt="" /></span></p>
+              <ul class="note">
+                <li id="bookmarka-note1a">1. Chrome拡張のコンテキストメニューへの項目の追加が2個以上の場合、追加した項目は折りたたまれてしまい少し使いにくくなってしまうため、可能であれば項目は1個だけ追加するようにして折りたたまれないようにしたかった。</li>
+                <li id="bookmarka-note2a">2. Chrome拡張のポップアップは、プログラム側から開くことはできないため、ポップアップを開かずにブックマーク追加ができるようにする必要があった。</li>
+              </ul>
+            </div>
+          </section>
+          <section>
+            <div class="col4 fl-l">
+              <div class="director">
+                <p><span class="lazy-container lazy colp"><noscript><img src="/images/hatenaportal/company/intern2013/yanbe-sq.jpg" alt="" class="colp" /></noscript><img data-src="/images/hatenaportal/company/intern2013/yanbe-sq.jpg" data-alt="" alt="" /></span></p>
+                <p>id:yanbe<span>ディレクター</span></p>
+              </div>
+              <p class="director-comment">はてなブックマークGoogle Chrome拡張は、広く使われており、普段のブラウジング中でいつでも簡単に呼び出せるので、はてなブックマークとユーザーの皆様とをつなぐ、一番近いインターフェースのひとつであると考えられます。今回の複数の改善によって、Chrome拡張を通じてはてなブックマークの便利な機能がユーザーの皆様により伝わりやすくなりました。またブックマークを追加する際の支援機能によって、ユーザーの皆様のブックマークの価値が、はてなブックマークをご利用の他のユーザーの皆様に伝わりやすくなりました。はてなブックマークはGoogle Chrome以外のメジャーブラウザ向けにも拡張機能を提供しています。今後の展開として、Safari拡張やFirefox拡張、ブックマークレットなどにも、今回の改善を取り込んでいくことが考えられます。</p>
+            </div>
+            <div class="col2 fl-r release">
+              <h3>リリース</h3>
+              <h4><a href="http://bookmark.hatenastaff.com/entry/2013/09/05/203819" target="_blank">コメント一覧ページの関連商品の精度を改善し、Google Chrome 拡張から人気のコメントが確認出来るようになりました</a></h4>
+              <p class="thumb"><a href="http://bookmark.hatenastaff.com/entry/2013/09/05/203819" target="_blank"><span class="lazy-container lazy ss"><noscript><img src="/images/hatenaportal/company/intern2013/bookmark-a-ss.png" alt="" class="ss" /></noscript><img data-src="/images/hatenaportal/company/intern2013/bookmark-a-ss.png" data-alt="" alt="" /></span></a></p>
+              <blockquote>コメント一覧ページの一番下に表示されている「関連商品」の精度を向上させる改善を行いました。コメント一覧ページの「関連商品」は、ブックマーク先…</blockquote>
+            </div>
+          </section>
+        </div>
+
+      </div>
+
+      <div class="section" id="teamblog">
+        <header class="section-image">
+          <div class="section-image-image section-image-teamblog lazy-background" data-background-image="/images/hatenaportal/company/intern2013/teamblog-header.jpg">
+            <div class="section-image-inner">
+              <h2>Blog Team</h2>
+            </div>
+          </div>
+        </header>
+
+        <div id="teambloga" class="subsection">
+          <section class="section">
+            <div class="section-header">
+              <div class="col4 fl-l title">
+                <hgroup>
+                  <h4>ペーパープロトタイピングからはじめるiOSアプリ開発</h4>
+                  <h3>はてなブログiOSアプリのユニバーサル化！</h3>
+                </hgroup>
+              </div>
+              <div class="fl-r students solo">
+                <div class="student">
+                  <p><span class="lazy-container lazy colp"><noscript><img src="/images/hatenaportal/company/intern2013/questbeat.jpg" alt="" class="colp" /></noscript><img data-src="/images/hatenaportal/company/intern2013/questbeat.jpg" data-alt="" alt="" /></span></p>
+                  <p>id:questbeat</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="col4 fl-l">
+              <div style="overflow: hidden;">
+                <div class="col2 fl-l">
+                  <h3>くつろぎの<br />ブロギング体験を求めて</h3>
+                  <p>はてなブログiOSアプリのiPad対応を開発してもらいました。iPadの広い画面でブログを書ければ、パソコンの前にしっかり座っていなくても、より気軽にブログを更新するのに使ってもらえると考え、本機能の開発に当たってもらいました。</p>
+                </div>
+                <div class="col2 fl-r">
+            <p class="ta-c inline-margin" style="margin-top: 70px;"><span class="lazy-container lazy" style="width: 306px; height: 230px;"><noscript><img src="/images/hatenaportal/company/intern2013/teamblog-b-3.jpg" alt="" style="width: 306px; height: 230px;" /></noscript><img data-src="/images/hatenaportal/company/intern2013/teamblog-b-3.jpg" data-alt="" style="width: 306px; height: 230px;" alt="" /></span></p>
+                </div>
+              </div>
+              <p class="inline-margin" style="margin-top: 32px;"><span class="lazy-container lazy col4"><noscript><img src="/images/hatenaportal/company/intern2013/teamblog-a-2.jpg" alt="" class="col4" /></noscript><img data-src="/images/hatenaportal/company/intern2013/teamblog-a-2.jpg" data-alt="" alt="" /></span></p>
+            </div>
+            <div class="col2 fl-r">
+              <h3>デバイスに最適なUIを<br />出し分ける</h3>
+              <p>はてなブログiOSアプリは、まずiPhoneアプリとしていつでもどこにいても簡単にブログが書ける、というところからスタートしましたが、最近ではユーザーの皆様からiPadに対応してほしい、という要望をいただくこともよくありました。<br />id:questbeatさんはiOSアプリ開発の経験もあり、うってつけの題材であると考えました。技術的には、iPhone/iPod touchとiPadでそれぞれ最適なUIを出し分ける、ユニバーサルAppとしました。出し分ける部分は複雑になりますが、同じ機能を様々な端末でサポートしていくのにはむしろ効率的なやり方です。その上でiPadという広い画面で十分に使いやすいUIを実現するため、初日はずっとペーパープロトタイピングをしてもらって、いくつかのパターンを検討しました。id:questbeatさんの工夫が各所に込められ、結果として大変使いやすいものに仕上がったと思います。</p>
+            </div>
+          </section>
+          <section>
+            <div class="col4 fl-l">
+              <div class="director">
+                <p><span class="lazy-container lazy colp"><noscript><img src="/images/hatenaportal/company/intern2013/onishi-sq.jpg" alt="" class="colp" /></noscript><img data-src="/images/hatenaportal/company/intern2013/onishi-sq.jpg" data-alt="" alt="" /></span></p>
+                <p>id:onishi<span>ディレクター</span></p>
+              </div>
+              <p class="director-comment">短い期間で、品質の高い開発をしてくれたと思っています。単純にUIを大きくするだけでなく、iPad専用のUIを時間をかけて検討してもらい、結果として当初の想像を上回る出来映えになりました。リリースはインターン期間後になりましたが、期間内にApp Storeへの申請までできたので非常に良かったです。今後もiOS向けアプリは継続的に改善していきたいと思います。</p>
+            </div>
+            <div class="col2 fl-r release">
+              <h3>リリース</h3>
+              <h4><a href="//staff.hatenablog.com/entry/2013/09/10/122812" target="_blank">iPadでも書きやすく、読みやすい！ iOSアプリをユニバーサルアプリ化しました</a></h4>
+              <p class="thumb"><a href="//staff.hatenablog.com/entry/2013/09/10/122812" target="_blank"><span class="lazy-container lazy ss"><noscript><img src="/images/hatenaportal/company/intern2013/teamblog-a-ss.jpg" alt="" class="ss" /></noscript><img data-src="/images/hatenaportal/company/intern2013/teamblog-a-ss.jpg" data-alt="" alt="" /></span></a></p>
+              <blockquote>コメント一覧ページの一番下に表示されている「関連商品」の精度を向上させる改善を行いました。コメント一覧ページの「関連商品」は、ブックマーク先…</blockquote>
+            </div>
+          </section>
+        </div>
+
+        <div id="teamblogb" class="subsection even">
+          <section class="section">
+            <div class="section-header">
+              <div class="col4 fl-l title">
+                <hgroup>
+                  <h4>ユーザー体験向上を視野に入れた編集機能の改善</h4>
+                  <h3>リアルタイムプレビュー機能・Gist/Flickr 貼り付け機能！</h3>
+                </hgroup>
+              </div>
+              <div class="fl-r students">
+                <div class="student">
+                  <p><span class="lazy-container lazy colp"><noscript><img src="/images/hatenaportal/company/intern2013/fromatom.jpg" alt="" class="colp" /></noscript><img data-src="/images/hatenaportal/company/intern2013/fromatom.jpg" data-alt="" alt="" /></span></p>
+                  <p>id:FromAtom</p>
+                </div>
+                <div class="student">
+                  <p><span class="lazy-container lazy colp"><noscript><img src="/images/hatenaportal/company/intern2013/amagitakayosi.jpg" alt="" class="colp" /></noscript><img data-src="/images/hatenaportal/company/intern2013/amagitakayosi.jpg" data-alt="" alt="" /></span></p>
+                  <p>id:amagitakayosi</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="col2 fl-l">
+              <h3>ブレストが出発点</h3>
+              <p>リアルタイムプレビューと、編集サイドバーの2つの新機能を作りました。編集画面をより便利にするという課題でブレストを行い、その中で出た案の中から2週間で3機能という高頻度でリリースできました。</p>
+            </div>
+            <div class="col4 fl-r">
+              <p><span class="lazy-container lazy col4"><noscript><img src="/images/hatenaportal/company/intern2013/teamblog-b-1.jpg" alt="" class="col4" /></noscript><img data-src="/images/hatenaportal/company/intern2013/teamblog-b-1.jpg" data-alt="" alt="" /></span></p>
+            </div>
+          </section>
+          <section>
+            <div class="col4 fl-r">
+              <h3>集中して「書くこと」を忘れないプロダクト</h3>
+              <p>リアルタイムプレビューは、はてな記法やMarkdownのフォーマット結果をリアルタイムに表示して、記事の仕上がりを簡単に確認できる機能です。書いているあいだにはプレビューを更新せず、しばらく手を止めたタイミングで更新するなど、書く人を邪魔せず、さりげないタイミングで動くような工夫ができました。編集サイドバーへの機能追加では、Gist貼り付けと、Flickr貼り付けをリリースしました。Gist貼り付けという、普段ソースコードをブログで紹介するような、エンジニア向きの機能から、Flickr貼り付けという、リッチなブログを書きたい人なら誰でも使える機能まで作ることができ、バランスのよい開発ができたと思います。</p>
+              <p class="ta-c screenshot touch-block" style="width: 656px; height: 236px;"><span class="lazy-container lazy"><noscript><img src="/images/hatenaportal/company/intern2013/teamblog-b-4.png" alt="" /></noscript><img data-src="/images/hatenaportal/company/intern2013/teamblog-b-4.png" data-alt="" alt="" /></span></p>
+            </div>
+            <div class="col2 fl-l">
+              <p><span class="lazy-container lazy col2"><noscript><img src="/images/hatenaportal/company/intern2013/teamblog-b-5.jpg" alt="" class="col2" /></noscript><img data-src="/images/hatenaportal/company/intern2013/teamblog-b-5.jpg" data-alt="" alt="" /></span></p>
+            </div>
+          </section>
+          <section>
+            <div class="col4 fl-l">
+              <div class="director">
+                <p><span class="lazy-container lazy colp"><noscript><img src="/images/hatenaportal/company/intern2013/onishi-sq.jpg" alt="" class="colp" /></noscript><img data-src="/images/hatenaportal/company/intern2013/onishi-sq.jpg" data-alt="" alt="" /></span></p>
+                <p>id:onishi<span>ディレクター</span></p>
+              </div>
+              <p class="director-comment">リアルタイムプレビューは、当初編集サイドバーに表示するという面白機能として開発していたのですが、チームメンバーとのディスカッションの結果、今のUIに落ち着きました。開発しながらよりよい仕様を模索していく、といった貴重な体験をしてもらえたのではないでしょうか。2週間で、合計3つの機能追加は非常にスピード感があって良かったです。品質にも問題なく、リリース後の反響も良かったので満足しています。編集機能はブログの要なので、今後もいろいろな機能追加を計画しています。</p>
+            </div>
+            <div class="col2 fl-r">
+              <p><span class="lazy-container lazy col2"><noscript><img src="/images/hatenaportal/company/intern2013/teamblog-b-2.jpg" alt="" class="col2" /></noscript><img data-src="/images/hatenaportal/company/intern2013/teamblog-b-2.jpg" data-alt="" alt="" /></span></p>
+            </div>
+          </section>
+          <section class="release">
+            <div class="col2 fl-l m">
+              <h3>リリース1</h3>
+              <h4><a href="//staff.hatenablog.com/entry/2013/09/02/184231" target="_blank">記事を書きながら表示を確認！ 編集画面にリアルタイムプレビュー機能を追加し…</a></h4>
+              <p class="thumb"><a href="//staff.hatenablog.com/entry/2013/09/02/184231" target="_blank"><span class="lazy-container lazy ss"><noscript><img src="/images/hatenaportal/company/intern2013/teamblog-b-ss1.jpg" alt="" class="ss" /></noscript><img data-src="/images/hatenaportal/company/intern2013/teamblog-b-ss1.jpg" data-alt="" alt="" /></span></a></p>
+              <blockquote>本日、はてなブログの記事編集画面に、リアルタイムプレビュー機能を追加しました。記事を書きながら、どのように表示されるかをその場で確認できます。リアルタイムプレビューは、次の編集モード…</blockquote>
+            </div>
+            <div class="col2 fl-l">
+              <h3>リリース2</h3>
+              <h4><a href="//staff.hatenablog.com/entry/2013/09/05/172241" target="_blank">ソースコードを簡単に共有しよう！ Gistからの貼り付けに対応しました</a></h4>
+              <p class="thumb"><a href="//staff.hatenablog.com/entry/2013/09/05/172241" target="_blank"><span class="lazy-container lazy ss"><noscript><img src="/images/hatenaportal/company/intern2013/teamblog-b-ss2.jpg" alt="" class="ss" /></noscript><img data-src="/images/hatenaportal/company/intern2013/teamblog-b-ss2.jpg" data-alt="" alt="" /></span></a></p>
+              <blockquote>本日、はてなブログの編集サイドバーに「Gist貼り付け」機能を追加しました。GitHubが運営するソースコード共有サイトGistで一般公開されているコードを、ブログの編集画面で簡単に貼り付けること…</blockquote>
+            </div>
+            <div class="col2 fl-r">
+              <h3>リリース3</h3>
+              <h4><a href="//staff.hatenablog.com/entry/2013/09/06/123414" target="_blank">Flickrからの画像の検索と貼り付けに対応しました</a></h4>
+              <p class="thumb"><a href="//staff.hatenablog.com/entry/2013/09/06/123414" target="_blank"><span class="lazy-container lazy ss"><noscript><img src="/images/hatenaportal/company/intern2013/teamblog-b-ss3.jpg" alt="" class="ss" /></noscript><img data-src="/images/hatenaportal/company/intern2013/teamblog-b-ss3.jpg" data-alt="" alt="" /></span></a></p>
+              <blockquote>はてなブログでは、Flickrで公開されている写真を検索して簡単に貼り付けられる「Flickr貼り付け」機能を、編集サイドバーに追加しました。検索できるのは、クリエイティブ・コモンズ・ライセンス…</blockquote>
+            </div>
+          </section>
+        </div>
+
+        <div id="teamblogc" class="subsection">
+          <section class="section">
+            <div class="section-header">
+              <div class="col4 fl-l">
+                <hgroup>
+                  <h4>サードパーティのツールと連携できるAPI開発</h4>
+                  <h3>はてなブログ AtomPub APIの公開！</h3>
+                </hgroup>
+              </div>
+              <div class="fl-r students">
+                <div class="student">
+                  <p><span class="lazy-container lazy colp"><noscript><img src="/images/hatenaportal/company/intern2013/moznion.jpg" alt="" class="colp" /></noscript><img data-src="/images/hatenaportal/company/intern2013/moznion.jpg" data-alt="" alt="" /></span></p>
+                  <p>id:moznion</p>
+                </div>
+                <div class="student">
+                  <p><span class="lazy-container lazy colp"><noscript><img src="/images/hatenaportal/company/intern2013/krrrr.jpg" alt="" class="colp" /></noscript><img data-src="/images/hatenaportal/company/intern2013/krrrr.jpg" data-alt="" alt="" /></span></p>
+                  <p>id:krrrr</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="col2 fl-l">
+              <h3>ブログ向けツールを開発しやすくするAPI</h3>
+              <p>はてなブログにはこれまでなかった、記事の投稿や削除のできる、AtomPub APIを作りました。開発者の方がはてなブログに関するソフトウェアを作りやすくなったので、今後、便利なツールやスマートフォンアプリなどが登場して、はてなブログの利便性が向上していくことを期待しています。</p>
+            </div>
+            <div class="col4 fl-r">
+              <p><span class="lazy-container lazy col4"><noscript><img src="/images/hatenaportal/company/intern2013/teamblog-c-1.jpg" alt="" class="col4" /></noscript><img data-src="/images/hatenaportal/company/intern2013/teamblog-c-1.jpg" data-alt="" alt="" /></span></p>
+          </section>
+          <section>
+            <div class="col4 fl-l">
+              <h3>高品質なAPIを提供するための工夫</h3>
+              <p>多くのブログではAPIを利用してツールやアプリを作ることができ、活用の幅を広げることができます。はてなブログでもAPIにより活用の可能性を広げたいという思いから、AtomPub APIを作ることにしました。AtomPubは6年以上前に仕様が策定された枯れた技術です。対応しているツールが多いことなど、利便性を考えて採用しました。仕様への準拠が大事なポイントですが、RFCから網羅しなければならない点をチェックリストするなどの工夫があり、確実に実装がすすみました。認証に関する部分など、正確性の要求される部分もありましたが、網羅性の高いテストなどで、品質の高いソフトウェアを作成できていました。APIが完成したあとには、追加の認証方法の実装や、VimプラグインやChrome拡張などAPIを利用した新しいツールの作成にも取り組んでもらいました。量、質ともに文句のない開発だったと思います。</p>
+            </div>
+            <div class="col2 fl-r inline-margin" style="margin-top: 45px;">
+              <p><span class="lazy-container lazy col2"><noscript><img src="/images/hatenaportal/company/intern2013/teamblog-c-2.jpg" alt="" class="col2" /></noscript><img data-src="/images/hatenaportal/company/intern2013/teamblog-c-2.jpg" data-alt="" alt="" /></span></p>
+            </div>
+          </section>
+          <section>
+            <div class="col4 fl-l">
+              <div class="director">
+                <p><span class="lazy-container lazy colp"><noscript><img src="/images/hatenaportal/company/intern2013/onishi-sq.jpg" alt="" class="colp" /></noscript><img data-src="/images/hatenaportal/company/intern2013/onishi-sq.jpg" data-alt="" alt="" /></span></p>
+                <p>id:onishi<span>ディレクター</span></p>
+              </div>
+              <p class="director-comment">2008年にはてなダイアリーのAtomPubをインターンで作ってくれたid:hakobe932がメンターになって、2013年にはてなブログのAtomPubを新しいインターンが作る、という非常に感慨深いめぐり合わせになりました。AtomPubは、はてなブログの開発当初からやりたかった機能なので、今回実現してもらって非常にありがたかったです。網羅的なテストを伴ったしっかりした開発で、見ていて安心感がありました。今後も認証方法の追加（BASIC認証、OAuth認証）など、より便利にしていきたいと思います。</p>
+            </div>
+            <div class="col2 fl-r release">
+              <h3>リリース</h3>
+              <h4><a href="//staff.hatenablog.com/entry/2013/09/04/125926" target="_blank">はてなブログAtomPub APIを公開しました。サードパーティのブログ投稿ツールを利用・作成できます</a></h4>
+              <p class="thumb"><a href="//staff.hatenablog.com/entry/2013/09/04/125926" target="_blank"><span class="lazy-container lazy ss"><noscript><img src="/images/hatenaportal/company/intern2013/teamblog-a-ss.jpg" alt="" class="ss" /></noscript><img data-src="/images/hatenaportal/company/intern2013/teamblog-a-ss.jpg" data-alt="" alt="" /></span></a></p>
+              <blockquote>本日、はてなブログの記事を投稿・編集等できるAPI「はてなブログAtomPub」を公開しました。はてなブログAtomPubは、Atom Publishing Protocolに準拠したAPIです…</blockquote>
+            </div>
+          </section>
+        </div>
+
+      </div>
+
+      <div class="section" id="teamplatform">
+        <header class="section-image">
+          <div class="section-image-image section-image-teamplatform lazy-background" data-background-image="/images/hatenaportal/company/intern2013/teaminfra-header.jpg">
+            <div class="section-image-inner">
+              <h2>Department of <br />System Platform</h2>
+            </div>
+          </div>
+        </header>
+
+        <div id="teamplatforma" class="subsection">
+          <section class="section">
+            <div class="section-header">
+              <div class="col4 fl-l">
+                <hgroup>
+                  <h4>システムプラットフォーム</h4>
+                  <h3>HTTPリクエスト・レンダリング時間測定ツールを作りSPDYの効果を検証！</h3>
+                </hgroup>
+              </div>
+              <div class="fl-r students solo">
+                <div class="student">
+                  <p><span class="lazy-container lazy colp"><noscript><img src="/images/hatenaportal/company/intern2013/c255.jpg" alt="" class="colp" /></noscript><img data-src="/images/hatenaportal/company/intern2013/c255.jpg" data-alt="" alt="" /></span></p>
+                  <p>id:c255</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="col2 fl-l">
+              <h3>モバイル環境をより快適に</h3>
+              <p>モバイル環境におけるページ表示速度の改善を行うため、JavaScriptによりクライアントサイドでページ全体のロード時間を測定するシステムを構築しました。また、構築したシステムを用いて、SPDYの導入によるページ表示速度の変化を測定しました。</p>
+            </div>
+            <div class="col4 fl-r">
+              <p><span class="lazy-container lazy col4"><noscript><img src="/images/hatenaportal/company/intern2013/teaminfra-1.jpg" alt="" class="col4" /></noscript><img data-src="/images/hatenaportal/company/intern2013/teaminfra-1.jpg" data-alt="" alt="" /></span></p>
+            </div>
+          </section>
+          <section>
+            <div class="col3 fl-l">
+              <p class="touch-block"><span class="lazy-container lazy" style="width: 480px; height: 455px;"><noscript><img src="/images/hatenaportal/company/intern2013/teaminfra-2.jpg" alt="" style="width: 480px; height: 455px;" /></noscript><img data-src="/images/hatenaportal/company/intern2013/teaminfra-2.jpg" data-alt="" style="width: 480px; height: 455px;" alt="" /></span></p>
+            </div>
+            <div class="col3 fl-r">
+              <h3>ネットワークレイヤでの影響を<br />自動で・繰り返し測定</h3>
+              <p>ひとつの技術課題に深く取り組むという性質から、大規模システムコースでは、担当社員の技術分野も踏まえ参加者と話し合いの上で個別に課題を設定しています。構築したシステムは自動でリロードを繰り返し時系列で長時間にわたり測定するもので、「ユーザ側ネットワークの影響を含めて測定する」「ページ内の複数ある全要素を取得するのにかかる時間を測定」「ノイズに埋もれやすい軽微な差を可視化できる」といった特徴を持っています。相対的に低速であるとはいえネットワークレイヤでの影響を測定することから、回線の混雑による影響などを区別できるよう、今回のようなシステムを構築しました。</p>
+            </div>
+          </section>
+          <section>
+            <div class="col4 fl-l">
+              <div class="director">
+                <p><span class="lazy-container lazy colp"><noscript><img src="/images/hatenaportal/company/intern2013/halfrack-sq.jpg" alt="" class="colp" /></noscript><img data-src="/images/hatenaportal/company/intern2013/halfrack-sq.jpg" data-alt="" alt="" /></span></p>
+                <p>id:halfrack</p>
+              </div>
+              <p class="director-comment">アクシデントにより作業日数が減るという状況下で、結果を出すところまで到達できたことは喜ばしいです。今回の測定で得られた「モバイル環境でSPDYを導入すると体感可能な速度向上がある」という結果は、はてなのサービスへSPDY/HTTP2.0を導入する契機になるでしょう。</p>
+            </div>
+          </section>
+        </div>
+
+      </div>
+
+      <div id="content-footer" class="section">
+        <section>
+          <p><a href="/intern2013/students/"><span>参加者の声</span></a></p>
+        </section>
+      </div>
+
+    </div>
+
+    <nav id="sub-nav">
+      <ul>
+        <li><a href="#"><span></span><b>後半課程</b></a></li>
+        <li><a href="#teambookmark" id="teambookmark"><span></span><b>ブックマークチーム</b></a></li>
+        <li><a href="#teambookmarka"><span></span><b>コメント一覧ページの関連商品の精度改善 ／ ブックマーク</b></a></li>
+        <li><a href="#teambookmarkb"><span></span><b>Google Chrome 拡張の新機能を追加・利便性向上 ／ ブックマーク</b></a></li>
+        <li><a href="#teamblog" id="teamblog"><span></span><b>ブログチーム</b></a></li>
+        <li><a href="#teambloga"><span></span><b>はてなブログiOSアプリのユニバーサル化 ／ ブログ</b></a></li>
+        <li><a href="#teamblogb"><span></span><b>リアルタイムプレビュー機能・Gist/Flickr 貼り付け機能 ／ ブログ</b></a></li>
+        <li><a href="#teamblogc"><span></span><b>はてなブログ AtomPub APIの公開 ／ ブログ</b></a></li>
+        <li><a href="#teamplatform" id="teamplatform"><span></span><b>システムプラットフォーム部</b></a></li>
+        <li><a href="#teamplatforma"><span></span><b>HTTP リクエスト・レンダリング時間測定ツールの作成 ／ プラットフォーム</b></a></li>
+        <li id="tip"><span></span></li>
+      </ul>
+    </nav>
+
+    <footer id="footer">
+      <div id="footer-inner">
+
+        <section id="footer-blogs">
+          <h4>インターン参加者のブログ記事</h4>
+          <ul>
+            <li><a href="//amagitakayosi.hatenablog.com/entry/2013/09/08/222235" target="_blank">もう24歳なのに、はてなインターンに参加した</a> <a href="//b.hatena.ne.jp/entry/amagitakayosi.hatenablog.com/entry/2013/09/08/222235" target="_blank" class="users"><img src="http://b.hatena.ne.jp/entry/image/http://amagitakayosi.hatenablog.com/entry/2013/09/08/222235" /></a></li>
+            <li><a href="//astj.hatenablog.com/entry/2013/09/08/163734" target="_blank">はてなインターン2013でブログチームの連勝記録を打破してきた</a> <a href="//b.hatena.ne.jp/entry/astj.hatenablog.com/entry/2013/09/08/163734" target="_blank" class="users"><img src="http://b.hatena.ne.jp/entry/image/http://astj.hatenablog.com/entry/2013/09/08/163734" /></a></li>
+            <li><a href="//cocodrips.hateblo.jp/entry/2013/09/07/221309" target="_blank">Perlの書けない女子大生がはてなインターンに参加してきた</a> <a href="//b.hatena.ne.jp/entry/cocodrips.hateblo.jp/entry/2013/09/07/221309" target="_blank" class="users"><img src="http://b.hatena.ne.jp/entry/image/http://cocodrips.hateblo.jp/entry/2013/09/07/221309" /></a></li>
+            <li><a href="//fromatom.hatenablog.com/entry/2013/09/08/023743" target="_blank">はてなサマーインターン2013と、僕たちの夏が終わった。</a> <a href="//b.hatena.ne.jp/entry/fromatom.hatenablog.com/entry/2013/09/08/023743" target="_blank" class="users"><img src="http://b.hatena.ne.jp/entry/image/http://fromatom.hatenablog.com/entry/2013/09/08/023743" /></a></li>
+            <li><a href="//krrrr.hatenablog.com/entry/2013/09/08/104152" target="_blank">はてなインターン2013に参加した</a> <a href="//b.hatena.ne.jp/entry/krrrr.hatenablog.com/entry/2013/09/08/104152" target="_blank" class="users"><img src="http://b.hatena.ne.jp/entry/image/http://krrrr.hatenablog.com/entry/2013/09/08/104152" /></a></li>
+            <li><a href="//moznion.hatenadiary.com/entry/2013/09/11/163554" target="_blank">はてなインターン2013に参加して参りました、そして与太話がしたい</a> <a href="//b.hatena.ne.jp/entry/moznion.hatenadiary.com/entry/2013/09/11/163554" target="_blank" class="users"><img src="http://b.hatena.ne.jp/entry/image/http://moznion.hatenadiary.com/entry/2013/09/11/163554" /></a></li>
+            <li><a href="//pastak.hatenablog.com/entry/2013/09/18/233702" target="_blank">はてなインターンで美少女に出会ってドクターペッパーを40本飲んだ話</a> <a href="//b.hatena.ne.jp/entry/pastak.hatenablog.com/entry/2013/09/18/233702" target="_blank" class="users"><img src="http://b.hatena.ne.jp/entry/image/http://pastak.hatenablog.com/entry/2013/09/18/233702" /></a></li>
+            <li><a href="//questbeat.hatenablog.jp/entry/2013/09/24/113945" target="_blank">はてなサマーインターン2013に参加しました</a> <a href="//b.hatena.ne.jp/entry/questbeat.hatenablog.jp/entry/2013/09/24/113945" target="_blank" class="users"><img src="http://b.hatena.ne.jp/entry/image/http://questbeat.hatenablog.jp/entry/2013/09/24/113945" /></a></li>
+            <li><a href="//tonerorin.hatenablog.com/entry/2013/09/30/235823" target="_blank">はてなインターンに参加した話</a> <a href="//b.hatena.ne.jp/entry/tonerorin.hatenablog.com/entry/2013/09/30/235823" target="_blank" class="users"><img src="http://b.hatena.ne.jp/entry/image/http://tonerorin.hatenablog.com/entry/2013/09/30/235823" /></a></li>
+          </ul>
+        </section>
+
+        <section id="footer-interns">
+          <h4><a href="/intern2013/">はてなインターン2013</a></h4>
+          <ul>
+            <li><a href="/intern2013/">トップページ</a></li>
+            <li><a href="/intern2013/study/">前半課程</a></li>
+            <li><a href="/intern2013/projects/">後半課程</a></li>
+            <li><a href="/intern2013/students/">参加者の声</a></li>
+            <li><a href="/intern2013/photos/">写真集</a></li>
+          </ul>
+          <h4 class="past-interns">これまでのインターン</h4>
+          <ul>
+            <li><a href="//intern.hatenastaff.com/" target="_blank">はてなサマーインターン2012</a></li>
+            <li><a href="//www.hatena.ne.jp/company/intern2011/" target="_blank">はてなサマーインターン2011</a></li>
+            <li><a href="//www.hatena.ne.jp/company/intern2010/" target="_blank">はてなサマーインターン2010</a></li>
+            <li><a href="//www.hatena.ne.jp/company/intern2009/" target="_blank">はてなサマーインターン2009</a></li>
+            <li><a href="//www.hatena.ne.jp/company/staff/intern2008/" target="_blank">はてなサマーインターン2008</a></li>
+          </ul>
+        </section>
+
+        <section id="footer-links">
+          <h4>はてな関連リンク</h4>
+          <ul>
+            <li><a href="http://d.hatena.ne.jp/hatenatech/">はてな技術ブログ</a></li>
+            <li><a href="/information/culture">はてな 会社紹介</a></li>
+            <li><a href="/recruit/">はてな 求人情報</a></li>
+          </ul>
+          <div id="social-btn">
+            <p><a href="http://b.hatena.ne.jp/entry/http://hatenacorp.jp/intern2013/" class="hatena-bookmark-button" data-hatena-bookmark-title="はてなサマーインターン2013 レポートサイト" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a></p>
+            <p><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://hatenacorp.jp/intern2013/" data-text="はてなサマーインターン2013 レポートサイト" data-lang="ja" data-hashtags="hatena-intern2013">ツイート</a></p>
+            <div class="fb-like" data-href="http://hatenacorp.jp/intern2013/" data-width="450" data-layout="button_count" data-show-faces="false" data-send="false"></div>
+            <div id="fb-root"></div>
+            <div class="g-plusone" data-size="medium" data-href="http://hatenacorp.jp/intern2013/"></div>
+          </div>
+        </section>
+      </div>
+      <div id="copyright">&copy; Hatena.</div>
+    </footer>
+
+    <!-- intern2013.js -->
+    <script src="/js/hatenaportal/jquery-1.10.2.min.js"></script>
+    <script src="/js/hatenaportal/intern2013.js"></script>
+    <!-- bookmark -->
+    <script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+    <!-- twitter -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    <!-- facebook -->
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <!-- google+ -->
+    <script type="text/javascript">
+      window.___gcfg = {lang: 'ja'};
+      (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+    </script>
+  </body>
+</html>
