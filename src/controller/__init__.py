@@ -4,6 +4,7 @@ import os
 
 with open("../work/company.csv") as f:
     url = f.read()
+    print(url)
 
     # html取得
     os.system("wget --recursive --quiet --accept=html --wait=1 --random-wait --force-directories --directory-prefix=../../sites/ " + url)
