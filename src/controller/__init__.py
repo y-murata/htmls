@@ -17,5 +17,5 @@ for url in open("../work/company.csv", "r"):
 
     # wgetによる変更をプッシュ
     os.system("git add ../../sites/")
-    os.system("git commit -a -m 'auto commit : %s'" % nowDate)
+    os.system("git commit -a -m 'auto commit : %s : %s'" % (url, nowDate))
     os.system("git push origin master")
