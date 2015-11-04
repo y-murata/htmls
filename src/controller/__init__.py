@@ -4,14 +4,15 @@ import os
 from datetime import datetime
 
 
-def git_commit():
+def git_commit(url, nowDate):
     os.system("git add ../../sites/")
     os.system("git commit -a -m 'auto commit : %s : %s'" % (url, nowDate))
     os.system("git push origin master")
 
 
 def wget_list():
-    os.system("wget --recursive --quiet --accept=html --wait=1 --random-wait --force-directories --directory-prefix=../../sites/ " + url)
+    os.system(
+        "wget --recursive --quiet --accept=html --wait=1 --random-wait --force-directories --directory-prefix=../../sites/ " + url)
 
 
 def file_encode():
@@ -28,7 +29,7 @@ for url in open("../work/company.csv", "r"):
     file_encode()
 
     # 現在日時の取得
-    # nowDate = datetime.now().strftime("%Y/%m/%d")
+    nowDate = datetime.now().strftime("%Y/%m/%d_%H/%M/%S")
 
     # wgetによる変更をプッシュ
-    # git_commit()
+    git_commit(url, nowDate)
