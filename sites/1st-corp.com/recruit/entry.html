@@ -1,0 +1,256 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<meta http-equiv="Content-Language" content="ja">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>エントリーフォーム | ファーストコーポレーション株式会社 採用サイト</title>
+<meta name="keywords" content="ファーストコーポレーション株式会社,採用,新築分譲マンション建設,建設,施工管理,企画開発">
+<meta name="description" content="ファーストコーポレーション株式会社の採用サイトです。少しでも当社の雰囲気を知ってください。元気で正直なら大歓迎です！">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30384269-15']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+<div id="container">
+
+
+<div id="header">
+
+
+<dl class="clearfix">
+<dt>
+<h1>
+<a href="index.html"><img src="image/img_logo.jpg" width="305" height="41" alt="ファーストコーポレーション株式会社　採用サイト"></a>
+</h1>
+
+</dt>
+<dd class="corp">
+<a href="http://www.1st-corp.com/" target="_blank">コーポレートサイトへ</a>
+</dd>
+<dd class="entry">
+<a href="entry.html"><img src="image/img_btn_entry01.jpg" width="226" height="36" alt="求人募集へエントリー"></a>
+</dd>
+</dl>
+
+
+<div class="clearfix">
+<img src="image/img_entry_01.jpg" width="908" height="102" alt="エントリー">
+</div>
+
+<div class="gnav clearfix">
+<ul>
+<li><a href="index.html"><img src="image/img_gnav_btn01_a.jpg" width="181" height="70" alt="ホーム"></a></li>
+<li><a href="company.html"><img src="image/img_gnav_btn02_a.jpg" width="182" height="70" alt="会社を知る"></a></li>
+<li><a href="works.html"><img src="image/img_gnav_btn03_a.jpg" width="182" height="70" alt="仕事を知る"></a></li>
+<li><a href="person.html"><img src="image/img_gnav_btn04_a.jpg" width="182" height="70" alt="人を知る"></a></li>
+<li><a href="photo.html"><img src="image/img_gnav_btn05_a.jpg" width="181" height="70" alt="フォトギャラリー"></a></li>
+</ul>
+</div><!--/.gnav-->
+
+</div><!--/#header-->
+
+
+<div id="content" class="clearfix">
+
+<div class="entry clearfix">
+<h2>エントリーフォーム</h2>
+
+<div class="entry_info">※は必須です</div>
+
+
+
+<form action="cgi-bin/postmail/postmail.cgi" method="post">
+<input type="hidden" name="need" value="name name2 sex year month day email email_check phone address1 address2 address3">
+<input type="hidden" name="match" value="email email_check">
+
+
+
+<table width="95%" cellspacing="0" cellpadding="0">
+  <tr>
+    <th>希望職種&nbsp;<span>※</span></th>
+    <td>
+      <select name="job">
+        <option value="分譲マンションの施工管理">分譲マンションの施工管理</option>
+<!--        <option value="制御・組み込み系エンジニア">事務スタッフ</option>-->
+      </select>
+    </td>
+    </tr>
+  <tr>
+    <th>氏名&nbsp;<span>※</span></th>
+    <td><input name="name" type="text" size="40"></td>
+    </tr>
+  <tr>
+    <th>フリガナ&nbsp;<span>※</span></th>
+    <td><input name="name2" type="text" size="40"></td>
+    </tr>
+  <tr>
+    <th>性別&nbsp;<span>※</span></th>
+    <td><input type="radio" name="sex" value="男性">&nbsp;男性&nbsp;&nbsp;&nbsp;<input type="radio" name="性別(必須)" value="女性">&nbsp;女性</td>
+    </tr>
+  <tr>
+    <th>生年月日&nbsp;<span>※</span></th>
+    <td>
+      <input name="year" type="text" size="8">年&nbsp;
+      <input name="month" type="text" size="3">月&nbsp;
+      <input name="day" type="text" size="3">日
+      </td>
+    </tr>
+  <tr>
+    <th>メールアドレス&nbsp;<span>※</span></th>
+    <td><input name="email" type="text" size="40"></td>
+    </tr>
+  <tr>
+    <th>メールアドレス（確認用）<span>※</span></th>
+    <td><input name="email_check" type="text" size="40"></td>
+    </tr>
+  <tr>
+    <th>電話番号&nbsp;<span>※</span></th>
+    <td><input name="phone" type="text" size="40"></td>
+    </tr>
+  <tr>
+    <th>指定連絡先</th>
+    <td><input name="phone_2" type="text" size="40"></td>
+    </tr>
+  <tr>
+    <th rowspan="3">住所&nbsp;<span>※</span></th>
+    <td>都道府県
+      <select name="address1">
+<option value="" selected="selected">選択して下さい</option>
+<option value="北海道">北海道</option>
+<option value="青森県">青森県</option>
+<option value="岩手県">岩手県</option>
+<option value="宮城県">宮城県</option>
+<option value="秋田県">秋田県</option>
+<option value="山形県">山形県</option>
+<option value="福島県">福島県</option>
+<option value="茨城県">茨城県</option>
+<option value="栃木県">栃木県</option>
+<option value="群馬県">群馬県</option>
+<option value="埼玉県">埼玉県</option>
+<option value="千葉県">千葉県</option>
+<option value="東京都">東京都</option>
+<option value="神奈川県">神奈川県</option>
+<option value="新潟県">新潟県</option>
+<option value="富山県">富山県</option>
+<option value="石川県">石川県</option>
+<option value="福井県">福井県</option>
+<option value="山梨県">山梨県</option>
+<option value="長野県">長野県</option>
+<option value="岐阜県">岐阜県</option>
+<option value="静岡県">静岡県</option>
+<option value="愛知県">愛知県</option>
+<option value="三重県">三重県</option>
+<option value="滋賀県">滋賀県</option>
+<option value="京都府">京都府</option>
+<option value="大阪府">大阪府</option>
+<option value="兵庫県">兵庫県</option>
+<option value="奈良県">奈良県</option>
+<option value="和歌山県">和歌山県</option>
+<option value="鳥取県">鳥取県</option>
+<option value="島根県">島根県</option>
+<option value="岡山県">岡山県</option>
+<option value="広島県">広島県</option>
+<option value="山口県">山口県</option>
+<option value="徳島県">徳島県</option>
+<option value="香川県">香川県</option>
+<option value="愛媛県">愛媛県</option>
+<option value="高知県">高知県</option>
+<option value="福岡県">福岡県</option>
+<option value="佐賀県">佐賀県</option>
+<option value="長崎県">長崎県</option>
+<option value="熊本県">熊本県</option>
+<option value="大分県">大分県</option>
+<option value="宮崎県">宮崎県</option>
+<option value="鹿児島県">鹿児島県</option>
+<option value="沖縄県">沖縄県</option>
+</select></td>
+    </tr>
+  <tr>
+    <td>市区町村&nbsp;&nbsp;
+      <input name="address2" type="text" size="40"></td>
+  </tr>
+  <tr>
+    <td>番&nbsp;&nbsp;地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input name="address3" type="text" size="40"></td>
+  </tr>
+  <tr>
+    <th>ご質問・自己PR</th>
+    <td><textarea name="question" cols="60" rows="8"></textarea></td>
+  </tr>
+  </table>
+
+<h2>個人情報の取り扱い</h2>
+<table width="95%" cellspacing="0" cellpadding="0">
+  <tr>
+    <th width="30%">個人情報保護方針</th>
+    <td>
+<div class="policy" style="height:200px; overflow:auto;">
+<p>
+      <strong>■個人情報とは</strong><br>
+      個人情報とは、ファーストコーポレーション株式会社の事業サービスに付随して収集され、個人を識別できる情報、例えば、氏名、生年月日、住所、電話番号、メールアドレス、勤務先、その他個人に関する情報のことを指します。</p>
+      <p><strong>■個人情報の利用について</strong><br>
+        応募者の皆様の個人情報は、適切かつ円滑な採用活動を行うために利用させていただきます。</p>
+      <p><strong>■個人情報の管理について</strong></p>
+      <p>弊社は個人情報への不当なアクセスまたは、紛失、破壊、改ざん、漏えいなどの危険に対して技術面および組織面において、必要な安全対策を断続的に講じます。また、個人情報の適切な取り扱いについて、弊社で勤務するすべての者に対して教育を行います。 しかしながら、インターネットを利用しての情報送信時およびアクセス過程でのセキュリティは、インターネットの特性上弊社で保証することができません。個人情報を送信する場合は、ご自身の責任において情報を送信していただくようお願い致します。 また、弊社のＷＥＢサイトからリンクされている第三者のＷＥＢサイト上で収集される情報の保護や活用について、弊社はいかなる義務や責任を負いかねますので予めご了承下さい。 弊社の個人情報の取扱いおよび安全管理に係る適切な措置については、適宜見直し、改善致します。 </p>
+      <p><strong>■個人情報の第三者への開示について</strong></p>
+      <p>弊社は、以下のいずれか該当する場合を除き、ご本人の同意なく個人情報を第三者に開示または提供致しません。<br>
+        （1）業務を円滑に進めるため、業務の一部を委託する場合。業務委託先が充分な個人情報の保護水準にあることを確認するとともに、契約により適正な個人情報の取り扱いを実施させます。<br>
+        （2）関係する法令または指針・代度ラインにより、第三者への開示が認められている場合。<br>
+        （3）司法または行政機関等から、関係する法令に基づき開示または提出を命じられた場合。 </p>
+      <p><strong>■関係法令の遵守について</strong></p>
+      <p>弊社は、個人情報に関して適用される法令およびガイドライン、ならびに弊社が定めた内部規定を遵守します。<br>
+        ご自身の個人情報について照会、訂正、削除等をご希望される場合には、下記弊社個人情報相談窓口までご連絡いただき、ご本人確認の上で法令の主旨に則り合理的な範囲で速やかに対応致します。 </p>
+      <p><strong>お問合せ窓口</strong><br>
+        ファーストコーポレーション株式会社<br>
+        所在地：〒167-0032　東京都杉並区天沼2丁目3-9 朝日生命ビル4階<br>
+        電話番号：03-5347-9103</p></div></td>
+  </tr>
+</table>
+
+<div class="entry_area clearfix">
+<span><input type="image" src="image/img_entry_02.jpg" alt="エントリーする" value="エントリーする"></span>
+</div><!--/.entry_area-->
+</form>
+
+
+
+
+</div><!--/.entry-->
+
+
+
+
+</div><!--/#content-->
+
+</div><!--/#container-->
+
+<div id="footer">
+<div class="footer_area clearfix">
+<ul>
+<li><a href="index.html">ホーム</a></li>
+<li><a href="company.html">会社を知る</a></li>
+<li><a href="works.html">仕事を知る</a></li>
+<li><a href="person.html">人を知る</a></li>
+<li><a href="photo.html">フォトギャラリー</a></li>
+</ul>
+<img src="image/img_copyright.jpg" width="324" height="12" alt="copyright(C)2013 First-corporation Inc. All rights reserved">
+</div>
+</div><!--/#footer-->
+
+</body>
+</html>

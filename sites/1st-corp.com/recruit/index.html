@@ -1,0 +1,145 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="ja">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>ファーストコーポレーション株式会社 採用サイト</title>
+<meta name="keywords" content="ファーストコーポレーション株式会社,採用,新築分譲マンション建設,建設,施工管理,企画開発">
+<meta name="description" content="ファーストコーポレーション株式会社の採用サイトです。少しでも当社の雰囲気を知ってください。元気で正直なら大歓迎です！">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30384269-15']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+<div id="container">
+
+
+<div id="header">
+
+
+<dl class="clearfix">
+<dt>
+<h1>
+<a href="index.html"><img src="image/img_logo.jpg" width="305" height="41" alt="ファーストコーポレーション株式会社　採用サイト"></a>
+</h1>
+
+</dt>
+<dd class="corp">
+<a href="http://www.1st-corp.com/" target="_blank">コーポレートサイトへ</a>
+</dd>
+<dd class="entry">
+<a href="entry.html"><img src="image/img_btn_entry01.jpg" width="226" height="36" alt="求人募集へエントリー"></a>
+</dd>
+</dl>
+
+<script type="text/javascript">
+$(function(){
+	var imgNum = 3;		//画像の枚数
+	var imgSize = 908;	//画像のサイズ
+	var time = 6000;	//切り替えのタイミング
+	var current = 1;	//現在の画像
+	setInterval(function(){
+		if( current < imgNum ) {
+			current++;
+		    $("#banner ul").animate({
+				marginLeft : parseInt($("#banner ul").css("margin-left"))-imgSize+"px"
+			},"slow");
+		//最後の画像にきたら最初に戻る
+		} else {
+			 $("#banner ul").animate({
+				marginLeft : parseInt($("#banner ul").css("margin-left"))+(imgSize * (imgNum-1))+"px"
+			},"slow");
+			current = 1;
+		}
+	}, time);
+});
+</script>
+
+<div id="banner" class="top_bnr">
+<div class="banner_bg">
+<ul>
+<li><img src="image/phoset1.jpg" alt="" /></li>
+<li><img src="image/phoset2.jpg" alt="" /></li>
+<li><img src="image/phoset3.jpg" alt="" /></li>
+</ul>
+</div>
+<!--div.banner_bg-->
+</div><!--div#banner-->
+
+<div class="gnav clearfix">
+<ul>
+<li><a href="index.html"><img src="image/img_gnav_btn01_b.jpg" width="181" height="70" alt="ホーム"></a></li>
+<li><a href="company.html"><img src="image/img_gnav_btn02_a.jpg" width="182" height="70" alt="会社を知る"></a></li>
+<li><a href="works.html"><img src="image/img_gnav_btn03_a.jpg" width="182" height="70" alt="仕事を知る"></a></li>
+<li><a href="person.html"><img src="image/img_gnav_btn04_a.jpg" width="182" height="70" alt="人を知る"></a></li>
+<li><a href="photo.html"><img src="image/img_gnav_btn05_a.jpg" width="181" height="70" alt="フォトギャラリー"></a></li>
+</ul>
+</div><!--/.gnav-->
+
+</div><!--/#header-->
+
+<div id="top_content" class="clearfix">
+
+<div class="top_news clearfix">
+
+<dl>
+<dt>2013.06.11</dt>
+<dd>採用サイトを公開しました。</dd>
+</dl>
+
+<dl>
+<dt>2013.01.08</dt>
+<dd>会社説明会の予約受付を開始致しました。</dd>
+</dl>
+
+<dl>
+<dt>2012.12.01</dt>
+<dd>2014年4月新規学卒者採用のエントリー受付を開始致しました。</dd>
+</dl>
+
+</div>
+<!--/.top_news-->
+
+<div class="top_photo">
+<a href="photo.html"><img src="image/btn_top_photo.jpg" alt="フォトギャラリーで実際の雰囲気を見てみよう！" width="381" height="62">フォトギャラリーで実際の雰囲気を見てみよう！</a>
+</div>
+<!--/.top_photo-->
+
+
+
+
+</div><!--/#content-->
+
+</div><!--/#container-->
+
+<div id="footer">
+<div class="footer_area clearfix">
+<ul>
+<li><a href="index.html">ホーム</a></li>
+<li><a href="company.html">会社を知る</a></li>
+<li><a href="works.html">仕事を知る</a></li>
+<li><a href="person.html">人を知る</a></li>
+<li><a href="photo.html">フォトギャラリー</a></li>
+</ul>
+<img src="image/img_copyright.jpg" width="324" height="12" alt="copyright(C)2013 First-corporation Inc. All rights reserved">
+</div>
+</div><!--/#footer-->
+
+</body>
+</html>
