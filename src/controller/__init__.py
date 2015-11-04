@@ -28,7 +28,7 @@ for url in open("../work/company.csv", "r"):
     file_encode()
 
     # 現在日時の取得
-    nowDate = datetime.now().strftime("%Y/%m/%d")
+    # nowDate = datetime.now().strftime("%Y/%m/%d")
 
     # wgetによる変更をプッシュ
-    git_commit()
+    # git_commit()
