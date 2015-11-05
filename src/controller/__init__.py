@@ -13,7 +13,7 @@ for url in open("../work/company.csv", "r"):
     os.system("nkf -Xw --overwrite ../../sites/**/*.html")
 
     # 現在日時の取得
-    nowDate = datetime.now().strftime("%Y/%m/%d")
+    nowDate = datetime.now().strftime("%Y/%m/%d/%H/%M/%S")
 
     # wgetによる変更をプッシュ
     os.system("git add ../../sites/")
