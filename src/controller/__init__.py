@@ -13,9 +13,9 @@ for url in open("../work/company.csv", "r"):
     os.system("nkf -Xw --overwrite ../../sites/**/*.html")
 
     # 現在日時の取得
-    nowDate = datetime.now().strftime("%Y/%m/%d/%H/%M/%S")
+    nowDate = datetime.now().strftime("%Y/%m/%d %H:%M:%S")
 
     # wgetによる変更をプッシュ
     os.system("git add ../../sites/")
-    os.system("git commit -a -m 'auto commit_%s_%s'" % (url, nowDate))
+    os.system("git commit -a -m 'auto commit_%s %s'" % (url, nowDate))
     os.system("git push origin master")
