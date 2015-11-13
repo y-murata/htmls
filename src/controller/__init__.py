@@ -1,6 +1,6 @@
 # encoding:utf-8
 
-import os
+import os, hashlib
 from datetime import datetime
 
 
@@ -15,9 +15,12 @@ if __name__ == '__main__':
 
     for url in open(listFilePath, "r"):
         print(url)
+        branch = hashlib.md5(url).hexdigest()
+
+        exit()
 
         # ブランチを切って切り替える
-        os.system("git checkout -b %s" % url)
+        os.system("git checkout -b %s" % branch)
 
         # wgetによりhtmlを取得
         ## オプションと説明の一覧
@@ -33,7 +36,7 @@ if __name__ == '__main__':
         # 取得したファイルをプッシュする
         os.system("git add ../../sites/")
         os.system("git commit -a -m 'auto commit_%s %s'" % (url, nowDate))
-        os.system("git push -u origin %s" % url)  # ローカルブランチ:リモートブランチ
+        os.system("git push -u origin %s" % branch)  # ローカルブランチ:リモートブランチ
 
         # プルリクエスト : 要インストール : brew install hub
         os.system("git pull-request")
@@ -44,7 +47,7 @@ if __name__ == '__main__':
 
         # マージする
         ## マージするときはmasterのHEADに行ってマージしないといけない
-        os.system("git merge %s --no-ff" % url)
+        os.system("git merge %s --no-ff" % branch)
 
         # ブランチを削除する
-        os.system("git branch -D %s" % url)
+        os.system("git branch -D %s" % branch)
