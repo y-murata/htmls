@@ -34,7 +34,7 @@ if __name__ == '__main__':
         # 取得したファイルをプッシュする
         os.system("git add ../../sites/")
         os.system("git commit -a -m 'auto commit_%s %s'" % (url, nowDate))
-        os.system("git push -u origin %s" % branch)  # ローカルブランチ:リモートブランチ
+        # os.system("git push -u origin %s" % branch)  # ローカルブランチ:リモートブランチ
 
         # プルリクエスト : 要インストール : brew install hub
         # os.system("hub pull-request -m auto_PR_%s" % url)
