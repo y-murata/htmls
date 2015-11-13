@@ -3,19 +3,48 @@
 import os
 from datetime import datetime
 
-for url in open("../work/company.csv", "r"):
-    print(url)
 
-    # html取得
-    os.system("wget --recursive --quiet --accept=html --wait=1 --random-wait --force-directories --directory-prefix=../../sites/ " + url)
+def getNowDate():
+    return datetime.now().strftime("%Y/%m/%d %H:%M:%S")
 
-    # 文字コード変換
-    os.system("nkf -Xw --overwrite ../../sites/**/*.html")
 
-    # 現在日時の取得
-    nowDate = datetime.now().strftime("%Y/%m/%d %H:%M:%S")
+def __main__():
+    listFilePath = "../work/company.csv"
 
-    # wgetによる変更をプッシュ
-    os.system("git add ../../sites/")
-    os.system("git commit -a -m 'auto commit_%s %s'" % (url, nowDate))
-    os.system("git push origin master")
+    # プロセス並列化をする
+
+    for url in open(listFilePath, "r"):
+        print(url)
+
+        # ブランチを切って切り替える
+        os.system("git branch -b %s" % url)
+
+        # wgetによりhtmlを取得
+        ## オプションと説明の一覧
+        os.system(
+            "wget --recursive --quiet --accept=html --wait=1 --random-wait --force-directories --directory-prefix=../../sites/ " + url)
+
+        # 取得ファイルの文字コード変換
+        os.system("nkf -Xw --overwrite ../../sites/**/*.html")
+
+        # コミットコメント用に現在日時の取得
+        nowDate = getNowDate()
+
+        # 取得したファイルをプッシュする
+        os.system("git add ../../sites/")
+        os.system("git commit -a -m 'auto commit_%s %s'" % (url, nowDate))
+        os.system("git push -u origin %s" % url)  # ローカルブランチ:リモートブランチ
+
+        # プルリクエスト : 要インストール : brew install hub
+        os.system("git pull-request")
+
+        # masterに移動，最新をプル
+        os.system("git checkout master")
+        os.system("git pull -u origin master")
+
+        # マージする
+        ## マージするときはmasterのHEADに行ってマージしないといけない
+        os.system("git merge %s --no-ff" % url)
+
+        # ブランチを削除する
+        os.system("git branch -D %s" % url)
