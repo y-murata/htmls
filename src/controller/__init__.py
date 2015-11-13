@@ -37,7 +37,7 @@ if __name__ == '__main__':
         os.system("git push -u origin %s" % branch)  # ローカルブランチ:リモートブランチ
 
         # プルリクエスト : 要インストール : brew install hub
-        os.system("git pull-request")
+        os.system("hub pull-request")
 
         # masterに移動，最新をプル
         os.system("git checkout master")
