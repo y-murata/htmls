@@ -8,7 +8,7 @@ def getNowDate():
     return datetime.now().strftime("%Y/%m/%d %H:%M:%S")
 
 
-def __main__():
+if __name__ == '__main__':
     listFilePath = "../work/company.csv"
 
     # プロセス並列化をする
@@ -17,7 +17,7 @@ def __main__():
         print(url)
 
         # ブランチを切って切り替える
-        os.system("git branch -b %s" % url)
+        os.system("git checkout -b %s" % url)
 
         # wgetによりhtmlを取得
         ## オプションと説明の一覧
