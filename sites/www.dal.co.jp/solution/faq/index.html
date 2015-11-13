@@ -1,0 +1,434 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis" />
+<meta name="keywords" content="EDI,B2B,DAL,ACMS,ebXML MS,EDIINT AS2,AnyTran,JX手順,JCA手順,流通BMS,共同実証,Web-EDI,流通SCM" />				
+<meta name="description" content="流通BMSや流通BMSを利用してシステム構築をする際のよくある質問（FAQ）です。" />
+<title>DAL－データ・アプリケーション｜ソリューション：流通BMSと導入ポイント | よくある質問(FAQ)</title>
+<link rel="stylesheet" type="text/css" href="../../css/base.css" media="screen, print" />
+<link rel="stylesheet" type="text/css" href="../../css/common.css" media="screen, print" />
+<link rel="stylesheet" type="text/css" href="../../css/font.css" media="screen, print" />
+<link rel="stylesheet" type="text/css" href="../css/solution.css" media="screen, print" />
+<script type="text/javascript" src="../../js/fw.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22731513-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body class="solution" onload="MM_preloadImages('../../images/navi/navi_product2.gif','../../images/navi/navi_download2.gif','../../images/navi/navi_shiryo2.gif','../../images/navi/gl_product2.gif','../../images/navi/gl_case2.gif','../../images/navi/gl_download2.gif','../../images/navi/gl_partner2.gif','../../images/navi/gl_seminar2.gif','../../images/navi/gl_inquiry2.gif','../../images/gl_sub_company2.gif','../../images/gl_sub_ir2.gif','../../images/gl_sub_recruit2.gif','../../images/gl_sub_sitemap2.gif','../../images/gl_sub_customer2.gif','../images/navi_product2.gif','../images/navi_product_s2.gif','../images/navi_case2.gif','../images/navi_download2.gif','../images/navi_shiryo2.gif')">
+
+<a name="top"></a>
+<div id="container">
+<script type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<script type="text/JavaScript">
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+<body onLoad="MM_preloadImages('/images/navi/gl_product2.gif','/images/navi/gl_case2.gif','/images/navi/gl_download2.gif','/images/navi/gl_partner2.gif','/images/navi/gl_seminar2.gif','/images/navi/gl_inquiry2.gif','/images/gl_sub_ir2.gif','/images/gl_sub_customer2.gif','/images/gl_sub_partnersportal_2.gif')">
+<div id="globalNav">
+<table width="753" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td colspan="2" bgcolor="#000000"><img src="/images/spacer.gif" alt="" width="1" height="5" /></td>
+</tr>
+<tr>
+<td><a href="/"><img src="/images/logo.gif" alt="DAL 株式会社データアプリケーション" width="184" height="53" border="0" /></a></td>
+<td align="right"><table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+  <td><a href="/company/greeting.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image29','','/images/gl_sub_company2.gif',1)"><img src="/images/gl_sub_company.gif" alt="会社案内" name="Image29" width="70" height="17" border="0" id="Image29" /></a></td>
+  <td><a href="/ir/index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image30','','/images/gl_sub_ir2.gif',1)"><img src="/images/gl_sub_ir.gif"  alt="IR情報"name="Image30" width="64" height="17" border="0" id="Image30" /></a></td>
+  <td><a href="/pressrelease.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image301','','/images/gl_sub_pressr2.gif',1)"><img src="/images/gl_sub_pressr.gif"  alt="プレスリリース"name="Image301" width="112" height="17" border="0" id="Image301" /></a></td>
+  <td><a href="https://www.dal.co.jp/form/inq.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image304','','/images/gl_sub_inquiry2.gif',1)"><img src="/images/gl_sub_inquiry.gif" alt="お問い合わせ" name="Image304" width="97" height="17" border="0" id="Image34" /></a></td>
+  <td align="left"><a href="/sitemap.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image32','','/images/gl_sub_sitemap2.gif',1)"><img src="/images/gl_sub_sitemap.gif" alt="サイトマップ" name="Image32" width="85" height="17" border="0" id="Image32" /></a></td>
+  <td>&nbsp;</td>
+  </tr>
+</table>  
+  <table width="100" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image332','','/images/gl_sub_customer2.gif',1)"><img src="/images/gl_sub_customer.gif" alt="カスタマーサポート" name="Image332" width="131" height="27" hspace="5" border="0" id="Image332" onclick="MM_openBrWindow('/systemstoppage/','','location=yes,status=yes,scrollbars=yes,resizable=yes,width=800,height=666')" /></a></td>
+      <td><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image3311','','/images/gl_sub_partnersportal_2.gif',1)"><img src="/images/gl_sub_partnersportal.gif" alt="パートナーズポータル" name="Image3311" width="131" height="27" hspace="5" border="0" id="Image3311" onclick="MM_openBrWindow('https://www.dal.co.jp/pp/','','location=yes,status=yes,scrollbars=yes,resizable=yes,width=800,height=580')" /></a></td>
+    </tr>
+  </table></td>
+</tr>
+</table>
+
+<table width="753" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td width="124"><a href="/products/list.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image21','','/images/navi/gl_product2.gif',1)"><img src="/images/navi/gl_product.gif" alt="製品情報" name="Image21" width="124" height="25" border="0" id="Image21" /></a></td>
+<td width="124"><a href="/casestudies/company.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image22','','/images/navi/gl_case2.gif',1)"><img src="/images/navi/gl_case.gif" alt="事例紹介" name="Image22" width="124" height="25" border="0" id="Image22" /></a></td>
+<td width="130"><a href="/contact/trial_dl.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image23','','/images/navi/gl_download2.gif',1)"><img src="/images/navi/gl_download.gif" alt="製品ダウンロード" name="Image23" width="130" height="25" border="0" id="Image23" /></a></td>
+<td width="125"><a href="/partner/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image24','','/images/navi/gl_partner2.gif',1)"><img src="/images/navi/gl_partner.gif" alt="パートナー紹介" name="Image24" width="125" height="25" border="0" id="Image24" /></a></td>
+<td width="127"><a href="/seminar/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image25','','/images/navi/gl_seminar2.gif',1)"><img src="/images/navi/gl_seminar.gif" alt="セミナー／トレーニング" name="Image25" width="126" height="25" border="0" id="Image25" /></a></td>
+<td width="124"><a href="https://www.dal.co.jp/form/datadl.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image26','','/images/navi/gl_inquiry2.gif',1)"><img src="/images/navi/gl_inquiry.gif" alt="資料ダウンロード" name="Image26" width="124" height="25" border="0" id="Image26" /></a></td>
+</tr>
+</table>
+</div>
+
+<div id="path"><span class="line"><a href="../../">HOME</a>&nbsp;&gt;&nbsp;<a href="../index.html">ソリューション：流通BMSと導入ポイント</a>&nbsp;&gt;&nbsp;よくある質問(FAQ)</span></div>
+<div id="wrap">
+<div id="contents">
+		<div id="category">
+		<h1>流通BMSと導入ポイント</h1>
+		<p>様々な形態のB2B（企業間電子取引)を成功に導くミドルウェア製品を提供しています。</p>	
+		</div>
+		
+<div id="etcLink">
+<ul>
+<li><a href="https://www.dal.co.jp/form/inq.php"><img src="../images/button_contact.jpg" alt="お問い合わせ" width="65" height="36" /></a></li><!--
+ --><li><a href="https://www.dal.co.jp/form/datadl.php"><img src="../images/button_download.jpg" alt="資料ダウンロード" width="65" height="36" /></a></li><!-- 
+ --></ul>
+</div>
+		
+<div id="product_main">
+
+<h2><img src="images/title_faq.jpg" alt="よくある質問(FAQ)" width="576" height="25" /></h2>
+<p>流通BMSや流通BMSを利用してシステム構築をする際のよくある質問（FAQ）です。</p>
+
+<div class="question">
+<dl>
+<dt>EDIでのインターネットの利用</dt>
+<dd>
+<ul>
+<li><a href="#anchor01">インターネットを使ってEDIするメリットってなに？</a></li>
+<li><a href="#anchor02">インターネットだとデータを覗かれたり壊されたりするのでは？</a></li>
+</ul>
+</dd>
+</dl>
+</div>
+
+<div class="question">
+<dl>
+<dt>企業コードや商品コードの取り扱い</dt>
+<dd>
+<ul>
+<li><a href="#anchor03">GLN企業コードは取得しなきゃいけないの？</a></li>
+<li><a href="#anchor04">GTIN商品コードはどうやって採番するの？</a></li>
+</ul>
+</dd>
+</dl>
+</div>
+
+<div class="question">
+<dl>
+<dt>通信手順</dt>
+<dd>
+<ul>
+<li><a href="#anchor05">通信手順が3種類もあるけど、どれを使えばいいの？</a></li>
+</ul>
+</dd>
+</dl>
+</div>
+
+<div class="question">
+<dl>
+<dt>証明書</dt>
+<dd>
+<ul>
+<li><a href="#anchor06">どうして証明書が必要なの？</a></li>
+<li><a href="#anchor07">どうして流通業界共通認証局発行の証明書しか使っちゃダメなの？</a></li>
+</ul>
+</dd>
+</dl>
+</div>
+
+<div class="question">
+<dl>
+<dt>メッセージ</dt>
+<dd>
+<ul>
+<li><a href="#anchor10">流通BMSではどんなデータを送るの？</a></li>
+<li><a href="#anchor11">どの通信メッセージを使えばいいの？</a></li>
+</ul>
+</dd>
+</dl>
+</div>
+
+<div class="question">
+<dl>
+<dt>XMLスキーマ</dt>
+<dd>
+<ul>
+<li><a href="#anchor12">接続先の業界が新しいXMLスキーマを作ったんだけど、ACMSで使えるの？</a></li>
+<li><a href="#anchor13">接続相手先ごとにXMLスキーマのバージョンが違うんだけど、どうすればいいの？</a></li>
+<li><a href="#anchor14">出来上がったXMLデータが正しいかどうか自信がないんですが…</a></li>
+</ul>
+</dd>
+</dl>
+</div>
+
+<div class="question questionLastChild">
+<dl>
+<dt>協定シートとCPA</dt>
+<dd>
+<ul>
+<li><a href="#anchor15">流通BMS協定シートは誰が書くの？</a></li>
+<li><a href="#anchor16">ebXML&nbsp;MSのCPAは誰が作るの？</a></li>
+</ul>
+</dd>
+</dl>
+</div>
+
+
+<div class="p_list01">
+<h3>EDIでのインターネットの利用</h3>
+</div>
+
+<div class="answer">
+<h4 id="anchor01">インターネットを使ってEDIするメリットってなに？</h4>
+<p>今までEDIに使用していた専用／公衆回線やINS回線と比べると、回線スピードが格段に早いためデータ転送時間が短縮でき、業務効率向上に貢献します。<br />
+さらに、回線使用料が従来の従量課金制から定額制に変わることによって、24時間常時接続が可能になるとともに、料金も安くなりますので、ランニングコスト削減に対しても効果があります。</p>
+</div>
+
+<div class="answer answerLastChild">
+<h4 id="anchor02">インターネットだとデータを覗かれたり壊されたりするのでは？</h4>
+<p>インターネットの世界では、データ漏洩や不正進入などに対するセキュリティ対策を実施する必要がありますので、企業のWeb公開サーバやE-MAILサーバと同様のセキュリティ対策を実施するとともに、SSLを使った通信の暗号化を実施しておけば安心です。<br />
+その上ACMSであれば、データ漏洩や不正進入の可能性があるDMZ（非武装地帯）へ送受信データを置かないEDIシステムを構築できますので、さらに安心です。</p>
+<div><a href="#top">ページトップ▲</a></div>
+</div>
+
+
+<div class="p_list01">
+<h3>企業コードや商品コードの取り扱い</h3>
+</div>
+
+<div class="answer">
+<h4 id="anchor03">GLN企業コードは取得しなきゃいけないの？</h4>
+<p>GLN（Global Location Number）は、流通業界で世界共通の企業コードです。既にJAN企業コード（旧JANメーカーコード）をお持ちであれば、JAN企業コードをそのままGLNとして使用できます（詳細については、流通システム開発センターのWebページをご参照ください）。<br />
+自社の商品にJANコードを表示する必要がある場合には、GLNではなくJAN企業コードが必要となりますので、ご注意ください。</p>
+</div>
+
+<div class="answer answerLastChild">
+<h4 id="anchor04">GTIN商品コードはどうやって採番するの？</h4>
+<p>GTIN（ジーティン）とは、現在使われているJANコード（EANコード）の13桁や8桁、UPCコードの12桁、集合包装用商品コードの14桁など、桁数の違った商品識別コードを、14桁に統一した国際標準の商品コードのことです。コンピュータ上での処理、例えばEDIなどで使用する場合は、異なる桁数を14桁に揃えるために先頭に「0」を埋めて14桁にします。<br />商品コードを14桁に統一することにより、グローバルな商品取引だけでなく、国内の流通サプライチェーン全体においても効率化を図ることができます。</p>
+<div><a href="#top">ページトップ▲</a></div>
+</div>
+
+
+<div class="p_list01">
+<h3>通信手順</h3>
+</div>
+
+<div class="answer answerLastChild">
+<h4 id="anchor05">通信手順が3種類もあるけど、どれを使えばいいの？</h4>
+<p>流通BMSの標準通信プロトコルとしてebXML MS、EDIINT AS2、JX手順の3つのプロトコルが存在し、ebXML MSとEDIINT AS2はサーバ手順、JX手順はクライアント手順です。このうち、JX手順が従来のJCA手順を代替する手順となります。<br />
+基本的には、接続先の小売企業からプロトコルを指定されますので、それに従うことになります。ACMSは上記3手順を全て実装している上に、JCA・全銀・全銀TCP/IP手順やFTPまでもが同一パッケージで動作しますので、送受信の一元管理が可能となります。</p>
+<div><a href="#top">ページトップ▲</a></div>
+</div>
+
+
+<div class="p_list01">
+<h3>証明書</h3>
+</div>
+
+<div class="answer">
+<h4 id="anchor06">どうして証明書が必要なの？</h4>
+<p>電子証明書は、例えば実世界での印鑑証明書のようなものです。この電子証明書は、SSLを使った暗号化通信の実現や通信相手が正しいことを証明するデジタル署名といったコンピュータのセキュリティ技術を利用するために必要となります。</p>
+</div>
+
+<div class="answer answerLastChild">
+<h4 id="anchor07">どうして流通業界共通認証局発行の証明書しか使っちゃダメなの？</h4>
+<p>電子証明書を使う場合、接続相手先の証明書発行局(RA)とその上位認証局(CA)の電子証明書を自社システムに取り込んでおく必要があります。<br />
+そのため、接続相手先がバラバラの発行局から電子証明書を取得してしまうと、その数だけの発行局・認証局証明書を自社システムに取り込む手間が発生してしまいますので、この手間を避けることを目的としています。</p>
+</div>
+
+<div class="p_list01">
+<h3>メッセージ</h3>
+</div>
+
+<div class="answer">
+<h4 id="anchor10">流通BMSではどんなデータを送るの？</h4>
+<p>流通BMSでは7業務14メッセージ（※１）が規定されており、そのデータフォーマットにはXMLを採用しています。<br />
+一般的には、AnyTranのようなトランスレータソフトウェアを使用して業務データをXMLに変換することで、既存システムへの影響を最小限に抑えます。<br />
+<span class="caution">※1 「流通ビジネスメッセージ標準　導入ガイドライン（導入編）」には8業務14メッセージと記載されていますが、ここでは7業務14メッセージに分類します。</span></p>
+</div>
+
+<div class="answer answerLastChild">
+<h4 id="anchor11">どの通信メッセージを使えばいいの？</h4>
+<p>3種類の通信プロトコルのうち、どのプロトコルで接続したとしても、流通BMSで規定された7業務14メッセージを使います。<br />
+この7業務14メッセージのうち、どの通信メッセージを使用するかは、接続相手先ごとの取り決め事項となります。</p>
+<div><a href="#top">ページトップ▲</a></div>
+</div>
+
+
+<div class="p_list01">
+<h3>XMLスキーマ</h3>
+</div>
+
+<div class="answer">
+<h4 id="anchor12">接続先の業界が新しいXMLスキーマを作ったんだけど、ACMSで使えるの？</h4>
+<p>XMLスキーマは辞書のような役割をするもので、通信メッセージのデータ項目や項目ごとの属性・桁数などが記載されています。ACMSはスキーマに依存して動作するソフトウェアではありませんので、新しいXMLスキーマも問題なく使用できます。<br />
+なお、XML変換に使用するトランスレータAnyTranに必要な変換定義については、流通システム開発センターから新しいスキーマが公開された場合、速やかに新しいスキーマに対応した入力／出力データ構造定義を作成し無償でお渡ししますので、これを元に変換定義を作成してください。</p>
+</div>
+
+<div class="answer">
+<h4 id="anchor13">接続相手先ごとにXMLスキーマのバージョンが違うんだけど、どうすればいいの？</h4>
+<p>流通BMSのXMLスキーマには、Ver1.0（グローサリー）、Ver1.1（アパレル）、生鮮Ver1.0（生鮮）の3種類があります。（2008年9月現在）<br />
+ACMSは、スキーマに依存して動作するソフトウェアではありませんので、問題なく使用できます。XMLデータ変換については、各接続先ごとに異なるスキーマバージョンのAnyTran変換定義をお使い頂くことが可能であり、XML妥当性検証についてはチェックに使用するスキーマを実行時に切り替えることが可能です。</p>
+</div>
+
+<div class="answer answerLastChild">
+<h4 id="anchor14">出来上がったXMLデータが正しいかどうか自信がないんですが…</h4>
+<p>トランスレータなどで作成したXMLデータ、もしくは、受信したXMLデータがXMLスキーマの定義に違反していないかどうかチェックするには、XML妥当性検証（バリデーションチェック）を実施します。ACMS（AnyTran）では、XMLデータ変換実行時に同時に実施できます。</p>
+<div><a href="#top">ページトップ▲</a></div>
+</div>
+
+
+<div class="p_list01">
+<h3>協定シートとCPA</h3>
+</div>
+
+<div class="answer">
+<h4 id="anchor15">流通BMS協定シートは誰が書くの？</h4>
+<p>「流通BMS協定シート」は、「共通確認シート」、「EDI基本情報協定シート」、「EDI通信パラメータ協定シート」、「EDI通信パラメータ情報シート」で構成されており、EDIシステムの設定に必要な業務とITのパラメータ調整を行うために使用します。<br />
+この「流通BMS協定シート」は、小売企業が作成して卸・メーカ企業に提示し、卸・メーカ企業は自社情報を記入して返送するルールとなっています。</p>
+</div>
+
+<div class="answer answerLastChild">
+<h4 id="anchor16">ebXML&nbsp;MSのCPAは誰が作るの？</h4>
+<p>ebXML手順の場合、CPA（Collaboration Protocol Agreement）というものが存在します。CPAには、通信設定の定義情報が書かれており、取引を行う企業双方で合意した内容を記述します。ACMSでは、このCPAを読み込むことである程度の通信設定が出来上がるようになっています。CPAの作成は小売企業の作業であり、「流通BMS協定シート」の記述に従って作成します。</p>
+<div><a href="#top">ページトップ▲</a></div>
+</div>
+
+
+<!-- 関連情報 include -->
+<table width="578" border="0" cellspacing="1" cellpadding="0">
+<tr>
+<td colspan="2" bgcolor="#FFFFFF" class="pt_12b"><img src="/images/tit_kanren.gif" alt="関連情報" width="575" height="24" /></td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#C7E0FF" class="pt_12b">■製品情報</td>
+</tr>
+<tr>
+<td width="195" bgcolor="#C7E0FF" class="pt_12b">&nbsp;<a href="/products/edi/index.html">EDI (企業間電子商取引)</a></td>
+<td width="380" bgcolor="#F4FAFF" class="pt_12"><a href="/products/edi/e2x/outline.html">ACMS E<sup>2</sup>X</a>｜<a href="/products/edi/b2b/outline.html">ACMS B2B</a>｜<a href="/products/edi/liteneo/outline.html">ACMS Lite Neo</a>｜<a href="/products/edi/ws/outline.html">ACMS/WS</a>
+<br /><a href="/products/edi/wa/outline.html">ACMS WebAgent</a>｜<a href="/products/edi/monitoring/outline.html">ACMS運用監視機能</a></td>
+</tr>
+<tr>
+<td bgcolor="#C7E0FF" class="pt_12b">&nbsp;<a href="/products/webedi/index.html">Web-EDI</a></td>
+<td bgcolor="#F4FAFF" class="pt_12"><a href="/products/webedi/webframer/outline.html">ACMS WebFramer</a>｜<a href="/products/webedi/template/outline.html">流通BMS対応Web-EDIテンプレート</a>｜<a href="/products/webedi/detrade2/outline.html">ACMS Web/deTradeⅡ</a>｜<a href="/products/webedi/bsw/outline.html">BUYSELWARE</a></td>
+</tr>
+<tr>
+<td bgcolor="#C7E0FF" class="pt_10b">&nbsp;<a href="/products/dhp/index.html">データ ハンドリング プラットフォーム</a></td>
+<td bgcolor="#F4FAFF" class="pt_12"><a href="/products/dhp/raccoon/outline.html">RACCOON</a></td>
+</tr>
+<tr>
+<td bgcolor="#C7E0FF" class="pt_12b">&nbsp;<a href="/products/any/index.html">トランスフォーマ</a></td>
+<td bgcolor="#F4FAFF" class="pt_12"><a href="/products/any/index.html">AnyTran</a></td>
+</tr>
+<tr>
+  <td bgcolor="#C7E0FF" class="pt_12b">&nbsp;販売・サポート終了について</td>
+  <td bgcolor="#F4FAFF" class="pt_12"><a href="/products/eollist.html">「その他の製品」の販売とサポートの終了に関してはこちら</a></td>
+
+</tr>
+</table>
+
+<!-- /関連情報 include -->
+
+<br />
+<table width="575" border="0" cellspacing="0" cellpadding="0">
+
+<tr>
+<td class="pt_12">
+<br /></td>
+</tr>
+<tr>
+<td align="right" class="pt_12"><a href="#top"><img src="../../images/item_pagetop.gif" alt="ページのトップへ" width="52" height="13" border="0" /></a></td>
+</tr>
+</table>
+</div>
+
+</div>
+
+<!-- ローカルナビゲーション include -->
+<div id="lo_navi">
+<ul>
+<li><img src="/solution/images/navi_solution.gif" alt="ソリューション" width="150" height="25" /></li>
+<li><span class="line"><a href="/solution/index.html">流通BMSと導入ポイント</a></span></li>
+<li><span class="line2"><a href="/solution/about/index.html">流通BMSについて</a></span></li>
+<li><span class="line2"><a href="/solution/point/index.html">流通BMS導入のポイント</a></span></li>
+<li><span class="line2"><a href="/solution/products/index.html">流通BMS対応製品</a></span></li>
+<li><span class="line2"><a href="/solution/faq/index.html">よくある質問</a></span></li>
+<li><span class="line2"><a href="/solution/standard/index.html">DAL標準化への取り組み</a></span></li>
+<li><span class="line2 lastChild"><a href="/solution/link/index.html">リンク集</a></span></li>
+<li class="border"><span class="line"><a href="/solution/backrex.html">BACREX対応ソリューション</a></span></li>
+<li class="border"><span class="line"><a href="/solution/faxedi.html">FAX-EDIソリューション</a></span></li>
+<!--
+ for IE6 comment--><li><a href="/products/list.html"><img src="/solution/images/navi_product.gif" alt="製品情報" name="navi_product" width="150" height="26" id="navi_product" onmouseover="MM_swapImage('navi_product','','/solution/images/navi_product2.gif',1)" onmouseout="MM_swapImgRestore()" /></a></li>
+<li><a href="/products/list.html"><img src="/solution/images/navi_product_s.gif" alt="製品検索" name="navi_product_s" width="150" height="26" id="navi_product_s" onmouseover="MM_swapImage('navi_product_s','','/solution/images/navi_product_s2.gif',1)" onmouseout="MM_swapImgRestore()" /></a></li>
+<li><a href="/casestudies/products.html"><img src="/solution/images/navi_case.gif" alt="導入事例" name="navi_case" width="150" height="26" id="navi_case" onmouseover="MM_swapImage('navi_case','','/solution/images/navi_case2.gif',1)" onmouseout="MM_swapImgRestore()" /></a></li>
+<li><a href="/contact/trial_dl.html"><img src="/solution/images/navi_download.gif" alt="製品ダウンロード" name="navi_download" width="150" height="26" id="navi_download" onmouseover="MM_swapImage('navi_download','','/solution/images/navi_download2.gif',1)" onmouseout="MM_swapImgRestore()" /></a></li>
+<li><a href="https://www.dal.co.jp/form/datadl.php"><img src="/solution/images/navi_shiryo.gif" alt="資料ダウンロード" name="navi_shiryo" width="150" height="26" id="navi_shiryo" onmouseover="MM_swapImage('navi_shiryo','','/solution/images/navi_shiryo2.gif',1)" onmouseout="MM_swapImgRestore()" /></a></li>
+</ul>
+
+<div id="navi_bnr"> <a href="/products/dhp/raccoon/outline.html"><img src="/images/navi/bnr_raccoon.gif" alt="RACCOON" border="0" /></a> <a href="/webframer/"><img src="/images/navi/bnr_webframer.gif" alt="ACMS WebFramer" border="0" /></a></div>
+</div>
+<!-- /ローカルナビゲーション include  -->
+
+</div>
+</div>
+
+<div id="footer">
+<table width="100%" border="0" align="right" cellpadding="0" cellspacing="0">
+<tr>
+  <td align="left" id="ftlink">&nbsp;&nbsp;&nbsp;<a href="/policy/index.html">プライバシーポリシー</a></td>
+<td align="right">Copyright 2012 Data Applications Co., Ltd.&nbsp;&nbsp;&nbsp;</td>
+</tr>
+</table>
+</div>
+<!--
+<div id="footer">
+<table border="0" align="right" cellpadding="0" cellspacing="0">
+<tr>
+<td>Copyright 2012 Data Applications Co., Ltd.</td>
+</tr>
+</table>
+</div>
+-->
+<!-- Visionalist tag start -->
+<SCRIPT type="text/javascript" src="https://www04.tracer.jp/VL/Trace?c=bs6390&p=SLfaq"></SCRIPT>
+<!-- Visionalist tag end -->
+
+<script language="javascript">
+<!--
+    document.write("<img src='https://car11.kaitaku.biz/car/beacon/BeaconReceiver.jsp?bid=BCID00626907366&title=" + document.title + "&charset=" + document.charset + "&characterSet=" + document.characterSet + "&refererEx=" + escape(document.referrer) + "'>");
+-->
+</script>
+
+</body>
+</html>

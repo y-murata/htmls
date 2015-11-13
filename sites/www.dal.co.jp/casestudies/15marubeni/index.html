@@ -1,0 +1,418 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis" />
+<meta name="keywords" content="EDI,B2B,EAI,DAL,ACMS,ACMS E2X,商社,システム連携,丸紅">				
+<meta name="description" content="社内外システム連携基盤を「ACMS E2X」で刷新。60サーバ/36業務システムをシームレスに連携し一元管理を実現">
+<title>DAL－データ・アプリケーション｜導入事例｜丸紅株式会社　導入製品：ACMS E2X</title>
+<link rel="stylesheet" type="text/css" href="../../css/base.css" media="screen, print">
+<link rel="stylesheet" type="text/css" href="../../css/common.css" media="screen, print">
+<link rel="stylesheet" type="text/css" href="../../css/font.css" media="screen, print">
+<script type="text/javascript" src="../../js/fw.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22731513-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script type="text/javascript">
+(function() {
+  var didInit = false;
+  function initMunchkin() {
+    if(didInit === false) {
+      didInit = true;
+      Munchkin.init('648-HCF-038',{"domainLevel":2});
+    }
+  }
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = '//munchkin.marketo.net/munchkin.js';
+  s.onreadystatechange = function() {
+    if (this.readyState == 'complete' || this.readyState == 'loaded') {
+      initMunchkin();
+    }
+  };
+  s.onload = initMunchkin;
+  document.getElementsByTagName('head')[0].appendChild(s);
+})();
+</script>
+</head>
+<body onload="MM_preloadImages('../../images/navi/navi_product2.gif','../../images/navi/navi_download2.gif','../../images/navi/navi_shiryo2.gif','../../images/navi/gl_product2.gif','../../images/navi/gl_case2.gif','../../images/navi/gl_download2.gif','../../images/navi/gl_partner2.gif','../../images/navi/gl_seminar2.gif','../../images/navi/gl_inquiry2.gif','../../images/gl_sub_company2.gif','../../images/gl_sub_ir2.gif','../../images/gl_sub_recruit2.gif','../../images/gl_sub_sitemap2.gif','../../images/gl_sub_customer2.gif')">
+
+<a name="top"></a>
+
+<div id="container">
+<script type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<script type="text/JavaScript">
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+<body onLoad="MM_preloadImages('/images/navi/gl_product2.gif','/images/navi/gl_case2.gif','/images/navi/gl_download2.gif','/images/navi/gl_partner2.gif','/images/navi/gl_seminar2.gif','/images/navi/gl_inquiry2.gif','/images/gl_sub_ir2.gif','/images/gl_sub_customer2.gif','/images/gl_sub_partnersportal_2.gif')">
+<div id="globalNav">
+<table width="753" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td colspan="2" bgcolor="#000000"><img src="/images/spacer.gif" alt="" width="1" height="5" /></td>
+</tr>
+<tr>
+<td><a href="/"><img src="/images/logo.gif" alt="DAL 株式会社データアプリケーション" width="184" height="53" border="0" /></a></td>
+<td align="right"><table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+  <td><a href="/company/greeting.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image29','','/images/gl_sub_company2.gif',1)"><img src="/images/gl_sub_company.gif" alt="会社案内" name="Image29" width="70" height="17" border="0" id="Image29" /></a></td>
+  <td><a href="/ir/index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image30','','/images/gl_sub_ir2.gif',1)"><img src="/images/gl_sub_ir.gif"  alt="IR情報"name="Image30" width="64" height="17" border="0" id="Image30" /></a></td>
+  <td><a href="/pressrelease.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image301','','/images/gl_sub_pressr2.gif',1)"><img src="/images/gl_sub_pressr.gif"  alt="プレスリリース"name="Image301" width="112" height="17" border="0" id="Image301" /></a></td>
+  <td><a href="https://www.dal.co.jp/form/inq.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image304','','/images/gl_sub_inquiry2.gif',1)"><img src="/images/gl_sub_inquiry.gif" alt="お問い合わせ" name="Image304" width="97" height="17" border="0" id="Image34" /></a></td>
+  <td align="left"><a href="/sitemap.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image32','','/images/gl_sub_sitemap2.gif',1)"><img src="/images/gl_sub_sitemap.gif" alt="サイトマップ" name="Image32" width="85" height="17" border="0" id="Image32" /></a></td>
+  <td>&nbsp;</td>
+  </tr>
+</table>  
+  <table width="100" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image332','','/images/gl_sub_customer2.gif',1)"><img src="/images/gl_sub_customer.gif" alt="カスタマーサポート" name="Image332" width="131" height="27" hspace="5" border="0" id="Image332" onclick="MM_openBrWindow('/systemstoppage/','','location=yes,status=yes,scrollbars=yes,resizable=yes,width=800,height=666')" /></a></td>
+      <td><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image3311','','/images/gl_sub_partnersportal_2.gif',1)"><img src="/images/gl_sub_partnersportal.gif" alt="パートナーズポータル" name="Image3311" width="131" height="27" hspace="5" border="0" id="Image3311" onclick="MM_openBrWindow('https://www.dal.co.jp/pp/','','location=yes,status=yes,scrollbars=yes,resizable=yes,width=800,height=580')" /></a></td>
+    </tr>
+  </table></td>
+</tr>
+</table>
+
+<table width="753" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td width="124"><a href="/products/list.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image21','','/images/navi/gl_product2.gif',1)"><img src="/images/navi/gl_product.gif" alt="製品情報" name="Image21" width="124" height="25" border="0" id="Image21" /></a></td>
+<td width="124"><a href="/casestudies/company.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image22','','/images/navi/gl_case2.gif',1)"><img src="/images/navi/gl_case.gif" alt="事例紹介" name="Image22" width="124" height="25" border="0" id="Image22" /></a></td>
+<td width="130"><a href="/contact/trial_dl.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image23','','/images/navi/gl_download2.gif',1)"><img src="/images/navi/gl_download.gif" alt="製品ダウンロード" name="Image23" width="130" height="25" border="0" id="Image23" /></a></td>
+<td width="125"><a href="/partner/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image24','','/images/navi/gl_partner2.gif',1)"><img src="/images/navi/gl_partner.gif" alt="パートナー紹介" name="Image24" width="125" height="25" border="0" id="Image24" /></a></td>
+<td width="127"><a href="/seminar/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image25','','/images/navi/gl_seminar2.gif',1)"><img src="/images/navi/gl_seminar.gif" alt="セミナー／トレーニング" name="Image25" width="126" height="25" border="0" id="Image25" /></a></td>
+<td width="124"><a href="https://www.dal.co.jp/form/datadl.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image26','','/images/navi/gl_inquiry2.gif',1)"><img src="/images/navi/gl_inquiry.gif" alt="資料ダウンロード" name="Image26" width="124" height="25" border="0" id="Image26" /></a></td>
+</tr>
+</table>
+</div>
+
+<div id="path"><span class="line"><a href="../../">HOME</a>&nbsp;&gt;&nbsp;<a href="../products.html">導入事例一覧</a>&nbsp;&gt;&nbsp;丸紅株式会社</span></div>
+<div id="wrap">
+<div id="contents">
+<div id="category">
+		<h1>導入事例</h1>
+<p>EDIで1500社以上の導入企業と6000サイトを越えるシステム が日本のビジネスを支えています。</p>
+</div>
+<table width="575" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="470"><h2><img src="images/h_tit.gif" alt="丸紅株式会社" width="241" height="99" /></h2></td>
+<td width="105" align="center" valign="top"><table border="0" align="right" cellpadding="1" cellspacing="0">
+  <tr>
+    <td bgcolor="#E0DFE3"><table width="83" border="0" cellpadding="2" cellspacing="0">
+      <tr>
+        <td width="29" rowspan="2" bgcolor="#FFFFFF"><a href="../pdf/marubeni.pdf" target="_blank"><img src="../images/icn_pdf.gif" alt="PDF" width="29" height="28" border="0" /></a></td>
+        <td width="42" bgcolor="#FFFFFF"><a href="../pdf/marubeni.pdf" target="_blank"><img src="../images/icn_pdf2.gif" alt="PDF版" width="42" height="15" border="0" /></a></td>
+      </tr>
+      <tr>
+        <td align="center" bgcolor="#FFFFFF" class="pt_12n"><a href="../pdf/marubeni.pdf" target="_blank">1.31MB</a></td>
+      </tr>
+    </table></td>
+  </tr>
+</table></td>
+</tr>
+</table>
+<table width="575" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="pt_12"><img src="../../images/spacer.gif" alt="" width="2" height="10" />
+<table width="575" border="0" cellspacing="1" cellpadding="0">
+<tr>
+<td bgcolor="#E9E9EB" class="pt_12b"><table width="575" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="13" class="pt_12"><img src="../../images/item_bar01.gif" alt="" width="13" height="20" /></td>
+<td width="65" bgcolor="#E9E9EB" class="pt_12">導入製品：</td>
+<td width="493" bgcolor="#E9E9EB" class="pt_12">ACMS E<sup>2</sup>X</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td bgcolor="#E9E9EB" class="pt_12b"><table width="575" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="13" class="pt_12"><img src="../../images/item_bar01.gif" alt="" width="13" height="20" /></td>
+<td width="65" bgcolor="#E9E9EB" class="pt_12">業&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;種：</td>
+<td width="497" bgcolor="#E9E9EB" class="pt_12">商社・卸</td>
+</tr>
+</table></td>
+</tr>
+</table>
+<br />
+<h3><img src="images/h_catch.gif" alt="社内外システム連携基盤を「ACMS E2X」で全面刷新
+60サーバ/36業務システムをシームレスに連携し一元管理を実現" width="480" height="37" /></h3>
+<br /></td>
+</tr>
+<tr>
+<td bgcolor="#666666"><img src="../../images/spacer.gif" alt="" width="2" height="4" /></td>
+</tr>
+</table>
+<br />
+<table width="575" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="218" valign="top"><table width="218" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td><img src="images/h_p01.jpg" alt="隅倉 啓介 氏" width="90" height="97" /></td>
+<td><img src="../../images/spacer.gif" alt="" width="6" height="2" /></td>
+<td width="128" valign="bottom" class="pt_10">
+
+丸紅株式会社<br />
+情報企画部<br />
+企画推進課長<br />
+<strong>隅倉 啓介 氏</strong></td>
+</tr>
+</table>
+<img src="../../images/spacer.gif" alt="" width="8" height="5" /><br />
+<table width="218" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td><img src="images/h_p02.jpg" alt="石本 宏 氏" width="90" height="97" /></td>
+<td><img src="../../images/spacer.gif" alt="" width="6" height="2" /></td>
+<td width="128" valign="bottom" class="pt_10"><br />
+  丸紅<br />情報システムズ株式会社<br />
+  アプリケーションサービス部<br />
+  部長代理<br />
+  <strong>石本 宏 氏</strong></td>
+</tr>
+</table>
+<img src="../../images/spacer.gif" alt="" width="8" height="5" /><br />
+<table width="218" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td><img src="images/h_p03.jpg" alt="草川 大治 氏" width="90" height="97" /></td>
+<td><img src="../../images/spacer.gif" alt="" width="6" height="2" /></td>
+<td width="128" valign="bottom" class="pt_10">丸紅<br />情報システムズ株式会社<br />
+  アプリケーションサービス部<br />
+  AS第1チーム<br />
+  課長代理<br />
+  <strong>草川 大治 氏</strong></td>
+</tr>
+</table></td>
+<td width="357" valign="top" class="pt_12"><p>　総合商社大手の丸紅株式会社（以下丸紅）では、取引先との電子商取引を支えるEDIサーバの再構築を実施した。旧システムでは各種業務サーバとEDIサーバの連携が個別に行われており、システム環境の複雑化やコスト増大などの課題が生じていた。こうした点を解消すると同時に、EAIによるシームレスな社内システム間連携を実現するのが今回の狙いだ。同社では新たなEDI/EAI基盤として、DALが提供するB2Bインテグレーション・サーバ「ACMS E<sup>2</sup>X」を採用。EDI環境とEAI環境を一元化し、運用管理負荷の軽減やITコストの削減を実現している。</p>
+<br />
+<table width="350" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td bgcolor="#F7F7F7"><img src="../../images/spacer.gif" alt="" width="5" height="5" />
+<table width="340" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td width="14" valign="top" bgcolor="#F7F7F7"><img src="../../images/item_arrow01.gif" alt="" width="19" height="10" /></td>
+<td width="331" bgcolor="#F7F7F7" class="pt_12"><a href="#h01">長年培った総合力を活かしさらなる飛躍を目指す</a></td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#F7F7F7"><img src="../../images/spacer.gif" alt="" width="2" height="4" /></td>
+</tr>
+<tr>
+<td valign="top" bgcolor="#F7F7F7"><img src="../../images/item_arrow01.gif" alt="" width="19" height="10" /></td>
+<td bgcolor="#F7F7F7" class="pt_12"><a href="#h02">EDIサーバの再構築とEAI導入を同時に実施</a></td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#F7F7F7"><img src="../../images/spacer.gif" alt="" width="2" height="4" /></td>
+</tr>
+<tr>
+<td valign="top" bgcolor="#F7F7F7"><img src="../../images/item_arrow01.gif" alt="" width="19" height="10" /></td>
+<td bgcolor="#F7F7F7" class="pt_12"><a href="#h03">「ACMS E<sup>2</sup>X」でプラットフォームの異なるシステム間をシンプルに連携</a></td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#F7F7F7"><img src="../../images/spacer.gif" alt="" width="2" height="4" /></td>
+</tr>
+<tr>
+<td valign="top" bgcolor="#F7F7F7"><img src="../../images/item_arrow01.gif" alt="" width="19" height="10" /></td>
+<td bgcolor="#F7F7F7" class="pt_12"><a href="#h04">大容量データを短時間で伝送、ITコストの削減にも成功</a></td>
+</tr>
+</table>
+<img src="../../images/spacer.gif" alt="" width="5" height="5" /> </td>
+</tr>
+</table></td>
+</tr>
+</table>
+<br />
+<table width="575" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="pt_12"><a name="h01" id="h01"></a>
+<h4><img src="images/h01_tit.gif" alt="長年培った総合力を活かしさらなる飛躍を目指す" width="395" height="20" /></h4>
+<br />
+<p>　日本を代表する総合商社として、一般にも広く知られている丸紅。食料品や繊維などの身近な分野から、化学、エネルギー、重工業分野に至るまで、幅広い領域でビジネスを展開している。現在は2003年度から始まった中期経営計画「Vプラン」を完遂し、成長（Growth）と栄光（Glory）の頭文字を冠した新中期経営計画「Gプラン」を推進中だ。<br />
+　こうした同社の事業展開を支えているのが、IT部門である情報企画部だ。企画推進課長を務める隅倉 啓介氏は「ビジネスのグローバル化・スピード化に対応していく上では、IT活用が重要なポイントになります。ユーザー部門の期待に応えられるよう、システム環境の整備・拡充に注力していきたい」と語る。</p>
+<br /></td>
+</tr>
+<tr>
+<td class="pt_12"><a name="h02" id="h02"></a>
+<h4><img src="images/h02_tit.gif" alt="EDIサーバの再構築とEAI導入を同時に実施" width="381" height="20" /></h4>
+<br />
+<p>　同社では様々な業務システムを構築・運用しているが、2005年初頭より一つのプロジェクトに着手した。それは取引先とのデータ伝送を担うEDIサーバの再構築である。隅倉氏はその背景について「旧システム
+は導入から既に7～8年が経過し、様々な面で不都合な点が目立ってきました。そこで環境を全面的に刷新し、今後に向けた新たなシステム基盤を確立したいと考えたのです」と説明する。<br />
+　たとえば旧EDIシステムでは、ビジネスの拡大や取引先の増大などに伴い順次拡充してきたため、取引データの転送ルートや伝送プロトコル、ソフトウェアが複数存在していた。このためシステム間連携の
+複雑化が進み、コストや運用管理負荷の増大などの課題が生じていたのだ。そこで今回の再構築を契機に、これらの点を解消したいと考えたわけである。<br />
+　また、今回のプロジェクトでは、総合商社として多くの部門を配し各部門に存在する業務システムをEAIの導入によりシームレスに連携するという新たな大きなテーマも設定された。従来は各業務システム間の連携についても、EDIと同様個別に作り込みが行われていた。これをEAIによってシームレスな連携が実現でき運用を一元管理することで、シンプルかつ効率的なIT環境の実現を目指したのだ。<br />
+　ここで採用されたのが、DALが提供するB2Bインテグレーション・サーバ「ACMS E<sup>2</sup>X」である。今回の構築作業を担当した丸紅情報システムズ株式会社の石本 宏　アプリケーションサービス部 部長代理は、その理由を「ACMS E<sup>2</sup>Xなら、EDIの機能とEAIの機能を一つの製品でカバーすることができます。それぞれの機能を別々の製品で構築する場合に比べて、低コストで安定的な環境を実現できます」と説明する。
+また、同 アプリケーションサービス部 AS第1チーム 草川 大治課長代理も「ACMS E<sup>2</sup>Xを導入すれば、システム連携のリアルタイム性も高められます。たとえば各システムに配布するマスターなどについても、バッチでまとめて送るのではなく、必要に応じてタイムリーに更新できます」と続ける。</p></td>
+</tr>
+<tr>
+  <td class="pt_12"><img src="images/h02_item01.gif" alt="" width="575" height="237" /><br /><br /></td>
+</tr>
+<tr>
+<td class="pt_12"><a name="h03" id="h03"></a>
+<h4><img src="images/h03_tit.gif" alt="「ACMS E2X」でプラットフォームの異なるシステム間をシンプルに連携" width="448" height="38" /></h4>
+<br />
+<p>　実際の構築作業には、2006年2月より着手。旧EDIシステムでは「伝送レコード長に制限がある」「相手先からの可変長データを固定長変換できない」「文字コード変換機能が2バイトコードに対応していない」「同報配信を行う際にはシェル作成が必要」などの点が課題となっていたが、ACMS E<sup>2</sup>Xの機能を利用することで個別開発することなくすべて解消した。<br />
+　とはいえ、再構築にあたってまったく苦労らしい苦労がなかったわけではない。今回のプロジェクトでは、対象となる業務システムが36システム、サーバ台数で60台以上にも上る。それだけに、先ず現状データがどう流れているのかを把握するのが大変だったという。「たとえば、課題の一つであった可変長データの固定長変換では、一度メインフレームにデータ送って変換する形で対応を行っていました。こうしたパターンを全部洗い出し、送信元・受信先という明快な形に整理するのは、多少時間が掛かりましたね」(草川氏)。<br />
+　もっとも、データの流れがハッキリしている場合には、ACMS E<sup>2</sup>Xの導入にほとんど手間は掛からなかったとのこと。草川氏は「比較的最近構築された業務システムなどでは、作業着手から一ヶ月程度で統合できました」と語る。<br />
+　連携対象となるシステムには、UNIX、Windows、OS/400など様々なプラットフォームが混在していた。しかしACMS E<sup>2</sup>XはJavaベースで動作するため、こうしたプラットフォームの違いもほとんど意識する必要
+がない。草川氏は「再構築プロジェクトを進めていく上では、このことも大きなメリットになった」と語る。</p>
+<br /></td>
+</tr>
+<tr>
+<td class="pt_12"><a name="h04" id="h04"></a>
+<h4><img src="images/h04_tit.gif" alt="大容量データを短時間で伝送、ITコストの削減にも成功" width="448" height="20" /></h4>
+<br />
+<p>　同社ではACMS E<sup>2</sup>Xへの切り替えを順次行い、2007年3月に全面移行を完了した。新システムの導入効果について、石本氏は「まず管理が行いやすくなった点が挙げられます。社内・社外すべてのデータ伝送が一元的に管理できますから、システムごとに個別対応を行う必要がありません。伝送状況の確認なども、送信先の状況まで含めて確認できるようになりました」と語る。<br />
+　同社全体で交換されているデータ種は約3000ファイル。一日あたりに交換されるデータは約1600ファイル、容量にして通常日でも2.8GBにも達するが、ACMS E<sup>2</sup>Xはこれを確実に処理し続けている。しかも伝
+送スピードも、以前に比べて飛躍的に向上した。石本氏は「旧システムでは40～50分掛かっていた伝送が、わずか数分で処理できるようになりました。最初は本当に送れているのか疑ったほどです」とにこやかに語る。これほど短時間で処理が完了できれば、何か障害などがあった場合なども余裕を持って対応することが可能だ。<br />
+　また、コスト削減の面でも大きな効果が得られた。隅倉氏は「各サーバに個別に導入していた伝送ツールが不要になりましたし、保守費用も大きく下がりました。旧システムと比較して、コストは1/2以下になりましたね」と満足げに語る。<br />
+　EDIサーバの刷新、EAIによるシームレスな社内システム連携、ITコスト削減という3つの目的を、見事に実現した同社だが、今後もよりリアルなシステム連携に向けての改善を続けていくとのこと。ACMS E<sup>2</sup>Xが
+活躍する場面も、さらに増えていきそうだ。</p>
+<br />
+<br /></td>
+</tr>
+</table>
+<br />
+<br />
+					
+<div class="pt_12" align="center">
+<a href="../products.html">
+製品別導入事例一覧に戻る
+</a>
+　|　
+<a href="../company.html">
+業種別導入事例一覧に戻る
+</a>
+</div>
+<br />
+					
+<table width="575" border="0" cellspacing="0" cellpadding="0">
+
+<tr>
+<td class="pt_12">
+<table width="578" border="0" cellspacing="1" cellpadding="0">
+<tr>
+<td colspan="2" bgcolor="#FFFFFF" class="pt_12b"><img src="/images/tit_kanren.gif" alt="関連情報" width="575" height="24" /></td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#C7E0FF" class="pt_12b">■製品情報</td>
+</tr>
+<tr>
+<td width="195" bgcolor="#C7E0FF" class="pt_12b">&nbsp;<a href="/products/edi/index.html">EDI (企業間電子商取引)</a></td>
+<td width="380" bgcolor="#F4FAFF" class="pt_12"><a href="/products/edi/e2x/outline.html">ACMS E<sup>2</sup>X</a>｜<a href="/products/edi/b2b/outline.html">ACMS B2B</a>｜<a href="/products/edi/liteneo/outline.html">ACMS Lite Neo</a>｜<a href="/products/edi/ws/outline.html">ACMS/WS</a>
+<br /><a href="/products/edi/wa/outline.html">ACMS WebAgent</a>｜<a href="/products/edi/monitoring/outline.html">ACMS運用監視機能</a></td>
+</tr>
+<tr>
+<td bgcolor="#C7E0FF" class="pt_12b">&nbsp;<a href="/products/webedi/index.html">Web-EDI</a></td>
+<td bgcolor="#F4FAFF" class="pt_12"><a href="/products/webedi/webframer/outline.html">ACMS WebFramer</a>｜<a href="/products/webedi/template/outline.html">流通BMS対応Web-EDIテンプレート</a>｜<a href="/products/webedi/detrade2/outline.html">ACMS Web/deTradeⅡ</a>｜<a href="/products/webedi/bsw/outline.html">BUYSELWARE</a></td>
+</tr>
+<tr>
+<td bgcolor="#C7E0FF" class="pt_10b">&nbsp;<a href="/products/dhp/index.html">データ ハンドリング プラットフォーム</a></td>
+<td bgcolor="#F4FAFF" class="pt_12"><a href="/products/dhp/raccoon/outline.html">RACCOON</a></td>
+</tr>
+<tr>
+<td bgcolor="#C7E0FF" class="pt_12b">&nbsp;<a href="/products/any/index.html">トランスフォーマ</a></td>
+<td bgcolor="#F4FAFF" class="pt_12"><a href="/products/any/index.html">AnyTran</a></td>
+</tr>
+<tr>
+  <td bgcolor="#C7E0FF" class="pt_12b">&nbsp;販売・サポート終了について</td>
+  <td bgcolor="#F4FAFF" class="pt_12"><a href="/products/eollist.html">「その他の製品」の販売とサポートの終了に関してはこちら</a></td>
+
+</tr>
+</table>
+
+
+<br></td>
+</tr>
+<tr>
+<td align="right" class="pt_12"><a href="#top"><img src="../../images/item_pagetop.gif" alt="ページのトップへ" width="52" height="13" border="0"></a></td>
+</tr>
+</table>
+</div>
+
+<div id="lo_navi">
+<ul>
+<li><a href="/products/list.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('product','','/images/navi/navi_product2.gif',1)"><img src="/images/navi/navi_product.gif" name="product" width="150" height="25" border="0" id="product" /></a></li>
+<li><span class="line"><a href="/products/edi/index.html">EDI (企業間電子商取引)</a></span></li>
+<li><span class="line"><a href="/products/webedi/index.html">Web-EDI</a></span></li>
+<li class="t-row"><span class="t-line"><a href="/products/dhp/">データ ハンドリング<br />プラットフォーム</a></span></li>
+<li><span class="line"><a href="/products/any/">トランスフォーマ</a></span></li>
+<li><span class="line"><a href="/products/solution/">ソリューション</a></span></li>
+<li><span class="line"><a href="/products/support.html">製品サポートについて</a></span></li>
+<li><span class="line"><a href="/products/export.html">海外輸出について</a></span></li>
+
+<li><img src="/images/navi/navi_product_s.gif" alt="製品検索" /></li>
+<li><span class="line"><a href="/products/list.html">製品一覧から探す</a></span></li>
+<li><span class="line"><a href="/products/map.html">製品マップから探す</a></span></li>
+<li><span class="line"><a href="/products/problem.html">課題から探す</a></span></li>
+<li><img src="/images/navi/navi_case.gif" alt="導入事例" /></li>
+<li><span class="line active"><a href="/casestudies/products.html">製品別導入事例</a></span></li>
+<li><span class="line active"><a href="/casestudies/company.html">業種別導入事例</a></span></li>
+<li><a href="/contact/trial_dl.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('download','','/images/navi/navi_download2.gif',1)"><img src="/images/navi/navi_download.gif" name="download" width="150" height="25" border="0" id="download" /></a></li>
+<li class="t-row"><span class="t-line"><a href="https://www.dal.co.jp/form/trial2.php">評価版ダウンロード<br />
+  (ACMS Lite Neo)</a></span></li>
+<li class="t-row"><span class="t-line"><a href="https://www.dal.co.jp/form/trial.php">評価版ダウンロード<br />
+  (AnyTranDeskTop版他)</a></span></li>
+<li><a href="https://www.dal.co.jp/form/datadl.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('shiryo','','/images/navi/navi_shiryo2.gif',1)"><img src="/images/navi/navi_shiryo.gif" name="shiryo" width="150" height="25" border="0" id="shiryo" alt="資料ダウンロード" /></a></li>
+</ul>
+
+<div id="navi_bnr"> <a href="/products/dhp/raccoon/outline.html"><img src="/images/navi/bnr_raccoon.gif" alt="RACCOON" border="0" /></a> <a href="/webframer/"><img src="/images/navi/bnr_webframer.gif" alt="ACMS WebFramer" border="0" /></a></div>
+</div>
+
+</div>
+</div>
+
+<div id="footer">
+<table width="100%" border="0" align="right" cellpadding="0" cellspacing="0">
+<tr>
+  <td align="left" id="ftlink">&nbsp;&nbsp;&nbsp;<a href="/policy/index.html">プライバシーポリシー</a></td>
+<td align="right">Copyright 2012 Data Applications Co., Ltd.&nbsp;&nbsp;&nbsp;</td>
+</tr>
+</table>
+</div>
+<!-- Visionalist tag start -->
+<SCRIPT type="text/javascript" src="https://www04.tracer.jp/VL/Trace?c=bs6390&p=donyu15"></SCRIPT>
+<!-- Visionalist tag end -->
+
+<script language="javascript">
+<!--
+    document.write("<img src='https://car11.kaitaku.biz/car/beacon/BeaconReceiver.jsp?bid=BCID00626907366&title=" + document.title + "&charset=" + document.charset + "&characterSet=" + document.characterSet + "&refererEx=" + escape(document.referrer) + "'>");
+-->
+</script>
+
+</body>
+</html>

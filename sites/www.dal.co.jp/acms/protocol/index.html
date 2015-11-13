@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="インターネットEDI,EDI,Web-EDI,通信プロトコル, DAL,データ・アプリケーション" />
+<meta name="description" content="インターネットEDIに欠かせない5大通信プロトコル（EDIINT AS2,OFTP2,ebXML MS,JX手順,SFTP）のポイントを簡単解説！DALのACMSシリーズなら全てに対応。" />
+<link type="text/css" rel="stylesheet" href="css/import.css" media="all" />
+<title>5大通信プロコトルを簡単解説　これからの「インターネットEDI」</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/scrollsmoothly.js"></script>
+
+<script type="text/javascript">
+(function() {
+  var didInit = false;
+  function initMunchkin() {
+    if(didInit === false) {
+      didInit = true;
+      Munchkin.init('648-HCF-038',{"domainLevel":2});
+    }
+  }
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = '//munchkin.marketo.net/munchkin.js';
+  s.onreadystatechange = function() {
+    if (this.readyState == 'complete' || this.readyState == 'loaded') {
+      initMunchkin();
+    }
+  };
+  s.onload = initMunchkin;
+  document.getElementsByTagName('head')[0].appendChild(s);
+})();
+</script>
+</head>
+<body>
+<ul class="menu">
+  <li class="menu-01"><a href="#1">従来型EDIの課題</a></li>
+  <li class="menu-02"><a href="#2">導入のメリット</a></li>
+  <li class="menu-03"><a href="#3">5大通信プロトコル</a></li>
+  <li class="menu-04"><a href="#4">ACMSシリーズ</a></li>
+  <li class="menu-05"><a href="#5">資料ダウンロード</a></li>
+  <li class="menu-06"><a href="#5">お問い合わせ</a></li>
+  <li class="menu-07"><a href="#contents">Topへ</a></li>
+</ul>
+<div id="contents">
+  <div class="content-img1">
+    <div class="wrapper clearfix">
+      <h1>Date Application Company, Limited</h1>
+      <ul>
+        <li class="btn-logo"><a href="http://www.dal.co.jp/" target="_blank">Date Application Company, Limited</a></li>
+      </ul>
+      <h2>5大通信プロコトルを簡単解説　これからの「インターネットEDI」</h2>
+    </div>
+  </div>
+  <div class="content-img2">
+    <div class="wrapper clearfix">
+      <h2>従来型EDIではもう限界　いよいよ「インターネットEDI」の時代へ</h2>
+      <p class="txt-01">従来型EDIやインターネットを介してのメールEDI、Web-EDIでも様々な課題を抱える中、<br />
+        インターネット・プロトコルを利用したインターネットEDIの採用が本格化し、<br />
+        いよいよ「インターネットEDI」の時代に移行し始めました。</p>
+    </div>
+  </div>
+  <div id="1" class="content-img3">
+    <div class="wrapper clearfix">
+      <h2>従来型EDIの課題</h2>
+      <h3>加入電話・ISDNの光回線への移行</h3>
+      <h3>EDIの適用範囲拡大</h3>
+      <h3>通信機器の陳腐化</h3>
+      <h3>グローバルEDIの拡大</h3>
+      <h3>従量制による通信コストの増大</h3>
+    </div>
+  </div>
+  <div class="content-img4">
+    <div class="wrapper clearfix">
+      <h2>上記のような課題がある中、インターネットEDIの導入には次のようなメリットがあります。</h2>
+    </div>
+  </div>
+  <div id="2" class="content-img5">
+    <div class="wrapper clearfix">
+      <h2>インターネットEDI導入のメリット</h2>
+      <h3>グローバル共通のインターネット利用</h3>
+      <h3>安価な通信コスト</h3>
+      <h3>セキュアなデータ交換</h3>
+      <h3>多様なデータ形式</h3>
+      <h3>大容量のデータ交換</h3>
+      <h3>ファイル添付にも対応</h3>
+    </div>
+  </div>
+  <div class="content-img6">
+    <div class="wrapper clearfix">
+      <ul>
+        <li class="btn-09"><a href="https://www.dal.co.jp/form/protocol.php" target="_blank" onclick="_gaq.push(['_trackEvent', 'Click', 'http://www.dal.co.jp/acms/protocol/', '資料ダウンロード（下）', 1, true]);">資料ダウンロード</a></li>
+        <li class="btn-10"><a href="https://www.dal.co.jp/form/inq.php" target="_blank" onclick="_gaq.push(['_trackEvent', 'Click', 'http://www.dal.co.jp/acms/protocol/', 'お問い合わせ（下）', 1, true]);">お問い合わせ</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="3" class="content-img7">
+    <div class="wrapper clearfix">
+      <h2>インターネットEDIを支える5大通信プロコトル</h2>
+      <p class="txt-01">国内の様々な業界でインターネットEDIが利用されており、<br />
+        今後さらに多くの業界での採用が予想されます。<br />
+        海外においても、多くのグローバル企業で「インターネットEDI」を利用しています。<br />
+        <br />
+        それではここで、その「インターネットEDI」を実現する、<br />
+        5大通信プロトコルをご紹介します。</p>
+    </div>
+  </div>
+  <div class="content-img8">
+    <div class="wrapper clearfix">
+      <h2>EDINT AS2</h2>
+      <p class="txt-01">概要<br />
+        IETF EDIINTの活動によりRFC 4130として標準化された通信プロトコル。 HTTPとMIMEをベースとしてセキュアにデータ交換が可能で、ウォルマートやカルフール、Amazonなどの多くのグローバル企業が採用。</p>
+      <p class="txt-01R">採用業界など<br />
+        <span class="maru">●</span>流通BMS（流通BMS協議会）<br />
+        <span class="maru">●</span>EDIサービス<br />
+        <span class="maru">●</span>グローバルEDI</p>
+      <h2>OFTP2</h2>
+      <p class="txt-02"> 概要<br />
+        欧州自動車標準化団体であるOdetteが開発した通信プロトコル。 欧州の自動車業界を中心に利用され、国内の自動車業界でも利用の動きがある。</p>
+      <p class="txt-02R"> 採用業界など<br />
+        <span class="maru">●</span>グローバルEDI（自動車業界）</p>
+      <h2>ebXML MS</h2>
+      <p class="txt-03"> 概要<br />
+        UN/CEFACTとOASISによって開発された通信プロトコル。 アジアを中心に利用され、国内ではバージョン2とバージョン3が様々な業界で利用されている。</p>
+      <p class="txt-03R">採用業界など<br />
+        <span class="maru">●</span>流通BMS（流通BMS協議会）<br />
+        <span class="maru">●</span>JAMP-GP（産業環境管理協会）<br />
+        <span class="maru">●</span>ECALGA（JEITA/ECセンター）<br />
+        <span class="maru">●</span>NACCS（輸出入・港湾関連情報処理センター）<br />
+        <span class="maru">●</span>MD-Net（日本医療機器ネットワーク協会）<br />
+        <span class="maru">●</span>EDIサービス</p>
+      <h2>JX手順</h2>
+      <p class="txt-04">概要<br />
+        日本独自の規格で、SOAP-RPCをベースに中小企業向けのプル型データ交換を可能にした通信プロトコル。 JCA手順の後継プロトコルとされているが、小売・流通業以外の業界も採用。</p>
+      <p class="txt-04R">採用業界など<br />
+        <span class="maru">●</span>流通BMS（流通BMS協議会）<br />
+        <span class="maru">●</span>MD-Net（日本医療機器ネットワーク協会）<br />
+        <span class="maru">●</span>OCCTO（電力広域的運営推進機関）<br />
+        <span class="maru">●</span>EDIサービス</p>
+      <h2>SFTP</h2>
+      <p class="txt-05">概要<br />
+        IETFにより開発されたFTPコマンドのように対話的にファイル転送をするOSに標準実装されている通信プロトコル。 企業内や企業間でのファイル交換に幅広く利用。</p>
+      <p class="txt-05R">採用業界など<br />
+        <span class="maru">●</span>グローバルEDI<br />
+        <span class="maru">●</span>サービス（各種SaaS）連携<br />
+        <span class="maru">●</span>社内・グループ企業間データ連携</p>
+    </div>
+  </div>
+  <div class="content-img9">
+    <div class="wrapper clearfix">
+      <h2>インターネットEDI用通信プロコトルの特徴</h2>
+      <p class="txt-01">各通信プロトコルは、データを<br />
+        保護するために暗号化します。<br />
+        これにより通信途中で第三者に<br />
+        盗み見られたり改ざんされたり<br />
+        することはありません。</p>
+      <p class="txt-02">欠落防止や重複破棄、<br />
+        否認防止などにより<br />
+        実データや添付ファイルの<br />
+        送受信が保証されています。</p>
+      <p class="txt-03">認定機関や標準化団体、<br />
+        ベンダーコミュニティが実施する<br />
+        相互運用性試験により、<br />
+        各ベンダーが提供する製品の<br />
+        相互運用性が保証されています。</p>
+    </div>
+  </div>
+  <div class="content-img10">
+    <div class="wrapper clearfix">
+      <h2>ACMSなら5大通信プロコトルにすべて対応</h2>
+      <p class="txt-00">ACMSシリーズは、国内外問わずインターネットを介したEDIを実現する<br />
+        様々な通信プロトコルと様々なデータフォーマットに対応したデータ変換機能を提供。<br />
+        国内EDIはもとよりグローバルEDIも合わせ支援し、<br />
+        お客様の売上拡大とコスト削減に貢献します。</p>
+      <p class="txt-01">ACMSシリーズの特徴</p>
+      <p class="txt-02"><span>5大通信プロトコルをサポート</span><br />
+        インターネットEDIで利用されている<br />
+        代表的な5つの通信プロトコルを<br />
+        すべてサポート </p>
+      <ul class="txt-02-02 clearfix">
+        <li><span>●</span>EDIINT AS2</li>
+        <li><span>●</span>OFTP2</li>
+        <li><span>●</span>ebXML MS</li>
+        <li><span>●</span>JX手順</li>
+        <li><span>●</span>SFTP</li>
+      </ul>
+      <p class="txt-03"><span>安心の相互運用性</span><br />
+        各プロトコルは、<br />
+        標準化団体や認定機関、<br />
+        ソフトウェアベンダー間の<br />
+        相互運用性の<br />
+        試験も実施しています。</p>
+      <p class="txt-04"><span>簡単に統合運用</span><br />
+        それぞれの異なる仕様の<br />
+        通信プロトコルですが、<br />
+        従来の通信プロトコルと同様に<br />
+        導入は容易で、<br />
+        統一された運用が可能です。</p>
+      <p class="txt-05"><span>XMLも使える形に変換</span><br />
+        インターネットEDIは多くの場合、<br />
+        XML形式を利用しています。<br />
+        データ変換機能で<br />
+        既存の社内フォーマットに変換し、<br />
+        データの取り扱いを容易にします。</p>
+      <p class="txt-06"><span>高信頼性と高可用性</span><br />
+        分散配置ができるため、<br />
+        セキュアで拡張性が高く、<br />
+        耐障害性に優れ<br />
+        可用性の高いEDIシステムを<br />
+        構築できます。</p>
+    </div>
+  </div>
+  <div id="4" class="content-img11">
+    <div class="wrapper clearfix">
+      <h2>ACMSシリーズ利用概念図</h2>
+    </div>
+  </div>
+  <div id="5" class="content-img12">
+    <div class="wrapper clearfix">
+      <h2>ACMSシリーズに興味を持ったら</h2>
+      <ul>
+        <li class="btn-09"><a href="https://www.dal.co.jp/form/protocol.php" target="_blank" onclick="_gaq.push(['_trackEvent', 'Click', 'http://www.dal.co.jp/acms/protocol/', '資料ダウンロード（下）', 1, true]);">資料ダウンロード</a></li>
+        <li class="btn-10"><a href="https://www.dal.co.jp/form/inq.php" target="_blank" onclick="_gaq.push(['_trackEvent', 'Click', 'http://www.dal.co.jp/acms/protocol/', 'お問い合わせ（下）', 1, true]);">お問い合わせ</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="footer">
+    <ul>
+      <li class="btn-logo"><a href="http://www.dal.co.jp/" target="_blank">Date Application Company, Limited</a></li>
+    </ul>
+    <ul class="address">
+      <li><span>●</span>問い合わせ先</li>
+      <li>株式会社データ?アプリケーション</li>
+      <li>〒103-0013 東京都中央区日本橋人形町1丁目3番8号</li>
+      <li>TEL 03-5640-8540（代表）</li>
+      <li>FAX 03-5640-8541 </li>
+    </ul>
+    <address>
+    Copyright&copy;2015 Data Applications Co., Ltd. All rights reserved.
+    </address>
+  </div>
+</div>
+<!-- Google Tag Manager -->
+
+<noscript>
+<iframe src="//www.googletagmanager.com/ns.html?id=GTM-NTHHNC"
+
+height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+
+})(window,document,'script','dataLayer','GTM-NTHHNC');</script> 
+
+<!-- End Google Tag Manager -->
+</body>
+</html>

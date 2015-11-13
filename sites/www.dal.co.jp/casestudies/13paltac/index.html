@@ -1,0 +1,511 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis" />
+<meta name="keywords" content="EDI,B2B,EAI,DAL,ACMS,ebXML,EDIINT AS2,パルタック,paltac,商社,卸,流通BMS,XML,ACMS B2B">				
+<meta name="description" content="流通BMSに準拠した次世代EDIシステムの運用を開始
+ACMSの機能分散で安全性と拡張性を両立">
+<title>DAL－データ・アプリケーション｜導入事例｜株式会社パルタック　導入製品：ACMS B2B</title>
+<link rel="stylesheet" type="text/css" href="../../css/base.css" media="screen, print">
+<link rel="stylesheet" type="text/css" href="../../css/common.css" media="screen, print">
+<link rel="stylesheet" type="text/css" href="../../css/font.css" media="screen, print">
+<script type="text/javascript" src="../../js/fw.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22731513-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script type="text/javascript">
+(function() {
+  var didInit = false;
+  function initMunchkin() {
+    if(didInit === false) {
+      didInit = true;
+      Munchkin.init('648-HCF-038',{"domainLevel":2});
+    }
+  }
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = '//munchkin.marketo.net/munchkin.js';
+  s.onreadystatechange = function() {
+    if (this.readyState == 'complete' || this.readyState == 'loaded') {
+      initMunchkin();
+    }
+  };
+  s.onload = initMunchkin;
+  document.getElementsByTagName('head')[0].appendChild(s);
+})();
+</script>
+</head>
+<body onload="MM_preloadImages('../../images/navi/navi_product2.gif','../../images/navi/navi_download2.gif','../../images/navi/navi_shiryo2.gif','../../images/navi/gl_product2.gif','../../images/navi/gl_case2.gif','../../images/navi/gl_download2.gif','../../images/navi/gl_partner2.gif','../../images/navi/gl_seminar2.gif','../../images/navi/gl_inquiry2.gif','../../images/gl_sub_company2.gif','../../images/gl_sub_ir2.gif','../../images/gl_sub_recruit2.gif','../../images/gl_sub_sitemap2.gif','../../images/gl_sub_customer2.gif')">
+
+<a name="top"></a>
+
+<div id="container">
+<script type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<script type="text/JavaScript">
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+<body onLoad="MM_preloadImages('/images/navi/gl_product2.gif','/images/navi/gl_case2.gif','/images/navi/gl_download2.gif','/images/navi/gl_partner2.gif','/images/navi/gl_seminar2.gif','/images/navi/gl_inquiry2.gif','/images/gl_sub_ir2.gif','/images/gl_sub_customer2.gif','/images/gl_sub_partnersportal_2.gif')">
+<div id="globalNav">
+<table width="753" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td colspan="2" bgcolor="#000000"><img src="/images/spacer.gif" alt="" width="1" height="5" /></td>
+</tr>
+<tr>
+<td><a href="/"><img src="/images/logo.gif" alt="DAL 株式会社データアプリケーション" width="184" height="53" border="0" /></a></td>
+<td align="right"><table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+  <td><a href="/company/greeting.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image29','','/images/gl_sub_company2.gif',1)"><img src="/images/gl_sub_company.gif" alt="会社案内" name="Image29" width="70" height="17" border="0" id="Image29" /></a></td>
+  <td><a href="/ir/index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image30','','/images/gl_sub_ir2.gif',1)"><img src="/images/gl_sub_ir.gif"  alt="IR情報"name="Image30" width="64" height="17" border="0" id="Image30" /></a></td>
+  <td><a href="/pressrelease.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image301','','/images/gl_sub_pressr2.gif',1)"><img src="/images/gl_sub_pressr.gif"  alt="プレスリリース"name="Image301" width="112" height="17" border="0" id="Image301" /></a></td>
+  <td><a href="https://www.dal.co.jp/form/inq.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image304','','/images/gl_sub_inquiry2.gif',1)"><img src="/images/gl_sub_inquiry.gif" alt="お問い合わせ" name="Image304" width="97" height="17" border="0" id="Image34" /></a></td>
+  <td align="left"><a href="/sitemap.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image32','','/images/gl_sub_sitemap2.gif',1)"><img src="/images/gl_sub_sitemap.gif" alt="サイトマップ" name="Image32" width="85" height="17" border="0" id="Image32" /></a></td>
+  <td>&nbsp;</td>
+  </tr>
+</table>  
+  <table width="100" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image332','','/images/gl_sub_customer2.gif',1)"><img src="/images/gl_sub_customer.gif" alt="カスタマーサポート" name="Image332" width="131" height="27" hspace="5" border="0" id="Image332" onclick="MM_openBrWindow('/systemstoppage/','','location=yes,status=yes,scrollbars=yes,resizable=yes,width=800,height=666')" /></a></td>
+      <td><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image3311','','/images/gl_sub_partnersportal_2.gif',1)"><img src="/images/gl_sub_partnersportal.gif" alt="パートナーズポータル" name="Image3311" width="131" height="27" hspace="5" border="0" id="Image3311" onclick="MM_openBrWindow('https://www.dal.co.jp/pp/','','location=yes,status=yes,scrollbars=yes,resizable=yes,width=800,height=580')" /></a></td>
+    </tr>
+  </table></td>
+</tr>
+</table>
+
+<table width="753" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td width="124"><a href="/products/list.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image21','','/images/navi/gl_product2.gif',1)"><img src="/images/navi/gl_product.gif" alt="製品情報" name="Image21" width="124" height="25" border="0" id="Image21" /></a></td>
+<td width="124"><a href="/casestudies/company.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image22','','/images/navi/gl_case2.gif',1)"><img src="/images/navi/gl_case.gif" alt="事例紹介" name="Image22" width="124" height="25" border="0" id="Image22" /></a></td>
+<td width="130"><a href="/contact/trial_dl.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image23','','/images/navi/gl_download2.gif',1)"><img src="/images/navi/gl_download.gif" alt="製品ダウンロード" name="Image23" width="130" height="25" border="0" id="Image23" /></a></td>
+<td width="125"><a href="/partner/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image24','','/images/navi/gl_partner2.gif',1)"><img src="/images/navi/gl_partner.gif" alt="パートナー紹介" name="Image24" width="125" height="25" border="0" id="Image24" /></a></td>
+<td width="127"><a href="/seminar/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image25','','/images/navi/gl_seminar2.gif',1)"><img src="/images/navi/gl_seminar.gif" alt="セミナー／トレーニング" name="Image25" width="126" height="25" border="0" id="Image25" /></a></td>
+<td width="124"><a href="https://www.dal.co.jp/form/datadl.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image26','','/images/navi/gl_inquiry2.gif',1)"><img src="/images/navi/gl_inquiry.gif" alt="資料ダウンロード" name="Image26" width="124" height="25" border="0" id="Image26" /></a></td>
+</tr>
+</table>
+</div>
+
+<div id="path"><span class="line"><a href="../../">HOME</a>&nbsp;&gt;&nbsp;<a href="../products.html">導入事例一覧</a>&nbsp;&gt;&nbsp;株式会社パルタック</span></div>
+<div id="wrap">
+<div id="contents">
+<div id="category">
+		<h1>導入事例</h1>
+<p>EDIで1500社以上の導入企業と6000サイトを越えるシステム が日本のビジネスを支えています。</p>
+</div>
+<table width="575" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="470"><h2><img src="images/h_tit.gif" alt="株式会社パルタック" width="241" height="99" /></h2></td>
+<td width="105" align="center" valign="top"><table border="0" align="right" cellpadding="1" cellspacing="0">
+  <tr>
+    <td bgcolor="#E0DFE3"><table width="83" border="0" cellpadding="2" cellspacing="0">
+      <tr>
+        <td width="29" rowspan="2" bgcolor="#FFFFFF"><a href="../pdf/paltac.pdf" target="_blank"><img src="../images/icn_pdf.gif" alt="PDF" width="29" height="28" border="0" /></a></td>
+        <td width="42" bgcolor="#FFFFFF"><a href="../pdf/paltac.pdf" target="_blank"><img src="../images/icn_pdf2.gif" alt="PDF版" width="42" height="15" border="0" /></a></td>
+      </tr>
+      <tr>
+        <td align="center" bgcolor="#FFFFFF" class="pt_12n"><a href="../pdf/paltac.pdf" target="_blank">900KB</a></td>
+      </tr>
+    </table></td>
+  </tr>
+</table></td>
+</tr>
+</table>
+<table width="575" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="pt_12"><img src="../../images/spacer.gif" alt="" width="2" height="10" />
+<table width="575" border="0" cellspacing="1" cellpadding="0">
+<tr>
+<td bgcolor="#E9E9EB" class="pt_12b"><table width="575" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="13" class="pt_12"><img src="../../images/item_bar01.gif" alt="" width="13" height="20" /></td>
+<td width="65" bgcolor="#E9E9EB" class="pt_12">導入製品：</td>
+<td width="493" bgcolor="#E9E9EB" class="pt_12">ACMS B2B</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td bgcolor="#E9E9EB" class="pt_12b"><table width="575" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="13" class="pt_12"><img src="../../images/item_bar01.gif" alt="" width="13" height="20" /></td>
+<td width="65" bgcolor="#E9E9EB" class="pt_12">業&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;種：</td>
+<td width="497" bgcolor="#E9E9EB" class="pt_12">商社・卸</td>
+</tr>
+</table></td>
+</tr>
+</table>
+<br />
+<h3><img src="images/h_catch.gif" alt="流通BMSに準拠した次世代EDIシステムの運用を開始
+ACMSの機能分散で安全性と拡張性を両立" width="432" height="36" /></h3>
+<br /></td>
+</tr>
+<tr>
+<td bgcolor="#666666"><img src="../../images/spacer.gif" alt="" width="2" height="4" /></td>
+</tr>
+</table>
+<br />
+<table width="575" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="218" valign="top"><table width="218" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td><img src="images/h_p01.jpg" alt="吉野 英行 氏" width="90" height="97" /></td>
+<td><img src="../../images/spacer.gif" alt="" width="6" height="2" /></td>
+<td width="128" valign="bottom" class="pt_10">
+
+株式会社パルタック<br />
+執行役員・<br />
+情報システム本部長<br />
+<b>吉野 英行 氏</b></td>
+</tr>
+</table>
+<img src="../../images/spacer.gif" alt="" width="8" height="5" /><br />
+<table width="218" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td><img src="images/h_p02.jpg" alt="荒井 清一 氏" width="90" height="97" /></td>
+<td><img src="../../images/spacer.gif" alt="" width="6" height="2" /></td>
+<td width="128" valign="bottom" class="pt_10"><br />
+株式会社パルタック<br />
+情報システム本部<br />
+マネジャー<br />
+<b>荒井 清一 氏</b></td>
+</tr>
+</table>
+<img src="../../images/spacer.gif" alt="" width="8" height="5" /><br />
+<table width="218" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td><img src="images/h_p03.jpg" alt="木村 真 氏" width="90" height="97" /></td>
+<td><img src="../../images/spacer.gif" alt="" width="6" height="2" /></td>
+<td width="128" valign="bottom" class="pt_10">
+TIS株式会社<br />
+事業統括本部<br />
+産業第2事業部<br />
+産業システム第1部<br />
+<b>木村 真 氏</b></td>
+</tr>
+</table></td>
+<td width="357" valign="top" class="pt_12"><p>　100年以上の歴史を持つ化粧品・日用品、一般用医薬品卸
+売業の大手企業、株式会社パルタック（以下パルタック）は2007年春、「流通ビジネスメッセージ標準（以下流通BMS）」
+に準拠した次世代標準EDIシステムを構築。流通BMSの共同実証プロジェクトを経て、イオンとはAS2、ダイエーとは
+ebXML/MSを使用したインターネットをベースとしたEDIの本番運用を開始した。新システムにはDALの「ACMS B2B」
+を採用し、「通信コストを大幅に削減でき、物流現場における業務品質と顧客サービスの向上を実現できた」という。</p>
+<br />
+<table width="350" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td bgcolor="#F7F7F7"><img src="../../images/spacer.gif" alt="" width="5" height="5" />
+<table width="340" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td width="14" valign="top" bgcolor="#F7F7F7"><img src="../../images/item_arrow01.gif" alt="" width="19" height="10" /></td>
+<td width="331" bgcolor="#F7F7F7" class="pt_12"><a href="#h01">大規模M＆Aで業容急拡大、医薬品流通を統合</a></td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#F7F7F7"><img src="../../images/spacer.gif" alt="" width="2" height="4" /></td>
+</tr>
+<tr>
+<td valign="top" bgcolor="#F7F7F7"><img src="../../images/item_arrow01.gif" alt="" width="19" height="10" /></td>
+<td bgcolor="#F7F7F7" class="pt_12"><a href="#h02">GCIと流通BMSの標準化活動に参画</a></td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#F7F7F7"><img src="../../images/spacer.gif" alt="" width="2" height="4" /></td>
+</tr>
+<tr>
+<td valign="top" bgcolor="#F7F7F7"><img src="../../images/item_arrow01.gif" alt="" width="19" height="10" /></td>
+<td bgcolor="#F7F7F7" class="pt_12"><a href="#h03">使い勝手と信頼性でACMSを選択</a></td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#F7F7F7"><img src="../../images/spacer.gif" alt="" width="2" height="4" /></td>
+</tr>
+<tr>
+<td valign="top" bgcolor="#F7F7F7"><img src="../../images/item_arrow01.gif" alt="" width="19" height="10" /></td>
+<td bgcolor="#F7F7F7" class="pt_12"><a href="#h04">ACMSの分散機能をシステム設計に活かす</a></td>
+</tr>
+<tr>
+  <td colspan="2" bgcolor="#F7F7F7"><img src="../../images/spacer.gif" alt="" width="2" height="4" /></td>
+</tr>
+<tr>
+  <td valign="top" bgcolor="#F7F7F7"><img src="../../images/item_arrow01.gif" alt="" width="19" height="10" /></td>
+  <td bgcolor="#F7F7F7" class="pt_12"><a href="#h05">通信コストと現場業務に大きな導入効果</a></td>
+</tr>
+<tr>
+  <td colspan="2" bgcolor="#F7F7F7"><img src="../../images/spacer.gif" alt="" width="2" height="4" /></td>
+</tr>
+<tr>
+  <td valign="top" bgcolor="#F7F7F7"><img src="../../images/item_arrow01.gif" alt="" width="19" height="10" /></td>
+  <td bgcolor="#F7F7F7" class="pt_12"><a href="#h06">ACMSとDALのサポートで技術問題を難なくクリア</a></td>
+</tr>
+</table>
+<img src="../../images/spacer.gif" alt="" width="5" height="5" /> </td>
+</tr>
+</table></td>
+</tr>
+</table>
+<br />
+<table width="575" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="pt_12"><a name="h01" id="h01"></a>
+<h4><img src="images/h01_tit.gif" alt="大規模M＆Aで業容急拡大、医薬品流通を統合" width="432" height="20" /></h4>
+<br />
+<p>　パルタックは全国16箇所に大規模物流センターを展開するナショ
+ナルホールセラーだ。同社は近年、M＆Aを通じて業容を拡大し続けて
+いる。取り分け2005年10月のメディセオ・パルタックホールディン
+グスとの株式交換後の、アルコス、エバルス、クラヤ三星堂の一般用医
+薬品卸売事業の集約により、大衆薬や医用品の卸事業に進出。従来か
+らの日用雑貨と化粧品に並ぶ第3の柱を打ち立てた。現在、株式会社
+メディセオ・パルタックホールディングス全体の売上は2兆1600億
+円あり、そのうちパルタック単体では25％の5100億円を占める。</p>
+<br /></td>
+</tr>
+<tr>
+<td class="pt_12"><a name="h02" id="h02"></a>
+<h4><img src="images/h02_tit.gif" alt="GCIと流通BMSの標準化活動に参画" width="423" height="20" /></h4>
+<br />
+<p>　大規模な取り扱い品目と取引先の拡大・統合に対処する一方で、パ
+ルタックは消費財流通の標準化活動に積極参加してきた。まず、日本
+GCI推進協議会の正会員として、商品コードや事業所コードの国際的
+統一や、RFID/EPC電子タグの実証実験に尽力。<br />
+　そして、経済産業省が後押しする「流通システム標準化事業」の次世代
+EDI標準化ワーキンググループへの参画だ。2006年秋には、XMLベース
+のデータ表現形式、メッセージ種別、データ項目、通信プロトコルなど
+の流通BMSの仕様がほぼ固まった。これを受け、策定された仕様の妥当
+性と運用ルールの有効性を検証することを目的として、参加小売大手18
+社のうち4社が、それぞれの協力卸企業を指名する形で共同実証プロ
+ジェクトが立ち上げられた。パルタックはイオンおよびダイエーの指名を受け、イオンとはAS2（Applicability Statement2）、ダイエーとは
+ebXML/MS（ebXML Message Service）プロトコルで接続すること
+になった。システムの通信環境部分の構築はTIS株式会社（以下TIS）
+が担当した。</p>
+
+<br /></td>
+</tr>
+<tr>
+<td class="pt_12"><a name="h03" id="h03"></a>
+<h4><img src="images/h03_tit.gif" alt="使い勝手と信頼性でACMSを選択" width="423" height="20" /></h4>
+<br />
+<p>　プロジェクトの開始は2006年12月。基本設計に着手し、翌年1月
+に機器を調達。2月にネットワークとEDIサーバを構築し、接続テスト
+を実施した。3月にはイオン／ダイエーとのテスト運用を開始し、4月
+には一部地域にてダイエーとの流通BMSによる本番運用を開始した。
+　EDIソフトにはDALの「ACMS B2B」を採用。第1の理由は対応プロ
+トコル。流通BMSでは通信プロトコルにAS2、ebXML/MS、JX手順
+を採用しているが、「プロジェクトのスタート時において3つともサ
+ポートしているのはACMSだけでした」と情報システム本部の荒井
+清一マネジャーは指摘する。<br />
+　もうひとつの理由は、ACMSの品質と使い勝手の良さ。「ACMSは
+弊社のVANサービスでもコアパッケージとして使用しており、また
+ACMS販売代理店として、今までに数多くの導入実績もあります。」と
+TISの木村 真 氏は言う。</p>
+<br /></td>
+</tr>
+<tr>
+<td class="pt_12"><a name="h04" id="h04"></a>
+<h4><img src="images/h04_tit.gif" alt="ACMSの分散機能をシステム設計に活かす" width="423" height="20" /></h4>
+<br />
+<p>　新システムで特徴的なのは、パルタックはJCAや全銀TCP/IP等の従来の通信手順に対応したEDIシステムをACMSを使って構築して
+いたが、ACMSの分散機能を利用し、既存EDIシステムにほとんど影響
+を与えることなく、新システムを追加構築している点だ。新EDIサーバ
+はDMZ上に配置されており、取引先EDIサーバとのSSL（暗号化）通信
+に専念して、データを蓄積しない。一方、Windowsベースの既存EDI
+サーバは社内ネットワークに配置されており、データの蓄積・変換・
+振分・基幹システムとの連携と、既存EDIの通信を担当する。新EDI
+サーバは社外のインターネットとつながるため、より高セキュリティ
+なLinuxを採用した。また、データ自体をDMZ上の新EDIサーバに置か
+ないことでも高いセキュリティを確保している。<br />
+　新システムではモジュールを追加すれば、処理量の増大にもスケー
+ラブルに対応できるという。これを実現するため「ACMSの分散配置
+とモジュール追加が可能かどうかを確認したうえで、安全性と拡張性
+に優れたシステム構成を設計しました」とTISの木村氏は振り返る。</p>
+<img src="images/h03_item01.gif" alt="" width="574" height="185" /><br /><br /></td>
+</tr>
+<tr>
+  <td class="pt_12"><a name="h03" id="h05"></a>
+      <h4><img src="images/h05_tit.gif" alt="通信コストと現場業務に大きな導入効果" width="423" height="20" /></h4>
+      <br />
+      <p>　吉野本部長は「インターネットEDIと流通BMSの意義は絶大」と話す。
+まず、従来はデータの形式が小売ごとに違っていたため、それぞれの変
+換プログラムを用意する必要があった。パルタックではEDIでの取引先
+が1200社あり、メッセージ種別やデータ項目の違いを含めるとフォー
+マットは5000種にもおよんでいた。しかし今後は、1本化された標準
+XMLメッセージを自社フォーマットに変換するだけで済む。<br />
+　通信回線はブロードバンドに置き換わった。従来の公衆回線では
+3Mbyteの伝送に約1時間かかっていたが、Bフレッツの100Mbpsと
+なり、実測値で30Mbyteを30秒で伝送。データが固定長からXMLに
+なったことでデータ量は約10倍になったとしても通信時間は大幅
+短縮となる。また、通信費が従量制から固定制になることで通信コストの激減も見込める。<br />
+　EDI処理の時間短縮は、現場業務の改善にも結びついており、JCA
+手順で1時間かかっていたものが、今後は1～2分間で完了する。この
+ため「出荷の前準備に余裕ができ、小売向けサービスの向上につながっ
+ています」（荒井マネジャー）とのことだ。</p>
+    <br /></td>
+</tr>
+<tr>
+  <td class="pt_12"><a name="h03" id="h06"></a>
+      <h4><img src="images/h06_tit.gif" alt="使い勝手と信頼性でACMSを選択" width="423" height="20" /></h4>
+      <br />
+      <p>　ACMSの利点として吉野本部長は、「基幹システムの側に一切手を
+加える必要がなかった点」と「レガシーEDIのようなベンダ依存に陥
+らない点」を挙げる。<br />
+　一方、インテグレータの立場から木村氏は、「ACMSの強力なトラ
+ンスレータ機能：AnyTran」を挙げる。データ量が10倍になった為、従
+来よりもフォーマット変換処理でのシステム負荷が増大した。しかし
+ながら、AnyTranのメモリ抑制機能を使用することでシステム負荷
+を一定に抑えることができたという。変換速度としても、共同実証プ
+ロジェクト成果報告の平均変換時間の半分程度であった。<br />
+　DALのサポートも成功要因となった。共同実証プロジェクトに併
+せて、DALでも特別なサポート体制を構築した。「共同実証プロジェ
+クトを経て修正された流通BMSの標準スキーマの正式版1.0が、本番
+運用開始直前にリリースされましたが、ACMSの活用とDALの技術
+支援で容易に対応することができました。また、共同実証プロジェク
+トの過程で、流通BMSのセキュリティ認証方式が変更された際にも
+DALは機能追加に迅速に対応してくれた。」（木村氏）<br />
+　今後について吉野本部長は、「流通BMSがドラッグストアなど他の
+業界への広がりや広範な中小取引先にも普及することを願っていま
+す」と話している。</p>
+    <br /></td>
+</tr>
+</table>
+<br />
+<br />
+					
+<div class="pt_12" align="center">
+<a href="../products.html">
+製品別導入事例一覧に戻る
+</a>
+　|　
+<a href="../company.html">
+業種別導入事例一覧に戻る
+</a>
+</div>
+<br />
+					
+<table width="575" border="0" cellspacing="0" cellpadding="0">
+
+<tr>
+<td class="pt_12">
+<table width="578" border="0" cellspacing="1" cellpadding="0">
+<tr>
+<td colspan="2" bgcolor="#FFFFFF" class="pt_12b"><img src="/images/tit_kanren.gif" alt="関連情報" width="575" height="24" /></td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#C7E0FF" class="pt_12b">■製品情報</td>
+</tr>
+<tr>
+<td width="195" bgcolor="#C7E0FF" class="pt_12b">&nbsp;<a href="/products/edi/index.html">EDI (企業間電子商取引)</a></td>
+<td width="380" bgcolor="#F4FAFF" class="pt_12"><a href="/products/edi/e2x/outline.html">ACMS E<sup>2</sup>X</a>｜<a href="/products/edi/b2b/outline.html">ACMS B2B</a>｜<a href="/products/edi/liteneo/outline.html">ACMS Lite Neo</a>｜<a href="/products/edi/ws/outline.html">ACMS/WS</a>
+<br /><a href="/products/edi/wa/outline.html">ACMS WebAgent</a>｜<a href="/products/edi/monitoring/outline.html">ACMS運用監視機能</a></td>
+</tr>
+<tr>
+<td bgcolor="#C7E0FF" class="pt_12b">&nbsp;<a href="/products/webedi/index.html">Web-EDI</a></td>
+<td bgcolor="#F4FAFF" class="pt_12"><a href="/products/webedi/webframer/outline.html">ACMS WebFramer</a>｜<a href="/products/webedi/template/outline.html">流通BMS対応Web-EDIテンプレート</a>｜<a href="/products/webedi/detrade2/outline.html">ACMS Web/deTradeⅡ</a>｜<a href="/products/webedi/bsw/outline.html">BUYSELWARE</a></td>
+</tr>
+<tr>
+<td bgcolor="#C7E0FF" class="pt_10b">&nbsp;<a href="/products/dhp/index.html">データ ハンドリング プラットフォーム</a></td>
+<td bgcolor="#F4FAFF" class="pt_12"><a href="/products/dhp/raccoon/outline.html">RACCOON</a></td>
+</tr>
+<tr>
+<td bgcolor="#C7E0FF" class="pt_12b">&nbsp;<a href="/products/any/index.html">トランスフォーマ</a></td>
+<td bgcolor="#F4FAFF" class="pt_12"><a href="/products/any/index.html">AnyTran</a></td>
+</tr>
+<tr>
+  <td bgcolor="#C7E0FF" class="pt_12b">&nbsp;販売・サポート終了について</td>
+  <td bgcolor="#F4FAFF" class="pt_12"><a href="/products/eollist.html">「その他の製品」の販売とサポートの終了に関してはこちら</a></td>
+
+</tr>
+</table>
+
+
+<br></td>
+</tr>
+<tr>
+<td align="right" class="pt_12"><a href="#top"><img src="../../images/item_pagetop.gif" alt="ページのトップへ" width="52" height="13" border="0"></a></td>
+</tr>
+</table>
+</div>
+
+<div id="lo_navi">
+<ul>
+<li><a href="/products/list.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('product','','/images/navi/navi_product2.gif',1)"><img src="/images/navi/navi_product.gif" name="product" width="150" height="25" border="0" id="product" /></a></li>
+<li><span class="line"><a href="/products/edi/index.html">EDI (企業間電子商取引)</a></span></li>
+<li><span class="line"><a href="/products/webedi/index.html">Web-EDI</a></span></li>
+<li class="t-row"><span class="t-line"><a href="/products/dhp/">データ ハンドリング<br />プラットフォーム</a></span></li>
+<li><span class="line"><a href="/products/any/">トランスフォーマ</a></span></li>
+<li><span class="line"><a href="/products/solution/">ソリューション</a></span></li>
+<li><span class="line"><a href="/products/support.html">製品サポートについて</a></span></li>
+<li><span class="line"><a href="/products/export.html">海外輸出について</a></span></li>
+
+<li><img src="/images/navi/navi_product_s.gif" alt="製品検索" /></li>
+<li><span class="line"><a href="/products/list.html">製品一覧から探す</a></span></li>
+<li><span class="line"><a href="/products/map.html">製品マップから探す</a></span></li>
+<li><span class="line"><a href="/products/problem.html">課題から探す</a></span></li>
+<li><img src="/images/navi/navi_case.gif" alt="導入事例" /></li>
+<li><span class="line active"><a href="/casestudies/products.html">製品別導入事例</a></span></li>
+<li><span class="line active"><a href="/casestudies/company.html">業種別導入事例</a></span></li>
+<li><a href="/contact/trial_dl.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('download','','/images/navi/navi_download2.gif',1)"><img src="/images/navi/navi_download.gif" name="download" width="150" height="25" border="0" id="download" /></a></li>
+<li class="t-row"><span class="t-line"><a href="https://www.dal.co.jp/form/trial2.php">評価版ダウンロード<br />
+  (ACMS Lite Neo)</a></span></li>
+<li class="t-row"><span class="t-line"><a href="https://www.dal.co.jp/form/trial.php">評価版ダウンロード<br />
+  (AnyTranDeskTop版他)</a></span></li>
+<li><a href="https://www.dal.co.jp/form/datadl.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('shiryo','','/images/navi/navi_shiryo2.gif',1)"><img src="/images/navi/navi_shiryo.gif" name="shiryo" width="150" height="25" border="0" id="shiryo" alt="資料ダウンロード" /></a></li>
+</ul>
+
+<div id="navi_bnr"> <a href="/products/dhp/raccoon/outline.html"><img src="/images/navi/bnr_raccoon.gif" alt="RACCOON" border="0" /></a> <a href="/webframer/"><img src="/images/navi/bnr_webframer.gif" alt="ACMS WebFramer" border="0" /></a></div>
+</div>
+
+</div>
+</div>
+
+<div id="footer">
+<table width="100%" border="0" align="right" cellpadding="0" cellspacing="0">
+<tr>
+  <td align="left" id="ftlink">&nbsp;&nbsp;&nbsp;<a href="/policy/index.html">プライバシーポリシー</a></td>
+<td align="right">Copyright 2012 Data Applications Co., Ltd.&nbsp;&nbsp;&nbsp;</td>
+</tr>
+</table>
+</div>
+<!-- Visionalist tag start -->
+<SCRIPT type="text/javascript" src="https://www04.tracer.jp/VL/Trace?c=bs6390&p=donyu13"></SCRIPT>
+<!-- Visionalist tag end -->
+
+<script language="javascript">
+<!--
+    document.write("<img src='https://car11.kaitaku.biz/car/beacon/BeaconReceiver.jsp?bid=BCID00626907366&title=" + document.title + "&charset=" + document.charset + "&characterSet=" + document.characterSet + "&refererEx=" + escape(document.referrer) + "'>");
+-->
+</script>
+
+</body>
+</html>
