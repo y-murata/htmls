@@ -47,8 +47,8 @@ if __name__ == '__main__':
         ## マージするときはmasterのHEADに行ってマージしないといけない
         os.system("git merge %s --no-ff" % branch)
 
-        # ローカルでマージしたmasterをpush
-        os.system("git push -u origin master")
-
         # ブランチを削除する
         os.system("git branch -D %s" % branch)
+
+        # ローカルでマージしたmasterをpush
+        os.system("git push -u origin master")
