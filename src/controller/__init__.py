@@ -11,8 +11,6 @@ def getNowDate():
 if __name__ == '__main__':
     listFilePath = "../work/company.csv"
 
-    # プロセス並列化をする
-
     for url in open(listFilePath, "r"):
         branch = hashlib.md5(url.encode('utf-8')).hexdigest()
         print(url, branch)
@@ -32,6 +30,7 @@ if __name__ == '__main__':
         nowDate = getNowDate()
 
         # 取得したファイルをプッシュする
+        # # 会社毎の追加してコミットするようにすればいいんじゃね？
         os.system("git add ../../sites/")
         os.system("git commit -a -m 'auto commit_%s %s'" % (url, nowDate))
         # os.system("git push -u origin %s" % branch)  # ローカルブランチ:リモートブランチ

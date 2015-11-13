@@ -1,0 +1,419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis" />
+<meta name="keywords" content="EDI,B2B,DAL,ACMS,Web/deTrade,AnyTran,Web-EDI,ACMS B2B">				
+<meta name="description" content="「ACMS WebAgent」を導入しWeb-EDI業務の自動化を実現">
+<title>DAL－データ・アプリケーション｜導入事例｜富士ゼロックス株式会社　導入製品：ACMS WebAgent</title>
+<link rel="stylesheet" type="text/css" href="../../css/base.css" media="screen, print">
+<link rel="stylesheet" type="text/css" href="../../css/common.css" media="screen, print">
+<link rel="stylesheet" type="text/css" href="../../css/font.css" media="screen, print">
+<script type="text/javascript" src="../../js/fw.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22731513-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script type="text/javascript">
+(function() {
+  var didInit = false;
+  function initMunchkin() {
+    if(didInit === false) {
+      didInit = true;
+      Munchkin.init('648-HCF-038',{"domainLevel":2});
+    }
+  }
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = '//munchkin.marketo.net/munchkin.js';
+  s.onreadystatechange = function() {
+    if (this.readyState == 'complete' || this.readyState == 'loaded') {
+      initMunchkin();
+    }
+  };
+  s.onload = initMunchkin;
+  document.getElementsByTagName('head')[0].appendChild(s);
+})();
+</script>
+</head>
+<body onload="MM_preloadImages('../../images/navi/navi_product2.gif','../../images/navi/navi_download2.gif','../../images/navi/navi_shiryo2.gif','../../images/navi/gl_product2.gif','../../images/navi/gl_case2.gif','../../images/navi/gl_download2.gif','../../images/navi/gl_partner2.gif','../../images/navi/gl_seminar2.gif','../../images/navi/gl_inquiry2.gif','../../images/gl_sub_company2.gif','../../images/gl_sub_ir2.gif','../../images/gl_sub_recruit2.gif','../../images/gl_sub_sitemap2.gif','../../images/gl_sub_customer2.gif')">
+
+<a name="top"></a>
+
+<div id="container">
+<script type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<script type="text/JavaScript">
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+<body onLoad="MM_preloadImages('/images/navi/gl_product2.gif','/images/navi/gl_case2.gif','/images/navi/gl_download2.gif','/images/navi/gl_partner2.gif','/images/navi/gl_seminar2.gif','/images/navi/gl_inquiry2.gif','/images/gl_sub_ir2.gif','/images/gl_sub_customer2.gif','/images/gl_sub_partnersportal_2.gif')">
+<div id="globalNav">
+<table width="753" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td colspan="2" bgcolor="#000000"><img src="/images/spacer.gif" alt="" width="1" height="5" /></td>
+</tr>
+<tr>
+<td><a href="/"><img src="/images/logo.gif" alt="DAL 株式会社データアプリケーション" width="184" height="53" border="0" /></a></td>
+<td align="right"><table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+  <td><a href="/company/greeting.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image29','','/images/gl_sub_company2.gif',1)"><img src="/images/gl_sub_company.gif" alt="会社案内" name="Image29" width="70" height="17" border="0" id="Image29" /></a></td>
+  <td><a href="/ir/index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image30','','/images/gl_sub_ir2.gif',1)"><img src="/images/gl_sub_ir.gif"  alt="IR情報"name="Image30" width="64" height="17" border="0" id="Image30" /></a></td>
+  <td><a href="/pressrelease.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image301','','/images/gl_sub_pressr2.gif',1)"><img src="/images/gl_sub_pressr.gif"  alt="プレスリリース"name="Image301" width="112" height="17" border="0" id="Image301" /></a></td>
+  <td><a href="https://www.dal.co.jp/form/inq.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image304','','/images/gl_sub_inquiry2.gif',1)"><img src="/images/gl_sub_inquiry.gif" alt="お問い合わせ" name="Image304" width="97" height="17" border="0" id="Image34" /></a></td>
+  <td align="left"><a href="/sitemap.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image32','','/images/gl_sub_sitemap2.gif',1)"><img src="/images/gl_sub_sitemap.gif" alt="サイトマップ" name="Image32" width="85" height="17" border="0" id="Image32" /></a></td>
+  <td>&nbsp;</td>
+  </tr>
+</table>  
+  <table width="100" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image332','','/images/gl_sub_customer2.gif',1)"><img src="/images/gl_sub_customer.gif" alt="カスタマーサポート" name="Image332" width="131" height="27" hspace="5" border="0" id="Image332" onclick="MM_openBrWindow('/systemstoppage/','','location=yes,status=yes,scrollbars=yes,resizable=yes,width=800,height=666')" /></a></td>
+      <td><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image3311','','/images/gl_sub_partnersportal_2.gif',1)"><img src="/images/gl_sub_partnersportal.gif" alt="パートナーズポータル" name="Image3311" width="131" height="27" hspace="5" border="0" id="Image3311" onclick="MM_openBrWindow('https://www.dal.co.jp/pp/','','location=yes,status=yes,scrollbars=yes,resizable=yes,width=800,height=580')" /></a></td>
+    </tr>
+  </table></td>
+</tr>
+</table>
+
+<table width="753" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td width="124"><a href="/products/list.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image21','','/images/navi/gl_product2.gif',1)"><img src="/images/navi/gl_product.gif" alt="製品情報" name="Image21" width="124" height="25" border="0" id="Image21" /></a></td>
+<td width="124"><a href="/casestudies/company.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image22','','/images/navi/gl_case2.gif',1)"><img src="/images/navi/gl_case.gif" alt="事例紹介" name="Image22" width="124" height="25" border="0" id="Image22" /></a></td>
+<td width="130"><a href="/contact/trial_dl.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image23','','/images/navi/gl_download2.gif',1)"><img src="/images/navi/gl_download.gif" alt="製品ダウンロード" name="Image23" width="130" height="25" border="0" id="Image23" /></a></td>
+<td width="125"><a href="/partner/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image24','','/images/navi/gl_partner2.gif',1)"><img src="/images/navi/gl_partner.gif" alt="パートナー紹介" name="Image24" width="125" height="25" border="0" id="Image24" /></a></td>
+<td width="127"><a href="/seminar/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image25','','/images/navi/gl_seminar2.gif',1)"><img src="/images/navi/gl_seminar.gif" alt="セミナー／トレーニング" name="Image25" width="126" height="25" border="0" id="Image25" /></a></td>
+<td width="124"><a href="https://www.dal.co.jp/form/datadl.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image26','','/images/navi/gl_inquiry2.gif',1)"><img src="/images/navi/gl_inquiry.gif" alt="資料ダウンロード" name="Image26" width="124" height="25" border="0" id="Image26" /></a></td>
+</tr>
+</table>
+</div>
+
+<div id="path"><span class="line"><a href="../../">HOME</a>&nbsp;&gt;&nbsp;<a href="../products.html">導入事例一覧</a>&nbsp;&gt;&nbsp;富士ゼロックス株式会社</span></div>
+<div id="wrap">
+<div id="contents">
+<div id="category">
+		<h1>導入事例</h1>
+<p>EDIで1500社以上の導入企業と6000サイトを越えるシステム が日本のビジネスを支えています。</p>
+</div>
+<table width="575" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="470">
+<h2><img src="images/h_tit.gif" alt="富士ゼロックス株式会社" width="400" height="84" /><br />
+<br /></h2></td>
+<td width="105" align="center" valign="top"><table border="0" align="right" cellpadding="1" cellspacing="0">
+  <tr>
+    <td bgcolor="#E0DFE3"><table width="83" border="0" cellpadding="2" cellspacing="0">
+      <tr>
+        <td width="29" rowspan="2" bgcolor="#FFFFFF"><a href="../pdf/fxps.pdf" target="_blank"><img src="../images/icn_pdf.gif" alt="PDF" width="29" height="28" border="0" /></a></td>
+        <td width="42" bgcolor="#FFFFFF"><a href="../pdf/fxps.pdf" target="_blank"><img src="../images/icn_pdf2.gif" alt="PDF版" width="42" height="15" border="0" /></a></td>
+      </tr>
+      <tr>
+        <td align="center" bgcolor="#FFFFFF" class="pt_12n"><a href="../pdf/fxps.pdf" target="_blank">708KB</a></td>
+      </tr>
+    </table></td>
+  </tr>
+</table></td>
+</tr>
+</table>
+
+<div class="pt_10">※記載内容は2005年取材当時のものですので、予めご了承下さい。<br />
+　富士ゼロックスプリンティング株式会社は、2007年4月に富士ゼロックス株式会社に統合されています。</div>
+
+<span class="pt_12"><img src="../images/spacer.gif" alt="" width="2" height="10" /> </span>
+<table width="575" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="pt_12"><table width="575" border="0" cellspacing="1" cellpadding="0">
+<tr>
+<td bgcolor="#E9E9EB" class="pt_12b"><table width="575" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="13" class="pt_12"><img src="../../images/item_bar01.gif" alt="" width="13" height="20" /></td>
+<td width="65" bgcolor="#E9E9EB" class="pt_12">導入製品：</td>
+<td width="493" bgcolor="#E9E9EB" class="pt_12">ACMS B2B・ACMS Web/deTrade・AnyTran</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td bgcolor="#E9E9EB" class="pt_12b"><table width="575" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="13" class="pt_12"><img src="../../images/item_bar01.gif" alt="" width="13" height="20" /></td>
+<td width="65" bgcolor="#E9E9EB" class="pt_12">業&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;種：</td>
+<td width="497" bgcolor="#E9E9EB" class="pt_12">機械・精密</td>
+</tr>
+</table></td>
+</tr>
+</table>
+<br />
+<h3><img src="images/h_catch.gif" alt="「ACMS WebAgent」を導入しWeb-EDI業務の自動化を実現" width="469" height="18" /></h3>
+<br /></td>
+</tr>
+<tr>
+<td bgcolor="#666666"><img src="../../images/spacer.gif" alt="" width="2" height="4" /></td>
+</tr>
+</table>
+<br />
+<table width="575" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="218" valign="top"><table width="218" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td><img src="images/h_p01.jpg" alt="小林 和幸 氏" width="90" height="97" /></td>
+<td><img src="../../images/spacer.gif" alt="" width="6" height="2" /></td>
+<td width="128" valign="bottom" class="pt_10">富士ゼロックス<br />
+プリンティングシステムズ<br />
+株式会社　<br />
+情報システム部 部長<br />
+<b>小林 和幸 氏</b></td>
+</tr>
+</table>
+<img src="../../images/spacer.gif" alt="" width="8" height="5" /><br />
+<table width="218" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td><img src="images/h_p02.jpg" alt="石川 晃 氏" width="90" height="97" /></td>
+<td><img src="../../images/spacer.gif" alt="" width="6" height="2" /></td>
+<td width="128" valign="bottom" class="pt_10">富士ゼロックス<br />
+プリンティングシステムズ<br />
+株式会社　<br />
+第一ソリューショングループ<br />
+マネージャー<br />
+<b>石川 晃 氏</b></td>
+</tr>
+</table>
+<img src="../../images/spacer.gif" alt="" width="8" height="5" /><br />
+<table width="218" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td><img src="images/h_p03.jpg" alt="幸田 善則 氏" width="90" height="97" /></td>
+<td><img src="../../images/spacer.gif" alt="" width="6" height="2" /></td>
+<td width="128" valign="bottom" class="pt_10">株式会社スコープ<br />
+アプリケーションエンジニア<br />
+<b>幸田 善則 氏</b></td>
+</tr>
+</table></td>
+<td width="357" valign="top" class="pt_12"><p>富士ゼロックスプリンティングシステムズ株式会社（以下、FXPS）では、Web-EDIによる受注業務の効率化が課題と
+なっていた。取引先サイトからの受注データ取得や納期回答入力などを手作業で行わなくてはならず、業務処理に長い
+時間が掛かっていたのである。そこで新たに導入したのが、DALのブラウザ操作自動化ツール「ACMS WebAgent」だ。
+「ACMS B2B」「AnyTran」などの製品群も組み合わせることで、取引先サイトと基幹システム間の自動連携を実現。受注処理の効率化と、業務品質の向上に役立てている。 </p>
+
+<br />
+<table width="350" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td bgcolor="#F7F7F7"><img src="../../images/spacer.gif" alt="" width="5" height="5" />
+<table width="340" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td width="14" valign="top" bgcolor="#F7F7F7"><img src="../../images/item_arrow01.gif" alt="" width="19" height="10" /></td>
+<td width="331" bgcolor="#F7F7F7" class="pt_12"><a href="#h01">高品質なドキュメント製品をオフィス市場に幅広く提供</a></td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#F7F7F7"><img src="../../images/spacer.gif" alt="" width="2" height="4" /></td>
+</tr>
+<tr>
+<td valign="top" bgcolor="#F7F7F7"><img src="../../images/item_arrow01.gif" alt="" width="19" height="10" /></td>
+<td bgcolor="#F7F7F7" class="pt_12"><a href="#h02">Web-EDIによる受注が拡大、業務プロセスの非効率さが課題に</a></td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#F7F7F7"><img src="../../images/spacer.gif" alt="" width="2" height="4" /></td>
+</tr>
+<tr>
+<td valign="top" bgcolor="#F7F7F7"><img src="../../images/item_arrow01.gif" alt="" width="19" height="10" /></td>
+<td bgcolor="#F7F7F7" class="pt_12"><a href="#h03">「WebAgent」を導入し作業の自動化を実現</a></td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#F7F7F7"><img src="../../images/spacer.gif" alt="" width="2" height="4" /></td>
+</tr>
+<tr>
+<td valign="top" bgcolor="#F7F7F7"><img src="../../images/item_arrow01.gif" alt="" width="19" height="10" /></td>
+<td bgcolor="#F7F7F7" class="pt_12"><a href="#h04">年間2,000時間の削減に成功、入力ミスなどの問題も解消</a></td>
+</tr>
+</table>
+<img src="../../images/spacer.gif" alt="" width="5" height="5" /> </td>
+</tr>
+</table></td>
+</tr>
+</table>
+<br />
+<table width="575" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="pt_12"><a name="h01" id="h01"></a>
+<h4><img src="images/h01_tit.gif" alt="高品質なドキュメント製品をオフィス市場に幅広く提供" width="432" height="20" /></h4><br />
+<p>効率的なオフィスワークを実現する上で、絶対に欠かせないのがプリンタやスキャナなどのドキュメント関連機器だ。富士ゼロックスグループの一員として、こうした製品群の開発・販売を手がけているのがFXPSである。FXPS 情報システム部 部長 小林 和幸氏は、同社設立の経緯を「市場での競争力を維持し続けるためには、自分たちの強みをより発揮できるビジネス環境が必要です。そこでコア事業への特化をさらに推進すべく、2003年に富士ゼロックス本社より分社・独立致しました」と説明する。<br />
+　
+一口にプリンタと言っても様々なジャンルの製品が存在するが、同社では主にオフィス向けのモノクロレーザープリンタ／カラーレーザープリンタを提供。「最近では一般のオフィスでも、カラードキュメントが普通に使われるようになっています。我々が長年培ってきた高画質技術やノウハウを活かし、この分野のリーディング・カンパニーを目指したい」と小林氏は続ける。<br />
+　スピードが要求される現代のビジネスでは、効率的な業務環境づくりも大きな課題だ。サプライチェーン関連のシステム開発を担当するFXPS情報システム部第一ソリューショングループマネージャー石川晃氏は「サプライチェーンの全体最適化を追求することで、お取引先様のニーズにしっかりと応えていきたい」と語る。</p>
+<br /></td>
+</tr>
+<tr>
+<td class="pt_12"><a name="h02" id="h02"></a>
+<h4><img src="images/h02_tit.gif" alt="Web-EDIによる受注が拡大、業務プロセスの非効率さが課題に" width="469" height="20" /></h4><br />
+<p>同社では2004年末頃より、Web-EDI業務の自動化プロジェクトに着手した。小林氏はその理由を「Web-EDIを新たに導入するお取引先様が増加したことで、受注業務の効率が以前より落ちてきたのです」と語る。<br />
+　
+従来は取引先から注文をFAXで受け、その内容に基づいて出荷処理をすれば良かった。しかしWeb-EDIによる受注では、担当者が自分で取引先サイトにアクセスし、受注データを取りに行く必要がある。「しかも受注の内容を紙に出力し、それをまた基幹システムに手作業で投入しなくてはなりません。このため一伝票を処理するのに、10分程度の時間が掛かっていました」と石川氏は当時を振り返る。<br />
+　「その上お取引先様からは、納期回答や出荷通知などの情報も要求されるようになりました。これを全部手作業で処理していたのでは、業務効率がますます低下してしまいます。そこでなんとか業務処理を自動化する方法はないか、検討に乗り出したのです」（小林氏）。</p>
+<br />
+<img src="images/h02_item01.gif" alt="" width="575" height="264" /><br />
+<br />
+<br /></td>
+</tr>
+<tr>
+<td class="pt_12"><a name="h03" id="h03"></a>
+<h4><img src="images/h03_tit.gif" alt="「WebAgent」を導入し作業の自動化を実現" width="423" height="20" /></h4><br />
+<p>　Web-EDIにまつわる問題を解消すべく、同社では自動化ツールの選定に着手。そこで選ばれたのが、DALのブラウザ操作自動化ツール「ACMS WebAgent（以下WebAgent）」である。「当社では基幹システムに『R/3』で構築していますが、そのベンダであるSAP社から紹介されたのがきっかけです。製品を評価した結果も良好だったので、さっそく導入を決めました」と小林氏は説明する。<br />
+　
+今回構築されたシステムでは、BtoBサーバ「ACMS B2B」とトランスレータ「AnyTran」も導入。WebAgentが取引先サイトを自動巡回して受注データを取得し、ACMSB2Bを経由して自動的に基幹システムに転送できるようにした。実際の処理ではXML形式の受注データをR/3のデータフォーマットであるIDoc形式に変換する必要があるが、この処理をAnyTranが担当している。<br />
+　またWebAgentは、基幹システムに蓄積された納期・出荷日などの情報を、取引先サイトに対して入力する作業も行ってる。石川氏は「受注データの取得から基幹システムへの投入、受注伝票の発行、さらには納期・出荷日回答に至るまで、一連の作業をすべて自動化できました」と満足げに語る。<br />
+　システム構築のしやすさに対しても、高い評価が寄せられている。同社のITパートナーである株式会社スコープ　アプリケーションエンジニア　幸田　善則氏は「WebAgentは、スクリプトで動作を柔軟に設定できるので非常に扱いやすい。人間がサイトを閲覧するのと、ほぼ変わらない動作を簡単に再現でき、障害に対する動作設定も容易でした」と語る。今回の自動化システムは2005年4月より本稼働を開始しているが、構築期間は2ヶ月程度で済んだとのことだ。</p>
+<br /></td>
+</tr>
+<tr>
+<td class="pt_12"><a name="h04" id="h04"></a>
+<h4><img src="images/h04_tit.gif" alt="年間2,000時間の削減に成功、入力ミスなどの問題も解消" width="482" height="20" /></h4><br />
+<p>現在では受注担当者の業務スケジュールや取引先の発注タイミングに合わせ、一日5～6回WebAgentが動作するように設定
+されている。まず取引先1社で開始した運用も徐々に拡大され、数社のWeb-EDI業務をWebAgentが処理している。<br />
+　WebAgentの導入メリットについて、「受注業務の大幅な効率化が実現できた上、手作業につきもののデータ入力ミスなどもなくなりました」とにこやかに語る小林氏。石川氏も「年間で約2,000時間の時間短縮効果を実現。作業負担も軽減されたと、現場のユーザーからも好評です」と続ける。<br />
+　DALのサービス・サポート対する評価も高い。「特殊な構成のWebサイトにも対応できるよう機能強化を行ってくれるなど、DALは手厚いサポートを行ってくれました。これには大いに感謝しています」と小林氏は語る。<br />
+　同社では今後も取引先サイト数の拡大を図っていくと同時に、他の分野への応用も検討中だ。小林氏は「Webサイトから情報を取り出す、情報を投入するといった作業は、Web-EDI以外にもいろいろ考えられます。この仕組みを拡げていくことで、他の業務の効率化にも役立てていきたいですね」と抱負を語った。</p>
+</td>
+</tr>
+</table>
+<br />
+<br />
+					
+<div class="pt_12" align="center">
+<a href="../products.html">
+製品別導入事例一覧に戻る
+</a>
+　|　
+<a href="../company.html">
+業種別導入事例一覧に戻る
+</a>
+</div>
+<br />
+					
+<table width="575" border="0" cellspacing="0" cellpadding="0">
+
+<tr>
+<td class="pt_12">
+<table width="578" border="0" cellspacing="1" cellpadding="0">
+<tr>
+<td colspan="2" bgcolor="#FFFFFF" class="pt_12b"><img src="/images/tit_kanren.gif" alt="関連情報" width="575" height="24" /></td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#C7E0FF" class="pt_12b">■製品情報</td>
+</tr>
+<tr>
+<td width="195" bgcolor="#C7E0FF" class="pt_12b">&nbsp;<a href="/products/edi/index.html">EDI (企業間電子商取引)</a></td>
+<td width="380" bgcolor="#F4FAFF" class="pt_12"><a href="/products/edi/e2x/outline.html">ACMS E<sup>2</sup>X</a>｜<a href="/products/edi/b2b/outline.html">ACMS B2B</a>｜<a href="/products/edi/liteneo/outline.html">ACMS Lite Neo</a>｜<a href="/products/edi/ws/outline.html">ACMS/WS</a>
+<br /><a href="/products/edi/wa/outline.html">ACMS WebAgent</a>｜<a href="/products/edi/monitoring/outline.html">ACMS運用監視機能</a></td>
+</tr>
+<tr>
+<td bgcolor="#C7E0FF" class="pt_12b">&nbsp;<a href="/products/webedi/index.html">Web-EDI</a></td>
+<td bgcolor="#F4FAFF" class="pt_12"><a href="/products/webedi/webframer/outline.html">ACMS WebFramer</a>｜<a href="/products/webedi/template/outline.html">流通BMS対応Web-EDIテンプレート</a>｜<a href="/products/webedi/detrade2/outline.html">ACMS Web/deTradeⅡ</a>｜<a href="/products/webedi/bsw/outline.html">BUYSELWARE</a></td>
+</tr>
+<tr>
+<td bgcolor="#C7E0FF" class="pt_10b">&nbsp;<a href="/products/dhp/index.html">データ ハンドリング プラットフォーム</a></td>
+<td bgcolor="#F4FAFF" class="pt_12"><a href="/products/dhp/raccoon/outline.html">RACCOON</a></td>
+</tr>
+<tr>
+<td bgcolor="#C7E0FF" class="pt_12b">&nbsp;<a href="/products/any/index.html">トランスフォーマ</a></td>
+<td bgcolor="#F4FAFF" class="pt_12"><a href="/products/any/index.html">AnyTran</a></td>
+</tr>
+<tr>
+  <td bgcolor="#C7E0FF" class="pt_12b">&nbsp;販売・サポート終了について</td>
+  <td bgcolor="#F4FAFF" class="pt_12"><a href="/products/eollist.html">「その他の製品」の販売とサポートの終了に関してはこちら</a></td>
+
+</tr>
+</table>
+
+
+<br></td>
+</tr>
+<tr>
+<td align="right" class="pt_12"><a href="#top"><img src="../../images/item_pagetop.gif" alt="ページのトップへ" width="52" height="13" border="0"></a></td>
+</tr>
+</table>
+</div>
+
+<div id="lo_navi">
+<ul>
+<li><a href="/products/list.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('product','','/images/navi/navi_product2.gif',1)"><img src="/images/navi/navi_product.gif" name="product" width="150" height="25" border="0" id="product" /></a></li>
+<li><span class="line"><a href="/products/edi/index.html">EDI (企業間電子商取引)</a></span></li>
+<li><span class="line"><a href="/products/webedi/index.html">Web-EDI</a></span></li>
+<li class="t-row"><span class="t-line"><a href="/products/dhp/">データ ハンドリング<br />プラットフォーム</a></span></li>
+<li><span class="line"><a href="/products/any/">トランスフォーマ</a></span></li>
+<li><span class="line"><a href="/products/solution/">ソリューション</a></span></li>
+<li><span class="line"><a href="/products/support.html">製品サポートについて</a></span></li>
+<li><span class="line"><a href="/products/export.html">海外輸出について</a></span></li>
+
+<li><img src="/images/navi/navi_product_s.gif" alt="製品検索" /></li>
+<li><span class="line"><a href="/products/list.html">製品一覧から探す</a></span></li>
+<li><span class="line"><a href="/products/map.html">製品マップから探す</a></span></li>
+<li><span class="line"><a href="/products/problem.html">課題から探す</a></span></li>
+<li><img src="/images/navi/navi_case.gif" alt="導入事例" /></li>
+<li><span class="line active"><a href="/casestudies/products.html">製品別導入事例</a></span></li>
+<li><span class="line active"><a href="/casestudies/company.html">業種別導入事例</a></span></li>
+<li><a href="/contact/trial_dl.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('download','','/images/navi/navi_download2.gif',1)"><img src="/images/navi/navi_download.gif" name="download" width="150" height="25" border="0" id="download" /></a></li>
+<li class="t-row"><span class="t-line"><a href="https://www.dal.co.jp/form/trial2.php">評価版ダウンロード<br />
+  (ACMS Lite Neo)</a></span></li>
+<li class="t-row"><span class="t-line"><a href="https://www.dal.co.jp/form/trial.php">評価版ダウンロード<br />
+  (AnyTranDeskTop版他)</a></span></li>
+<li><a href="https://www.dal.co.jp/form/datadl.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('shiryo','','/images/navi/navi_shiryo2.gif',1)"><img src="/images/navi/navi_shiryo.gif" name="shiryo" width="150" height="25" border="0" id="shiryo" alt="資料ダウンロード" /></a></li>
+</ul>
+
+<div id="navi_bnr"> <a href="/products/dhp/raccoon/outline.html"><img src="/images/navi/bnr_raccoon.gif" alt="RACCOON" border="0" /></a> <a href="/webframer/"><img src="/images/navi/bnr_webframer.gif" alt="ACMS WebFramer" border="0" /></a></div>
+</div>
+
+</div>
+</div>
+
+<div id="footer">
+<table width="100%" border="0" align="right" cellpadding="0" cellspacing="0">
+<tr>
+  <td align="left" id="ftlink">&nbsp;&nbsp;&nbsp;<a href="/policy/index.html">プライバシーポリシー</a></td>
+<td align="right">Copyright 2012 Data Applications Co., Ltd.&nbsp;&nbsp;&nbsp;</td>
+</tr>
+</table>
+</div>
+<!-- Visionalist tag start -->
+<SCRIPT type="text/javascript" src="https://www04.tracer.jp/VL/Trace?c=bs6390&p=donyu02"></SCRIPT>
+<!-- Visionalist tag end -->
+
+<script language="javascript">
+<!--
+    document.write("<img src='https://car11.kaitaku.biz/car/beacon/BeaconReceiver.jsp?bid=BCID00626907366&title=" + document.title + "&charset=" + document.charset + "&characterSet=" + document.characterSet + "&refererEx=" + escape(document.referrer) + "'>");
+-->
+</script>
+
+</body>
+</html>

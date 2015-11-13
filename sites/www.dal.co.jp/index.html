@@ -1,0 +1,601 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=shift_jis" />
+		<meta name="keywords" content="EDI,JX手順,流通BMS,DAL,データ・アプリケーション" />
+		<meta name="description" content="1500社6000サイト以上の導入実績を誇るACMSシリーズ。企業間電子商取引（EDI・B2B）から社内のアプリケーション統合（EAI）までシームレスにつなぐデータ・エクスチェンジ・ミドルウェアです。" />
+		<!-- Google WebMasterTool -->
+		<meta name="google-site-verification" content="0n1mYHW0FjCXxWZdO2esNu9LdguQ2X3dfdLmd57E65w" />
+		<title>
+		EDIならDAL−データ・アプリケーション
+		</title>
+		<link rel="stylesheet" type="text/css" href="css/top.css" />
+		<link rel="stylesheet" type="text/css" href="css/font.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+		<link rel="stylesheet" type="text/css" href="css/topSlider.css" />
+		<script type="text/javascript" src="js/fw.js">
+		</script>
+		<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/topSlider.js"></script>
+
+        
+		<script type="text/JavaScript">
+			<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+		</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22731513-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	
+<script type="text/javascript">
+(function() {
+  var didInit = false;
+  function initMunchkin() {
+    if(didInit === false) {
+      didInit = true;
+      Munchkin.init('648-HCF-038',{"domainLevel":2});
+    }
+  }
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = '//munchkin.marketo.net/munchkin.js';
+  s.onreadystatechange = function() {
+    if (this.readyState == 'complete' || this.readyState == 'loaded') {
+      initMunchkin();
+    }
+  };
+  s.onload = initMunchkin;
+  document.getElementsByTagName('head')[0].appendChild(s);
+})();
+</script>
+</head>
+	<!--
+<body onload="MM_preloadImages('/images/gl_sub_customer2.gif','/images/gl_sub_partnersportal_2.gif')">
+-->
+	<body onLoad="MM_preloadImages('/images/navi/gl_product2.gif','/images/navi/gl_case2.gif','/images/navi/gl_download2.gif','/images/navi/gl_partner2.gif','/images/navi/gl_seminar2.gif','/images/navi/gl_inquiry2.gif','/images/gl_sub_ir2.gif')">
+		<div id="globalNav">
+			<table width="753" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td colspan="2" bgcolor="#000000">
+						<img src="/images/spacer.gif" alt="" width="1" height="5" />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<h1>EDIなら株式会社データ・アプリケーション</h1>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="/">
+							<div>
+								<img src="/images/logo.gif" alt="DAL 株式会社データアプリケーション" width="184" height="53" border="0" />
+							</div>
+						</a>
+					</td>
+					<td align="right">
+						<table border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td>
+									<a href="/company/greeting.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image29','','/images/gl_sub_company2.gif',1)">
+										<img src="/images/gl_sub_company.gif" alt="会社案内" name="Image29" width="70" height="17" border="0" id="Image29" />
+									</a>
+								</td>
+								<td>
+									<a href="/ir/index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image30','','/images/gl_sub_ir2.gif',1)">
+										<img src="/images/gl_sub_ir.gif"  alt="IR情報"name="Image30" width="64" height="17" border="0" id="Image30" />
+									</a>
+								</td>
+								<td>
+									<a href="/pressrelease.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image301','','/images/gl_sub_pressr2.gif',1)">
+										<img src="/images/gl_sub_pressr.gif"  alt="プレスリリース"name="Image301" width="112" height="17" border="0" id="Image301" />
+									</a>
+								</td>
+								<td>
+									<a href="https://www.dal.co.jp/form/inq.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image304','','/images/gl_sub_inquiry2.gif',1)">
+										<img src="/images/gl_sub_inquiry.gif" alt="お問い合わせ" name="Image304" width="97" height="17" border="0" id="Image34" />
+									</a>
+								</td>
+								<td align="left">
+									<a href="/sitemap.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image32','','/images/gl_sub_sitemap2.gif',1)">
+										<img src="/images/gl_sub_sitemap.gif" alt="サイトマップ" name="Image32" width="85" height="17" border="0" id="Image32" />
+									</a>
+								</td>
+								<td>&nbsp;
+									
+								</td>
+							</tr>
+						</table>
+						<table width="100" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td>
+									<a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image332','','/images/gl_sub_customer2.gif',1)">
+										<img src="/images/gl_sub_customer.gif" alt="カスタマーサポート" name="Image332" width="131" height="27" hspace="5" border="0" id="Image332" onclick="MM_openBrWindow('/systemstoppage/','','location=yes,status=yes,scrollbars=yes,resizable=yes,width=800,height=666')" />
+									</a>
+								</td>
+								<td>
+									<a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image3311','','/images/gl_sub_partnersportal_2.gif',1)">
+										<img src="/images/gl_sub_partnersportal.gif" alt="パートナーズポータル" name="Image3311" width="131" height="27" hspace="5" border="0" id="Image3311" onclick="MM_openBrWindow('https://www.dal.co.jp/pp/','','location=yes,status=yes,scrollbars=yes,resizable=yes,width=800,height=580')" />
+									</a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table width="753" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="124"><a href="/products/list.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image21','','/images/navi/gl_product2.gif',1)"><img src="/images/navi/gl_product.gif" alt="製品情報" name="Image21" width="124" height="25" border="0" id="Image21" /></a></td>
+					<td width="124"><a href="/casestudies/company.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image22','','/images/navi/gl_case2.gif',1)"><img src="/images/navi/gl_case.gif" alt="事例紹介" name="Image22" width="124" height="25" border="0" id="Image22" /></a></td>
+					<td width="130"><a href="/contact/trial_dl.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image23','','/images/navi/gl_download2.gif',1)"><img src="/images/navi/gl_download.gif" alt="製品ダウンロード" name="Image23" width="130" height="25" border="0" id="Image23" /></a></td>
+					<td width="125"><a href="/partner/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image24','','/images/navi/gl_partner2.gif',1)"><img src="/images/navi/gl_partner.gif" alt="パートナー紹介" name="Image24" width="125" height="25" border="0" id="Image24" /></a></td>
+					<td width="127"><a href="/seminar/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image25','','/images/navi/gl_seminar2.gif',1)"><img src="/images/navi/gl_seminar.gif" alt="セミナー／トレーニング" name="Image25" width="126" height="25" border="0" id="Image25" /></a></td>
+					<td width="124"><a href="https://www.dal.co.jp/form/datadl.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image26','','/images/navi/gl_inquiry2.gif',1)"><img src="/images/navi/gl_inquiry.gif" alt="資料ダウンロード" name="Image26" width="124" height="25" border="0" id="Image26" /></a></td>
+				</tr>
+			</table>
+		</div>
+ 		<div id="mainImage">
+		<div class="section slide08"><a href="acms/protocol/" target="_blank">&nbsp;</a>
+		</div><!-- /slide08 -->
+		<div class="section slide06">
+		<p class="tit"><img src="images/topSlider/main_tit_06.gif" alt="ACMS WebFramer" width="353" height="48" /></p>
+		<p class="txt"><img src="images/topSlider/main_txt_06.gif" alt="競争力あるビジネス実現のために Web-EDIは新たなステージへ" width="332" height="51" /></p>
+		<p class="btn typeProduct"><a href="webframer/" target="_blank"><img src="images/topSlider/main_btn_product.gif" alt="製品ページへはこちら" width="139" height="32" /></a></p>
+		</div><!-- /slide06 -->
+		<div class="section slide05">
+		<p class="btn typeProduct"><a href="products/dhp/raccoon/outline.html"><img src="images/topSlider/main_btn_product.gif" alt="製品ページへはこちら" width="139" height="32" /></a></p>
+		</div><!-- /slide05 -->
+		<div class="section slide04">
+		<p class="tit"><img src="images/topSlider/main_tit_04.gif" alt="ACMS" width="155" height="71" /></p>
+		<p class="txt"><img src="images/topSlider/main_txt_04.gif" alt="データ連携ソリューションのACMS（エーシーエムエス） 国産ソフトウェアベンダーEDI市場シェアNo.1を継続1,500社以上、累計出荷数6,000本以上の導入実績が誇る信頼性と性能" width="399" height="65" /></p>
+		<p class="btn typeCase"><a href="casestudies/products.html"><img src="images/topSlider/main_btn_case.gif" alt="最新事例はこちら" width="131" height="32" /></a></p>
+		</div><!-- /slide04 -->
+		</div><!-- /mainImage -->
+		<table width="753px" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td align="center">
+					
+			  </td>
+			</tr>
+		</table>
+		<div id="wrap">
+			<div id="left_contents">
+				<!-- Information -->
+				<div id="information">
+					<img src="images/top_title_info.gif" alt="Information" />
+					<div class="left_block">
+						<!--リリースノート -->
+
+						<p><strong>2015/9/1<span class="red">NEW</span></strong></p>
+						<div class="release"><a href="information/info_20150901.html">AnyTran 5.x.x販売/サポート終了のお知らせ</a></div>
+
+						<p><strong>2015/8/31<span class="red">NEW</span></strong></p>
+						<div class="release"><a href="products/edi/monitoring/release.html">ACMS運用監視機能 1.0をリリースしました。</a></div>
+
+						<p><strong>2015/8/31<span class="red">NEW</span></strong></p>
+						<div class="release"><a href="products/edi/e2x/release.html">ACMS E2X 4.3をリリースしました。</a></div>
+
+						<p><strong>2015/8/31<span class="red">NEW</span></strong></p>
+						<div class="release"><a href="products/edi/b2b/release.html">ACMS B2B/ACMS B2B LE 4.3をリリースしました。</a></div>
+
+						<p><strong>2015/8/28<span class="red">NEW</span></strong></p>
+						<div class="release"><a href="http://www.anytran.jp/outline/release/release_any60.html" target="_blank">AnyTran 6.0をリリースしました。</a></div>
+
+
+						<!--リリースノート -->
+						<a href="what_backnumber.html">
+							<img src="images/btn_backnumber.gif" alt="バックナンバー" width="168" height="17" border="0" class="btn" />
+						</a>
+					</div>
+					<!-- PressRelease -->
+				</div>
+				<div id="press">
+					<img src="images/top_title_press.gif" alt="Press Release" width="190" height="22" />
+					<div class="left_block">
+						<!--プレスリリース -->
+						<div class="release">
+							<p><strong>2015/09/29<span class="red">NEW</span></strong><br />
+								<a href="pressrel/20150929.html">DAL、電力自由化に向けて、「スイッチング支援システム」および「広域機関システム」との連携を効率化するEDIソフト「ACMS」を電気事業者に向けて提供<br /></a>
+							</p>
+                        </div>
+						<div class="release">
+							<p><strong>2015/08/31</strong><br />
+								<a href="pressrel/20150831.html">DAL、統合EDI製品「ACMSシリーズ」の最新版を発売<br /></a>
+							</p>
+                        </div>
+						<div class="release">
+							<p><strong>2015/04/01</strong><br />
+								<a href="pressrel/20150401.html">DAL、社長交代のお知らせ<br /></a>
+							</p>
+                        </div>
+						<div class="release">
+							<p><strong>2015/03/25</strong><br />
+								<a href="pressrel/20150325.html">DAL、データ連携・移行プログラムをドラック＆ドロップで開発できる<br />
+                                データ ハンドリング プラットフォーム「RACCOON」最新版を発売<br /></a>
+							</p>
+                        </div>
+						<a href="pressrelease.html">
+							<img src="images/btn_backnumber.gif" alt="バックナンバー" width="168" height="17" border="0" class="btn" />
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div id="center_contents">
+				<h2>
+					<img src="images/top_title_case.gif" alt="導入事例" />
+				</h2>
+				
+				<p class="subtitle">EDIやデータ変換の導入事例をご紹介しています。</p>
+
+				<div class="top_case">
+					<div class="case_title">
+						<h3>
+							<a href="casestudies/31seigyokizai/index.html">
+								制御機材株式会社							</a>
+						&nbsp;（2013/12）&nbsp;						</h3>
+						<span class="business">
+						商社・卸
+						</span>
+					</div>
+				<div class="case_product">
+						<span class="product_name">
+						導入製品：
+						</span>
+						<span class="business">
+							ACMS B2B LE
+						</span>
+					</div>
+					<p>
+						<a href="casestudies/31seigyokizai/index.html">ACMS B2B LE と「FAX 連携機能」の合わせ技で、<br />
+注文、見積業務の完全自動化を実現</a>				</p>
+				</div>
+
+				<div class="top_case">
+					<div class="case_title" style="height:26px;">
+						<h3>
+							<a href="casestudies/30columbiasports/index.html">株式会社コロンビアスポーツウェアジャパン</a>
+						&nbsp;（2012/03）&nbsp;</h3>
+						<span class="business">
+						アパレル
+						</span>
+					</div>
+					<div class="case_product">
+						<span class="product_name">
+						導入製品：
+						</span>
+						<span class="business">
+						ACMS B2B LE
+						</span>
+					</div>
+					<p>
+						<a href="casestudies/30columbiasports/index.html">フォーマット違いのデータを自動変換してリポジトリへ<br />
+ETLツールの役割も果たせるACMS B2B LE</a>					</p>
+				</div>
+
+				<div class="top_case">
+					<div class="case_title">
+						<h3>
+							<a href="casestudies/29senko/index.html">センコー株式会社</a>
+						&nbsp;（2012/01）&nbsp;</h3>
+						<span class="business">
+						運輸
+						</span>
+					</div>
+					<div class="case_product">
+						<span class="product_name">
+						導入製品：
+						</span>
+						<span class="business">
+						ACMS E<sup>2</sup>X
+						</span>
+						<span class="business">
+							AnyTran
+						</span>
+					</div>
+					<p>
+						<a href="casestudies/29senko/index.html">産業界を止めない一大BCPプロジェクト<br />
+ACMS E<sup>2</sup>X、AnyTranでのEDIシステム大刷新</a>					</p>
+				</div>
+
+				<div class="btn_list">
+					<a href="casestudies/products.html">
+						<img src="images/btn_case_list.gif" alt="導入事例一覧" border="0" />
+					</a>
+				</div>
+				<h2>
+					<img src="images/top_title_solution.gif" alt="ソリューション" width="350" height="25" />
+				</h2>
+				<div class="top_product">
+					<div class="product_box1">
+						<div class="product_title1">
+							<h3>
+                                EDI（企業間電子商取引）
+							</h3>
+						</div>
+                        <a href="solution/index.html">
+                        	<img src="images/bnr_bms.gif" alt="流通BMS対応ソリューション" width="173" border="0" />
+                        </a>
+                    </div>
+					<div class="product_box2">
+						<div class="product_title2">
+							<h3>
+                                Web-EDI
+							</h3>
+						</div>
+                        <a href="solution/backrex.html">
+                            <img src="images/bnr_bacrex.gif" alt="BACREX対応ソリューション" width="173" border="0" />
+                        </a>
+                    </div>
+				</div>
+				<div class="top_product">
+					<div class="product_box1">
+					<div class="product_title1">
+							<h3>
+                                FAX-EDI
+							</h3>
+						</div>
+                        <a href="solution/faxedi.html">
+                            <img src="images/bnr_faxedi.jpg" alt="FAX-EDIソリューション" width="173" border="0" />
+                        </a>
+                    </div>
+				</div>
+				<div class="btn_list">
+					<a href="products/solution/">
+						<img src="images/btn_solution.gif" alt="ソリューション" width="106" height="17" border="0" />
+					</a>
+				</div>
+                
+				<div class="top_product" style="padding-top:10px;">
+					<div class="product_box1">
+                        <a href="http://www.ediblog.jp/" target="_blank">
+                            <img src="images/bnr_edi.jpg" alt="ふじのひろしEDI情報館" width="173" border="0" />
+                        </a>
+					</div>
+					<div class="product_box2">
+                        <a href="glossary/index.html">
+                            <img src="images/bnr_glossary.gif" alt="EDI用語集　EDIで使用される専門用語集" width="173" border="0" />
+                        </a>
+					</div>
+				</div>
+				<div class="top_product">
+					<div class="product_box1">
+                        <a href="mailmagazine/index.html">
+                            <img src="images/bnr_dalflash.jpg" alt="DAL FLASH　B2Bシステム構築者を支援するメールマガジン" width="173" border="0" />
+                        </a>
+					</div>
+					<div class="product_box2">
+                    <a href="http://www.anytran.jp/index.html?link_id2=topany" onClick="return (VL_ExtLink(this))" target="_blank">
+                            <img src="images/bnr_anytran.jpg" alt="データ交換・フォーマット交換・漢字コード変換　AnyTran" width="173" border="0" />
+                        </a>
+					</div>
+				</div>
+                
+			</div>
+
+			<div id="right_contents">
+            <div style="display:none;"><img src="images/top_title_infra.gif" alt="セミナー／トレーニング情報" width="190" height="22" /></div>
+				<div style="display:none;text-align:center;padding:5px 0 10px;">
+<iframe width="178" height="100" src="//www.youtube.com/embed/f1DgfXA4qms?showinfo=0&rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+                
+<div id="seminer">
+					<img src="images/top_title_semi.gif" alt="セミナー／トレーニング情報" width="190" height="22" />
+					<div class="right_block">
+						<!--リリースノート -->
+						<div class="release">
+							<p class="dblue">
+								<b>
+								セミナー情報
+								</b>
+							</p>
+						<ul>
+							<li>
+								<table width="100%" border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td><a href="seminar/index.html"><strong>新はじめてのEDI</strong></a></td>
+									</tr>
+								</table>
+                            	2015年11月26日（木）<br />
+                            	10:00〜11:40<br />
+								2016年1月14日（木）<br />
+                            	10:00〜11:40
+                            </li>
+							<br />
+						</ul>
+							<ul>
+							<li>
+								<table width="100%" border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td><a href="seminar/index.html"><strong>マルチフォーマットをまとめて変換<br />RACCOON紹介セミナー</strong></a></td>
+									</tr>
+								</table>
+								2016年1月14日（木）<br />
+                                13:30〜14:30
+                            </li>
+							<br />
+						</ul>
+							<ul>
+							<li>
+								<table width="100%" border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td><a href="seminar/index.html"><strong>統合EDI環境をクラウド上で実現する<br />ACMSシリーズ紹介セミナー</strong></a></td>
+									</tr>
+								</table>
+								2016年1月14日（木）<br />
+								15:00〜16:00
+                            </li>
+							<br />
+						</ul>
+							<ul>
+							<li>
+								<table width="100%" border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td><a href="seminar/index.html"><strong>EDIトランスレータ<br />AnyTran紹介セミナー</strong></a></td>
+									</tr>
+								</table>
+								2015年11月26日（木）<br />
+								13:30〜15:00
+                            </li>
+							<br />
+						</ul>
+							<ul>
+							<li>
+								<table width="100%" border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td><a href="seminar/index.html"><strong>社内外のデータをシームレスに連携する<br />ACMS紹介セミナー</strong></a></td>
+									</tr>
+								</table>
+								2015年11月26日（木）<br />
+								15:30〜17:00
+                                </li>
+							</ul>
+						</div>
+
+						<div class="release">
+							<p class="dblue">
+								<b>
+								トレーニング情報
+								</b>
+							</p>
+							<ul>
+								<li>
+								・
+								<a href="training/training_i.html" target="_blank">
+									ACMSを使った流通BMS
+								</a>
+								</li>
+								<li>
+								・
+								<a href="training/training_b.html" target="_blank">
+									AnyTran
+								</a>
+								</li>
+								<li>
+								・
+								<a href="training/training_g.html" target="_blank">
+									ACMS E<sup>2</sup>X／      ACMS B2B
+								</a>
+								</li>
+								<li>
+								・
+								<a href="training/training_h.html" target="_blank">
+									ACMS E<sup>2</sup>X／ACMS B2B
+									<br />
+									&nbsp;EDI連携オプション
+								</a>
+								</li>
+							</ul>
+						</div>
+
+						<a href="seminar/index.html">
+							<img src="images/btn_seminer.gif" alt="セミナー／トレーニング一覧" width="168" height="17" border="0" class="btn" />
+						</a>
+					</div>
+					<!-- PressRelease -->
+			</div>
+			</div>
+		</div>
+	
+	<div id="footer">
+		<table width="100%" border="0" align="right" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="left">
+					&nbsp;&nbsp;&nbsp;
+					<a href="/policy/index.html">
+						<font color="ffffff">
+						プライバシーポリシー
+						</font>
+					</a>
+					&nbsp;&nbsp;&nbsp;
+				</td>
+				<td align="left">
+<p>EDIで1500社以上の導入企業と6000サイトを越えるシステム を支えるデータ・アプリケーション</p>
+				</td>
+				<td align="right">
+					Copyright 2012 Data Applications Co., Ltd.&nbsp;&nbsp;&nbsp;
+				</td>
+			</tr>
+		</table>
+	</div>
+	<!-- Visionalist tag start -->
+	<SCRIPT type="text/javascript" src="https://www04.tracer.jp/VL/Trace?c=bs6390&p=toppage&fl=1&lk=1">
+	</SCRIPT>
+	<!-- Visionalist tag end -->
+	<div id="container">
+
+	<!-- Google Analytics -->
+	<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www."); document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+		try { var pageTracker = _gat._getTracker("UA-15583308-1"); pageTracker._addOrganic("goo","MT"); pageTracker._addOrganic("infoseek","qt"); pageTracker._trackPageview(); } catch(err) {}
+	</script>
+
+	<script type='text/javascript' charset='utf-8' src='//clickanalyzer.jp/ClickIndex.js' id='fullspeed/20100604184427'></script>
+	<noscript><img src='//clickanalyzer.jp/ClickIndex.php?mode=noscript&id=fullspeed&pg=20100604184427' width='0' height='0' /></noscript>
+
+<script language="javascript">
+
+<!--
+
+    document.write("<img src='https://car11.kaitaku.biz/car/beacon/BeaconReceiver.jsp?bid=BCID00626907366&title=" + document.title + "&charset=" + document.charset + "&characterSet=" + document.characterSet + "&refererEx=" + escape(document.referrer) + "'>");
+
+-->
+
+</script>
+
+</div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 963668037;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/963668037/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+</body>
+</html>

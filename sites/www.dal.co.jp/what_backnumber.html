@@ -1,0 +1,1640 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis" />
+<meta name="keywords" content="EDI,B2B,EAI,DAL,ACMS,ebXML,EDIINT AS2,AnyTran,B2B,Card Authorization" />				
+<meta name="description" content="1500社6000サイト以上の導入実績を誇るACMSシリーズは、
+企業間電子商取引（B2B）から社内のアプリケーション統合（EAI）まで、社内外のアプリケーションをシームレスにつなぐデータ・エクスチェンジ・ミドルウェアです。" />
+<title>DAL−データ・アプリケーション｜バックナンバー：Information</title>
+<link rel="stylesheet" type="text/css" href="css/base.css" media="screen, print" />
+<link rel="stylesheet" type="text/css" href="css/common.css" media="screen, print" />
+<link rel="stylesheet" type="text/css" href="css/font.css" media="screen, print" />
+<script type="text/javascript" src="js/fw.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22731513-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body onload="MM_preloadImages('../images/navi/navi_product2.gif','../images/navi/navi_download2.gif','../images/navi/navi_shiryo2.gif','../images/navi/gl_product2.gif','../images/navi/gl_case2.gif','../images/navi/gl_download2.gif','../images/navi/gl_partner2.gif','../images/navi/gl_seminar2.gif','../images/navi/gl_inquiry2.gif','../images/gl_sub_company2.gif','../images/gl_sub_ir2.gif','../images/gl_sub_recruit2.gif','../images/gl_sub_sitemap2.gif','../images/gl_sub_customer2.gif')">
+
+<a name="top"></a>
+<div id="container">
+<script type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<script type="text/JavaScript">
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+<body onLoad="MM_preloadImages('/images/navi/gl_product2.gif','/images/navi/gl_case2.gif','/images/navi/gl_download2.gif','/images/navi/gl_partner2.gif','/images/navi/gl_seminar2.gif','/images/navi/gl_inquiry2.gif','/images/gl_sub_ir2.gif','/images/gl_sub_customer2.gif','/images/gl_sub_partnersportal_2.gif')">
+<div id="globalNav">
+<table width="753" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td colspan="2" bgcolor="#000000"><img src="/images/spacer.gif" alt="" width="1" height="5" /></td>
+</tr>
+<tr>
+<td><a href="/"><img src="/images/logo.gif" alt="DAL 株式会社データアプリケーション" width="184" height="53" border="0" /></a></td>
+<td align="right"><table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+  <td><a href="/company/greeting.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image29','','/images/gl_sub_company2.gif',1)"><img src="/images/gl_sub_company.gif" alt="会社案内" name="Image29" width="70" height="17" border="0" id="Image29" /></a></td>
+  <td><a href="/ir/index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image30','','/images/gl_sub_ir2.gif',1)"><img src="/images/gl_sub_ir.gif"  alt="IR情報"name="Image30" width="64" height="17" border="0" id="Image30" /></a></td>
+  <td><a href="/pressrelease.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image301','','/images/gl_sub_pressr2.gif',1)"><img src="/images/gl_sub_pressr.gif"  alt="プレスリリース"name="Image301" width="112" height="17" border="0" id="Image301" /></a></td>
+  <td><a href="https://www.dal.co.jp/form/inq.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image304','','/images/gl_sub_inquiry2.gif',1)"><img src="/images/gl_sub_inquiry.gif" alt="お問い合わせ" name="Image304" width="97" height="17" border="0" id="Image34" /></a></td>
+  <td align="left"><a href="/sitemap.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image32','','/images/gl_sub_sitemap2.gif',1)"><img src="/images/gl_sub_sitemap.gif" alt="サイトマップ" name="Image32" width="85" height="17" border="0" id="Image32" /></a></td>
+  <td>&nbsp;</td>
+  </tr>
+</table>  
+  <table width="100" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image332','','/images/gl_sub_customer2.gif',1)"><img src="/images/gl_sub_customer.gif" alt="カスタマーサポート" name="Image332" width="131" height="27" hspace="5" border="0" id="Image332" onclick="MM_openBrWindow('/systemstoppage/','','location=yes,status=yes,scrollbars=yes,resizable=yes,width=800,height=666')" /></a></td>
+      <td><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image3311','','/images/gl_sub_partnersportal_2.gif',1)"><img src="/images/gl_sub_partnersportal.gif" alt="パートナーズポータル" name="Image3311" width="131" height="27" hspace="5" border="0" id="Image3311" onclick="MM_openBrWindow('https://www.dal.co.jp/pp/','','location=yes,status=yes,scrollbars=yes,resizable=yes,width=800,height=580')" /></a></td>
+    </tr>
+  </table></td>
+</tr>
+</table>
+
+<table width="753" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td width="124"><a href="/products/list.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image21','','/images/navi/gl_product2.gif',1)"><img src="/images/navi/gl_product.gif" alt="製品情報" name="Image21" width="124" height="25" border="0" id="Image21" /></a></td>
+<td width="124"><a href="/casestudies/company.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image22','','/images/navi/gl_case2.gif',1)"><img src="/images/navi/gl_case.gif" alt="事例紹介" name="Image22" width="124" height="25" border="0" id="Image22" /></a></td>
+<td width="130"><a href="/contact/trial_dl.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image23','','/images/navi/gl_download2.gif',1)"><img src="/images/navi/gl_download.gif" alt="製品ダウンロード" name="Image23" width="130" height="25" border="0" id="Image23" /></a></td>
+<td width="125"><a href="/partner/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image24','','/images/navi/gl_partner2.gif',1)"><img src="/images/navi/gl_partner.gif" alt="パートナー紹介" name="Image24" width="125" height="25" border="0" id="Image24" /></a></td>
+<td width="127"><a href="/seminar/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image25','','/images/navi/gl_seminar2.gif',1)"><img src="/images/navi/gl_seminar.gif" alt="セミナー／トレーニング" name="Image25" width="126" height="25" border="0" id="Image25" /></a></td>
+<td width="124"><a href="https://www.dal.co.jp/form/datadl.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image26','','/images/navi/gl_inquiry2.gif',1)"><img src="/images/navi/gl_inquiry.gif" alt="資料ダウンロード" name="Image26" width="124" height="25" border="0" id="Image26" /></a></td>
+</tr>
+</table>
+</div>
+
+<div id="path"><span class="line"><a href="./">HOME</a>&nbsp;&gt;&nbsp;バックナンバー：Information</span></div>
+<div id="wrap">
+<div id="contents">
+		<div id="category">
+		<h1>バックナンバー：Information</h1>
+		<p>バックナンバーのご紹介。</p>
+		</div>
+		
+        <div id="product_main">
+          <h2><img src="images/top_title_backno.gif" alt="バックナンバー" width="574" height="24" /></h2>
+          <div id="cate_list">
+            <table width="560" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td align="right" class="pt_12"><a href="#2015">●2015</a>&nbsp;&nbsp;<a href="#2014">●2014</a>&nbsp;&nbsp;<a href="#2013">●2013</a>&nbsp;&nbsp;<a href="#2012">●2012</a>&nbsp;&nbsp;<a href="#2011">●2011</a>&nbsp;&nbsp;<a href="#2010">●2010</a>&nbsp;&nbsp;<a href="#2009">●2009</a>&nbsp;&nbsp;<a href="#2008">●2008</a>&nbsp;&nbsp;<a href="#2007">●2007</a>&nbsp;&nbsp;<a href="#2006">●2006</a>&nbsp;&nbsp;<a href="#2005">●2005</a>&nbsp;&nbsp;<a href="#2004">●2004</a>&nbsp;&nbsp;<a href="#2003">●2003</a></td>
+              </tr>
+            </table>
+            <br />
+            <table width="560" border="0" align="center" cellpadding="1" cellspacing="0" bgcolor="#4C82C2">
+              <tr>
+                <td width="240" height="118"><table width="560" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" height="118">
+                    <tr>
+                      <td width="343" height="8" colspan="3"><img src="images/spacer.gif" width="1" height="8" /></td>
+                    </tr>
+                    <tr>
+                      <td width="10" height="100"><img src="images/spacer.gif" width="10" height="1" /></td>
+                      <td width="500" height="100" align="left" valign="top"><!--***** What's Newエリア −ここから********************-->
+
+                        <b><span class="pt_12"><a name="2015" id="2015"></a>＜＜ 2015年 ＞＞</span></b>
+<p class="pt_12"><strong>2015/9/1</strong><br />
+<span class="release"><a href="information/info_20150901.html">AnyTran 5.x.x販売/サポート終了のお知らせ</a></span></p>
+
+<p class="pt_12"><strong>2015/8/31</strong><br />
+<span class="release"><a href="products/edi/monitoring/release.html">ACMS運用監視機能 1.0をリリースしました。</a></span></p>
+
+<p class="pt_12"><strong>2015/8/31</strong><br />
+<span class="release"><a href="products/edi/e2x/release.html">ACMS E2X 4.3をリリースしました。</a></span></p>
+
+<p class="pt_12"><strong>2015/8/31</strong><br />
+<span class="release"><a href="products/edi/b2b/release.html">ACMS B2B/ACMS B2B LE 4.3をリリースしました。</a></span></p>
+
+<p class="pt_12"><strong>2015/8/28</strong><br />
+<span class="release"><a href="http://www.anytran.jp/outline/release/release_any60.html" target="_blank">AnyTran 6.0をリリースしました。</a></span></p>
+
+<p class="pt_12"><strong>2015/6/30</strong><br />
+<span class="release"><a href="products/dhp/raccoon/release.html">RACCOON 1.3.1をリリースしました。</a></span></p>
+
+<p class="pt_12"><strong>2015/6/30</strong><br />
+<span class="release"><a href="products/webedi/webframer/release.html">ACMS WebFramer 1.2をリリースしました。</a></span></p>
+
+<p class="pt_12"><strong>2015/6/3</strong><br />
+<span class="release"><a href="information/info_20150603.html">流通BMSガイドライン改定に対するACMSの対応</a></span></p>
+
+<p class="pt_12"><strong>2015/5/29</strong><br />
+<span class="release"><a href="products/edi/wa/release.html">ACMS WebAgent, ACMS WebAgent LE, ACMS WebAgent Script Studio バージョン2.2.3をリリースしました。</a></span></p>
+
+<p class="pt_12"><strong>2015/4/17</strong><br />
+<span class="release"><a href="products/edi/liteneo/release.html">
+ACMS Lite Neo 1.7をリリースしました。</a></span></p>
+
+<p class="pt_12"><strong>2015/3/26</strong><br />
+<span class="release"><a href="products/dhp/raccoon/release.html">
+RACCOON 1.3をリリースしました。</a></span></p>
+
+<p class="pt_12"><strong>2015/3/2</strong><br />
+<span class="release"><a href="products/webedi/template/outline.html">
+ACMS WebFramer 流通BMS対応Web-EDIテンプレート 1.0をリリース</a></span></p>
+
+<p class="pt_12"><strong>2015/1/16</strong><br />
+<span class="release"><a href="information/info_20150116.html">
+当社名を騙る業者からの不審なメールにご注意ください</a></span></p>
+
+<p class="pt_12"><strong>2015/1/8</strong><br />
+<span class="release"><a href="information/info_20150108.html">
+サーバメンテナンスによるカスタマ・サポート・サービス停止のお知らせ</a></span></p>
+
+<p class="pt_12"><strong>2015/1/7</strong><br />
+<span class="release"><a href="products/edi/e2x/release.html">
+ACMS E<sup>2</sup>X4.2.0をリリースしました。</a></span></p>
+
+<p class="pt_12"><strong>2015/1/7</strong><br />
+<span class="release"><a href="products/edi/b2b/release.html">
+ACMS B2B/ACMS B2B LE 4.2.0をリリースしました。</a></span></p>
+
+                        <br /><b><span class="pt_12"><a name="2014" id="2014"></a>＜＜ 2014年 ＞＞</span></b>
+
+<p class="pt_12"><strong>2014/12/5</strong><br />
+<span class="release"><a href="products/dhp/raccoon/release.html">
+RACCOONバージョン1.2.1をリリースしました。</a></span></p>
+
+<p class="pt_12"><strong>2014/11/19</strong><br />
+<span class="release"><a href="information/info_20141119.html">
+年末年始の営業のお知らせ</a></span></p>
+
+<p class="pt_12"><strong>2014/11/4</strong><br />
+<span class="release"><a href="http://software.fujitsu.com/jp/partner/solution/products/s14052/" target="_blank">
+RACCOONがFUJITSU Software パートナー&amp;ソリューションの連携ソリューション一覧に掲載</a></span></p>
+
+<p class="pt_12"><strong>2014/10/21</strong><br />
+<span class="release"><a href="information/info_20141021.html">
+クラウド環境におけるACMSのサポートについて掲載しました。</a></span></p>
+
+<p class="pt_12"><strong>2014/10/21</strong><br />
+<span class="release"><a href="http://www.anytran.jp/outline/release/release_any50.html" target="_blank">
+AnyTranバージョン5.16.0をリリースしました。</a></span></p>
+
+<p class="pt_12"><strong>2014/9/30</strong><br />
+<span class="release"><a href="products/dhp/raccoon/release.html">
+RACCOONバージョン1.2.0をリリースしました。</a></span></p>
+
+<p class="pt_12"><strong>2014/8/29</strong><br />
+<span class="release"><a href="products/edi/ws/release.html">
+ACMS/WSバージョン5.4.0をリリースしました。</a></span></p>
+
+<p class="pt_12"><strong>2014/6/30</strong><br />
+<span class="release"><a href="products/dhp/raccoon/release.html">
+RACCOONバージョン1.1をリリースしました。</a></span></p>
+
+<p class="pt_12"><strong>2014/6/30</strong><br />
+<span class="release"><a href="products/webedi/webframer/release.html">
+ACMS  WebFramer バージョン1.1をリリースしました。</a></span></p>
+
+<p class="pt_12"><strong>2014/5/30</strong><br />
+<span class="release"><a href="products/edi/e2x/release.html">
+ACMS E<sup>2</sup>X バージョン4.1.0をリリースしました。</a></span></p>
+
+<p class="pt_12"><strong>2014/5/30</strong><br />
+<span class="release"><a href="products/edi/b2b/release.html">
+ACMS B2B/ACMS B2B LEバージョン4.1.0をリリースしました。</a></span></p>
+
+<p class="pt_12"><strong>2014/5/30</strong><br />
+<span class="release"><a href="http://www.anytran.jp/outline/release/release_any50.html" target="_blank">
+AnyTranバージョン5.15.2をリリースしました。</a></span></p>
+
+<p class="pt_12"><strong>2014/5/12</strong><br />
+<span class="release"><a href="products/edi/wa/release.html">
+ACMS WebAgent バージョン2.2.1をリリースしました。</a></span></p>
+
+<p class="pt_12"><strong>2014/4/28</strong><br />
+<span class="release"><a href="information/info_20140428.html">
+Apache Struts の脆弱性に関するACMS製品の影響について</a></span></p>
+
+<p class="pt_12"><strong>2014/4/18</strong><br />
+<span class="release"><a href="information/info_20140416.html">
+Open SSLの脆弱性に関するACMS製品の影響について</a></span></p>
+
+<p class="pt_12"><strong>2014/2/28</strong><br />
+<span class="release"><a href="products/edi/liteneo/release.html">
+ACMS Lite Neo バージョン1.6.0をリリースしました。</a></span></p>
+
+<p class="pt_12"><strong>2014/2/28</strong><br />
+<span class="release"><a href="products/edi/ws/release.html">
+ACMS/WS バージョン5.3.0をリリースしました。</a></span></p>
+
+<p class="pt_12"><strong>2014/2/6</strong><br />
+<span class="release"><a href="https://messe.nikkei.co.jp/rt/" target="_blank">
+リテールテックJapanに、Web-EDIシステム基盤「ACMS WebFramer」で出展します。</a></span></p>
+
+<p class="pt_12"><strong>2014/1/14</strong><br />
+<span class="release"><a href="information/info_20140114.html">
+サーバメンテナンスのお知らせ。</a></span></p>
+
+                        <br /><b><span class="pt_12"><a name="2013" id="2013"></a>＜＜ 2013年 ＞＞</span></b>
+
+<p class="pt_12"><strong>2013/12/2</strong><br />
+<span class="release"><a href="information/info_20131202.html">
+年末年始の営業のお知らせ。</a></span></p>
+
+<p class="pt_12"><strong>2013/11/29</strong><br />
+<span class="release"><a href="products/edi/wa/release.html">
+ACMS WebAgent バージョン2.2.0をリリースしました。</a></span></p>
+
+<p class="pt_12"><strong>2013/11/22</strong><br />
+<span class="release"><a href="http://software.fujitsu.com/jp/partner/solution/products/acms/" target="_blank">
+FUJITSU Software パートナープログラム 連携ソリューション一覧にACMSシリーズが掲載</a></span></p>
+
+<p class="pt_12"><strong>2013/10/9</strong><br />
+<span class="release"><a href="information/info_20131009.html">
+ACMS E<sup>2</sup>X、ACMS B2BおよびACMS B2B LEのバージョン3.x.x販売／サポート終了のお知らせ</a></span></p>
+
+<p class="pt_12"><strong>2013/10/4</strong><br />
+<span class="release"><a href="information/info_20131004.html">
+イオン様向け流通BMS用サーバ証明書更新作業に関する弊社製品へのFAQ</a></span></p>
+
+<p class="pt_12"><strong>2013/10/1</strong><br />
+<span class="release"><a href="information/info_20131001_2.html">
+富士通エフ・アイ・ピー(株)様からイオン様流通BMS取引先向けレターへの弊社回答</a></span></p>
+
+<p class="pt_12"><strong>2013/10/1</strong><br />
+<span class="release"><a href="information/info_20131001.html">
+イオン様流通BMS用サーバ証明書更新に伴う鍵長の変更対応について</a></span></p>
+
+<p class="pt_12"><strong>2013/9/30</strong><br />
+<span class="release"><a href="products/webedi/webframer/outline.html">
+ACMS WebFramerバージョン1.0.0をリリースしました。</a></span></p>
+
+<p class="pt_12"><strong>2013/8/30</strong><br />
+<span class="release"><a href="information/info_20130830.html">
+Oracle JavaでのSSL/TLS Renegotiation脆弱性への対応の影響について</a></span></p>
+
+<p class="pt_12"><strong>2013/8/9</strong><br />
+<span class="release"><a href="information/info_20130809.html">
+新製品の販売開始延期のお知らせとお詫び</a></span></p>
+
+<p class="pt_12"><strong>2013/5/31</strong><br />
+<span class="release"><a href="products/edi/e2x/release.html">
+ACMS E<sup>2</sup>Xバージョン4.0.0をリリースしました。</a></span></p>
+
+<p class="pt_12"><strong>2013/5/31</strong><br />
+<span class="release"><a href="products/edi/b2b/release.html">
+ACMS B2B(LE)バージョン4.0.0をリリースしました。</a></span></p>
+
+<p class="pt_12"><strong>2013/3/13</strong><br />
+<span class="release"><a href="products/edi/liteneo/150patch.html">
+ACMS Lite Neoバージョン1.5.0パッチ適用のお願い</a></span></p>
+
+<p class="pt_12"><strong>2013/2/1</strong><br />
+<span class="release"><a href="information/info_20130201.html">
+サーバーメンテナンスのお知らせ</a></span></p>
+
+<p class="pt_12"><strong>2013/1/18</strong><br />
+<span class="release"><a href="information/info_20130118.html">
+ACMS/WS販売終了のお知らせ</a></span></p>
+
+                        <br /><b><span class="pt_12"><a name="2012" id="2012"></a>＜＜ 2012年 ＞＞</span></b>
+
+<p class="pt_12"><strong>2012/11/21</strong><br />
+<span class="release"><a href="information/info_20121121.html">
+年末年始の営業のお知らせ。</a></span></p>
+
+<p class="pt_12"><strong>2012/7/31</strong><br />
+<span class="release"><a href="products/edi/e2x/release.html">
+ACMS E<sup>2</sup>Xバージョン3.9.1をリリースしました</a></span></p>
+
+<p class="pt_12"><strong>2012/7/31</strong><br />
+<span class="release"><a href="products/edi/b2b/release.html">
+ACMS B2B（LE）バージョン3.9.1をリリースしました</a></span></p>
+
+<p class="pt_12"><strong>2012/7/31</strong><br />
+<span class="release"><a href="products/edi/wa/release.html">
+ACMS WebAgent(LE)/ACMS Script Studio バージョン2.1.0をリリースしました</a></span></p>
+
+<p class="pt_12"><strong>2012/7/20</strong><br />
+<span class="release"><a href="http://www.anytran.jp/outline/release/release_any50.html" target="_blank">
+AnyTran Java 5.15.1をリリースしました。</a></span></p>
+
+<p class="pt_12"><strong>2012/7/10</strong><br />
+<span class="release"><a href="information/info_20120710.html">
+サーバーメンテナンスのお知らせ</a></span></p>
+
+<p class="pt_12"><strong>2012/5/11</strong><br />
+<span class="release"><a href="information/info_20120511.html">
+ACMS E2X/ACMS B2Bホストアダプタ販売終了のお知らせ</a></span></p>
+
+<p class="pt_12"><strong>2012/4/23</strong><br />
+<span class="release"><a href="information/info_20120423.html">
+サーバーメンテナンスのお知らせ</a></span></p>
+						
+<p class="pt_12"><strong>2012/3/16</strong><br />
+<span class="release"><a href="campaign/">
+カスタマ・サポート・サービス終了に伴う優待キャンペーンのご案内</a></span></p>
+
+<p class="pt_12"><strong>2012/2/24</strong><br />
+<span class="release"><a href="information/info_20120224.html">
+メールサーバー障害復旧の報告とお詫び</a></span></p>
+
+<p class="pt_12"><strong>2012/2/23</strong><br />
+<span class="release"><a href="information/info_20120223.html">
+メールサーバー障害のお知らせ</a></span></p>
+
+<p class="pt_12"><strong>2012/2/14</strong><br />
+<span class="release"><a href="information/info_20120214.html">
+サーバーメンテナンスのお知らせ</a></span></p>
+
+<p class="pt_12"><strong>2012/1/31</strong><br />
+<span class="release"><a href="products/edi/e2x/release.html">
+ACMS E<sup>2</sup>Xバージョン3.9.0をリリースしました。</a></span></p>
+                        
+<p class="pt_12"><strong>2012/1/31</strong><br />
+<span class="release"><a href="products/edi/b2b/release.html">
+ACMS B2B(LE)バージョン3.9.0をリリースしました。</a></span></p>
+                        
+<p class="pt_12"><strong>2012/1/25</strong><br />
+<span class="release"><a href="http://www.anytran.jp/outline/support/index.html" target="_blank">
+AnyTran Java  5.15.0をリリースしました。</a></span></p>
+
+                        <br /><b><span class="pt_12"><a name="2011" id="2011"></a>＜＜ 2011年 ＞＞</span></b>
+
+<p class="pt_12"><strong>2011/12/14</strong><br />
+<span class="release"><a href="information/info_20111214.html">
+年末年始の営業について</a></span></p>
+							
+<p class="pt_12"><strong>2011/12/12</strong><br />
+<span class="release"><a href="products/edi/wa/release.html">
+ACMS WebAgent 1.6.2_01 をリリースしました。</a></span></p>
+							
+<p class="pt_12"><strong>2011/11/25</strong><br />
+<span class="release"><a href="products/edi/liteneo/release.html">
+ACMS　Lite Neo バージョン1.5.0をリリースしました。</a></span></p>
+					
+<p class="pt_12"><strong>2011/10/3</strong><br />
+<span class="release"><a href="products/support.html">
+「製品サポートについて」ページにカスタマー・サポート・サービス約款を掲載しました。</a></span></p>
+						
+<p class="pt_12"><strong>2011/7/29</strong><br />
+<span class="release"><a href="products/edi/e2x/release.html">
+ACMS E<sup>2</sup>Xバージョン3.8.0をリリースしました。</a></span></p>
+						
+<p class="pt_12"><strong>2011/7/29</strong><br />
+<span class="release"><a href="products/edi/b2b/release.html">
+ACMS B2B(LE)バージョン3.8.0をリリースしました。</a></span></p>
+
+<p class="pt_12"><strong>2011/7/12</strong><br />
+<span class="release"><a href="http://www.anytran.jp/outline/support/index.html" target="_blank">
+AnyTranバージョン5.14をリリースしました。</a></span></p>
+						
+<p class="pt_12"><strong>2011/4/25</strong><br />
+<span class="release"><a href="information/info_20110425.html">
+ゴールデンウィークの営業のお知らせ</a></span></p>
+			
+<p class="pt_12"><strong>2011/4/1</strong><br />
+<span class="release"><a href="http://www.dal.co.jp/products/eol/EOL_ACMSLite_costomer.pdf" target="_blank">
+ACMS Liteは2011/3/31をもって販売終了になりました。</a></span></p>
+						
+<p class="pt_12"><strong>2011/3/31</strong><br />
+<span class="release"><a href="products/edi/ws/release.html">
+ACMS/WSバージョン5.2をリリースしました。</a></span></p>
+						
+<p class="pt_12"><strong>2011/3/25</strong><br />
+<span class="release"><a href="information/info_20110325.html">
+サーバーメンテナンスのお知らせ 2011/3/25 19:00〜3/28 8:00</a></span></p>
+						
+<p class="pt_12"><strong>2011/3/17</strong><br />
+<span class="release"><a href="products/edi/liteneo/release.html">
+ACMS Lite Neoバージョン1.4.1をリリースしました。</a></span></p>
+						
+<p class="pt_12"><strong>2011/3/4</strong><br />
+<span class="release"><a href="information/info_20110304.html">
+サーバーメンテナンスのお知らせ 2011/4/2 (土) 9:00-16:00</a></span></p>
+
+<p class="pt_12"><strong>2011/2/17</strong><br />
+<span class="release"><a href="information/info_20110217.html">
+サーバーメンテナンスのお知らせ 2011/2/18 18:00〜2/21 8:00</a></span></p>
+						
+<p class="pt_12"><strong>2011/1/31</strong><br />
+<span class="release"><a href="products/edi/e2x/release.html">
+ACMS E<sup>2</sup>Xバージョン3.7.0をリリースしました。</a></span></p>
+						
+<p class="pt_12"><strong>2011/1/31</strong><br />
+<span class="release"><a href="products/edi/b2b/release.html">
+ACMS B2B(LE)バージョン3.7.0をリリースしました。</a></span></p>
+						
+<p class="pt_12"><strong>2011/1/18</strong><br />
+<span class="release"><a href="http://www.anytran.jp/outline/support/index.html">
+AnyTran Javaバージョン5.13をリリースしました。</a></span></p>
+						
+<p class="pt_12"><strong>2011/1/14</strong><br />
+<span class="release"><a href="products/edi/liteneo/outline.html">
+ACMS Lite Neoバージョン1.4.0をリリースしました。</a></span></p>
+						
+                        <br /><b><span class="pt_12"><a name="2010" id="2010"></a>＜＜ 2010年 ＞＞</span></b>
+                        
+<p class="pt_12"><strong>2010/12/7</strong><br />
+<span class="release"><a href="information/info_20101200.html">
+年末年始のお知らせ。</a></span></p>
+
+<p class="pt_12"><strong>2010/8/2</strong><br />
+<span class="release"><a href="information/info_20100802.html">
+サーバーメンテナンスのお知らせ 8/13 18:00〜8/16 8:00</a></span></p>
+                        
+<p class="pt_12"><strong>2010/7/30</strong><br />
+<span class="release"><a href="products/edi/e2x/release.html">
+ACMS E<sup>2</sup>Xバージョン3.6.0をリリースしました。</a></span></p>
+                        
+<p class="pt_12"><strong>2010/7/30</strong><br />
+<span class="release"><a href="products/edi/b2b/release.html">
+ACMS B2B (LE）バージョン3.6.0をリリースしました。</a></span></p>
+                        
+<p class="pt_12"><strong>2010/7/20</strong><br />
+<span class="release"><a href="http://www.anytran.jp/outline/support/index.html">
+AnyTran Desktop版/AnyTran LEバージョン 4.12.2をリリースしました。</a></span></p>
+                        
+<p class="pt_12"><strong>2010/6/25</strong><br />
+<span class="release"><a href="http://www.anytran.jp/outline/support/index.html">
+AnyTran Java 5.12.0 をリリース</a></span></p>
+                        
+<p class="pt_12"><strong>2010/6/22</strong><br />
+<span class="release"><a href="information/info_20100622.html">
+メールサーバ　送信障害につきまして</a></span></p>
+                        
+<p class="pt_12"><strong>2010/6/10</strong><br />
+<span class="release"><a href="information/info_20100610.html">
+「暗号の2010年問題への対応」について</a></span></p>
+                        
+<p class="pt_12"><strong>2010/5/10</strong><br />
+<span class="release"><a href="products/edi/e2x/release.html">
+ACMS E<sup>2</sup>X 3.5.1をリリース</a></span></p>
+                        
+<p class="pt_12"><strong>2010/5/10</strong><br />
+<span class="release"><a href="products/edi/b2b/release.html">
+ACMS B2B (LE） 3.5.1をリリース</a></span></p>
+
+                        <p class="pt_12"><strong>2010/3/24</strong><br />
+                            <span class="release"><a href="information/info_100326.html">【重要】サーバーメンテナンスのお知らせ
+3/26 19:00〜3/27 19:00予定</a></span></p>
+                        <p class="pt_12"><strong>2010/2/26</strong><br />
+    <span class="release">ACMS  Lite Neoバージョン1.3.0をリリースしました。<br />
+詳細は、<a href="products/edi/liteneo/release.html">リリース情報</a>をご参照ください。</span></p>
+                        
+                        <p class="pt_12"><strong>2010/01/28</strong><br />
+                          <span class="release">ACMS E<sup>2</sup>Xバージョン3.5をリリースしました。<br />
+詳細は<a href="products/edi/e2x/release.html">リリース情報</a>をご参照ください。</span></p>
+                        <p class="pt_12"><strong>2010/01/28</strong><br />
+                          <span class="release">ACMS B2B(LE)バージョン3.5をリリースしました。<br />
+詳細は<a href="products/edi/b2b/release.html">リリース情報</a>をご参照ください。</span></p>
+                        <br /><b><span class="pt_12"><a name="2009" id="2009"></a>＜＜ 2009年 ＞＞</span></b>
+                        <p class="pt_12"><strong>2009/12/14</strong><br />
+                            <span class="release">ACMS Lite Neo バージョン1.2.1をリリースしました。<br />
+                              詳細は<a href="products/edi/liteneo/release.html">リリース情報</a>をご参照ください。</span></p>
+                        <p class="pt_12"><strong>2009/12/09</strong><br />
+                            <span class="release"><a href="information/info_091200.html">年末年始のお知らせ。</a></span></p>
+                        <p class="pt_12"><strong>2009/11/16</strong><br />
+                            <span class="release"><a href="information/info_091116.html">サーバメンテナンスのお知らせ。</a></span></p>
+                        <p class="pt_12"><strong>2009/10/19</strong><br />
+                        <span class="release"><a href="information/info_091019.html">サーバメンテナンスのお知らせ。</a></span></p>
+                        <p class="pt_12"><strong>2009/09/18</strong><br />
+                            <span class="release">仮想化環境におけるACMSのサポートについて掲載しました。<br />
+                            <a href="information/info_200909.html">こちら</a>をご参照ください。</span></p>
+                        <p class="pt_12"><strong>2009/05/18</strong><br />
+                            <span class="release"><a href="information/images/090518.pdf" target="_blank">【重要】サーバーメンテナンスのお知らせ
+5/25 19:00〜5/26 12:00予定</a></span></p>
+                        <p class="pt_12"><strong>2009/02/19</strong><br />
+                        <span class="release"><a href="information/info_090219.html">サーバメンテナンスのお知らせ。</a></span></p>
+                        <p class="pt_12"><strong>2009/01/30</strong><br />
+                          BUYSELWARE（LE）バージョン2.4.0をリリースしました。<br />
+                          詳細は<a href="products/webedi/bsw/release.html">リリース情報</a>をご参照ください。
+                        </p>
+                        <a name="2008" id="2008"></a>
+						<br />
+<span class="pt_12"><b>＜＜ 2008年 ＞＞</b>
+<p class="pt_12"><strong>2008/10/31</strong><br />
+ACMS WebAgentバージョン1.6.2をリリースしました。<br />詳細は<a href="products/edi/wa/release.html">リリース情報</a>をご参照ください。<br />
+</p>
+<p class="pt_12"><strong>2008/09/12</strong><br />
+ACMS Liteバージョン2.2.2をリリースしました。<br />詳細は<a href="products/edi/lite/release.html">リリース情報</a>をご参照ください。<br />
+</p>
+<p class="pt_12"><strong>2008/09/05</strong><br />
+BUYSELWARE(LE)バージョン2.3をリリースしました。<br />詳細は<a href="products/webedi/bsw/release.html">リリース情報</a>をご参照ください。<br />
+</p>
+<p class="pt_12">
+<strong>2008/08/29&nbsp;</strong><br />
+AnyTran（Java版）バージョン5.8をリリースしました。<br />
+詳細は<a href="http://www.anytran.jp/outline/support/index.html" target="_blank">リリース情報</a>をご参照ください。<br />
+</p>
+
+<p class="pt_12">
+<strong>2008/08/29&nbsp;</strong><br />
+ACMS E<sup>2</sup>Xバージョン3.2をリリースしました。<br />
+詳細は<a href="products/edi/e2x/release.html">リリース情報</a>をご参照ください。<br />
+</p>
+
+<p class="pt_12">
+<strong>2008/08/29&nbsp;</strong><br />
+ACMS B2B(LE)バージョン3.2をリリースしました。<br />
+詳細は<a href="products/edi/b2b/release.html">リリース情報</a>をご参照ください。<br />
+</p>
+
+<p class="pt_12">
+<strong>2008/07/10&nbsp;</strong><br />
+サーバメンテナンスのお知らせ<br />2008年7月12日サーバメンテナンスのため一部サービスを停止させて頂きます。詳細は<a href="information/info_080709.html">こちら</a>。<br />
+</p>
+
+<p class="pt_12">
+<strong>2008/06/20&nbsp;</strong><br />
+AnyTran（Java版）バージョン5.7.3をリリースしました。<br />
+  詳細は<a href="http://www.anytran.jp/outline/support/index.html" target="_blank">リリース情報</a>をご参照下さい。<br />
+</p>
+
+<p class="pt_12">
+<strong>2008/04/07&nbsp;</strong><br />
+BUYSELWARE(LE)バージョン2.2をリリースしました。<br />
+詳細は<a href="products/webedi/bsw/release.html">リリース情報</a>をご参照下さい。<br />
+</p>
+
+<p class="pt_12">
+<strong>2008/03/21&nbsp;</strong><br />
+ACMS E<sup>2</sup>Xバージョン3.1.1をリリースしました。
+詳細は<a href="products/edi/e2x/release.html">リリース情報</a>をご参照下さい。
+<br />
+</p>
+
+<p class="pt_12">
+<strong>2008/03/21&nbsp;</strong><br />
+ACMS B2B（LE）バージョン3.1.1をリリースしました。
+詳細は<a href="products/edi/b2b/release.html">リリース情報</a>をご参照下さい。
+<br />
+</p>
+
+<p class="pt_12">
+<strong>2008/02/13&nbsp;</strong><br />
+<a href="information/info_080213.html">サーバメンテナンスのお知らせ</a>
+<br />
+</p>
+
+<p class="pt_12">
+<strong>2008/02/06&nbsp;</strong><br />
+AnyTranバージョン5.7.0をリリースしました。<br />
+詳細は<a href="http://www.anytran.jp/outline/support/index.html" target="_blank">リリース情報</a>をご参照下さい。
+<br />
+</p>
+
+<p class="pt_12">
+<strong>2008/01/25&nbsp;</strong><br />
+ACMS WebAgentバージョン1.6.1をリリースしました。<br />詳細は<a href="products/edi/wa/release.html">リリース情報</a>をご参照下さい。
+</p>
+
+<p class="pt_12">
+<strong>2008/01/25&nbsp;</strong><br />
+<a href="http://www.scs.co.jp/news/pdf/20080124_1.pdf" target="_blank">住商情報システム、流通BMSを安価に実現する「流通BMS向け仮想化ソリューション」の販売を開始</a></p>
+
+<p class="pt_12">
+<strong>2008/01/18&nbsp;</strong><br />
+ACMS Liteバージョン2.2をリリースしました。<br />
+詳細は<a href="products/edi/lite/release.html">リリース情報</a>をご参照下さい。
+<br />
+<br />
+
+</p>
+				  
+					  
+<a name="2007" id="2007"></a>
+<br />
+<span class="pt_12"><b>＜＜ 2007年 ＞＞</b></span><br />
+<p class="pt_12">
+<strong>2007/11/20&nbsp;</strong><br />
+ACMS E<sup>2</sup>Xバージョン3.1をリリースしました。<br />
+  詳細は<a href="products/edi/e2x/release.html">リリース情報</a>をご参照下さい。
+<br />
+<br />
+<strong>2007/11/20&nbsp;</strong><br />
+ACMS B2B(LE)バージョン3.1をリリースしました。<br />
+  詳細は<a href="products/edi/b2b/release.html">リリース情報</a>をご参照下さい。
+<br />
+<br />
+<strong>2007/11/20&nbsp;</strong><br />
+BUYSELWARE(LE)バージョン2.1をリリースしました。<br />
+詳細は<a href="products/webedi/bsw/release.html">リリース情報</a>をご参照下さい。
+<br />
+<br />
+<strong>2007/11/12</strong><br />
+ACMS/WSバージョン4.1をリリースしました。<br />
+詳細は<a href="products/edi/ws/release.html">リリース情報</a>をご参照下さい。
+<br />
+<br />
+<strong>2007/9/27&nbsp;</strong><br />
+<a href="http://www.neutral.co.jp/info/press/new.html" target="_blank">近商ストア、流通BMSを採用した新EDIシステムを導入 </a></p>
+
+
+<p class="pt_12"><strong>2007/9/18</strong><br />
+ACMS Liteバージョン2.1.0をリリースしました。<br />
+詳細は<a href="products/edi/lite/release.html">リリース情報</a>をご参照下さい。
+
+</p><p class="pt_12"><strong>2007/8/29</strong><br />
+<a href="http://www.ydc.co.jp/topics/details/ydc_070829/" target="_blank">YDC、DALと日本HPの3社連携によるEDIシステム構築サービスを提供開始</a>
+</p>
+
+
+<p class="pt_12"><strong>2007/07/31</strong><br />
+ 以下製品の最新バーションをリリースしました。<br />
+・ACMS WebAgent Ver.1.6<br />
+・ACMS WebAgent LE Ver.1.6<br />
+・ACMS WebAgent Lite Ver.1.6<br />
+・ACMS WebAgent Script Studio Version 1.6.0</p>
+
+
+
+<p class="pt_12"><strong>2007/07/27</strong><br />
+以下製品の最新バーションをリリースしました。 <br />
+・ACMS   E<sup>2</sup>X　Ver.3.0.0<br />
+
+・ACMS B2B   Ver.3.0.0<br />
+
+・ACMS B2B LE   Ver.3.0.0<br />
+・BUYSELWARE   Ver.2.0.0<br />
+・BUYSELWARE LE Ver.2.0.0
+<br />
+<br />
+<strong>2007/06/29</strong><br />
+以下製品の最新バーションをリリースしました。<br />
+・ACMS B2B Ver.2.9.1<br />
+・ACMS B2B LE Ver.2.9.1<br />
+・ACMS EAIpro Ver.2.9.1<br />
+・ACMS EAIbase Ver.2.9.1<br />
+・AnyTran Ver.5.6.1</p>
+
+<p class="pt_12"><strong>2007/06/11</strong><br />
+以下製品の最新バーションをリリースしました。<br />
+・ACMS Lite Ver.2.0.0</p>
+
+
+<p class="pt_12"><strong>2007/05/22</strong><br />
+以下製品の最新バーションをリリースしました。<br/>
+・AnyTran Ver.5.6.0</p>
+
+
+<p class="pt_12"><strong>2007/04/27</strong><span></span><br />
+以下製品の最新バーションをリリースしました。<br />
+・ACMS B2B Ver.2.9.0<br />
+・ACMS B2B LE Ver.2.9.0<br />
+・ACMS EAIpro Ver.2.9.0<br/>
+・ACMS EAIbase Ver.2.9.0<br/>
+・BUYSELWARE Ver.1.1.1<br/>
+・BUYSELWARE LE Ver 1.1.1</p>
+
+
+
+<p class="pt_12"><strong>2007/4/27 </strong><br />
+07年5月2日より5月7日まで、サーバ・メンテナンスのため「製品ダウンロード」ならびに「セミナー/トレーニング」、「資料請求・お問い合わせ」がご利用いただけません。
+<br />
+お客様には大変ご迷惑をお掛け致しますが、ご理解とご協力をお願い申し上げます。</p>
+
+
+</span><p class="pt_12"><span class="pt_12"><strong>2007/03/30</strong></span><br />
+以下製品の最新バーションをリリースしました。<br />
+・AnyTran V5.5.0<br />
+・ACMS B2B Ver.2.8.3<br />
+・ACMS B2B LE Ver.2.8.3<br />
+・ACMS EAIpro Ver.2.8.3<br />
+・ACMS EAIbase Ver.2.8.3<br />
+・BUYSELWARE Ver.1.1.0<br />
+・BUYSELWARE LE Ver 1.1.0
+</p>
+
+
+
+								<p class="pt_12">
+									<strong>2007/02/05</strong><br />
+以下製品の最新バーションをリリースしました。<br />
+&nbsp;・AnyTran Ver.5.4.0
+</p>
+
+						<p class="pt_12">
+									<strong>2007/01/26</strong><br />
+							以下製品の最新バーションをリリースしました。<br />
+							&nbsp;・ACMS B2B       Ver.2.8.2<br />
+								&nbsp;・ACMS B2B LE   Ver.2.8.2<br />
+								&nbsp;・ACMS EAIpro    Ver.2.8.2<br />
+								&nbsp;・ACMS EAIbase   Ver.2.8.2<br />
+			</p>
+					  
+                          <a name="2006" id="2006"></a>
+						  <span class="pt_12"><b>＜＜ 2006年 ＞＞</b></span><br />
+                          <p class="pt_12"> <strong> 2006/12/28 </strong> <br />
+                            株式会社 翔泳社主催の<a href="http://www.seshop.com/event/dev/" target="_blank">Developers Summit 2007（デブサミ2007）</a>に協賛いたします。是非ご参加下さい。会期：2007年2月14日〜15日，会場：目黒雅叙園（東京・目黒） </p>
+                        <p class="pt_12"> <strong> 2006/12/25 </strong> <br />
+                          以下製品の最新バーションをリリースしました。<br />
+                          &nbsp;・ACMS B2B &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ver.2.8.1<br />
+                          &nbsp;・ACMS B2B LE &nbsp; Ver.2.8.1 &nbsp;<br />
+                          &nbsp;・ACMS EAIpro &nbsp;&nbsp; Ver.2.8.1<br />
+                          &nbsp;・ACMS EAIbase &nbsp; Ver.2.8.1<br />
+                        </p>
+                        <p class="pt_12"><strong>2006/11/10</strong><br />
+                          ACMS/UX Ver.4.6.3 をリリースしました。</p>
+                        <p class="pt_12"><strong>2006/11/10</strong><br />
+                          株式会社セゾン情報システムズ様主催の「第2回HDC(HULFT Data Communication)」紹介セミナー」（日時:11/28 13:30，会場:サンシャインシティ文化会館5階）に協賛致します。詳細・お申し込みは<a href="http://www.hulft.com/news/event/sunshine/semi_061128.html" target="_blank">セミナー情報サイト</a>よりお願い致します。</p>
+                        <p class="pt_12"><strong>2006/10/13 </strong><br />
+                          田村駒株式会社様でのACMS B2BやAnyTranの活用事例を掲載いたしました。詳細は<a href="casestudies/pdf/tamurakoma.pdf" target="_blank">事例紹介ページ</a>をご参照下さい。</p>
+                        <p class="pt_12"> <strong> 2006/10/16 </strong> <br />
+                          以下製品の最新バーションをリリースしました。<br />
+                          &nbsp;・ACMS B2B &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ver.2.8.0<br />
+                          &nbsp;・ACMS B2B LE &nbsp; Ver.2.8.0 &nbsp;<br />
+                          &nbsp;・ACMS EAIpro &nbsp;&nbsp; Ver.2.8.0<br />
+                          &nbsp;・ACMS EAIbase &nbsp; Ver.2.8.0<br />
+                        </p>
+                        <p class="pt_12"><strong>2006/09/21 </strong><br />
+                          インフォベック株式会社／GRANDITコンソーシアム主催の「GRANDIT DAY 2006」（日時：10/26，場所：ウェスティンホテル東京）に協賛・出展いたします。詳細は<a href="http://www.grandit.jp/granditday2006/index.html" target="_blank">こちら</a>をご参照下さい。</p>
+                        <p class="pt_12"><strong>2006/09/21 </strong><br />
+                          日本ヒューレット・パッカード株式会社と株式会社ワイ・ディ・シーとの共催にて、セミナー：「流通業界における次世代EDIの動向とITの役割〜変化と進化の時代に対応するリアルタイム・バリューチェーンの構築〜」（日時：10/23 14時，会場：世界貿易センタービルディング 3階 Room B）を開催いたします。詳細・申込は<a href="http://h50146.www5.hp.com/events/seminars/info/0610/1023edi.html" target="_blank">セミナー案内ページ</a>をご参照下さい。</p>
+                        <p class="pt_12"><strong>2006/09/08 </strong><br />
+                          以下製品の最新バーションをリリースしました。<br />
+                          ・ACMS B2B　Ver.2.7.1<br />
+                          ・ACMS B2B LE　Ver.2.7.1<br />
+                          ・ACMS EAIpro　Ver.2.7.1<br />
+                          ・ACMS EAIbase　Ver.2.7.1<br />
+                        </p>
+                        <p class="pt_12"><strong>2006/08/01 </strong><br />
+                          株式会社日立情報システムズ様主催の「電気・精密・一般機械器具製造業向けＩＴセミナー〜ローコストオペレーションの実現と内部統制への対応に向けて〜」
+                          （日時：8/23 14時，会場：世界貿易センタービル3階）に協賛いたします。詳細は<a href="http://www.hitachijoho.com/seminar/2006_08/060823.html" target="_blank">セミナー案内ページ</a>をご参照下さい。<br />
+                        </p>
+                        <p class="pt_12"><strong>2006/07/31 </strong><br />
+                          以下製品の最新バーションをリリースしました。<br />
+                          ・ACMS B2B　Ver.2.7.0<br />
+                          ・ACMS B2B LE　Ver.2.7.0<br />
+                          ・ACMS EAIpro　Ver.2.7.0<br />
+                          ・ACMS EAIbase　Ver.2.7.0<br />
+                          ・ACMS WebAgent　Ver.1.5.0<br />
+                          ・ACMS WebAgent Lite　Ver.1.5.0<br />
+                          ・ACMS WebAgent Script Studio　Ver.1.2.0<br />
+                          ・ACMS/NT　Ver.4.4.0<br />
+                          ・ACMS/NT for EDI　Ver.5.3.0<br />
+                          ・ACMS/NT for R/3　Ver.5.3.0</p>
+                        <p class="pt_12"><strong>2006/06/30</strong><br />
+                          グローバル標準のセキュア通信プロトコル「EDIINT AS2」対応のACMS Lite Ver.1.4.0 を新規リリースしました。</p>
+                        <p class="pt_12"><strong>2006/06/30</strong><br />
+                          ACMS Web/deTrade Ver.1.7.1 をリリースしました。</p>
+                        <div align="right"> <a href="#top"><img src="images/item_pagetop.gif" alt="ページのトップへ" width="52" height="13" border="0" /></a> </div>
+                        <p class="pt_12"><strong>2006/06/20</strong><br />
+                          ACMS/UX Ver.4.6.2 をリリースしました。</p>
+                        <p class="pt_12"><strong>2006/06/05</strong><br />
+                          ふじのひろしの<b><span class="red">「EDI情報館」</span></b>が新たにオープンしました。このブログを通じてEDIに関する様々な情報を発信いたします。EDI情報館については<a href="http://ediblog.dal.co.jp/" target="_blank">こちら</a>をご参照下さい。</p>
+                        <p class="pt_12"><strong>2006/04/28</strong><br />
+                          ACMS B2B Ver.2.6.1 をリリースしました。</p>
+                        <p class="pt_12"><strong>2006/04/10</strong><br />
+                          ACMS WebAgent Ver.1.4.2 をリリースしました。</p>
+                        <p class="pt_12"><strong>2006/04/10</strong><br />
+                          ACMS WebAgent Lite Ver.1.4.2 をリリースしました。</p>
+                        <p class="pt_12"><strong>2006/04/10</strong><br />
+                          ACMS WebAgent Script Studio Ver.1.1.2 をリリースしました。</p>
+                        <p class="pt_12"><strong>2006/03/31</strong><br />
+                          AnyTran Ver.5.2.0 をリリースしました。</p>
+                        <p class="pt_12"><strong>2006/03/31</strong><br />
+                          EDIINT AS2やDB連携機能などをサポートしたACMS B2B Ver.2.6.0 をリリースしました。</p>
+                        <p class="pt_12"><strong>2006/03/31</strong><br />
+                          ACMS EAIpro Ver.2.6.0 をリリースしました。</p>
+                        <p class="pt_12"><strong>2006/03/31</strong><br />
+                          ACMS EAIbase Ver.2.6.0 をリリースしました。</p>
+                        <p class="pt_12"><strong>2006/03/09</strong><br />
+                          富士ゼロックスプリンティングシステムズ株式会社様でのACMSシリーズの活用事例を掲載いたしました。</p>
+                        <p class="pt_12"><strong>2006/03/01</strong><br />
+                          ACMS Lite Ver.1.3.0 をリリースしました。</p>
+                        <p class="pt_12"><strong>2006/02/28</strong><br />
+                          ACMS/NT for EDI Ver.5.2.2 をリリースしました。
+						  <!--link070403
+						  詳細は<a href="http://www.dal.co.jp/products/release/note/acms_ntedi5.2.htm" target="_blank">リリースノート</a>をご参照下さい。
+						  -->
+					    </p>
+                        <p class="pt_12"><strong>2006/02/28</strong><br />
+                          ACMS/NT for R3 Ver.5.2.2 をリリースしました。
+						  <!--link070403
+						  詳細は<a href="http://www.dal.co.jp/products/release/note/acms_ntr35.2.htm" target="_blank">リリースノート</a>をご参照下さい。
+						  -->
+					    </p>
+                        <p class="pt_12"><strong>2006/02/28</strong><br />
+                          ACMS/NT Ver.4.3.2 をリリースしました。
+						  <!--link070403
+						  詳細は<a href="http://www.dal.co.jp/products/release/note/acms_nt4.3.htm" target="_blank">リリースノート</a>をご参照下さい。
+						  -->
+					    </p>
+                        <p class="pt_12"><strong>2006/01/31</strong><br />
+                          ACMS WebAgent Ver.1.4.1 をリリースしました。</p>
+                        <p class="pt_12"><strong>2006/01/31</strong><br />
+                          ACMS WebAgent Lite Ver.1.4.1 をリリースしました。</p>
+                        <p class="pt_12"><strong>2006/01/31</strong><br />
+                          ACMS WebAgent Script Studio Ver.1.1.1 をリリースしました。</p>
+                        <p class="pt_12"><strong>2006/01/31</strong><br />
+                          ACMS B2B Ver.2.5.1 をリリースしました。</p>
+                        <p class="pt_12"><strong>2006/01/31</strong><br />
+                          ACMS EAIpro Ver.2.5.1 をリリースしました。</p>
+                        <p class="pt_12"><strong>2006/01/31</strong><br />
+                          ACMS EAIbase Ver.2.5.1 をリリースしました。</p>
+                        <p class="pt_12"><strong>2006/01/27</strong><br />
+                          ACMS Lite Ver.1.2.1 をリリースしました。</p>
+                        <p class="pt_12"><strong>2006/01/18</strong><br />
+                          住商情報システム（株），SCS・ITマネジメント（株）共催によるHPオープンセミナー「基幹システム再構築の落とし穴〜EDI・EAI連携ソリューションによる効果と実績〜」に協賛いたします。<br />
+                          詳細・参加申込は<a href="http://h50146.www5.hp.com/events/seminars/oss/0602/06.html" target="_blank">こちら</a>。</p>
+                        <div align="right"> <a href="#top"><img src="images/item_pagetop.gif" alt="ページのトップへ" width="52" height="13" border="0" /></a> </div>
+                        <a name="2005" id="2005"></a>
+						<span class="pt_12"><b>＜＜ 2005年 ＞＞</b></span><br />
+                          <p class="pt_12"><strong>2005/12/28</strong><br />
+                            中堅・中小企業向けB2B製品：<b>ACMS Lite</b>に関する製品情報を掲載しました。
+                            ACMS Liteの製品情報は<a href="http://www.dal.co.jp/products/edi/lite/outline.html">こちら</a>。</p>
+                        <p class="pt_12"><strong>2005/12/28</strong><br />
+                          データ変換・フォーマット変換・漢字コード変換ソフトであるAnyTranの専用サイト：<b>AnyTran.jp</b>を立ち上げました。
+                          詳細は、<a href="http://www.AnyTran.jp/" target="_blank">http://www.AnyTran.jp/</a>をご参照下さい。</p>
+                        <p class="pt_12"><strong>2005/12/28</strong><br />
+                          Web-EDIのブラウザ操作を自動化するACMS WebAgentの無料製品紹介セミナーを2006年1月26日より開催いたします。
+                          詳細・お申込は<a href="seminar/index.html">こちら</a>から。</p>
+                        <p class="pt_12"><strong>2005/12/28</strong><br />
+                          データ変換・フォーマット変換・漢字コード変換ツール：AnyTranの無料製品紹介セミナーを2006年1月25日より開催いたします。詳細・お申込は<a href="http://www.AnyTran.jp/seminar/index.html">こちら</a>から。</p>
+                        <p class="pt_12"><strong>2005/12/26</strong><br />
+                          ACMS B2B Ver.2.5.0 をリリースしました。</p>
+                        <p class="pt_12"><strong>2005/12/26</strong><br />
+                          ACMS EAIpro Ver.2.5.0 をリリースしました。</p>
+                        <p class="pt_12"><strong>2005/12/26</strong><br />
+                          ACMS EAIbase Ver.2.5.0 をリリースしました。</p>
+                        <p class="pt_12"><strong>2005/12/20</strong> <br />
+                          AnyTran Ver.5.1.0 をリリースしました。</p>
+                        <p class="pt_12"><strong>2005/12/12</strong> <br />
+                          ACMS Lite Ver.1.2.0 をリリースしました。</p>
+                        <p class="pt_12"><strong>2005/11/07</strong><br />
+                          ACMS B2B Ver.2.4.0 をリリースしました。</p>
+                        <p class="pt_12"><strong>2005/11/07</strong><br />
+                          ACMS EAIpro Ver.2.4.0 をリリースしました。</p>
+                        <p class="pt_12"><strong>2005/11/07</strong><br />
+                          ACMS EAIbase Ver.2.4.0 をリリースしました。</p>
+                        <p class="pt_12"><strong>2005/10/31</strong><br />
+                          deTrade Ver.1.7.0 をリリースしました。</p>
+                        <p class="pt_12"><strong>2005/10/20</strong><br />
+                          AnyTran Ver.5.0.0 をリリースしました。</p>
+                        <p><font face="ＭＳ Ｐゴシック, Osaka" class="pt_12"><strong>2005/10/03</strong><br />
+                          住商情報システム（株），SCS・ITマネジメント（株）共催によるHPオープンセミナー「基幹システム再構築の落とし穴〜EDI・EAI連携ソリューションによる効果と実績〜」（2005/11/9開催）に協賛いたします。</font></p><font face="ＭＳ Ｐゴシック, Osaka" class="pt_12">
+                        <div align="right"> <a href="#top"><img src="images/item_pagetop.gif" alt="ページのトップへ" width="52" height="13" border="0" /></a> </div>
+                          <strong>2005/10/03</strong> <br />
+                        ACMS B2B Ver.2.3.2 をリリースしました。 
+                        <p></p>
+                        <strong>2005/10/03</strong> <br />
+                        ACMS EAIpro Ver.2.3.2 をリリースしました。 
+                        <p></P>
+                        <strong>2005/10/03</strong> <br />
+                        ACMS EAIbase Ver.2.3.2 をリリースしました。 
+                        <p></P>
+                        <strong>2005/09/30</strong><br />
+                        ACMS WebAgent Ver.1.4.0 をリリースしました。
+                        <p></p>
+                        <strong>2005/09/30</strong><br />
+                        ACMS WebAgent Lite Ver.1.4.0 をリリースしました。
+                        <p></p>
+                        <strong>2005/09/30</strong><br />
+                        ACMS ACMS WebAgent Script Studio Ver.1.1.0 をリリースしました。 
+                        <p></p>
+                        <strong>2005/09/20</strong><br />
+                        ACMS B2B Ver.2.3.1 をリリースしました。 
+                        <p></p>
+                        <strong>2005/09/20</strong><br />
+                        ACMS EAIpro Ver.2.3.1 をリリースしました。 
+                        <p></P>
+                        <strong>2005/09/20</strong><br />
+                        ACMS EAIbase Ver.2.3.1 をリリースしました。 
+                        <p></P>
+                        <strong>2005/09/20</strong><br />
+                        AnyTran Ver.4.10.0 をリリースしました。
+                        <p></P>
+                        <strong>2005/09/20</strong><br />
+                        AnyTran Desktop Ver.4.10.0 をリリースしました。
+                        <p></P>
+                        <strong>2005/09/20</strong><br />
+                        AnyTran LE Ver.4.10.0 をリリースしました。
+                        <p></P>
+                        <strong>2005/09/12</strong> <br />
+                        ACMS eCASH Ver.4.1.1 をリリースしました。<br />
+                        <!--link070403
+						詳細は<a href="http://www.dal.co.jp/products/release/note/acms_ec4.1.htm" target="_blank">リリースノート</a>をご参照下さい。
+						-->
+                        <p></p>
+                        <strong>2005/09/02</strong> <br />
+                        ACMS B2B Ver.2.3.0 をリリースしました。<br />
+                         
+                        <p></p>
+                        <strong>2005/09/02</strong> <br />
+                        ACMS EAIpro Ver.2.3.0 をリリースしました。
+                        <p></p>
+                        <div align="right"> <a href="#top"><img src="images/item_pagetop.gif" alt="ページのトップへ" width="52" height="13" border="0" /></a> </div>
+                        
+                        <strong>2005/09/02</strong> <br />
+                        ACMS EAIbase Ver.2.3.0 をリリースしました。<br />
+                         
+                        <p></p>
+                        <strong>2005/08/31</strong> <br />
+                        （株）日立情報システムズ主催の「次世代電子商取引セミナー（日程：2005/9/16 14:00，会場：日立情報システムズ千里オフィス）」に協賛いたします。
+
+                      <!--  
+						詳細・参加申込は<a href="http://www.dal.co.jp/info/HitachiJohoSem.pdf" target="_blank">こちら</a>。
+						-->
+                        <p></p>
+                          <strong>2005/08/31</strong> <br />
+                        インフォベック（株）主催の「GRANDIT DAY 2005（日程：2005/10/05 13:00，会場：六本木ヒルズ）」 に協賛し、出展いたします。
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        詳細・参加申込は<a href="http://www.grandit.jp/granditday/" target="_blank">こちら</a>。
+                        <p></p>
+                          <strong>2005/08/31</strong> <br />
+                        東洋ビジネスエンジニアリング（株）主催の「MCFrame Forum 2005（日程：2005/10/21 10:00，会場：六本木ヒルズ）」 に協賛し、出展いたします。
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        詳細・参加申込は<a href="http://www.mcframe.com/" target="_blank">こちら</a>。
+                        <p></p>
+                          <strong>2005/08/31</strong> <br />
+                        SAPジャパン（株）主催の「SAP TechEd '05（日程：2005/10/26〜27 10:00，会場：ホテル日航東京）」に協賛いたします。
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        詳細・参加申込は<a href="http://www.teched05.jp/" target="_blank">こちら</a>。
+                        <p></p>
+                          <strong>2005/08/25</strong><br />
+                        ACMS eCASH Ver.4.1.0 をリリースしました。<br />
+                        <!--link070403
+						詳細は<a href="http://www.dal.co.jp/products/release/note/acms_ec4.1.htm" target="_blank">リリースノート</a>をご参照下さい。
+						-->
+                        <p></p>
+                        <strong>2005/08/19</strong> <br />
+                        ACMS B2B Ver.1.9.3 をリリースしました。<br />
+                        <p></p>
+                        <strong>2005/08/19</strong> <br />
+                        ACMS EAIpro Ver.1.9.3 をリリースしました。<br />
+                         
+                        <p></p>
+                        <strong>2005/08/19</strong> <br />
+                        ACMS EAIbase Ver.1.9.3 をリリースしました。<br />
+                         
+                        <p></p>
+                        <strong>2005/08/10</strong> <br />
+                        AnyTran LEを新規にリリースしました。<br />
+                        <p></p>
+                        <strong>2005/07/15</strong> <br />
+                        ACMSシリーズには「JCE 1.2.1 の証明書期限切れ問題（2005年7月28日問題）」についての影響はありません。<br />
+                        <!--link070403
+						詳細は、<a href="info/20050715.html" target="_blank">こちら</a>をご参照下さい。
+						-->
+                        <p></p>
+                        <div align="right"> <a href="#top"><img src="images/item_pagetop.gif" alt="ページのトップへ" width="52" height="13" border="0" /></a> </div>
+                        
+                        <strong>2005/06/27</strong> <br />
+                        弊社Webサイトのトップページをリニューアルいたしました。
+                        <p></p>
+                        <strong>2005/06/20</strong><br />
+                        メールEDIやOracle 10g RACなどをサポートしたACMS B2B Ver.2.2.0 をリリースしました。<br />
+                         
+                        <p></p>
+                        <strong>2005/06/20</strong><br />
+                        Oracle 10g RAC対応のACMS EAIbase Ver.2.2.0 をリリースしました。<br />
+                         
+                        <p></p>
+                        <strong>2005/06/20</strong><br />
+                        Oracle 10g RAC対応のACMS EAIpro Ver.2.2.0 をリリースしました。<br />
+                         
+                        <p></p>
+                        ● 2005/03/28<br />
+                        ACMS B2B Ver.1.9.2 をリリースしました。<br />
+                        <br />
+                        ● 2005/03/28<br />
+                        ACMS EAIpro Ver.1.9.2 をリリースしました。<br />
+                        <br />
+                        <br />
+                        ● 2005/03/28<br />
+                        ACMS EAIbase Ver.1.9.2 をリリースしました。<br />
+                        <br />
+                        <br />
+                        ● 2005/03/28<br />
+                        ACMS B2B Ver.2.1.1 をリリースしました。<br />
+                        ・EBCDICコード入力支援機能が使用可能になりました。<br />
+                        <br />
+                        <br />
+                        ● 2005/03/28<br />
+                        ACMS EAIpro Ver.2.1.1 をリリースしました。<br />
+                        <br />
+                        <br />
+                        ● 2005/03/28<br />
+                        ACMS EAIbase Ver.2.1.1 をリリースしました。<br />
+                        <br />
+                        <br />
+                        ● 2005/03/22<br />
+                        ACMS/UX Ver.4.6.1 を新規リリースしました。<br />
+                        <br />
+                        <br />
+                        ● 2005/03/15　<br />
+                        ACMS WebAgent Lite Ver.1.3.9 を新規リリースしました。<br />
+                        <br />
+                        <br />
+                        ● 2005/03/15　<br />
+                        ACMS WebAgent Ver.1.3.9 をリリースしました。<br />
+                        ・クライアント認証ダイアログに対応しました。<br />
+                        <br />
+                        <br />
+                        ● 2005/03/15　<br />
+                        ACMS WebAgent Script Studio Ver.1.0.9 をリリースしました。<br />
+                        ・クライアント認証ダイアログに対応しました。<br />
+                        <br />
+                        <br />
+                        ● 2005/02/28　<br />
+                        ACMS/NT for EDI Ver.5.2.0 をリリースしました。<br />
+                        <!--
+						リリースノートは<a href="./products/release/note/acms_ntedi5.2.htm" target="_blank">こちら</a>にあります。
+						-->
+						<br />
+                        <br />
+                        ● 2005/02/28　<br />
+                        ACMS/NT for R/3 Ver.5.2.0 をリリースしました。<br />
+                       <!--link070403
+					    リリースノートは<a href="./products/release/note/acms_ntr35.2.htm" target="_blank">こちら</a>にあります。
+						-->
+						<br />
+                        <br />
+                        ● 2005/02/28　<br />
+                        ACMS/NT Ver.4.3.0 を新規リリースしました。<br />
+						<!--link070403
+                        リリースノートは<a href="./products/release/note/acms_nt4.3.htm" target="_blank">こちら</a>にあります。
+						-->
+						<br />
+                        <br />
+                        ● 2005/02/21<br />
+                        ACMS B2B Ver.2.1.0 をリリースしました。<br />
+                        ・パスワード暗号化機能が使用可能になりました。<br />
+                        DBに格納されるパスワードをAESアルゴリズムで暗号化する事が可能です。<br />
+                        ・運用画面のパスワードマスク機能が使用可能になりました。<br />
+                        ・運用者管理機能が使用可能になりました。<br />
+                        <br />
+                        <br />
+                        <br />
+                        <div align="right"> <a href="#top"><img src="images/item_pagetop.gif" alt="ページのトップへ" width="52" height="13" border="0" /></a> </div>
+                        <br />
+                        ● 2005/02/21<br />
+                        ACMS EAIpro Ver.2.1.0 をリリースしました。<br />
+                        ・パスワード暗号化機能が使用可能になりました。<br />
+                        DBに格納されるパスワードをAESアルゴリズムで暗号化する事が可能です。<br />
+                        ・運用画面のパスワードマスク機能が使用可能になりました。<br />
+                        ・運用者管理機能が使用可能になりました。<br />
+                        <br />
+                        ● 2005/02/21<br />
+                        ACMS EAIbase Ver.2.1.0 をリリースしました。<br />
+                        ・パスワード暗号化機能が使用可能になりました。<br />
+                        DBに格納されるパスワードをAESアルゴリズムで暗号化する事が可能です。<br />
+                        ・運用画面のパスワードマスク機能が使用可能になりました。<br />
+                        ・運用者管理機能が使用可能になりました。<br /> 
+                        <br />
+                        ● 2005/02/01　<br />
+                        ACMS Lite Ver.1.0.0 を新規リリースしました。
+                        <br />
+                        <br />
+                        ● 2005/01/31　<br />
+                        ACMS B2B Ver.2.0.0 をリリースしました。<br />
+                        ・ECALGA機能が使用可能になりました。
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        ebXML手順でECALGAビジネス文書の伝送が可能です。<br />
+                        下記のレイヤをサポートします。<br />
+                        &nbsp;&nbsp;・ECALGA伝送モデルのトランスポート（HTTP、SSL）層<br />
+                        &nbsp;&nbsp;・メッセージング（ebXML MS、CPPA）層<br />
+                        &nbsp;&nbsp;・ビジネスアクション（BPSS-BT）層
+                        <br />
+                        <br />
+                        ● 2005/01/31　<br />
+                        ACMS EAIpro Ver.2.0.0 をリリースしました。<br />
+                        ・R/3アダプタ機能が使用可能になりました。<br />
+                        &nbsp;&nbsp;SAP Java ConnectorによりSAP R/3とのリアル連携が可能になります。
+                        <br />
+                        <br />
+                        ● 2005/01/31　<br />
+                        ACMS EAIbase Ver.2.0.0 をリリースしました。<br /> 
+                        <br />
+                        ● 2005/01/20　<br />
+                        ACMS Web/deTrade Ver.1.6.1 をリリースしました。<br />
+                        ・クライアント側ファイル名の可変項目対応しました。
+                        <br />
+                          <br />
+                        ● 2005/01/18　<br />
+                        ACMS WebAgent Ver.1.3.8 をリリースしました。<br />
+                        ・任意の外部プログラムを起動する関数が追加されました。
+                        <br />
+                        <br />
+                        ● 2005/01/18　<br />
+                        ACMS WebAgent Script Studio Ver.1.0.8 をリリースしました。<br />
+                        ・スクリプトの自動生成時に共通関数で出力できるようになりました。
+                        <br />
+                        <br />
+                        ● 2005/01/12　<br />
+                        CiiTranslator Ver.3.1.1 をリリースしました。
+                        <br />
+                        <br />
+                        ● 2005/01/07<br />
+                        AnyTran Ver.4.9.0 をリリースしました。<br />
+                        ・XMLデータからデータ構造定義を推測して生成できるようになりました。<br />
+                        ・対応関係を紐付け表示できるようになりました。CII変換の速度が改善されました。
+                        <br />
+                        <br />
+                        ● 2005/01/07<br />
+                        AnyTran Desktop Ver.4.9.0 をリリースしました。<br />
+                        ・XMLデータからデータ構造定義を推測して生成できるようになりました。<br />
+                        ・対応関係を紐付け表示できるようになりました。CII変換の速度が改善されました。
+                        <br />
+                        <br />
+                        <br />
+                        <div align="right"> <a href="#top"><img src="images/item_pagetop.gif" alt="ページのトップへ" width="52" height="13" border="0" /></a> </div>
+                        <br />
+                        <a name="2004" id="2004"></a>
+						<span class="pt_12"><b>＜＜ 2004年 ＞＞</b></span><br /><br />
+						 ● 2004/12/29<br />
+                        ACMS/NT for EDI Ver.5.1.0 をリリースしました。<br />
+                        <!--link070403
+						リリースノートは<a href="./products/release/note/acms_ntedi5.1.htm" target="_blank">こちら</a>にあります。
+						-->
+						<br />
+                        <br />
+                        ● 2004/12/29<br />
+                        ACMS/NT for R/3 Ver.5.1.0 をリリースしました。<br />
+                        <!--link070403
+						リリースノートは<a href="./products/release/note/acms_ntr35.1.htm" target="_blank">こちら</a>にあります。
+						-->
+						<br />
+                        <br />
+                        ● 2004/12/10<br />
+                        ACMS	WebAgent Ver.1.3.7 をリリースしました。<br />
+                        ・後処理プログラムに監視機能が追加されました。<br />
+                          <br />
+                        ● 2004/12/10<br />
+                        ACMS WebAgent Script Studio Ver.1.0.7 をリリースしました。<br />
+                        ・後処理プログラムに監視機能が追加されました。<br />
+                          <br />
+                        ● 2004/11/30<br />
+                        ACMS B2B Ver.1.9.1 をリリースしました。<br />
+                        ・全銀ファイル成立タイミングにファイル終了回答電文を追加しました。<br />
+                        ・DB2 Version 8.2 のみ JDBC Driver Type4 に対応しました。
+                        <br />
+                        <br />
+                        ● 2004/11/30<br />
+                        ACMS EAIpro Ver.1.9.1 をリリースしました。<br />
+                        ・DB2 Version 8.2 のみ JDBC Driver Type4 に対応しました。
+                        <br />
+                        <br />
+                        ● 2004/11/30<br />
+                        ACMS EAIbase Ver.1.9.1 をリリースしました。
+                        <br />
+                        <br />
+                        ● 2004/11/30<br />
+                        ACMS/NT Ver.4.2.0 をリリースしました。<br />
+                        <!--link070403
+						リリースノートは<a href="./products/release/note/acms_nt4.2.htm" target="_blank">こちら</a>にあります。
+						-->
+                        <br />
+                        ● 2004/10/29<br />
+                        ACMS/UX for R/3 Ver.5.1.3 をリリースしました。<br />
+                        <br />
+                        ● 2004/10/29<br />
+                        ACMS/UX for EDI Ver.5.1.3 をリリースしました。
+                        <br />
+                        <br />
+                        ● 2004/10/20<br />
+                        ACMS/UX Ver.4.5.1  をリリースしました。
+                        <br />
+                        <br />
+                        ● 2004/10/08<br />
+                        ACMS WebAgent Ver.1.3.4 をリリースしました。
+                        <br />
+                        <br />
+                        ● 2004/10/08<br />
+                        Script Studio Ver.1.0.4 をリリースしました。<br />
+                        <br />
+                        ● 2004/09/30<br />
+                        ACMS B2B Ver.1.9.0 をリリースしました。<br />
+                        ・HP NonStop SQL/MP、SQL/MX に対応しました。<br />
+                        ・Windows版MySQLに対応しました。<br />
+                        ・WebAgentの通信日時を後続アプリケーションに通知する機能を追加しました。
+                        <br />
+                        <br />
+                        ● 2004/09/30<br />
+                        ACMS EAIpro Ver.1.9.0 をリリースしました。<br />
+                        ・HP NonStop SQL/MP、SQL/MX に対応しました。<br />
+                        ・Windows版MySQLに対応しました。
+                        <br />
+                        <br />
+                        ● 2004/09/30<br />
+                        ACMS EAIbase Ver.1.9.0 をリリースしました。<br />
+                        ・HP NonStop SQL/MP、SQL/MX に対応しました。<br />
+                        ・Windows版MySQLに対応しました。
+                        <br />
+                        <br />
+                        ● 2004/09/02<br />
+                        AnyTran Ver.4.8.1 をリリースしました。<br />
+                        ・データ構造をブックマーク、検索、置換できるようになりました。<br />
+                        ・CIIモードのトータルチェック、試験電文、B 属性に対する機能強化をしました。<br />
+                        <br />
+                        ● 2004/09/02<br />
+                        AnyTran Desktop Ver.4.8.1 をリリースしました。<br />
+                        ・データ構造をブックマーク、検索、置換できるようになりました。<br />
+                        ・CIIモードのトータルチェック、試験電文、B 属性に対する機能強化をしました。
+                        <br />
+                        <br />
+                        ● 2004/09/01<br />
+                        ACMS Web/deTrade (統合版) Ver.1.6.0 をリリースしました。<br />
+                        ・Tomcat5.0.Xに対応しました。<br />
+                        ・Redhat9に対応しました。<br />
+                        ・Oracle10gに対応しました。
+                        <br />
+                        <br />
+                        ● 2004/08/02<br />
+                        ACMS B2B Ver.1.8.2 をリリースしました。<br />
+                        ・MySQLが使用可能になりました。（Windows版は除く）<br />
+                        ・Oracle10gが使用可能になりました。
+                        <br />
+                        <br />
+                        ● 2004/08/02<br />
+                        ACMS EAIpro Ver.1.8.2 をリリースしました。<br />
+                        ・MySQLが使用可能になりました。（Windows版は除く）<br />
+                        ・Oracle10gが使用可能になりました。
+                        <br />
+                        <br />
+                        ● 2004/08/02<br />
+                        ACMS EAIbase Ver.1.8.2 をリリースしました。<br />
+                        ・MySQLが使用可能になりました。（Windows版は除く）<br />
+                        ・Oracle10gが使用可能になりました。<br />
+                        リリースノートは<a href="./products/release/note/acms_eai_base.htm" target="_blank">こちら</a>にあります。<br />
+                        ● 2004/07/20<br />
+                        Script Studio Ver.1.0.1 を新規リリースしました。<br />
+                        ACMS WebAgent用 ECMAスクリプト自動生成、編集機能を実装した製品です。
+                        <br />
+                        <br />
+                        ● 2004/07/20<br />
+                        ACMS WebAgent Ver.1.3.1 をリリースしました。
+                        <br />
+                        <br />
+                        ● 2004/05/10<br />
+                        ACMS B2B Ver.1.7.0 をリリースしました。<br />
+                        ・ファイル分割情報にグループ分割キー指定機能を追加しました。<br />
+                        ・ACMSWeb/deTradeにおけるグループ配信機能を追加しました。<br />
+                        ・データ送信メール通知機能でファイル単位のメール通知指定が可能になりました。<br />
+                        ・FTPクライアントのFTPコマンドにAPPEND（送信）機能が使用可能となりました。<br />
+                        ・クリーンナップに休日対応が追加されました。
+                        <br />
+                        <br />
+                        ● 2004/05/10<br />
+                        ACMS EAIpro Ver.1.7.0 をリリースしました。<br />
+                        ・ファイル分割情報にグループ分割キー指定機能を追加しました。<br />
+                        ・クリーンナップに休日対応が追加されました。
+                        <br />
+                        <br />
+                        ● 2004/05/10<br />
+                        ACMS EAIbase Ver.1.7.0 をリリースしました。<br />
+                        ・クリーンナップに休日対応が追加されました。
+                        <br />
+                        <br />
+                        ● 2004/05/01<br />
+                        ACMS WebAgent Ver.1.2.3 をリリースしました。<br />
+                        入れ子フレームのウェブページに対応しました。
+                        <br />
+                        <br />
+                        ● 2004/04/26　<br />
+                        AnyTran Ver 4.7.0 をリリースしました。<br />
+                        ・AnyTran変換ラッパー（別売オプション）が追加されました。<br />
+                        この機能により、EDIFACTメッセージの分割から変換定義の選択、変換実行、結合までの自動処理が可能になりました。
+                        <br />
+                        <br />
+                        ● 2004/04/26<br />
+                        AnyTran Desktop Ver 4.7.0 をリリースしました。<br />
+                        ・AnyTran変換ラッパー（別売オプション）が追加されました。<br />
+                        この機能により、EDIFACTメッセージの分割から変換定義の選択、変換実行、結合までの自動処理が可能になりました。
+                        <br />
+                        <br />
+                        ● 2004/04/01<br />
+                        ACMS/WS Ver.4.0 をリリースしました。
+                        <br />
+                        <br />
+                        ● 2004/02/16<br />
+                        HP Integrityサーバ「HP-UX 11iv2」OSに対応したACMS/UX Ver 4.4.6 をリリースしました。
+                        <br />
+                        <br />
+                        ● 2004/02/16<br />
+                        ACMS WebAgent Ver.1.2.0 をリリースしました。<br />
+                        伝票表示型ページの自動巡回に対応しました。<br />
+                        <br />
+                        ● 2004/01/26<br />
+                        CAI WebNavigator Ver 1.2.7 をリリースしました。<br />
+                        ・Client版に高速版の機能を実装しました。
+                        <br />
+                        <br />
+                        ● 2004/01/23<br />
+                        ACMS/UX for R/3 Ver 5.1.2 をリリースしました。<br />
+                        ・Solaris9 に対応しました。
+                        <br />
+                        <br />
+                        ● 2004/01/23<br />
+                        ACMS/UX for EDI Ver 5.1.2 をリリースしました。<br />
+                        ・Solaris9 に対応しました。
+                        <br />
+                        <br />
+                        ● 2004/01/22<br />
+                        ACMS/UX Ver 4.4.6 をリリースしました。<br />
+                        ・Solaris9 に対応しました。
+                        <br />
+                        <br />
+                        ● 2004/01/09<br />
+                        AnyTran Ver 4.6.0 をリリースしました。<br />
+                        ・データベース検索機能が追加されました。<br />
+                        ・変数検索機能が追加されました。
+                        <br />
+                        <br />
+                        ● 2004/01/09<br />
+                        AnyTran Desktop Ver 4.6.0 をリリースしました。<br />
+                        ・変数検索機能が追加されました。
+                        <br />
+                        <br />
+                        <br />
+                        <div align="right"> <a href="#top"><img src="images/item_pagetop.gif" alt="ページのトップへ" width="52" height="13" border="0" /></a> </div>
+                        <br />
+                        <a name="2003" id="2003"></a>
+						<span class="pt_12"><b>＜＜ 2003年 ＞＞</b></span><br />
+						<br />
+						 ● 2003/12/15<br />
+                        新製品<a href="http://122.200.205.26/products/edi/wa/outline.html">「ACMS WebAgent」</a>の製品紹介を掲載しました。<br />
+                        <br />
+                        ● 2003/11/12<br />
+                        ACMS B2B Ver 1.5.1 をリリースしました。<br />
+                        非常駐アプリケーション監視機能を実装しました。
+                        <br />
+                        <br />
+                        ● 2003/11/12<br />
+                        ACMS EAIpro Ver 1.5.1 をリリースしました。<br />
+                        非常駐アプリケーション監視機能を実装しました。
+                        <br />
+                        <br />
+                        ● 2003/11/12<br />
+                        ACMS EAIbase Ver 1.5.1 をリリースしました。<br />
+                        非常駐アプリケーション監視機能を実装しました。
+                        <br />
+                        <br />
+                        ● 2003/10/31<br />
+                        AnyTran Ver 4.5.0 をリリースしました。<br />
+                        AnyMapperにマッピング操作のUndo/Redo機能が追加されました。
+                        <br />
+                        <br />
+                        ● 2003/10/31<br />
+                        AnyTran Desktop Ver 4.5.0 をリリースしました。<br />
+                        ・AnyTran にライセンス管理機能を追加しました。<br />
+                        ・AnyMapperにマッピング操作のUndo/Redo機能が追加されました。
+                        <br />
+                        <br />
+                        ● 2003/10/06<br />
+                        ACMS B2B Ver 1.5.0 をリリースしました。<br />
+                        ・GUIのJOBリレーション定義ツールを使用可能になりました。<br />
+                        ・全銀TCP/IPにSSLセキュリティ機能を追加しました。<br />
+                        ・ネイティブなコマンド（ロード、APロード、稼動記録出力）を実装しました。<br />
+                        ・着呼／送信データ登録時に指定の宛先にメール通知する機能を追加しました。<br />
+                        ・記録照会で日時範囲指定での検索機能を追加しました。<br />
+                        ・ライセンス管理機能を実装しました。<br />
+                        ACMS/UXからの移行ツールが使用可能になりました。
+                        <br />
+                        <br />
+                        ● 2003/10/06<br />
+                        ACMS EAIpro Ver 1.5.0 をリリースしました。<br />
+                        ・GUIのJOBリレーション定義ツールを使用可能になりました。<br />
+                        ・ネイティブなコマンド（APロード、稼動記録出力）を実装しました。<br />
+                        ・記録照会で日時範囲指定での検索機能を追加しました。<br />
+                        ・ライセンス管理機能を実装しました。
+                        <br />
+                        <br />
+                        ● 2003/10/06<br />
+                        ACMS EAIbase Ver 1.5.0 をリリースしました。<br />
+                        ・ネイティブなコマンド（APロード、稼動記録出力）を実装しました。<br />
+                        ・記録照会で日時範囲指定での検索機能を追加しました。<br />
+                        ・ライセンス管理機能を実装しました。
+                        <br />
+                        <br />
+                        ● 2003/10/06<br />
+                        ACMS/WS Ver 3.0.0 をリリースしました。<br />
+                        ・SSL に対応しました。<br />
+                        ・ライセンス管理機能を実装しました。<br />
+                        <br />
+                        ● 2003/08/07<br />
+                        ACMS/UX for R/3 Ver 5.1.1 をリリースしました。<br />
+                        Red Hat Linux8, 9, UnitedLinux1.0 に対応しました。<br />
+                        Oracle9.2.0 に対応しました。
+                        <br />
+                        <br />
+                        ● 2003/08/07<br />
+                        ACMS/UX for EDI Ver 5.1.1 をリリースしました。<br />
+                        Red Hat Linux8, 9, UnitedLinux1.0 に対応しました。<br />
+                        Oracle9.2.0 に対応しました。
+                        <br />
+                        <br />
+                        ● 2003/08/04<br />
+                        ACMS UX 4.4.3 をリリースしました。<br />
+                        FTPサーバの列信機能、および、マルチログイン機能<br />
+                        Red Hat Linux8, 9, UnitedLinux1.0 に対応しました。<br />
+                        Oracle9.2.0 の対応
+                        <br />
+                        <br />
+                        ● 2003/07/29<br />
+                        AnyTran Ver 4.4.1 をリリースしました。<br />
+                        Red Hat Linux8, 9, UnitedLinux1.0 に対応しました。
+                        <br />
+                        <br />
+                        ● 2003/07/29<br />
+                        AnyTran DeskTop Ver 4.4.1 をリリースしました。
+                        <br />
+                        <br />
+                        ● 2003/07/07<br />
+                        ACMS Web/deTrade Ver 1.4.0 をリリースしました。<br />
+                        ・DB2(DB2ユニバーサル・データベース V7.2)に対応しました。<br />
+                        ・AS/400/DB2に対応しました。<br />
+                        ・PostgreSQL(V7.2.3)に対応しました。<br />
+                        ・SQLServer 2000 JDBC ドライバの使用が可能となりました。<br />
+                        ・サンプルJSP(帳票テンプレートファイル)を追加しました。
+                        <br />
+                        <br />
+                        ● 2003/07/01<br />
+                        ACMS B2B Ver 1.4.1をリリースしました。<br />
+                        ・MQインターフェースの使用が可能となりました。<br />
+                        ・ACMS/NTからの移行ツールの使用が可能となりました。<br />
+                        ・SQLServer 2000 JDBC ドライバの使用が可能となりました。<br />
+                        ・HTTP通信（XMLデータ等）の使用が可能となりました。
+                        <br />
+                        <br />
+                        ● 2003/07/01<br />
+                        ACMS EAIpro Ver 1.3.1をリリースしました。<br />
+                        ・MQインターフェースの使用が可能となりました。<br />
+                        ・SQLServer 2000 JDBC ドライバの使用が可能となりました。
+                        <br />
+                        <br />
+                        ● 2003/07/01<br />
+                        ACMS EAIbase Ver 1.3.1をリリースしました。<br />
+                        ・MQインターフェースの使用が可能となりました。<br />
+                        ・SQLServer 2000 JDBC ドライバの使用が可能となりました。
+                        <br />
+                        <br />
+                        <font face="ＭＳ Ｐゴシック, Osaka" class="pt_12"> ● 2003/07/01<br />
+                          ACMS eCASH Ver 4.0.0をリリースしました。<br />
+                          ・CAFIS<br />
+                          TCP/IP接続、ICカードI/F<br />
+                          ・CARDNET<br />
+                          TCP/IP(OBN経由)接続、デビットカードI/F<br />
+                          に対応しました。<br />
+                          <!--link070403
+						  リリースノートは<a href="http://www.dal.co.jp/products/release/note/acms_ec4.0.htm" target="_blank">こちら</a>にあります。-->
+						  <br />
+                          <br />
+                          ● 2003/05/30<br />
+                          ACMS/NT for EDI Ver.5.0.5 をリリースしました。ORACLE 9.2.0 に対応しました。.NET Framework ブラウザ運用が追加されました。<br />
+                         <!--link070403
+						  リリースノートは<a href="http://www.dal.co.jp/products/release/note/acms_ntedi5.0.htm" target="_blank">こちら</a>にあります。
+						  -->
+						  <br />
+                          <br />
+                          ● 2003/05/30<br />
+                          ACMS/NT for R/3 Ver.5.0.5 をリリースしました。ORACLE 9.2.0 に対応しました。.NET Framework ブラウザ運用が追加されました。<br />
+                          <!--link070403
+						  リリースノートは<a href="http://www.dal.co.jp/products/release/note/acms_ntr35.0.htm" target="_blank">こちら</a>にあります。
+						  -->
+						  <br />
+                          <br />
+                          ● 2003/05/30<br />
+                          ACMS/NT Ver.4.1.2 をリリースしました。ORACLE 9.2.0 に対応しました。.NET Framework ブラウザ運用が追加されました。<br />
+                          <!--link070403
+						  リリースノートは<a href="http://www.dal.co.jp/products/release/note/acms_nt4.1.htm" target="_blank">こちら</a>にあります。
+						  -->
+						  <br />
+                          <br />
+                          ● 2003/05/08<br />
+                          ACMS/UX for R/3 Ver.5.0.2をリリースしました。AIX5Lのみ ORACLE 9.2.0 に対応しました。
+                          <br />
+                          <br />
+                          ● 2003/05/08<br />
+                          ACMS/UX for EDI Ver.5.0.2をリリースしました。AIX5Lのみ ORACLE 9.2.0 に対応しました。<br />
+                          <br />
+                          ● 2003/05/08<br />
+                          AnyTran Ver.4.3.1がリリースされました。
+                          <br />
+                          <br />
+                          ● 2003/05/08<br />
+                          AnyTran Desktop Ver.4.3.1がリリースされました。
+                          <br />
+                          <br />
+                        </font>
+                        <div align="right"> <a href="#top"><img src="images/item_pagetop.gif" alt="ページのトップへ" width="52" height="13" border="0" /></a> </div>
+                        <font face="ＭＳ Ｐゴシック, Osaka" class="pt_12">
+                          <br />
+                        </font><font face="ＭＳ Ｐゴシック, Osaka" class="pt_12"> </font>
+                        <!--***** /What's Newエリア −ここまで********************-->
+                    <p></p></font></td>
+                      <td width="10" height="100"><img src="images/spacer.gif" width="10" height="1" /></td>
+                    </tr>
+                    <tr>
+                      <td width="343" height="10" colspan="3"><img src="images/spacer.gif" width="1" height="10" /></td>
+                    </tr>
+                </table></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+</div>
+<div id="lo_navi">
+<ul>
+<li><a href="/what_backnumber.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('backno','','/images/navi/navi_backnumber2.gif',1)"><img src="/images/navi/navi_backnumber.gif" name="backno" width="150" height="25" border="0" id="product" /></a></li>
+<li><span class="line"><a href="/what_backnumber.html#2015">2015</a></span></li>
+<li><span class="line"><a href="/what_backnumber.html#2014">2014</a></span></li>
+<li><span class="line"><a href="/what_backnumber.html#2013">2013</a></span></li>
+<li><span class="line"><a href="/what_backnumber.html#2012">2012</a></span></li>
+<li><span class="line"><a href="/what_backnumber.html#2011">2011</a></span></li>
+<li><span class="line"><a href="/what_backnumber.html#2010">2010</a></span></li>
+<li><span class="line"><a href="/what_backnumber.html#2009">2009</a></span></li>
+<li><span class="line"><a href="/what_backnumber.html#2008">2008</a></span></li>
+<li><span class="line"><a href="/what_backnumber.html#2007">2007</a></span></li>
+<li><span class="line"><a href="/what_backnumber.html#2006">2006</a></span></li>
+<li><span class="line"><a href="/what_backnumber.html#2005">2005</a></span></li>
+<li><span class="line"><a href="/what_backnumber.html#2004">2004</a></span></li>
+<li><span class="line"><a href="/what_backnumber.html#2003">2003</a></span></li>
+</ul>
+
+<div id="navi_bnr"> <a href="/products/dhp/raccoon/outline.html"><img src="/images/navi/bnr_raccoon.gif" alt="RACCOON" border="0" /></a> <a href="/webframer/"><img src="/images/navi/bnr_webframer.gif" alt="ACMS WebFramer" border="0" /></a></div>
+</div>
+
+</div>
+</div>
+
+<div id="footer">
+<table width="100%" border="0" align="right" cellpadding="0" cellspacing="0">
+<tr>
+  <td align="left" id="ftlink">&nbsp;&nbsp;&nbsp;<a href="/policy/index.html">プライバシーポリシー</a></td>
+<td align="right">Copyright 2012 Data Applications Co., Ltd.&nbsp;&nbsp;&nbsp;</td>
+</tr>
+</table>
+</div>
+<!--
+<div id="footer">
+<table border="0" align="right" cellpadding="0" cellspacing="0">
+<tr>
+<td>Copyright 2012 Data Applications Co., Ltd.</td>
+</tr>
+</table>
+</div>
+-->
+<!-- Visionalist tag start -->
+<SCRIPT type="text/javascript" src="https://www04.tracer.jp/VL/Trace?c=bs6390&p=what_bak"></SCRIPT>
+<!-- Visionalist tag end -->
+
+<script language="javascript">
+<!--
+    document.write("<img src='https://car11.kaitaku.biz/car/beacon/BeaconReceiver.jsp?bid=BCID00626907366&title=" + document.title + "&charset=" + document.charset + "&characterSet=" + document.characterSet + "&refererEx=" + escape(document.referrer) + "'>");
+-->
+</script>
+
+</body>
+</html>
