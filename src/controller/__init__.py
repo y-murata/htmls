@@ -37,7 +37,7 @@ if __name__ == '__main__':
         os.system("git push -u origin %s" % branch)  # ローカルブランチ:リモートブランチ
 
         # プルリクエスト : 要インストール : brew install hub
-        os.system("hub pull-request -m auto_PR_%s" % url)
+        # os.system("hub pull-request -m auto_PR_%s" % url)
 
         # masterに移動，最新をプル
         os.system("git checkout master")
@@ -46,6 +46,9 @@ if __name__ == '__main__':
         # マージする
         ## マージするときはmasterのHEADに行ってマージしないといけない
         os.system("git merge %s --no-ff" % branch)
+
+        # ローカルでマージしたmasterをpush
+        os.system("git push -u origin master")
 
         # ブランチを削除する
         os.system("git branch -D %s" % branch)
