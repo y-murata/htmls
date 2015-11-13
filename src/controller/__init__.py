@@ -14,10 +14,8 @@ if __name__ == '__main__':
     # プロセス並列化をする
 
     for url in open(listFilePath, "r"):
-        print(url)
-        branch = hashlib.md5(url).hexdigest()
-
-        exit()
+        branch = hashlib.md5(url.encode('utf-8')).hexdigest()
+        print(url, branch)
 
         # ブランチを切って切り替える
         os.system("git checkout -b %s" % branch)
